@@ -218,7 +218,6 @@ function install_begin_request(&$install_state) {
   if (!empty($install_state['parameters']['locale'])) {
     $install_state['parameters']['locale'] = preg_replace('/[^a-zA-Z_0-9\-]/', '', $install_state['parameters']['locale']);
   }
-
   // Allow command line scripts to override server variables used by Drupal.
   require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
   if (!$install_state['interactive']) {
