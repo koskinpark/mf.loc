@@ -3,6 +3,7 @@ description = Install my profile.
 version = VERSION
 core = 7.x
 exclusive = TRUE
+;custom
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
@@ -19,12 +20,30 @@ dependencies[] = taxonomy
 dependencies[] = dblog
 dependencies[] = search
 dependencies[] = shortcut
-dependencies[] = toolbar
 dependencies[] = overlay
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
-files[] = myprofile.profile
+
+;contib
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = ctools
+dependencies[] = ds
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = panels
+dependencies[] = panels_everywhere
+dependencies[] = strongarm
+dependencies[] = views
+dependencies[] = views_ui
+
+
+
+;features
+dependencies[] = f_ct_product
+dependencies[] = f_vocabulary_catalog
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"
