@@ -1,4 +1,4 @@
-name = f_page-manager
+name = f_page_manager
 core = 7.x
 package = Features
 dependencies[] = ctools
