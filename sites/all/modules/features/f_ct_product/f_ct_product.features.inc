@@ -5,6 +5,18 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function f_ct_product_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function f_ct_product_node_info() {

@@ -24,6 +24,12 @@ function f_ct_product_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'random_homepage_pictures' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -62,17 +68,24 @@ function f_ct_product_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
         'weight' => 3,
       ),
-      'teaser' => array(
+      'random_homepage_pictures' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -103,7 +116,7 @@ function f_ct_product_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -114,11 +127,23 @@ function f_ct_product_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 2,
       ),
-      'teaser' => array(
+      'random_homepage_pictures' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -157,11 +182,25 @@ function f_ct_product_field_default_field_instances() {
         'type' => 'image',
         'weight' => 1,
       ),
+      'random_homepage_pictures' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',

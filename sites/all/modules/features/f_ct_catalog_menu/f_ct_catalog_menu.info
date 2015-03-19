@@ -1,0 +1,8 @@
+name = f_ct_catalog_menu
+description = Here was created "catalog menu"
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-catalog-menu

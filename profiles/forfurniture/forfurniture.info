@@ -1,0 +1,65 @@
+name = forfurniture
+description = A new profile for creating site for furniture.
+version = VERSION
+core = 7.x
+exclusive = TRUE
+
+;custom
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+;dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+;contib
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = ctools
+dependencies[] = views_content
+dependencies[] = ctools_custom_content
+dependencies[] = page_manager
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = ds
+dependencies[] = ds_devel
+dependencies[] = ds_ui
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = nice_menus
+dependencies[] = panels
+dependencies[] = panels_node
+dependencies[] = panels_everywhere
+dependencies[] = strongarm
+dependencies[] = taxonomy_menu
+dependencies[] = views
+dependencies[] = views_ui
+
+;custom
+dependencies[] = layout_sample
+
+;features
+dependencies[] = f_ct_product
+dependencies[] = f_vocabulary_catalog
+dependencies[] = f_ct_catalog_menu
+
+; Information added by Drupal.org packaging script on 2014-11-19
+version = "7.34"
+project = "drupal"
+datestamp = "1416429488"
