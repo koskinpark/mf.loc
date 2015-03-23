@@ -50,6 +50,9 @@ dependencies[] = strongarm
 dependencies[] = taxonomy_menu
 dependencies[] = views
 dependencies[] = views_ui
+dependencies[] = uuid_features
+dependencies[] = services
+dependencies[] = uuid
 
 ;custom
 dependencies[] = layout_sample
@@ -58,6 +61,9 @@ dependencies[] = layout_sample
 dependencies[] = f_ct_product
 dependencies[] = f_vocabulary_catalog
 dependencies[] = f_ct_catalog_menu
+dependencies[] = f_page_manager
+dependencies[] = f_ct_random_hp_product
+dependencies[] = f_nice_menu_catalog
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Random homepage product feature.
+ */
+
+include_once 'f_ct_random_hp_product.features.inc';

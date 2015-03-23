@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_nice_menu_catalog feature.
+ */
+
+include_once 'f_nice_menu_catalog.features.inc';
