@@ -10,3 +10,4 @@ features[features_api][] = api:2
 features[page_manager_handlers][] = site_template__default
 features[page_manager_pages][] = home
 features[variable][] = panels_everywhere_site_template_enabled
+features[variable][] = site_frontpage
