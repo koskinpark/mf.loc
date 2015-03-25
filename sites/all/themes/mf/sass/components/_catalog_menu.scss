@@ -1,0 +1,73 @@
+
+.contextual-links-region {
+}
+
+#header-wrap .contextual-links-region {
+  width:100%;
+
+}
+
+.contextual-links-region ul {
+  width: auto;
+  float: none;
+  background: #fff;
+}
+
+.contextual-links-region ul li {
+  color: #626262;
+  text-align:center;
+  margin: 0 auto;
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  width: 10%;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+.contextual-links-region ul li:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.contextual-links-region ul li a {
+  text-decoration: none;
+}
+
+.contextual-links-region ul.nice-menu ul li {
+  border-top: unset;
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.contextual-links-region ul.nice-menu li {
+  border-top:1px solid #ffffff;
+  border-left:1px solid #ffffff;
+  border-right:1px solid #ffffff;
+  background: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contextual-links-region ul.nice-menu-down .menuparent a {
+  padding: 0;
+}
+
+ul.nice-menu-down li.menuparent {
+
+}
+
+ul.nice-menu-down li.menuparent:hover {
+  background:none;
+}
+
+ul.nice-menu a {
+  color: unset;
+}
+
+ul.nice-menu-down ul {
+  left:-1px;
+  top:48px;
+}

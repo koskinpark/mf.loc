@@ -1,0 +1,12 @@
+$height_of_iamge:320px;
+
+.views-row {
+  margin: 5px;
+  float:left;
+}
+
+.field__item img {
+  width: 100%;
+  height: $height_of_iamge;
+  background: #fff;
+}

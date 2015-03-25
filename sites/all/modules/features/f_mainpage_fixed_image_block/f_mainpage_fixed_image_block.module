@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_mainpage_fixed_image_block feature.
+ */
+
+include_once 'f_mainpage_fixed_image_block.features.inc';

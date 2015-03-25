@@ -187,7 +187,7 @@ function f_ct_product_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'mainpage_images_block',
         ),
         'type' => 'image',
         'weight' => 0,

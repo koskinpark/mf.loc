@@ -1,5 +1,97 @@
+/* No files to import found in abstractions/**\/* */
+/* line 1, ../sass/base/_media.scss */
 img, media {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* No files to import found in partials/components/**\/* */
+/* line 1, ../sass/base/_template.scss */
+body {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  width: 960px;
+  height: auto;
+  font-family: "Miller Banner",Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif;
+  font-size: 16px; }
+
+/* line 10, ../sass/base/_template.scss */
+#content-wrap {
+  margin-top: 10px; }
+
+/* line 5, ../sass/components/_catalog_menu.scss */
+#header-wrap .contextual-links-region {
+  width: 100%; }
+
+/* line 10, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul {
+  width: auto;
+  float: none;
+  background: #fff; }
+
+/* line 16, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul li {
+  color: #626262;
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  width: 10%;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26); }
+
+/* line 28, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul li:hover {
+  color: #000;
+  border-bottom: 1px solid #000; }
+
+/* line 33, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul li a {
+  text-decoration: none; }
+
+/* line 37, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul.nice-menu ul li {
+  border-top: unset;
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto; }
+
+/* line 45, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul.nice-menu li {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  background: none;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* line 54, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul.nice-menu-down .menuparent a {
+  padding: 0; }
+
+/* line 62, ../sass/components/_catalog_menu.scss */
+ul.nice-menu-down li.menuparent:hover {
+  background: none; }
+
+/* line 66, ../sass/components/_catalog_menu.scss */
+ul.nice-menu a {
+  color: unset; }
+
+/* line 70, ../sass/components/_catalog_menu.scss */
+ul.nice-menu-down ul {
+  left: -1px;
+  top: 48px; }
+
+/* line 3, ../sass/components/_random_picture.scss */
+.views-row {
+  margin: 1.1686%;
+  width: 31%;
+  height: 320px;
+  float: left; }
+
+/* line 10, ../sass/components/_random_picture.scss */
+.field__item img {
+  width: 100%;
+  height: 320px;
+  background: #fff; }
+
+/*# sourceMappingURL=mf.styles.css.map */
