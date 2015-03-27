@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd49590d-91f6-4fbd-ac09-7a3dc114a193" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_catalog_menu.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_catalog_menu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_random_picture.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_random_picture.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.strongarm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.features.menu_links.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.features.menu_links.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.pages_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.pages_default.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" afterPath="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="bd49590d-91f6-4fbd-ac09-7a3dc114a193" name="Default" comment="" />
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
