@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_ct_slider feature.
+ */
+
+include_once 'f_ct_slider.features.inc';

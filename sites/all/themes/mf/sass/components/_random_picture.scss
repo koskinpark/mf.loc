@@ -1,12 +1,21 @@
-$height_of_iamge:320px;
+$height_of_image:320px;
+
 
 .views-row {
   margin: 5px;
   float:left;
+  &:hover {
+    img {
+      opacity: 0.95;
+      transition: 0.25s;
+      box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.51);
+    }
+    transition: 0.25s;
+    background: #fff;
+  }
 }
 
-.field__item img {
-  width: 100%;
-  height: $height_of_iamge;
+.field .field--name-field-pictures .field--type-image .field--label-hiddenimg {
+  height: $height_of_image;
   background: #fff;
 }

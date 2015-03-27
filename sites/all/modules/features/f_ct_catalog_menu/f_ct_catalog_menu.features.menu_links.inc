@@ -92,6 +92,129 @@ function f_ct_catalog_menu_menu_default_menu_links() {
     'weight' => 10,
     'customized' => 0,
   );
+  // Exported menu link: menu-catalog-menu_cookware--tools:taxonomy/term/14
+  $menu_links['menu-catalog-menu_cookware--tools:taxonomy/term/14'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/14',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Cookware & Tools',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Cookware & Tools',
+      ),
+      'identifier' => 'menu-catalog-menu_cookware--tools:taxonomy/term/14',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'menu-catalog-menu_kitchen--tabletop:taxonomy/term/12',
+  );
+  // Exported menu link: menu-catalog-menu_decorative-accents:taxonomy/term/24
+  $menu_links['menu-catalog-menu_decorative-accents:taxonomy/term/24'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/24',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Decorative Accents',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Decorative Accents',
+      ),
+      'identifier' => 'menu-catalog-menu_decorative-accents:taxonomy/term/24',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+  );
+  // Exported menu link: menu-catalog-menu_globally-inspired:taxonomy/term/20
+  $menu_links['menu-catalog-menu_globally-inspired:taxonomy/term/20'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/20',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Globally Inspired',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Globally Inspired',
+      ),
+      'identifier' => 'menu-catalog-menu_globally-inspired:taxonomy/term/20',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'menu-catalog-menu_kitchen--tabletop:taxonomy/term/12',
+  );
+  // Exported menu link: menu-catalog-menu_indoor-accents:taxonomy/term/25
+  $menu_links['menu-catalog-menu_indoor-accents:taxonomy/term/25'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/25',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Indoor Accents',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Indoor Accents',
+      ),
+      'identifier' => 'menu-catalog-menu_indoor-accents:taxonomy/term/25',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'menu-catalog-menu_decorative-accents:taxonomy/term/24',
+  );
+  // Exported menu link: menu-catalog-menu_kitchen--tabletop:taxonomy/term/12
+  $menu_links['menu-catalog-menu_kitchen--tabletop:taxonomy/term/12'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/12',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Kitchen & Tabletop',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Kitchen & Tabletop',
+      ),
+      'identifier' => 'menu-catalog-menu_kitchen--tabletop:taxonomy/term/12',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+  );
+  // Exported menu link: menu-catalog-menu_mirrors--art:taxonomy/term/22
+  $menu_links['menu-catalog-menu_mirrors--art:taxonomy/term/22'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/22',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Mirrors & Art',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Mirrors & Art',
+      ),
+      'identifier' => 'menu-catalog-menu_mirrors--art:taxonomy/term/22',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+  );
   // Exported menu link: menu-catalog-menu_ottomans:taxonomy/term/6
   $menu_links['menu-catalog-menu_ottomans:taxonomy/term/6'] = array(
     'menu_name' => 'menu-catalog-menu',
@@ -113,6 +236,27 @@ function f_ct_catalog_menu_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'menu-catalog-menu_upholstered-furniture:taxonomy/term/1',
   );
+  // Exported menu link: menu-catalog-menu_outdoor-accents:taxonomy/term/26
+  $menu_links['menu-catalog-menu_outdoor-accents:taxonomy/term/26'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/26',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Outdoor Accents',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Outdoor Accents',
+      ),
+      'identifier' => 'menu-catalog-menu_outdoor-accents:taxonomy/term/26',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'menu-catalog-menu_decorative-accents:taxonomy/term/24',
+  );
   // Exported menu link: menu-catalog-menu_rooms:taxonomy/term/11
   $menu_links['menu-catalog-menu_rooms:taxonomy/term/11'] = array(
     'menu_name' => 'menu-catalog-menu',
@@ -133,6 +277,27 @@ function f_ct_catalog_menu_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 0,
     'parent_identifier' => 'menu-catalog-menu_childrens-furniture:taxonomy/term/2',
+  );
+  // Exported menu link: menu-catalog-menu_serveware:taxonomy/term/13
+  $menu_links['menu-catalog-menu_serveware:taxonomy/term/13'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/13',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Serveware',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Serveware',
+      ),
+      'identifier' => 'menu-catalog-menu_serveware:taxonomy/term/13',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'menu-catalog-menu_kitchen--tabletop:taxonomy/term/12',
   );
   // Exported menu link: menu-catalog-menu_shelves:taxonomy/term/9
   $menu_links['menu-catalog-menu_shelves:taxonomy/term/9'] = array(
@@ -197,6 +362,48 @@ function f_ct_catalog_menu_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'menu-catalog-menu_upholstered-furniture:taxonomy/term/1',
   );
+  // Exported menu link: menu-catalog-menu_table-linens:taxonomy/term/15
+  $menu_links['menu-catalog-menu_table-linens:taxonomy/term/15'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/15',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Table Linens',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Table Linens',
+      ),
+      'identifier' => 'menu-catalog-menu_table-linens:taxonomy/term/15',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'menu-catalog-menu_kitchen--tabletop:taxonomy/term/12',
+  );
+  // Exported menu link: menu-catalog-menu_tabletop:taxonomy/term/16
+  $menu_links['menu-catalog-menu_tabletop:taxonomy/term/16'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/16',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Tabletop',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Tabletop',
+      ),
+      'identifier' => 'menu-catalog-menu_tabletop:taxonomy/term/16',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'menu-catalog-menu_kitchen--tabletop:taxonomy/term/12',
+  );
   // Exported menu link: menu-catalog-menu_upholstered-furniture:taxonomy/term/1
   $menu_links['menu-catalog-menu_upholstered-furniture:taxonomy/term/1'] = array(
     'menu_name' => 'menu-catalog-menu',
@@ -215,6 +422,26 @@ function f_ct_catalog_menu_menu_default_menu_links() {
     'has_children' => 1,
     'expanded' => 1,
     'weight' => 2,
+    'customized' => 0,
+  );
+  // Exported menu link: menu-catalog-menu_wall-decor:taxonomy/term/23
+  $menu_links['menu-catalog-menu_wall-decor:taxonomy/term/23'] = array(
+    'menu_name' => 'menu-catalog-menu',
+    'link_path' => 'taxonomy/term/23',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Wall decor',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Wall decor',
+      ),
+      'identifier' => 'menu-catalog-menu_wall-decor:taxonomy/term/23',
+    ),
+    'module' => 'taxonomy_menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 1,
+    'weight' => 0,
     'customized' => 0,
   );
   // Exported menu link: menu-catalog-menu_wardrobes:taxonomy/term/8
@@ -244,12 +471,23 @@ function f_ct_catalog_menu_menu_default_menu_links() {
   t('Case furniture');
   t('Chairs');
   t('Children\'s furniture');
+  t('Cookware & Tools');
+  t('Decorative Accents');
+  t('Globally Inspired');
+  t('Indoor Accents');
+  t('Kitchen & Tabletop');
+  t('Mirrors & Art');
   t('Ottomans');
+  t('Outdoor Accents');
   t('Rooms');
+  t('Serveware');
   t('Shelves');
   t('Sofas');
   t('Stools');
+  t('Table Linens');
+  t('Tabletop');
   t('Upholstered furniture');
+  t('Wall decor');
   t('Wardrobes');
 
 

@@ -16,17 +16,17 @@ body {
 #content-wrap {
   margin-top: 10px; }
 
-/* line 5, ../sass/components/_catalog_menu.scss */
+/* line 7, ../sass/components/_catalog_menu.scss */
 #header-wrap .contextual-links-region {
   width: 100%; }
 
-/* line 10, ../sass/components/_catalog_menu.scss */
+/* line 12, ../sass/components/_catalog_menu.scss */
 .contextual-links-region ul {
   width: auto;
   float: none;
   background: #fff; }
 
-/* line 16, ../sass/components/_catalog_menu.scss */
+/* line 18, ../sass/components/_catalog_menu.scss */
 .contextual-links-region ul li {
   color: #626262;
   text-align: center;
@@ -38,24 +38,16 @@ body {
   height: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.26); }
 
-/* line 28, ../sass/components/_catalog_menu.scss */
+/* line 30, ../sass/components/_catalog_menu.scss */
 .contextual-links-region ul li:hover {
   color: #000;
   border-bottom: 1px solid #000; }
 
-/* line 33, ../sass/components/_catalog_menu.scss */
+/* line 35, ../sass/components/_catalog_menu.scss */
 .contextual-links-region ul li a {
   text-decoration: none; }
 
-/* line 37, ../sass/components/_catalog_menu.scss */
-.contextual-links-region ul.nice-menu ul li {
-  border-top: unset;
-  float: left;
-  display: table-cell;
-  vertical-align: middle;
-  margin: 0 auto; }
-
-/* line 45, ../sass/components/_catalog_menu.scss */
+/* line 40, ../sass/components/_catalog_menu.scss */
 .contextual-links-region ul.nice-menu li {
   border-top: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
@@ -64,33 +56,55 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 54, ../sass/components/_catalog_menu.scss */
+/* line 49, ../sass/components/_catalog_menu.scss */
 .contextual-links-region ul.nice-menu-down .menuparent a {
   padding: 0; }
 
-/* line 62, ../sass/components/_catalog_menu.scss */
+/* line 57, ../sass/components/_catalog_menu.scss */
 ul.nice-menu-down li.menuparent:hover {
   background: none; }
 
-/* line 66, ../sass/components/_catalog_menu.scss */
+/* line 61, ../sass/components/_catalog_menu.scss */
 ul.nice-menu a {
   color: unset; }
 
-/* line 70, ../sass/components/_catalog_menu.scss */
+/* line 65, ../sass/components/_catalog_menu.scss */
 ul.nice-menu-down ul {
-  left: -1px;
-  top: 48px; }
+  left: 0px;
+  top: 49px;
+  width: 100%; }
 
-/* line 3, ../sass/components/_random_picture.scss */
-.views-row {
-  margin: 1.1686%;
-  width: 31%;
-  height: 320px;
-  float: left; }
+/* line 71, ../sass/components/_catalog_menu.scss */
+ul.nice-menu ul {
+  border-top: unset; }
 
-/* line 10, ../sass/components/_random_picture.scss */
-.field__item img {
+/* line 75, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul.nice-menu ul li {
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
+  display: flex; }
+
+/* line 82, ../sass/components/_catalog_menu.scss */
+.contextual-links-region ul.nice-menu ul li a {
+  margin: auto; }
+
+/* line 4, ../sass/components/_random_picture.scss */
+.views-row {
+  margin: 5px;
+  float: left; }
+  /* line 7, ../sass/components/_random_picture.scss */
+  .views-row:hover {
+    transition: 0.25s;
+    background: #fff; }
+    /* line 8, ../sass/components/_random_picture.scss */
+    .views-row:hover img {
+      opacity: 0.95;
+      transition: 0.25s;
+      box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.51); }
+
+/* line 18, ../sass/components/_random_picture.scss */
+.field .field--name-field-pictures .field--type-image .field--label-hiddenimg {
   height: 320px;
   background: #fff; }
 

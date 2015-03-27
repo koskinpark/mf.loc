@@ -13,13 +13,6 @@ function f_ct_catalog_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_display_descendants_catalog';
-  $strongarm->value = 0;
-  $export['taxonomy_menu_display_descendants_catalog'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_display_num_catalog';
   $strongarm->value = 0;
   $export['taxonomy_menu_display_num_catalog'] = $strongarm;
@@ -44,13 +37,6 @@ function f_ct_catalog_strongarm() {
   $strongarm->name = 'taxonomy_menu_flat_catalog';
   $strongarm->value = 0;
   $export['taxonomy_menu_flat_catalog'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_hide_empty_terms_catalog';
-  $strongarm->value = 0;
-  $export['taxonomy_menu_hide_empty_terms_catalog'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
