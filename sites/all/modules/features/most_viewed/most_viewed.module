@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Most viewed feature.
+ */
+
+include_once 'most_viewed.features.inc';
