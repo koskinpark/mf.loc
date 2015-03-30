@@ -23,6 +23,15 @@ function f_ct_catalog_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Mirrors & Art',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '0840ff61-2471-447e-a5b4-bea6290425d5',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+  );
+  $terms[] = array(
     'name' => 'Case furniture',
     'description' => 'Buy our tables',
     'format' => 'plain_text',
@@ -44,6 +53,27 @@ function f_ct_catalog_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Outdoor Accents',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '2d5b37a1-880f-4e8b-858d-fbac02050333',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+    'parent' => array(
+      0 => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Kitchen & Tabletop',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+  );
+  $terms[] = array(
     'name' => 'Wardrobes',
     'description' => '',
     'format' => 'plain_text',
@@ -56,6 +86,18 @@ function f_ct_catalog_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Globally Inspired',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '60c7663e-e515-47ea-8caa-07923e768b13',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+    'parent' => array(
+      0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Children\'s furniture',
     'description' => 'Buy our furniture for your office!',
     'format' => 'plain_text',
@@ -63,6 +105,30 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '6476b63e-7f45-4dd4-b4d1-f3b27b97fa3d',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+  );
+  $terms[] = array(
+    'name' => 'Table Linens',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '71190f94-4d2f-4383-ad0a-d0d5943c42e6',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+    'parent' => array(
+      0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Serveware',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '76e87b36-559a-4859-92bc-f7f1a6df7704',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+    'parent' => array(
+      0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
+    ),
   );
   $terms[] = array(
     'name' => 'Shelves',
@@ -89,6 +155,27 @@ function f_ct_catalog_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Tabletop',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '9212b4fe-653d-490e-a25c-1d4b1b00ffaf',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+    'parent' => array(
+      0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Wall decor',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => 'afbee465-f34e-4916-918b-9122161749f5',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+  );
+  $terms[] = array(
     'name' => 'Rooms',
     'description' => '',
     'format' => 'plain_text',
@@ -99,6 +186,15 @@ function f_ct_catalog_uuid_features_default_terms() {
     'parent' => array(
       0 => '6476b63e-7f45-4dd4-b4d1-f3b27b97fa3d',
     ),
+  );
+  $terms[] = array(
+    'name' => 'Decorative Accents',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
   );
   $terms[] = array(
     'name' => 'Beds',
@@ -125,6 +221,18 @@ function f_ct_catalog_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Cookware & Tools',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => 'e61f725b-a1f7-49c2-b95b-92e2470a1e8c',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+    'parent' => array(
+      0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Upholstered furniture',
     'description' => '',
     'format' => 'plain_text',
@@ -132,6 +240,18 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+  );
+  $terms[] = array(
+    'name' => 'Indoor Accents',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => 'f972038f-1622-4e25-9c6a-4913651a10be',
+    'vocabulary_machine_name' => 'catalog',
+    'field_images' => array(),
+    'parent' => array(
+      0 => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
+    ),
   );
   return $terms;
 }
