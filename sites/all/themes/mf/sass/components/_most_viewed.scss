@@ -1,0 +1,71 @@
+$transition_0_25: 0.25s;
+
+.pane-most-viewed-panel-pane-1
+.pane-title:before {
+  border-bottom: 1px solid #969696;
+  content: ' ';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  top: -7px;
+  width: 60px;
+  margin-right:10px
+}
+.pane-title {
+  text-align: center;
+}
+.pane-title:after {
+  margin-left:10px;
+  border-bottom: 1px solid #969696;
+  content: ' ';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  top: -7px;
+  width: 60px;
+}
+
+$number_of_images: 8;
+$border_color: #999999, #4A9D6A, #FFD7F4, #FFFACC, #bffff5, #3E55F7, #A1AB13, #FF0091;
+
+.pane-most-viewed-panel-pane-1 .view-content {
+  text-align: center;
+  .views-row {
+    width: 220px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    cursor: pointer;
+    &:hover {
+      color: #000;
+      transition: $transition_0_25;
+        img {
+          transition: $transition_0_25;
+          opacity:0.85;
+          border: 2px solid #000;
+        }
+      }
+    &:not(:hover) {
+      transition: $transition_0_25;
+        img {
+          transition: $transition_0_25;
+        }
+    }
+    h2 {
+      margin: 5px 0 0 0;
+      font-weight: normal;
+      font-size: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  @for $i from 1 through $number_of_images {
+    .views-row-#{$i} img {
+      background: #FFF;
+      border-radius: 110px;
+      border: 2px solid nth($border_color, $i);
+    }
+  }
+
+}

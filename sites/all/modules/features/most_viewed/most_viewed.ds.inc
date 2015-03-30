@@ -18,7 +18,7 @@ function most_viewed_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'more_viewed';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -44,13 +44,13 @@ function most_viewed_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_pictures',
+        0 => 'field_pictures',
+        1 => 'title',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
       'field_pictures' => 'ds_content',
+      'title' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -59,7 +59,7 @@ function most_viewed_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
+    'layout_link_attribute' => 'content',
     'layout_link_custom' => '',
   );
   $export['node|product|more_viewed'] = $ds_layout;

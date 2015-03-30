@@ -33,7 +33,7 @@ function f_ct_product_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
+    'layout_link_attribute' => 'content',
     'layout_link_custom' => '',
   );
   $export['node|product|random_homepage_pictures'] = $ds_layout;

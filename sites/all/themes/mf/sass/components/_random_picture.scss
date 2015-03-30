@@ -1,7 +1,7 @@
 $height_of_image:320px;
 
 
-.views-row {
+.pane-random-homepage-product-panel-pane-1 .views-row {
   margin: 5px;
   float:left;
   &:hover {
@@ -15,7 +15,7 @@ $height_of_image:320px;
   }
 }
 
-.field .field--name-field-pictures .field--type-image .field--label-hiddenimg {
+.pane-random-homepage-product-panel-pane-1 .field .field--name-field-pictures .field--type-image .field--label-hiddenimg {
   height: $height_of_image;
   background: #fff;
 }

@@ -30,11 +30,11 @@ function most_viewed_image_default_styles() {
   $styles['most_viewed_image_style'] = array(
     'label' => 'most viewed image style',
     'effects' => array(
-      7 => array(
+      1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 160,
-          'height' => 160,
+          'width' => 220,
+          'height' => 220,
         ),
         'weight' => 1,
       ),

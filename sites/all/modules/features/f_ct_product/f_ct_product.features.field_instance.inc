@@ -28,7 +28,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'random_homepage_pictures' => array(
         'label' => 'hidden',
@@ -84,7 +84,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 10,
       ),
       'random_homepage_pictures' => array(
         'label' => 'above',
@@ -143,7 +143,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 9,
       ),
       'random_homepage_pictures' => array(
         'label' => 'above',
@@ -208,7 +208,7 @@ function f_ct_product_field_default_field_instances() {
           'image_style' => 'most_viewed_image_style',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'random_homepage_pictures' => array(
         'label' => 'hidden',

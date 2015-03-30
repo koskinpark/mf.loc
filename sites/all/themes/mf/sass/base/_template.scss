@@ -5,8 +5,19 @@ body {
   height: auto;
   font-family: "Miller Banner",Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif;
   font-size:16px;
+  color: #3D3D3D;
+}
+
+#header-wrap {
+  background: #ffffff;
 }
 
 #content-wrap {
-  margin-top:10px;
+   background: #ffffff;
+   margin-top:10px;
+}
+
+#footer-wrap {
+  border-top: 1px solid #61daff;
+  background: #ffffff;
 }
