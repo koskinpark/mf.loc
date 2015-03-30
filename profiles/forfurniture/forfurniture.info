@@ -55,6 +55,7 @@ dependencies[] = views_slideshow_cycle
 dependencies[] = uuid_features
 dependencies[] = services
 dependencies[] = uuid
+dependencies[] = uuid_path
 dependencies[] = uuid_services
 dependencies[] = rest_server
 dependencies[] = fontyourface

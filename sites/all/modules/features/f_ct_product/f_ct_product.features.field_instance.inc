@@ -24,6 +24,12 @@ function f_ct_product_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'more_viewed' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'random_homepage_pictures' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -72,6 +78,12 @@ function f_ct_product_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
+        'weight' => 3,
+      ),
+      'more_viewed' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'random_homepage_pictures' => array(
@@ -127,6 +139,12 @@ function f_ct_product_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 2,
       ),
+      'more_viewed' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'random_homepage_pictures' => array(
         'label' => 'above',
         'settings' => array(),
@@ -178,6 +196,16 @@ function f_ct_product_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'more_viewed' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'most_viewed_image_style',
         ),
         'type' => 'image',
         'weight' => 1,

@@ -86,6 +86,12 @@ function f_ct_product_strongarm() {
       'random_homepage_pictures' => array(
         'custom_settings' => TRUE,
       ),
+      'more_viewed' => array(
+        'custom_settings' => TRUE,
+      ),
+      'slider_mode' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
