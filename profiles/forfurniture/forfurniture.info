@@ -72,6 +72,8 @@ dependencies[] = f_nice_menu_catalog
 dependencies[] = f_ct_catalog
 dependencies[] = f_mainpage_fixed_image_block
 dependencies[] = f_ct_slider
+dependencies[] = most_viewed
+dependencies[] = footer_linker
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"

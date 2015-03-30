@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Footer Linker feature.
+ */
+
+include_once 'footer_linker.features.inc';
