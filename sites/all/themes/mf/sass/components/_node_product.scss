@@ -1,0 +1,48 @@
+.pane-page-content {
+  .node--product {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    #description-product-block {
+      clear: both;
+      display: table-cell;
+      vertical-align: middle;
+      width: 40%;
+      padding: 30px;
+      .field--name-title {
+        h2 {
+          font-weight: bolder;
+          text-transform: uppercase;
+          margin:0;
+          line-height: 16px;
+        }
+      }
+      .field--name-body {
+        p {
+          margin:0;
+        }
+      }
+      .field--name-field-cost {
+        padding-top: 25px;
+        font-style: oblique;
+      }
+    }
+    #description-product-image {
+      float: right;
+      padding:30px;
+
+      .field--name-post-date {
+        float: right;
+        font-style: oblique;
+        font-size: 15px;
+      }
+      .field--name-field-pictures {
+        img {
+          border: 2px solid #000;
+          border-radius: 280px;
+        }
+      }
+    }
+  }
+}

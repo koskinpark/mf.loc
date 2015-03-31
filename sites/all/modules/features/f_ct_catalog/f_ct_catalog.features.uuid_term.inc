@@ -18,6 +18,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '03b3c589-3f57-4ebf-9600-4077fbd8b1c4',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -30,6 +31,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '0840ff61-2471-447e-a5b4-bea6290425d5',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Case furniture',
@@ -39,6 +41,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '08df812a-0eb5-4c4d-9030-62b98577cd7e',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Stools',
@@ -48,6 +51,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '1ee128bd-58b4-442a-a0b7-9e937748d443',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -60,6 +64,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '2d5b37a1-880f-4e8b-858d-fbac02050333',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
     ),
@@ -72,6 +77,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Wardrobes',
@@ -81,6 +87,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '60672890-b2a0-4591-b84d-9092264ca5c0',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '08df812a-0eb5-4c4d-9030-62b98577cd7e',
     ),
@@ -93,6 +100,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '60c7663e-e515-47ea-8caa-07923e768b13',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -105,6 +113,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '6476b63e-7f45-4dd4-b4d1-f3b27b97fa3d',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Table Linens',
@@ -114,6 +123,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '71190f94-4d2f-4383-ad0a-d0d5943c42e6',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -126,6 +136,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '76e87b36-559a-4859-92bc-f7f1a6df7704',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -138,6 +149,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '77d13b1d-ee35-450d-9b97-046212252b30',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '08df812a-0eb5-4c4d-9030-62b98577cd7e',
     ),
@@ -150,6 +162,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '8eab2c41-fe23-414c-9586-701046a0b438',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -162,6 +175,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => '9212b4fe-653d-490e-a25c-1d4b1b00ffaf',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -174,6 +188,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'afbee465-f34e-4916-918b-9122161749f5',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Rooms',
@@ -183,6 +198,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'c288d35e-a77f-4b93-8134-1fd4ce9bc012',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '6476b63e-7f45-4dd4-b4d1-f3b27b97fa3d',
     ),
@@ -195,6 +211,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Beds',
@@ -204,6 +221,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'cd8b926a-5124-4061-907f-ab4420c44b9e',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '6476b63e-7f45-4dd4-b4d1-f3b27b97fa3d',
     ),
@@ -216,6 +234,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'd68db77b-baa5-4f85-b6c1-83c38d4f3642',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -228,6 +247,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'e61f725b-a1f7-49c2-b95b-92e2470a1e8c',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -240,6 +260,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
   );
   $terms[] = array(
     'name' => 'Indoor Accents',
@@ -249,6 +270,7 @@ function f_ct_catalog_uuid_features_default_terms() {
     'uuid' => 'f972038f-1622-4e25-9c6a-4913651a10be',
     'vocabulary_machine_name' => 'catalog',
     'field_images' => array(),
+    'url_alias' => array(),
     'parent' => array(
       0 => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
     ),

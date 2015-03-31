@@ -60,6 +60,7 @@ dependencies[] = uuid_services
 dependencies[] = rest_server
 dependencies[] = fontyourface
 dependencies[] = fontyourface_ui
+dependencies[] = field_group
 
 ;custom
 dependencies[] = layout_sample
@@ -75,6 +76,8 @@ dependencies[] = f_mainpage_fixed_image_block
 dependencies[] = f_ct_slider
 dependencies[] = most_viewed
 dependencies[] = footer_linker
+dependencies[] = node_product
+
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"

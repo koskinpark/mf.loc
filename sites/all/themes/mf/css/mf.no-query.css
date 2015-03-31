@@ -5,7 +5,7 @@ img, media {
 
 /* line 1, ../sass/base/_template.scss */
 body {
-  background-color: #f4f4f4;
+  background: #ffffff;
   margin: 0 auto;
   width: 960px;
   height: auto;
@@ -108,7 +108,7 @@ ul.nice-menu ul {
   height: 1px;
   position: relative;
   top: -7px;
-  width: 60px;
+  width: 100px;
   margin-right: 10px; }
 
 /* line 14, ../sass/components/_most_viewed.scss */
@@ -124,7 +124,7 @@ ul.nice-menu ul {
   height: 1px;
   position: relative;
   top: -7px;
-  width: 60px; }
+  width: 100px; }
 
 /* line 31, ../sass/components/_most_viewed.scss */
 .pane-most-viewed-panel-pane-1 .view-content {
@@ -199,6 +199,46 @@ ul.nice-menu ul {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #FF0091; }
+
+/* line 2, ../sass/components/_node_product.scss */
+.pane-page-content .node--product {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+  /* line 7, ../sass/components/_node_product.scss */
+  .pane-page-content .node--product #description-product-block {
+    clear: both;
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+    padding-left: 30px; }
+    /* line 14, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product #description-product-block .field--name-title h2 {
+      font-weight: bolder;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 16px; }
+    /* line 22, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product #description-product-block .field--name-body p {
+      margin: 0; }
+    /* line 26, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product #description-product-block .field--name-field-cost {
+      padding-top: 25px;
+      font-style: oblique; }
+  /* line 31, ../sass/components/_node_product.scss */
+  .pane-page-content .node--product #description-product-image {
+    float: right;
+    padding: 30px; }
+    /* line 34, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product #description-product-image .field--name-post-date {
+      float: right;
+      font-style: oblique;
+      font-size: 15px; }
+    /* line 40, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product #description-product-image .field--name-field-pictures img {
+      border: 2px solid #000;
+      border-radius: 240px; }
 
 /* line 4, ../sass/components/_random_picture.scss */
 .pane-random-homepage-product-panel-pane-1 .views-row {
