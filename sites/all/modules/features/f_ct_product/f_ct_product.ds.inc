@@ -20,10 +20,12 @@ function f_ct_product_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_pictures',
+        0 => 'title',
+        1 => 'field_pictures',
       ),
     ),
     'fields' => array(
+      'title' => 'ds_content',
       'field_pictures' => 'ds_content',
     ),
     'limit' => array(

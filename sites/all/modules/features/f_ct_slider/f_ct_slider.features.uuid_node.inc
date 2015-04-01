@@ -25,7 +25,7 @@ function f_ct_slider_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '5ce6227d-ecaa-427f-a856-bae6518e3af9',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(),
   'field_images' => array(
     'und' => array(
@@ -127,7 +127,7 @@ function f_ct_slider_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '68250709-5cc6-4960-b176-75694c2e0c4f',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(),
   'field_images' => array(
     'und' => array(
@@ -229,7 +229,7 @@ function f_ct_slider_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b59bd8df-9c2e-426f-9a83-b276d0378f92',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(),
   'field_images' => array(
     'und' => array(

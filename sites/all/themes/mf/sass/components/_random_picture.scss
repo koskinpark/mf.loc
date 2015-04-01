@@ -1,21 +1,52 @@
 $height_of_image:320px;
 
 
-.pane-random-homepage-product-panel-pane-1 .views-row {
-  margin: 5px;
-  float:left;
-  &:hover {
-    img {
-      opacity: 0.95;
-      transition: 0.25s;
-      box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.51);
+.pane-random-homepage-product-panel-pane-1 {
+  .view-random-homepage-product {
+    > .view-content {
+      > .views-row {
+        margin: 5px;
+        float: left;
+        position:relative;
+        > .view-mode-random_homepage_pictures {
+          > .field--name-title {
+            opacity:0;
+            display:flex;
+            text-align: center;
+            bottom: 0;
+            height: 0;
+            width: 100%;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.25);
+            color: #ffffff;
+            > .field__items {
+              margin: auto;
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+        &:hover {
+          >.view-mode-random_homepage_pictures {
+          > .field--name-title {
+            opacity:1;
+            transition:0.5s;
+            height:100%
+          }
+          > .field--name-field-pictures {
+            > img {
+              opacity: 0.95;
+              transition: 0.25s;
+              box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.51);
+            }
+          }
+          }
+        }
+      }
     }
-    transition: 0.25s;
-    background: #fff;
   }
 }
-
-.pane-random-homepage-product-panel-pane-1 .field .field--name-field-pictures .field--type-image .field--label-hiddenimg {
-  height: $height_of_image;
-  background: #fff;
-}
+//.pane-random-homepage-product-panel-pane-1 .field .field--name-field-pictures .field--type-image .field--label-hiddenimg {
+//  height: $height_of_image;
+//  background: #fff;
+//}

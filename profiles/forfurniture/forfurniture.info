@@ -76,6 +76,7 @@ dependencies[] = f_ct_slider
 dependencies[] = most_viewed
 dependencies[] = footer_linker
 dependencies[] = node_product
+dependencies[] = footer_panel
 
 
 ; Information added by Drupal.org packaging script on 2014-11-19

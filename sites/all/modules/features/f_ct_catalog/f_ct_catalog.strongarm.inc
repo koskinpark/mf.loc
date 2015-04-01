@@ -63,7 +63,7 @@ function f_ct_catalog_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_rebuild_catalog';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['taxonomy_menu_rebuild_catalog'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -120,6 +120,7 @@ function f_ct_catalog_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'uuid_features_entity_node';
   $strongarm->value = array(
+    'footer_type' => 'footer_type',
     'mainpage_slideshow' => 'mainpage_slideshow',
     'product' => 'product',
     'panel' => 0,
