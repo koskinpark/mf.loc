@@ -70,7 +70,6 @@ dependencies[] = f_ct_product
 dependencies[] = f_ct_catalog_menu
 dependencies[] = f_page_manager
 dependencies[] = f_ct_random_hp_product
-dependencies[] = f_nice_menu_catalog
 dependencies[] = f_ct_catalog
 dependencies[] = f_mainpage_fixed_image_block
 dependencies[] = f_ct_slider

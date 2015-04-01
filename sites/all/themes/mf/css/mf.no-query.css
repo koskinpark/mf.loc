@@ -207,38 +207,93 @@ ul.nice-menu ul {
   margin: 0 auto;
   position: relative; }
   /* line 7, ../sass/components/_node_product.scss */
-  .pane-page-content .node--product #description-product-block {
+  .pane-page-content .node--product .group-description-product {
     clear: both;
     display: table-cell;
     vertical-align: middle;
     width: 40%;
-    padding-left: 30px; }
+    padding: 30px; }
     /* line 14, ../sass/components/_node_product.scss */
-    .pane-page-content .node--product #description-product-block .field--name-title h2 {
+    .pane-page-content .node--product .group-description-product .field--name-title h2 {
       font-weight: bolder;
       text-transform: uppercase;
-      margin: 0;
-      line-height: 16px; }
-    /* line 22, ../sass/components/_node_product.scss */
-    .pane-page-content .node--product #description-product-block .field--name-body p {
       margin: 0; }
-    /* line 26, ../sass/components/_node_product.scss */
-    .pane-page-content .node--product #description-product-block .field--name-field-cost {
+    /* line 20, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product .group-description-product .field--name-body {
+      text-align: justify;
+      margin: 10px 0 0 0; }
+      /* line 23, ../sass/components/_node_product.scss */
+      .pane-page-content .node--product .group-description-product .field--name-body p {
+        margin: 0; }
+    /* line 27, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product .group-description-product .field--name-field-cost {
       padding-top: 25px;
       font-style: oblique; }
-  /* line 31, ../sass/components/_node_product.scss */
-  .pane-page-content .node--product #description-product-image {
-    float: right;
+  /* line 32, ../sass/components/_node_product.scss */
+  .pane-page-content .node--product .group-product-image {
+    width: 100%;
     padding: 30px; }
-    /* line 34, ../sass/components/_node_product.scss */
-    .pane-page-content .node--product #description-product-image .field--name-post-date {
-      float: right;
+    /* line 36, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture {
+      clear: both;
+      display: table-cell;
+      vertical-align: bottom; }
+      /* line 42, ../sass/components/_node_product.scss */
+      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items {
+        position: relative; }
+        /* line 44, ../sass/components/_node_product.scss */
+        .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item {
+          padding-top: 2px;
+          padding-right: 2px;
+          width: 80px;
+          height: 80px; }
+          /* line 46, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:last-child > img {
+            position: absolute;
+            bottom: 0;
+            left: 70px; }
+          /* line 53, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:nth-last-child(2) > img {
+            position: absolute;
+            bottom: 68px;
+            left: 22px; }
+          /* line 60, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:nth-last-child(3) > img {
+            position: absolute;
+            bottom: 149px;
+            left: -2px; }
+          /* line 67, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:nth-last-child(4) > img {
+            position: absolute;
+            bottom: 233px;
+            left: 0; }
+          /* line 77, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item img {
+            cursor: pointer;
+            border: 2px solid #fff;
+            border-radius: 40px; }
+          /* line 82, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item img:hover {
+            opacity: 0.9;
+            transition: 0.25s;
+            border: 2px solid rgba(0, 0, 0, 0.1); }
+    /* line 94, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures {
+      display: table-cell; }
+      /* line 96, ../sass/components/_node_product.scss */
+      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures img {
+        cursor: pointer;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        border-radius: 280px; }
+      /* line 101, ../sass/components/_node_product.scss */
+      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures img:hover {
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        transition: 0.25s; }
+    /* line 107, ../sass/components/_node_product.scss */
+    .pane-page-content .node--product .group-product-image .field--name-post-date {
+      text-align: right;
       font-style: oblique;
       font-size: 15px; }
-    /* line 40, ../sass/components/_node_product.scss */
-    .pane-page-content .node--product #description-product-image .field--name-field-pictures img {
-      border: 2px solid #000;
-      border-radius: 240px; }
 
 /* line 4, ../sass/components/_random_picture.scss */
 .pane-random-homepage-product-panel-pane-1 .views-row {

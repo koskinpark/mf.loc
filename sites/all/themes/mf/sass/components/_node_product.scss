@@ -4,7 +4,7 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    #description-product-block {
+    .group-description-product {
       clear: both;
       display: table-cell;
       vertical-align: middle;
@@ -14,13 +14,14 @@
         h2 {
           font-weight: bolder;
           text-transform: uppercase;
-          margin:0;
-          line-height: 16px;
+          margin: 0;
         }
       }
       .field--name-body {
+        text-align: justify;
+        margin: 10px 0 0 0;
         p {
-          margin:0;
+          margin: 0;
         }
       }
       .field--name-field-cost {
@@ -28,20 +29,85 @@
         font-style: oblique;
       }
     }
-    #description-product-image {
-      float: right;
-      padding:30px;
+    .group-product-image {
+      width: 100%;
+      padding: 30px;
+      .group-image-group {
+        > .field--name-one-more-picture {
+          clear: both;
+          display: table-cell;
+          vertical-align: bottom;
+          > .field__items {
+            > .field__item {
+              .field__items {
+                position: relative;
+                > .field__item {
+                  &:last-child {
+                    > img {
+                      position: absolute;
+                      bottom: 0;
+                      left: 70px;
+                    }
+                  }
+                  &:nth-last-child(2) {
+                    > img {
+                      position: absolute;
+                      bottom: 68px;
+                      left: 22px;
+                    }
+                  }
+                  &:nth-last-child(3) {
+                    > img {
+                      position: absolute;
+                      bottom: 149px;
+                      left: -2px;
+                    }
+                  }
+                  &:nth-last-child(4) {
+                    > img {
+                      position: absolute;
+                      bottom: 233px;
+                      left: 0;
+                    }
+                  }
+                  padding-top: 2px;
+                  padding-right: 2px;
+                  width: 80px;
+                  height: 80px;
+                  img {
+                    cursor: pointer;
+                    border: 2px solid #fff;
+                    border-radius: 40px;
+                  }
+                  img:hover {
+                    opacity: 0.9;
+                    transition: 0.25s;
+                    border: 2px solid rgba(0, 0, 0, 0.1);
+                  }
+                }
+              }
 
+            }
+          }
+
+        }
+        > .field--name-field-pictures {
+          display: table-cell;
+          img {
+            cursor: pointer;
+            border: 2px solid rgba(0, 0, 0, 0.02);
+            border-radius: 280px;
+          }
+          img:hover {
+            border: 2px solid rgba(255, 255, 255, 0.10);
+            transition: 0.25s;
+          }
+        }
+      }
       .field--name-post-date {
-        float: right;
+        text-align: right;
         font-style: oblique;
         font-size: 15px;
-      }
-      .field--name-field-pictures {
-        img {
-          border: 2px solid #000;
-          border-radius: 280px;
-        }
       }
     }
   }

@@ -8,7 +8,13 @@
  * Implements hook_ctools_plugin_api().
  */
 function node_product_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
   if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
 }
@@ -28,6 +34,21 @@ function node_product_image_default_styles() {
         'data' => array(
           'width' => 450,
           'height' => 450,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: small_pictures_of_node_page.
+  $styles['small_pictures_of_node_page'] = array(
+    'label' => 'Small pictures of node page',
+    'effects' => array(
+      8 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 80,
+          'height' => 80,
         ),
         'weight' => 1,
       ),

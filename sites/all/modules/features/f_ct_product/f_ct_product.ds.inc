@@ -26,6 +26,9 @@ function f_ct_product_ds_layout_settings_info() {
     'fields' => array(
       'field_pictures' => 'ds_content',
     ),
+    'limit' => array(
+      'field_pictures' => '1',
+    ),
     'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',

@@ -52,6 +52,9 @@ function most_viewed_ds_layout_settings_info() {
       'field_pictures' => 'ds_content',
       'title' => 'ds_content',
     ),
+    'limit' => array(
+      'field_pictures' => '1',
+    ),
     'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',

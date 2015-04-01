@@ -13,12 +13,12 @@ function f_ct_catalog_menu_menu_default_menu_custom() {
   // Exported menu: menu-catalog-menu.
   $menus['menu-catalog-menu'] = array(
     'menu_name' => 'menu-catalog-menu',
-    'title' => 'Catalog Menu',
+    'title' => 'catalog menu',
     'description' => '',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Catalog Menu');
+  t('catalog menu');
 
 
   return $menus;

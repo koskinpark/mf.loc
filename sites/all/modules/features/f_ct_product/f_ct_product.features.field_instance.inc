@@ -24,6 +24,20 @@ function f_ct_product_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 5,
       ),
+      'default_node_page' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
       'more_viewed' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -78,6 +92,18 @@ function f_ct_product_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 3,
+      ),
+      'default_node_page' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'more_viewed' => array(
         'label' => 'hidden',
@@ -137,6 +163,30 @@ function f_ct_product_field_default_field_instances() {
         ),
         'type' => 'number_integer',
         'weight' => 6,
+      ),
+      'default_node_page' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 6,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 4,
       ),
       'more_viewed' => array(
         'label' => 'hidden',
@@ -198,6 +248,26 @@ function f_ct_product_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 1,
+      ),
+      'default_node_page' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'node_of_product_image',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'node_of_product_image',
+        ),
+        'type' => 'image',
+        'weight' => 7,
       ),
       'more_viewed' => array(
         'label' => 'hidden',

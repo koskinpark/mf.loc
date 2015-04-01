@@ -13,6 +13,13 @@ function f_ct_catalog_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_descendants_catalog';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_descendants_catalog'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_display_num_catalog';
   $strongarm->value = 0;
   $export['taxonomy_menu_display_num_catalog'] = $strongarm;
@@ -37,6 +44,13 @@ function f_ct_catalog_strongarm() {
   $strongarm->name = 'taxonomy_menu_flat_catalog';
   $strongarm->value = 0;
   $export['taxonomy_menu_flat_catalog'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_hide_empty_terms_catalog';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_hide_empty_terms_catalog'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -100,6 +114,45 @@ function f_ct_catalog_strongarm() {
   $strongarm->name = 'taxonomy_menu_voc_name_catalog';
   $strongarm->value = FALSE;
   $export['taxonomy_menu_voc_name_catalog'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_node';
+  $strongarm->value = array(
+    'mainpage_slideshow' => 'mainpage_slideshow',
+    'product' => 'product',
+    'panel' => 0,
+    'taxonomy_panel' => 0,
+  );
+  $export['uuid_features_entity_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_taxonomy_term';
+  $strongarm->value = array(
+    'catalog' => 'catalog',
+    'footer_linker' => 'footer_linker',
+  );
+  $export['uuid_features_entity_taxonomy_term'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_taxonomy_term';
+  $strongarm->value = array(
+    'catalog' => 0,
+    'footer_linker' => 0,
+  );
+  $export['uuid_features_file_taxonomy_term'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_vocabulary_terms';
+  $strongarm->value = 0;
+  $export['uuid_features_vocabulary_terms'] = $strongarm;
 
   return $export;
 }
