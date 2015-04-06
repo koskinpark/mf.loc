@@ -25,7 +25,7 @@ function footer_panel_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '41ea60c3-2705-4f07-92ca-817a54354617',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -116,7 +116,7 @@ function footer_panel_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,

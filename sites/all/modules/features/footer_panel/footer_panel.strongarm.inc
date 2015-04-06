@@ -92,6 +92,9 @@ function footer_panel_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'logotype' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

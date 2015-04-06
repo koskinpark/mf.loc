@@ -31,6 +31,12 @@ function footer_panel_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'logotype' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -86,6 +92,16 @@ function footer_panel_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 1,
+      ),
+      'logotype' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',

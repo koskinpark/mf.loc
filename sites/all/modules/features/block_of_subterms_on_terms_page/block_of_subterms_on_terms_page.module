@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the block of subterms on terms page feature.
+ */
+
+include_once 'block_of_subterms_on_terms_page.features.inc';

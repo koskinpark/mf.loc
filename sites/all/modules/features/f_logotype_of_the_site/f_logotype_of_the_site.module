@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the logotype of the site feature.
+ */
+
+include_once 'f_logotype_of_the_site.features.inc';

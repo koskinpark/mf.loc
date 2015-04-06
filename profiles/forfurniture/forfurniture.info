@@ -76,6 +76,9 @@ dependencies[] = footer_linker
 dependencies[] = node_product
 dependencies[] = footer_panel
 dependencies[] = block_of_terms_on_terms_page
+dependencies[] = block_of_subterms_on_terms_page
+dependencies[] = block_of_random_products_on_terms_page
+dependencies[] = f_logotype_of_the_site
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"

@@ -1,0 +1,94 @@
+
+.pane-page-title {
+  z-index: 1;
+  position: relative;
+  height: 150px;
+  display: flex;
+  > h1 {
+    margin: auto;
+    color: #FFF;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #000;
+    cursor: default;
+  }
+}
+.pane-page-content {
+  > .contextual-links-region {
+    > .pane-taxonomy-term-field-image-for-title {
+      margin-top: -150px;
+      > .field--name-field-image-for-title {
+        > .field__items {
+          > .field__item {
+           > img {
+              vertical-align: bottom;
+            }
+          }
+        }
+      }
+    }
+    > .pane-term-description {
+      background: url(../../mf/images/description_of_taxonomy_term.gif) repeat;
+      > p {
+        margin: 0;
+        padding: 10px;
+        text-align: justify;
+        color: #000;
+        text-shadow: 0 0 1px #3A3A3A;
+      }
+    }
+    > .pane-show-subterms-panel-pane-1 {
+      > .view-display-id-panel_pane_1 {
+        > .view-content {
+          text-align: center;
+          > .views-row {
+            width: 160px;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+            > .views-field-field-images {
+              > .field-content {
+                > a {
+                  > img {
+                    vertical-align: bottom;
+                    transition:0.5s;
+                    @include grayscale;
+                  }
+                }
+              }
+            }
+            > .views-field-name {
+              > .field-content {
+                > a {
+                  transition: 0.5s;
+                  color: #3D3D3D;
+                  text-decoration: none;
+                }
+              }
+            }
+            &:hover {
+              > .views-field-field-images {
+                > .field-content {
+                  > a {
+                    > img {
+                      transition: 0.5s;
+                      @include ungrayscale;
+                    }
+                  }
+                }
+              }
+              > .views-field-name {
+                > .field-content {
+                  > a {
+                    transition: 0.5s;
+                    color: #000000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
