@@ -1,83 +1,74 @@
 $height_of_image:320px;
 
-
-.contextual-links-region {
-}
-
-#header-wrap .pane-nice-menus-1 {
+.pane-nice-menus-1 {
   width:100%;
-
-}
-
-.pane-nice-menus-1 ul {
-  width: auto;
-  float: none;
-  background: #fff;
-}
-
-.pane-nice-menus-1 ul li {
-  text-align:center;
-  margin: 0 auto;
-  float: none;
-  display: table-cell;
-  vertical-align: middle;
-  width: 10%;
-  height: 50px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
-}
-
-.pane-nice-menus-1 ul li:hover {
-  color: #000;
-  border-bottom: 1px solid #000;
-}
-
-.pane-nice-menus-1 ul li a {
-  text-decoration: none;
-}
-
-
-.pane-nice-menus-1 ul.nice-menu li {
-  border-top:1px solid #ffffff;
-  border-left:1px solid #ffffff;
-  border-right:1px solid #ffffff;
-  background: none;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.pane-nice-menus-1 ul.nice-menu-down .menuparent a {
-  padding: 0;
+  > .nice-menu-menu-catalog-menu {
+    width: auto;
+    float: none;
+    background: #fff;
+    > li {
+      text-align:center;
+      margin: 0 auto;
+      float: none;
+      display: table-cell;
+      vertical-align: middle;
+      width: 10%;
+      height: 50px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+      border-top:1px solid #ffffff;
+      border-left:1px solid #ffffff;
+      border-right:1px solid #ffffff;
+      background: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+      &:hover {
+        color: #000;
+        border-bottom: 1px solid #000;
+      }
+      > a {
+         text-decoration: none;
+         padding: 0;
+         color: unset;
+      }
+      > ul {
+        left:-1px;
+        top:49px;
+        width: 100%;
+        border-top: unset;
+       > li {
+          background: #fff;
+          height:50px;
+          padding-left: 15px;
+          padding-right: 15px;
+          width: calc(100% + 2px);
+          display:flex;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+         &:hover {
+           background: #f4f4f4;
+         }
+        > a {
+          text-decoration: none;
+          padding: 0;
+          color: unset;
+          margin: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 ul.nice-menu-down li.menuparent {
-
+  background:none;
 }
-
 ul.nice-menu-down li.menuparent:hover {
   background:none;
 }
 
-ul.nice-menu a {
-  color: unset;
+ul.nice-menu-down li {
+  border:none;
 }
-
-ul.nice-menu-down ul {
-  left:0px;
-  top:49px;
-  width: 100%;
-}
-
-ul.nice-menu ul {
-  border-top: unset;
-}
-
-.pane-nice-menus-1 ul.nice-menu ul li {
-  padding-left: 15px;
-  padding-right: 15px;
-  width:100%;
-  display:flex;
-}
-
-.pane-nice-menus-1 ul.nice-menu ul li a {
-  margin: auto;
+ul.nice-menu li {
+  border:none;
+  background-color: unset;
 }

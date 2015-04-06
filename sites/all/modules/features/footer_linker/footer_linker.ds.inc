@@ -12,6 +12,21 @@ function footer_linker_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|footer_type|footer_mode';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'footer_type';
+  $ds_fieldsetting->view_mode = 'footer_mode';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['node|footer_type|footer_mode'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'taxonomy_term|footer_linker|default';
   $ds_fieldsetting->entity_type = 'taxonomy_term';
   $ds_fieldsetting->bundle = 'footer_linker';

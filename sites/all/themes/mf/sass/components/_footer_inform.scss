@@ -1,0 +1,25 @@
+
+.pane-footer-inform-about-site-panel-pane-1 {
+  display: inline-block;
+  width: 40%;
+}
+
+.pane-nice-menus-2 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  width: 60%;
+  height: auto;
+  float: right;
+  > .nice-menu-menu-footer-menu {
+    > li {
+      text-align:center;
+      width:120px;
+      height:50px;
+      > a {
+        text-decoration: none;
+        color: unset;
+      }
+    }
+  }
+}

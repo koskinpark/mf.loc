@@ -143,7 +143,7 @@ function f_ct_catalog_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'uuid_features_file_taxonomy_term';
   $strongarm->value = array(
-    'catalog' => 0,
+    'catalog' => 'catalog',
     'footer_linker' => 0,
   );
   $export['uuid_features_file_taxonomy_term'] = $strongarm;

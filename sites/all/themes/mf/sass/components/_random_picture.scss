@@ -1,14 +1,25 @@
-$height_of_image:320px;
-
+$height_of_image:310px;
+@mixin clearfix() {
+&:before,
+&:after {
+  content: "";
+  display: table;
+}
+&:after {
+  clear: both;
+}
+}
 
 .pane-random-homepage-product-panel-pane-1 {
-  .view-random-homepage-product {
+  >.view-random-homepage-product {
+    @include clearfix;
     > .view-content {
       > .views-row {
         margin: 5px;
         float: left;
         position:relative;
         > .view-mode-random_homepage_pictures {
+          cursor: pointer;
           > .field--name-title {
             opacity:0;
             display:flex;
@@ -18,35 +29,50 @@ $height_of_image:320px;
             width: 100%;
             position: absolute;
             background: rgba(0, 0, 0, 0.25);
-            color: #ffffff;
+            color: rgba(255, 255, 255, 0);
             > .field__items {
               margin: auto;
               padding-left: 10px;
               padding-right: 10px;
             }
           }
+          > .field--name-field-pictures {
+            transition: 0.3s;
+            height: $height_of_image;
+          }
         }
         &:hover {
           >.view-mode-random_homepage_pictures {
           > .field--name-title {
             opacity:1;
-            transition:0.5s;
-            height:100%
-          }
-          > .field--name-field-pictures {
-            > img {
-              opacity: 0.95;
-              transition: 0.25s;
-              box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.51);
+            transition:0.3s ease-out;
+            height:100%;
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 5px #FFF;
+            > .field__items {
+              transition:0.1s ease-out;
             }
           }
+          > .field--name-field-pictures {
+            transition-delay: 0.2s;
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.37);
+            > img {
+              opacity: 0.95;
+            }
+          }
+          }
+        }
+        &:not(:hover) {
+          >.view-mode-random_homepage_pictures {
+            > .field--name-title {
+              transition: 0.1s ease-in;
+               .field__items {
+                 color: rgba(255, 255, 255, 0);
+              }
+            }
           }
         }
       }
     }
   }
 }
-//.pane-random-homepage-product-panel-pane-1 .field .field--name-field-pictures .field--type-image .field--label-hiddenimg {
-//  height: $height_of_image;
-//  background: #fff;
-//}

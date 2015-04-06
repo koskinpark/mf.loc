@@ -20,13 +20,15 @@ function footer_panel_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'body',
+        0 => 'title',
         1 => 'field_picture',
+        2 => 'body',
       ),
     ),
     'fields' => array(
-      'body' => 'ds_content',
+      'title' => 'ds_content',
       'field_picture' => 'ds_content',
+      'body' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
