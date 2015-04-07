@@ -62,6 +62,7 @@ dependencies[] = field_group
 
 ;custom
 dependencies[] = layout_sample
+dependencies[] = pane_for_logotype
 
 ;features
 dependencies[] = f_ct_product

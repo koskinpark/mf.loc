@@ -121,6 +121,10 @@ ul.nice-menu li {
       text-decoration: none;
       color: unset; }
 
+/* line 2, ../sass/components/_logotype.scss */
+.pane-pane-for-logo {
+  text-align: center; }
+
 /* line 6, ../sass/components/_most_viewed.scss */
 .pane-most-viewed-panel-pane-1 > .pane-title:before {
   border-bottom: 1px solid #969696;

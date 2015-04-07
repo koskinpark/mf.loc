@@ -1,0 +1,5 @@
+name = pane for logotype
+description = pane for new image style for logotype
+core = 7.x
+dependencies[] = ctools
+dependencies[] = panels
