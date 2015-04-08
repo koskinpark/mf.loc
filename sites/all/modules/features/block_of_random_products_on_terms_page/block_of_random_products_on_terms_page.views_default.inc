@@ -22,23 +22,24 @@ function block_of_random_products_on_terms_page_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Some products of this category';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Content: Taxonomy terms on node */
-  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
-  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
-  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
-  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
-    'catalog' => 'catalog',
-    'footer_linker' => 0,
-  );
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['view_mode'] = 'random_homepage_pictures';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_catalog_target_id']['id'] = 'field_catalog_target_id';
+  $handler->display->display_options['relationships']['field_catalog_target_id']['table'] = 'field_data_field_catalog';
+  $handler->display->display_options['relationships']['field_catalog_target_id']['field'] = 'field_catalog_target_id';
+  $handler->display->display_options['relationships']['field_catalog_target_id']['required'] = TRUE;
   /* Field: Content: Pictures */
   $handler->display->display_options['fields']['field_pictures']['id'] = 'field_pictures';
   $handler->display->display_options['fields']['field_pictures']['table'] = 'field_data_field_pictures';
@@ -51,35 +52,15 @@ function block_of_random_products_on_terms_page_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_pictures']['delta_offset'] = '0';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Taxonomy term: Term ID */
-  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['arguments']['tid']['default_action'] = 'not found';
-  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  /* Contextual filter: Content: Catalog (field_catalog) */
-  $handler->display->display_options['arguments']['field_catalog_target_id']['id'] = 'field_catalog_target_id';
-  $handler->display->display_options['arguments']['field_catalog_target_id']['table'] = 'field_data_field_catalog';
-  $handler->display->display_options['arguments']['field_catalog_target_id']['field'] = 'field_catalog_target_id';
-  $handler->display->display_options['arguments']['field_catalog_target_id']['default_action'] = 'not found';
-  $handler->display->display_options['arguments']['field_catalog_target_id']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_catalog_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_catalog_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_catalog_target_id']['summary_options']['items_per_page'] = '25';
+  /* Sort criterion: Global: Random */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
   /* Contextual filter: Taxonomy term: Parent term */
   $handler->display->display_options['arguments']['parent']['id'] = 'parent';
   $handler->display->display_options['arguments']['parent']['table'] = 'taxonomy_term_hierarchy';
   $handler->display->display_options['arguments']['parent']['field'] = 'parent';
-  $handler->display->display_options['arguments']['parent']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['parent']['relationship'] = 'field_catalog_target_id';
   $handler->display->display_options['arguments']['parent']['default_action'] = 'not found';
   $handler->display->display_options['arguments']['parent']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['parent']['summary']['number_of_records'] = '0';
@@ -103,21 +84,13 @@ function block_of_random_products_on_terms_page_views_default_views() {
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $handler->display->display_options['argument_input'] = array(
-    'tid' => array(
+    'parent' => array(
       'type' => 'panel',
       'context' => 'entity:comment.author',
       'context_optional' => 0,
-      'panel' => '1',
+      'panel' => '0',
       'fixed' => '',
-      'label' => 'Taxonomy term: Term ID',
-    ),
-    'field_catalog_target_id' => array(
-      'type' => 'panel',
-      'context' => 'entity:comment.author',
-      'context_optional' => 0,
-      'panel' => '1',
-      'fixed' => '',
-      'label' => 'Content: Catalog (field_catalog)',
+      'label' => 'Taxonomy term: Parent term',
     ),
   );
   $export['random_product_of_taxonomy_term'] = $view;

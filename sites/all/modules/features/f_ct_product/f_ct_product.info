@@ -3,6 +3,7 @@ core = 7.x
 package = Features
 dependencies[] = ctools
 dependencies[] = ds
+dependencies[] = entityreference
 dependencies[] = f_ct_catalog
 dependencies[] = features
 dependencies[] = field_group

@@ -1,12 +1,14 @@
 name = logotype of the site
 core = 7.x
 package = Features
+dependencies[] = ctools
 dependencies[] = ds
+dependencies[] = image
 dependencies[] = views
 dependencies[] = views_content
 features[ctools][] = ds:ds:1
 features[ctools][] = views:views_default:3.0
 features[ds_view_modes][] = logotype
 features[features_api][] = api:2
+features[image][] = logotype
 features[views_view][] = logotype_of_the_site
-features_exclude[dependencies][ctools] = ctools

@@ -38,16 +38,26 @@ function pane_for_logotype_pane_for_logo_content_type_edit_form_submit(&$form, &
     }
 }
 function pane_for_logotype_pane_for_logo_content_type_render($subtype, $conf, $args, $contexts) {
-    $image_logo_url_path = theme_get_setting('logo_path');
+    $custom_logo = theme_get_setting('logo_path');
     $pane = new stdClass();
-    $pane->content = l(theme('image_style', array(
+    if (!empty($custom_logo)) {
+        $image_logo_url_path = $custom_logo;
+        $pane->content = l(theme('image_style', array(
             'path' => $image_logo_url_path,
             'style_name' => $conf['image_style'],
         )),
-        '<front>', array('html' => true)
+            '<front>', array('html' => true)
         );
+    }
+    else {
+        $logo = theme_get_setting('logo');
+        $pane = new stdClass();
+        if (!empty($logo)) {
+            $image = '<img src="' . $logo . '" alt="' . t('Home') . '" />';
+            $pane->content = l($image, '', array('html' => TRUE, 'attributes' => array('rel' => 'home', 'id' => 'logo', 'title' => t('Home'))));
+        }
+    }
     return $pane;
 }
-
 
 ?>

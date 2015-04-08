@@ -59,6 +59,12 @@ dependencies[] = uuid_path
 dependencies[] = uuid_services
 dependencies[] = rest_server
 dependencies[] = field_group
+dependencies[] = search_api_db
+dependencies[] = search_api
+dependencies[] = search_api_facetapi
+dependencies[] = search_api_views
+dependencies[] = current_search
+dependencies[] = facetapi
 
 ;custom
 dependencies[] = layout_sample
@@ -80,6 +86,7 @@ dependencies[] = block_of_terms_on_terms_page
 dependencies[] = block_of_subterms_on_terms_page
 dependencies[] = block_of_random_products_on_terms_page
 dependencies[] = f_logotype_of_the_site
+dependencies[] = views_for_search
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"

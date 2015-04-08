@@ -13,6 +13,64 @@ function f_page_manager_default_page_manager_handlers() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
+  $handler->name = 'search_node__panel_context_4b44e403-3b66-448d-af3d-0b00e6f1ebb9';
+  $handler->task = 'search';
+  $handler->subtask = 'node';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Panel',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => '',
+  );
+  $display = new panels_display();
+  $display->layout = 'naked';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'content' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '66b4f94e-74e1-4f2c-ab8a-05479617dc1b';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-a7fbc9f9-3fb8-4ac3-b8e1-275971991eb7';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'search_titles-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'a7fbc9f9-3fb8-4ac3-b8e1-275971991eb7';
+    $display->content['new-a7fbc9f9-3fb8-4ac3-b8e1-275971991eb7'] = $pane;
+    $display->panels['content'][0] = 'new-a7fbc9f9-3fb8-4ac3-b8e1-275971991eb7';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-a7fbc9f9-3fb8-4ac3-b8e1-275971991eb7';
+  $handler->conf['display'] = $display;
+  $export['search_node__panel_context_4b44e403-3b66-448d-af3d-0b00e6f1ebb9'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
   $handler->name = 'site_template__default';
   $handler->task = 'site_template';
   $handler->subtask = '';
@@ -187,8 +245,8 @@ function f_page_manager_default_page_manager_handlers() {
       'override_title' => 0,
       'override_title_text' => '',
       'override_title_heading' => 'h2',
-      'image_style' => 'small_pictures_for_subterms',
-      'class' => 'logotype-picture',
+      'image_style' => 'logotype',
+      'class' => NULL,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -201,6 +259,25 @@ function f_page_manager_default_page_manager_handlers() {
     $pane->uuid = 'ccad9234-b5d0-4678-830d-d26adf318e51';
     $display->content['new-ccad9234-b5d0-4678-830d-d26adf318e51'] = $pane;
     $display->panels['header'][0] = 'new-ccad9234-b5d0-4678-830d-d26adf318e51';
+    $pane = new stdClass();
+    $pane->pid = 'new-42b37918-af7b-4ba6-9b20-cffefb0d8349';
+    $pane->panel = 'header';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'searchbox-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '42b37918-af7b-4ba6-9b20-cffefb0d8349';
+    $display->content['new-42b37918-af7b-4ba6-9b20-cffefb0d8349'] = $pane;
+    $display->panels['header'][1] = 'new-42b37918-af7b-4ba6-9b20-cffefb0d8349';
     $pane = new stdClass();
     $pane->pid = 'new-2932a9e0-86a1-4e22-8d02-ce0a437c392d';
     $pane->panel = 'header';
@@ -219,11 +296,11 @@ function f_page_manager_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '2932a9e0-86a1-4e22-8d02-ce0a437c392d';
     $display->content['new-2932a9e0-86a1-4e22-8d02-ce0a437c392d'] = $pane;
-    $display->panels['header'][1] = 'new-2932a9e0-86a1-4e22-8d02-ce0a437c392d';
+    $display->panels['header'][2] = 'new-2932a9e0-86a1-4e22-8d02-ce0a437c392d';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

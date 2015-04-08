@@ -2,19 +2,21 @@ $height_of_image:320px;
 
 .pane-nice-menus-1 {
   width:100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   > .nice-menu-menu-catalog-menu {
     width: auto;
     float: none;
     background: #fff;
     > li {
       text-align:center;
-      margin: 0 auto;
+      margin: 0 auto -1px auto;
       float: none;
       display: table-cell;
       vertical-align: middle;
       width: 10%;
       height: 50px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
       border-top:1px solid #ffffff;
       border-left:1px solid #ffffff;
       border-right:1px solid #ffffff;

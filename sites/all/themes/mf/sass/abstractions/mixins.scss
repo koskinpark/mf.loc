@@ -1,0 +1,120 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+}
+
+@mixin ungrayscale {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+@mixin random-product-pane {
+  @include clearfix;
+  > .view-content {
+    text-align: center;
+    > .views-row {
+      margin: 3px;
+      display: inline-block;
+      position: relative;
+      > .view-mode-random_homepage_pictures {
+        cursor: pointer;
+        > .field--name-title {
+          opacity:0;
+          display:flex;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          background: rgba(0, 0, 0, 0);
+          color: rgba(255, 255, 255, 0);
+          > .field__items {
+            margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+        > .field--name-field-pictures {
+          transition: 0.3s;
+          height: $height_of_image;
+        }
+      }
+      &:hover {
+        >.view-mode-random_homepage_pictures {
+          > .field--name-title {
+            opacity:1;
+            transition:0.3s ease-out;
+            color: rgb(255, 255, 255);
+            background: rgba(0, 0, 0, 0.25);
+            text-shadow: 0 0 10px #050505;
+            > .field__items {
+            }
+          }
+          > .field--name-field-pictures {
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.37);
+            > img {
+              opacity: 0.95;
+            }
+          }
+        }
+      }
+      &:not(:hover) {
+        >.view-mode-random_homepage_pictures {
+          > .field--name-title {
+            transition: 0.1s ease-in;
+            .field__items {
+              color: rgba(255, 255, 255, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin pane-title {
+  > .pane-title:before {
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px;
+    margin-right: 10px
+  }
+  > .pane-title {
+    font-style: oblique;
+    font-weight: normal;
+    text-align: center;
+    cursor: default;
+  }
+  > .pane-title:after {
+    margin-left: 10px;
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px;
+  }
+}
