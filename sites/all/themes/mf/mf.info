@@ -17,6 +17,7 @@ stylesheets[all][] = css/mf.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = js/mf.behaviors.js
+scripts[] = js/mf.js
 
 ; ========================================
 ; Regions

@@ -46,6 +46,15 @@ function f_ct_product_strongarm() {
       'default_node_page' => array(
         'custom_settings' => FALSE,
       ),
+      'search_view_mode' => array(
+        'custom_settings' => TRUE,
+      ),
+      'footer_mode' => array(
+        'custom_settings' => FALSE,
+      ),
+      'logotype' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

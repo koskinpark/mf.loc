@@ -1,4 +1,8 @@
 
+textarea:focus, input:focus {
+  outline: none;
+}
+
 body {
   background: #ffffff;
   margin: 0 auto;

@@ -1,0 +1,8 @@
+.pane-search-titles-panel-pane-1 {
+  > .view-id-search_titles {
+    > .view-header {
+      @include pane-title;
+    }
+    @include random-product-search-pane;
+  }
+}

@@ -127,6 +127,15 @@ function f_page_manager_default_page_manager_handlers() {
           'context' => 'node',
           'not' => TRUE,
         ),
+        2 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'search/node',
+          ),
+          'context' => 'argument_string_1',
+          'not' => TRUE,
+        ),
       ),
       'logic' => 'and',
     );

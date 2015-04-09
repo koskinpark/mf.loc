@@ -1,70 +1,73 @@
 $width: 150px;
 
 .pane-searchbox-panel-pane-1 {
-  float:right;
+  float: right;
   margin-top: 85px;
   > .view-display-id-panel_pane_1 {
-   .views-exposed-widgets {
-     position: relative;
-     margin: 0;
-     >.views-widget-filter-search_api_views_fulltext {
-       padding: 0;
-       > .views-widget {
-         > .form-item-search-api-views-fulltext {
-           > .form-text {
-             height: 30px;
-             width: 150px;
-             background: #F7F7F7;
-             border: 1px solid #DDD;
-             border-radius: 3px;
-             padding-right: 30px;
-             transition: 0.3s;
-           }
-         }
-       }
-     }
-     > .views-submit-button {
-       position: absolute;
-       top: 2px;
-       right: 2px;
-       float: none;
-       padding: 0;
-       height: 25px;
-       width: 25px;
-       opacity: 0.3;
-       transition: 0.3s;
-       > .form-submit {
-         background: url(../../mf/images/search_box/search.png) no-repeat;
-         margin: 0;
-         background-size: cover;
-         color: transparent;
-         border: none;
-         height: 100%;
-         width: 100%;
-       }
-     }
-     &:hover {
-       >.views-widget-filter-search_api_views_fulltext {
-         > .views-widget {
-           > .form-item-search-api-views-fulltext {
-             > .form-text {
-               width: $width;
-               transition: 0.3s;
-               background: #f9f9f9;
-               border: 1px solid rgba(0, 0, 0, 0.28);
-               &:focus {
-                 $width: 300px;
-                 width: $width;
-               }
-             }
-           }
-         }
-       }
-       > .views-submit-button {
-         transition: 0.3s;
-         opacity: 0.7;
-       }
-     }
-   }
+    .views-exposed-widgets {
+      position: relative;
+      margin: 0;
+      > .views-widget-filter-search_api_views_fulltext {
+        padding: 0;
+        > .views-widget {
+          > .form-item-search-api-views-fulltext {
+            > .form-text {
+              height: 30px;
+              width: $width;
+              background: #F7F7F7;
+              border: 1px solid #DDD;
+              border-radius: 3px;
+              padding-right: 30px;
+              transition: 0.3s;
+              font-style: oblique;
+              color: rgba(0, 0, 0, 0.55);
+              padding-left:10px;
+            }
+          }
+        }
+      }
+      > .views-submit-button {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        float: none;
+        padding: 0;
+        height: 24px;
+        width: 24px;
+        opacity: 0.3;
+        transition: 0.3s;
+        > .form-submit {
+          background: url(../../mf/images/search_box/search.png) no-repeat;
+          margin: 0;
+          background-size: cover;
+          color: transparent;
+          border: none;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
   }
+}
+
+.search_box_hover {
+  transition: 0.3s;
+  background: #f9f9f9 !important;
+  border: 1px solid rgba(0, 0, 0, 0.28) !important;
+}
+
+.search_box_focus {
+  transition: 0.3s;
+  width: $width + 150px !important;
+  background: #fFFFFF !important;
+  border: 2px solid rgba(0, 0, 0, 0.43) !important;
+}
+
+.search_submit_hover {
+  transition: 0.3s;
+  opacity:0.5 !important;
+}
+.search_submit_focus {
+  transition: 0.3s;
+  opacity:1 !important;
 }

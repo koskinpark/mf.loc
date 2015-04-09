@@ -98,7 +98,9 @@
       }
     }
     > .pane-random-product-of-taxonomy-term-panel-pane-1 {
-      @include pane-title;
+      > .pane-title {
+        @include pane-title;
+      }
       > .view-random-product-of-taxonomy-term {
         @include random-product-pane;
       }

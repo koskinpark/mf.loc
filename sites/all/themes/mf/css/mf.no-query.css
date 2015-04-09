@@ -3,6 +3,10 @@ img, media {
   max-width: 100%; }
 
 /* line 2, ../sass/base/_template.scss */
+textarea:focus, input:focus {
+  outline: none; }
+
+/* line 6, ../sass/base/_template.scss */
 body {
   background: #ffffff;
   margin: 0 auto;
@@ -12,15 +16,15 @@ body {
   font-size: 16px;
   color: #3D3D3D; }
 
-/* line 12, ../sass/base/_template.scss */
+/* line 16, ../sass/base/_template.scss */
 #header-wrap {
   background: #ffffff; }
 
-/* line 16, ../sass/base/_template.scss */
+/* line 20, ../sass/base/_template.scss */
 #content-wrap {
   background: #ffffff; }
 
-/* line 20, ../sass/base/_template.scss */
+/* line 24, ../sass/base/_template.scss */
 #footer-wrap {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   background: #ffffff; }
@@ -127,36 +131,37 @@ ul.nice-menu li {
   margin-top: 10px;
   display: inline-block; }
 
-/* line 94, ../sass/abstractions/mixins.scss */
-.pane-most-viewed-panel-pane-1 > .pane-title:before {
-  border-bottom: 1px solid #969696;
-  content: ' ';
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  top: -7px;
-  width: 100px;
-  margin-right: 10px; }
-/* line 104, ../sass/abstractions/mixins.scss */
+/* line 6, ../sass/components/_most_viewed.scss */
 .pane-most-viewed-panel-pane-1 > .pane-title {
   font-style: oblique;
   font-weight: normal;
   text-align: center;
+  font-size: 25px;
   cursor: default; }
-/* line 110, ../sass/abstractions/mixins.scss */
-.pane-most-viewed-panel-pane-1 > .pane-title:after {
-  margin-left: 10px;
-  border-bottom: 1px solid #969696;
-  content: ' ';
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  top: -7px;
-  width: 100px; }
-/* line 8, ../sass/components/_most_viewed.scss */
+  /* line 224, ../sass/abstractions/mixins.scss */
+  .pane-most-viewed-panel-pane-1 > .pane-title:before {
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px;
+    margin-right: 10px; }
+  /* line 234, ../sass/abstractions/mixins.scss */
+  .pane-most-viewed-panel-pane-1 > .pane-title:after {
+    margin-left: 10px;
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px; }
+/* line 10, ../sass/components/_most_viewed.scss */
 .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content {
   text-align: center; }
-  /* line 10, ../sass/components/_most_viewed.scss */
+  /* line 12, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row {
     width: 220px;
     height: auto;
@@ -164,64 +169,64 @@ ul.nice-menu li {
     vertical-align: top;
     margin: 5px;
     cursor: pointer; }
-    /* line 17, ../sass/components/_most_viewed.scss */
+    /* line 19, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:hover {
       color: #000;
       transition: 0.25s; }
-      /* line 20, ../sass/components/_most_viewed.scss */
+      /* line 22, ../sass/components/_most_viewed.scss */
       .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:hover img {
         transition: 0.25s;
         opacity: 0.85;
         border: 2px solid rgba(0, 0, 0, 0.52); }
-    /* line 26, ../sass/components/_most_viewed.scss */
+    /* line 28, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:not(:hover) {
       transition: 0.25s; }
-      /* line 28, ../sass/components/_most_viewed.scss */
+      /* line 30, ../sass/components/_most_viewed.scss */
       .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:not(:hover) img {
         transition: 0.25s; }
-    /* line 33, ../sass/components/_most_viewed.scss */
+    /* line 35, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row > .view-mode-more_viewed h2 {
       margin: 5px 0 0 0;
       font-weight: normal;
       font-size: 20px;
       padding-left: 10px;
       padding-right: 10px; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-1 img {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #00cce2; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-2 img {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #4A9D6A; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-3 img {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #FFD7F4; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-4 img {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #FFFACC; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-5 img {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #bffff5; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-6 img {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #3E55F7; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-7 img {
     background: #FFF;
     border-radius: 110px;
     border: 2px solid #A1AB13; }
-  /* line 43, ../sass/components/_most_viewed.scss */
+  /* line 45, ../sass/components/_most_viewed.scss */
   .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-8 img {
     background: #FFF;
     border-radius: 110px;
@@ -379,6 +384,112 @@ ul.nice-menu li {
       .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title .field__items {
         color: rgba(255, 255, 255, 0); }
 
+/* line 3, ../sass/components/_search.scss */
+.pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-header {
+  font-style: oblique;
+  font-weight: normal;
+  text-align: center;
+  font-size: 25px;
+  cursor: default; }
+  /* line 224, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-header:before {
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px;
+    margin-right: 10px; }
+  /* line 234, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-header:after {
+    margin-left: 10px;
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px; }
+/* line 2, ../sass/abstractions/mixins.scss */
+.pane-search-titles-panel-pane-1 > .view-id-search_titles:before, .pane-search-titles-panel-pane-1 > .view-id-search_titles:after {
+  content: "";
+  display: table; }
+/* line 7, ../sass/abstractions/mixins.scss */
+.pane-search-titles-panel-pane-1 > .view-id-search_titles:after {
+  clear: both; }
+/* line 95, ../sass/abstractions/mixins.scss */
+.pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content {
+  text-align: center; }
+  /* line 97, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row {
+    margin: 3px;
+    position: relative;
+    transition: 0.3s;
+    height: 310px;
+    width: 100%;
+    overflow: hidden; }
+    /* line 104, ../sass/abstractions/mixins.scss */
+    .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      /* line 108, ../sass/abstractions/mixins.scss */
+      .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-first {
+        width: 100%;
+        position: absolute; }
+        /* line 113, ../sass/abstractions/mixins.scss */
+        .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content {
+          position: relative; }
+  /* line 128, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+1) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :first-child > img {
+    left: 0;
+    position: absolute; }
+  /* line 134, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+1) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :last-child > img {
+    right: 0;
+    position: absolute; }
+  /* line 143, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+1) > .panel-display > .panel-col-last {
+    margin-left: 32%;
+    width: 34%;
+    position: absolute;
+    height: auto;
+    overflow: hidden; }
+  /* line 157, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+2) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content {
+    margin-left: 34%; }
+    /* line 160, ../sass/abstractions/mixins.scss */
+    .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+2) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :first-child > img {
+      left: 0;
+      position: absolute; }
+    /* line 166, ../sass/abstractions/mixins.scss */
+    .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+2) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :last-child > img {
+      right: 0;
+      position: absolute; }
+  /* line 175, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+2) > .panel-display > .panel-col-last {
+    width: 34%;
+    position: absolute;
+    height: auto;
+    overflow: hidden; }
+  /* line 190, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+3) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :first-child > img {
+    left: 0;
+    position: absolute; }
+  /* line 196, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+3) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :last-child > img {
+    right: 0;
+    margin-right: 34%;
+    position: absolute; }
+  /* line 206, ../sass/abstractions/mixins.scss */
+  .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+3) > .panel-display > .panel-col-last {
+    width: 34%;
+    right: 0;
+    position: absolute;
+    height: auto;
+    overflow: hidden; }
+
 /* line 3, ../sass/components/_serach_box.scss */
 .pane-searchbox-panel-pane-1 {
   float: right;
@@ -398,19 +509,22 @@ ul.nice-menu li {
         border: 1px solid #DDD;
         border-radius: 3px;
         padding-right: 30px;
-        transition: 0.3s; }
-    /* line 26, ../sass/components/_serach_box.scss */
+        transition: 0.3s;
+        font-style: oblique;
+        color: rgba(0, 0, 0, 0.55);
+        padding-left: 10px; }
+    /* line 29, ../sass/components/_serach_box.scss */
     .pane-searchbox-panel-pane-1 > .view-display-id-panel_pane_1 .views-exposed-widgets > .views-submit-button {
       position: absolute;
-      top: 2px;
-      right: 2px;
+      top: 3px;
+      right: 3px;
       float: none;
       padding: 0;
-      height: 25px;
-      width: 25px;
+      height: 24px;
+      width: 24px;
       opacity: 0.3;
       transition: 0.3s; }
-      /* line 36, ../sass/components/_serach_box.scss */
+      /* line 39, ../sass/components/_serach_box.scss */
       .pane-searchbox-panel-pane-1 > .view-display-id-panel_pane_1 .views-exposed-widgets > .views-submit-button > .form-submit {
         background: url(../../mf/images/search_box/search.png) no-repeat;
         margin: 0;
@@ -419,19 +533,29 @@ ul.nice-menu li {
         border: none;
         height: 100%;
         width: 100%; }
-    /* line 50, ../sass/components/_serach_box.scss */
-    .pane-searchbox-panel-pane-1 > .view-display-id-panel_pane_1 .views-exposed-widgets:hover > .views-widget-filter-search_api_views_fulltext > .views-widget > .form-item-search-api-views-fulltext > .form-text {
-      width: 150px;
-      transition: 0.3s;
-      background: #f9f9f9;
-      border: 1px solid rgba(0, 0, 0, 0.28); }
-      /* line 55, ../sass/components/_serach_box.scss */
-      .pane-searchbox-panel-pane-1 > .view-display-id-panel_pane_1 .views-exposed-widgets:hover > .views-widget-filter-search_api_views_fulltext > .views-widget > .form-item-search-api-views-fulltext > .form-text:focus {
-        width: 300px; }
-    /* line 63, ../sass/components/_serach_box.scss */
-    .pane-searchbox-panel-pane-1 > .view-display-id-panel_pane_1 .views-exposed-widgets:hover > .views-submit-button {
-      transition: 0.3s;
-      opacity: 0.7; }
+
+/* line 53, ../sass/components/_serach_box.scss */
+.search_box_hover {
+  transition: 0.3s;
+  background: #f9f9f9 !important;
+  border: 1px solid rgba(0, 0, 0, 0.28) !important; }
+
+/* line 59, ../sass/components/_serach_box.scss */
+.search_box_focus {
+  transition: 0.3s;
+  width: 300px !important;
+  background: #fFFFFF !important;
+  border: 2px solid rgba(0, 0, 0, 0.43) !important; }
+
+/* line 66, ../sass/components/_serach_box.scss */
+.search_submit_hover {
+  transition: 0.3s;
+  opacity: 0.5 !important; }
+
+/* line 70, ../sass/components/_serach_box.scss */
+.search_submit_focus {
+  transition: 0.3s;
+  opacity: 1 !important; }
 
 /* line 1, ../sass/components/_slideshow_on_mainpage.scss */
 .pane-view-slideshow-panel-pane-1 {
@@ -518,32 +642,33 @@ ul.nice-menu li {
       .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row:hover > .views-field-name > .field-content > a {
         transition: 0.5s;
         color: #000000; }
-/* line 94, ../sass/abstractions/mixins.scss */
-.pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title:before {
-  border-bottom: 1px solid #969696;
-  content: ' ';
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  top: -7px;
-  width: 100px;
-  margin-right: 10px; }
-/* line 104, ../sass/abstractions/mixins.scss */
+/* line 101, ../sass/components/_taxonomy_page.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title {
   font-style: oblique;
   font-weight: normal;
   text-align: center;
+  font-size: 25px;
   cursor: default; }
-/* line 110, ../sass/abstractions/mixins.scss */
-.pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title:after {
-  margin-left: 10px;
-  border-bottom: 1px solid #969696;
-  content: ' ';
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  top: -7px;
-  width: 100px; }
+  /* line 224, ../sass/abstractions/mixins.scss */
+  .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title:before {
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px;
+    margin-right: 10px; }
+  /* line 234, ../sass/abstractions/mixins.scss */
+  .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title:after {
+    margin-left: 10px;
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px; }
 /* line 2, ../sass/abstractions/mixins.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term:before, .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term:after {
   content: "";

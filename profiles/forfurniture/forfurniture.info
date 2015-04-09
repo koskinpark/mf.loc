@@ -69,6 +69,7 @@ dependencies[] = facetapi
 ;custom
 dependencies[] = layout_sample
 dependencies[] = pane_for_logotype
+dependencies[] = mf_search
 
 ;features
 dependencies[] = f_ct_product

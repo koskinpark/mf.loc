@@ -25,7 +25,6 @@ function node_product_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_cost',
-      2 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -58,7 +57,6 @@ function node_product_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_pictures',
-      1 => 'post_date',
     ),
     'format_type' => 'div',
     'format_settings' => array(
