@@ -88,6 +88,7 @@ dependencies[] = block_of_subterms_on_terms_page
 dependencies[] = block_of_random_products_on_terms_page
 dependencies[] = f_logotype_of_the_site
 dependencies[] = views_for_search
+dependencies[] = see_more_homepage
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"

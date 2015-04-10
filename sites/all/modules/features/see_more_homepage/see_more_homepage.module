@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the See more homepage feature.
+ */
+
+include_once 'see_more_homepage.features.inc';

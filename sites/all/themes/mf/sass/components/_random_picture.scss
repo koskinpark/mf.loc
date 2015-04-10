@@ -5,3 +5,8 @@ $height_of_image:310px;
     @include random-product-pane;
   }
 }
+
+.views-row-visible {
+  transition: 1s;
+  height: $height_of_image !important;
+}

@@ -57,6 +57,7 @@ $width: 150px;
 }
 
 .search_box_focus {
+  color: rgba(0, 0, 0, 0.74) !important;
   transition: 0.3s;
   width: $width + 150px !important;
   background: #fFFFFF !important;

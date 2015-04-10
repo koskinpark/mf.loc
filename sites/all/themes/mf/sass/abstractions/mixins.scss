@@ -9,6 +9,20 @@
   }
 }
 
+@mixin display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-flow {
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
 @mixin grayscale {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -27,65 +41,69 @@
   filter: grayscale(0%);
 }
 
+@mixin views-row {
+  margin: 3px;
+  display: inline-block;
+  position: relative;
+  > .view-mode-random_homepage_pictures {
+    cursor: pointer;
+    > .field--name-title {
+      opacity: 0;
+      display: flex;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: rgba(0, 0, 0, 0);
+      color: rgba(255, 255, 255, 0);
+      > .field__items {
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    > .field--name-field-pictures {
+      transition: 0.3s;
+      height: $height_of_image;
+    }
+  }
+  &:hover {
+    > .view-mode-random_homepage_pictures {
+      > .field--name-title {
+        opacity: 1;
+        transition: 0.3s ease-out;
+        color: rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0.25);
+        text-shadow: 0 0 10px #050505;
+        > .field__items {
+        }
+      }
+      > .field--name-field-pictures {
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.37);
+        > img {
+          opacity: 0.95;
+        }
+      }
+    }
+  }
+  &:not(:hover) {
+    > .view-mode-random_homepage_pictures {
+      > .field--name-title {
+        transition: 0.1s ease-in;
+        .field__items {
+          color: rgba(255, 255, 255, 0);
+        }
+      }
+    }
+  }
+}
+
 @mixin random-product-pane {
   @include clearfix;
   > .view-content {
     text-align: center;
     > .views-row {
-      margin: 3px;
-      display: inline-block;
-      position: relative;
-      > .view-mode-random_homepage_pictures {
-        cursor: pointer;
-        > .field--name-title {
-          opacity:0;
-          display:flex;
-          text-align: center;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          background: rgba(0, 0, 0, 0);
-          color: rgba(255, 255, 255, 0);
-          > .field__items {
-            margin: auto;
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-        }
-        > .field--name-field-pictures {
-          transition: 0.3s;
-          height: $height_of_image;
-        }
-      }
-      &:hover {
-        >.view-mode-random_homepage_pictures {
-          > .field--name-title {
-            opacity:1;
-            transition:0.3s ease-out;
-            color: rgb(255, 255, 255);
-            background: rgba(0, 0, 0, 0.25);
-            text-shadow: 0 0 10px #050505;
-            > .field__items {
-            }
-          }
-          > .field--name-field-pictures {
-            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.37);
-            > img {
-              opacity: 0.95;
-            }
-          }
-        }
-      }
-      &:not(:hover) {
-        >.view-mode-random_homepage_pictures {
-          > .field--name-title {
-            transition: 0.1s ease-in;
-            .field__items {
-              color: rgba(255, 255, 255, 0);
-            }
-          }
-        }
-      }
+      @include views-row;
     }
   }
 }
@@ -94,17 +112,19 @@
   @include clearfix;
  > .view-content {
    text-align: center;
+   margin-top: 8px;
    > .views-row {
-     margin: 3px;
+     padding: 0.3125%;
      position: relative;
      transition: 0.3s;
-     height: 310px;
+     height: 325px;
      width: 100%;
      overflow: hidden;
      > .panel-display {
        width: 100%;
        height: 100%;
        position: relative;
+       transition: 0.3s;
        > .panel-col-first {
          width: 100%;
          position: absolute;
@@ -112,6 +132,90 @@
            > .views-field-field-pictures {
              > .field-content {
                position: relative;
+               > a {
+                 > img {
+                   margin-top: 4px;
+                   background: #fff;
+                   position: absolute;
+                 }
+               }
+             }
+           }
+         }
+       }
+       > .panel-col-last {
+         margin-top: 4px;
+         width: 32.49475891%;
+         position: absolute;
+         height: 100%;
+         overflow: hidden;
+         cursor: default;
+         > .inside {
+           position: relative;
+           height: calc(100% - 8px);
+           border: 1px solid rgba(0, 0, 0, 0.07);
+           background: rgba(0, 0, 0, 0.03);
+           transition: 0.3s;
+           @include display-flex;
+           align-content: center;
+           font-style: oblique;
+           @include flex-flow;
+           > .views-field-title {
+             width:100%;
+             padding: 0 15px 0 15px;
+             font-size: 30px;
+             color: rgba(0, 0, 0, 0.45);
+             transition: 0.3s;
+           }
+           > .views-field-body-value {
+             width: 100%;
+             height: 0;
+             padding: 0 10px 0 10px;
+             overflow: hidden;
+             font-size: 15px;
+             transition: 0.1s;
+             @include display-flex;
+             > .field-content {
+               margin: auto;
+               > p {
+                 margin: 0;
+               }
+             }
+           }
+           > .views-field-field-cost {
+             width: 100%;
+             padding: 0 15px 0 15px;
+             font-size: 30px;
+             color: rgba(255, 94, 94, 1);
+             transition: 0.3s;
+           }
+         }
+       }
+     }
+     &:hover {
+       transition: 0.3s;
+       background: rgba(0, 0, 0, 0.04);
+       box-shadow: 0px 0px 3px 1px rgba(111, 111, 111, 0.41);
+       > .panel-display {
+         > .panel-col-last {
+           > .inside {
+             transition: 0.3s;
+             background: rgba(0, 0, 0, 0.01);
+             border: 1px solid rgba(0, 0, 0, 0.42);
+             > .views-field-title {
+               transition: 0.3s;
+               text-shadow: 0px 0px 2px #000;
+               color: rgba(0, 0, 0, 0.69);
+             }
+             > .views-field-body-value {
+               transition: 0.3s;
+               height: 120px;
+               margin: 35px 0 35px 0;
+             }
+             > .views-field-field-cost {
+               transition: 0.3s;
+               text-shadow: 0px 0px 1px #FF0000;
+               color: #FF0000;
              }
            }
          }
@@ -126,14 +230,16 @@
             > .field-content {
               > :first-child {
                 > img {
+                  margin-left: 0.628930818%;
+                  margin-right: 0.314465409%;
                   left: 0;
-                  position: absolute;
                 }
               }
               > :last-child {
                 > img {
+                  margin-right: 0.628930818%;
+                  margin-left: 0.314465409%;
                   right: 0;
-                  position: absolute;
                 }
               }
             }
@@ -141,11 +247,9 @@
         }
       }
       > .panel-col-last {
-        margin-left: 32%;
-        width: 34%;
-        position: absolute;
-        height: auto;
-        overflow: hidden;
+        margin-left: 33.752620545%;
+        margin-right: 0.314465409%;
+        left: 0;
       }
     }
    }
@@ -155,17 +259,18 @@
          > .inside {
            > .views-field-field-pictures {
              > .field-content {
-               margin-left: 34%;
                > :first-child {
                  > img {
+                   margin-left: 33.752620545%;
+                   margin-right: 0.314465409%;
                    left: 0;
-                   position: absolute;
                  }
                }
                > :last-child {
                  > img {
+                   margin-right: 0.628930818%;
+                   margin-left: 0.314465409%;
                    right: 0;
-                   position: absolute;
                  }
                }
              }
@@ -173,10 +278,8 @@
          }
        }
        > .panel-col-last {
-         width: 34%;
-         position: absolute;
-         height: auto;
-         overflow: hidden;
+         margin-left: 0.628930818%;
+         margin-right: 0.314465409%;
        }
      }
    }
@@ -188,15 +291,16 @@
              > .field-content {
                > :first-child {
                  > img {
+                   margin-left: 0.628930818%;
+                   margin-right: 0.314465409%;
                    left: 0;
-                   position: absolute;
                  }
                }
                > :last-child {
                  > img {
-                   right: 0;
-                   margin-right: 34%;
-                   position: absolute;
+                   margin-left: 33.752620545%;
+                   margin-right: 0.314465409%;
+                   left: 0;
                  }
                }
              }
@@ -204,11 +308,9 @@
          }
        }
        > .panel-col-last {
-         width: 34%;
+         margin-left: 0.314465409%;
+         margin-right: 0.628930818%;
          right: 0;
-         position: absolute;
-         height: auto;
-         overflow: hidden;
        }
      }
    }

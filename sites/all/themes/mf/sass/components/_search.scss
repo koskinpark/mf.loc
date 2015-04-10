@@ -1,6 +1,16 @@
+
+.panel-2col .panel-col-first .inside {
+  margin: 0;
+}
+.panel-2col .panel-col-last .inside {
+  margin: 0;
+}
+
 .pane-search-titles-panel-pane-1 {
   > .view-id-search_titles {
     > .view-header {
+      padding: 24px 0 24px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
       @include pane-title;
     }
     @include random-product-search-pane;

@@ -22,6 +22,7 @@ function views_for_search_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['hide_admin_links'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -79,6 +80,8 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['fields']['field_cost']['id'] = 'field_cost';
   $handler->display->display_options['fields']['field_cost']['table'] = 'search_api_index_title_index';
   $handler->display->display_options['fields']['field_cost']['field'] = 'field_cost';
+  $handler->display->display_options['fields']['field_cost']['label'] = '';
+  $handler->display->display_options['fields']['field_cost']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cost']['settings'] = array(
     'thousand_separator' => ' ',
     'prefix_suffix' => 1,
@@ -110,6 +113,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 0;
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['link_to_view'] = '0';
   $export['search_titles'] = $view;
 
   $view = new view();

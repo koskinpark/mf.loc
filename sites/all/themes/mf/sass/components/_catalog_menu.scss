@@ -41,7 +41,7 @@ $height_of_image:320px;
           padding-left: 15px;
           padding-right: 15px;
           width: calc(100% + 2px);
-          display:flex;
+          @include display-flex;
           border-bottom: 1px solid rgba(0, 0, 0, 0.26);
          &:hover {
            background: #f4f4f4;
