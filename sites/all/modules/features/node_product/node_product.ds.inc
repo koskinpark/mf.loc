@@ -24,7 +24,7 @@ function node_product_ds_field_settings_info() {
       'formatter_settings' => array(
         'show_title' => 0,
         'title_wrapper' => '',
-        'ctools' => 'a:3:{s:4:"conf";a:10:{s:5:"label";s:6:"hidden";s:9:"formatter";s:5:"image";s:11:"delta_limit";s:1:"0";s:12:"delta_offset";s:1:"0";s:14:"delta_reversed";i:0;s:18:"formatter_settings";a:2:{s:11:"image_style";s:27:"small_pictures_of_node_page";s:10:"image_link";s:0:"";}s:7:"context";s:25:"argument_entity_id:node_1";s:14:"override_title";i:0;s:19:"override_title_text";s:0:"";s:22:"override_title_heading";s:2:"h2";}s:4:"type";s:12:"entity_field";s:7:"subtype";s:19:"node:field_pictures";}',
+        'ctools' => 'a:3:{s:4:"conf";a:10:{s:5:"label";s:6:"hidden";s:9:"formatter";s:55:"lightbox2__lightbox__small_pictures_of_node_page__large";s:11:"delta_limit";s:1:"0";s:12:"delta_offset";s:1:"0";s:14:"delta_reversed";i:0;s:18:"formatter_settings";a:2:{s:11:"image_style";s:27:"small_pictures_of_node_page";s:10:"image_link";s:0:"";}s:7:"context";s:25:"argument_entity_id:node_1";s:14:"override_title";i:0;s:19:"override_title_text";s:0:"";s:22:"override_title_heading";s:2:"h2";}s:4:"type";s:12:"entity_field";s:7:"subtype";s:19:"node:field_pictures";}',
         'load_terms' => 0,
       ),
     ),
@@ -32,11 +32,6 @@ function node_product_ds_field_settings_info() {
       'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
-    ),
-    'post_date' => array(
-      'weight' => '4',
-      'label' => 'hidden',
-      'format' => 'ds_post_date_short',
     ),
   );
   $export['node|product|full'] = $ds_fieldsetting;
@@ -100,10 +95,9 @@ function node_product_ds_layout_settings_info() {
         2 => 'title',
         3 => 'body',
         4 => 'field_cost',
-        5 => 'post_date',
-        6 => 'group_image_group',
-        7 => 'one_more_picture',
-        8 => 'field_pictures',
+        5 => 'group_image_group',
+        6 => 'one_more_picture',
+        7 => 'field_pictures',
       ),
     ),
     'fields' => array(
@@ -112,7 +106,6 @@ function node_product_ds_layout_settings_info() {
       'title' => 'ds_content',
       'body' => 'ds_content',
       'field_cost' => 'ds_content',
-      'post_date' => 'ds_content',
       'group_image_group' => 'ds_content',
       'one_more_picture' => 'ds_content',
       'field_pictures' => 'ds_content',

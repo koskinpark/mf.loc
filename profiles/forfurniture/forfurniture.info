@@ -65,6 +65,12 @@ dependencies[] = search_api_facetapi
 dependencies[] = search_api_views
 dependencies[] = current_search
 dependencies[] = facetapi
+dependencies[] = fontyourface
+dependencies[] = fontyourface_ui
+dependencies[] = fontdeck
+dependencies[] = fonts_com
+dependencies[] = lightbox2
+dependencies[] = node_gallery
 
 ;custom
 dependencies[] = layout_sample
@@ -89,6 +95,7 @@ dependencies[] = block_of_random_products_on_terms_page
 dependencies[] = f_logotype_of_the_site
 dependencies[] = views_for_search
 dependencies[] = see_more_homepage
+
 
 ; Information added by Drupal.org packaging script on 2014-11-19
 version = "7.34"

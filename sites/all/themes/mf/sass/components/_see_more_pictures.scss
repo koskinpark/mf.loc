@@ -1,6 +1,7 @@
 .pane-see-more-product-homepage-panel-pane-1 {
   height: 200px;
   overflow: hidden;
+  transition: 0.2s;
   > .see-more {
     text-align: center;
     width: 150px;
@@ -60,4 +61,9 @@
 .see-more-visible {
   height: 3360px;
   transition:1s;
+  > .see-more {
+    > img {
+      @include transform-rotate(180deg);
+    }
+  }
 }

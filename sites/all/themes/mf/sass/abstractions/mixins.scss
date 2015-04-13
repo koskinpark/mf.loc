@@ -9,6 +9,15 @@
   }
 }
 
+@mixin transform-rotate($arg) {
+  -webkit-transform: rotate($arg);
+  -moz-transform: rotate($arg);
+  -o-transform: rotate($arg);
+  -ms-transform: rotate($arg);
+  transform: rotate($arg);
+
+}
+
 @mixin display-flex {
   display: -webkit-box;
   display: -moz-box;
