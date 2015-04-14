@@ -12,19 +12,18 @@ body {
   margin: 0 auto;
   width: 960px;
   height: auto;
-  font-family: "Miller Banner",Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif;
   font-size: 16px;
   color: #3D3D3D; }
 
-/* line 16, ../sass/base/_template.scss */
+/* line 15, ../sass/base/_template.scss */
 #header-wrap {
   background: #ffffff; }
 
-/* line 20, ../sass/base/_template.scss */
+/* line 19, ../sass/base/_template.scss */
 #content-wrap {
   background: #ffffff; }
 
-/* line 24, ../sass/base/_template.scss */
+/* line 23, ../sass/base/_template.scss */
 #footer-wrap {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   background: #ffffff; }
@@ -279,62 +278,57 @@ ul.nice-menu li {
       clear: both;
       display: table-cell;
       vertical-align: bottom; }
-      /* line 42, ../sass/components/_node_product.scss */
-      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items {
+      /* line 43, ../sass/components/_node_product.scss */
+      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items {
         position: relative; }
-        /* line 44, ../sass/components/_node_product.scss */
-        .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item {
+        /* line 45, ../sass/components/_node_product.scss */
+        .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item {
           padding-top: 2px;
           padding-right: 2px;
           width: 80px;
           height: 80px; }
-          /* line 46, ../sass/components/_node_product.scss */
-          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:last-child > img {
+          /* line 48, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:last-child > a > img {
             position: absolute;
             bottom: 0;
             left: 70px; }
-          /* line 53, ../sass/components/_node_product.scss */
-          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:nth-last-child(2) > img {
+          /* line 57, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:nth-last-child(2) > a > img {
             position: absolute;
             bottom: 68px;
             left: 22px; }
-          /* line 60, ../sass/components/_node_product.scss */
-          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:nth-last-child(3) > img {
+          /* line 66, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:nth-last-child(3) > a > img {
             position: absolute;
             bottom: 149px;
             left: -2px; }
-          /* line 67, ../sass/components/_node_product.scss */
-          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item:nth-last-child(4) > img {
+          /* line 75, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:nth-last-child(4) > a > img {
             position: absolute;
             bottom: 233px;
             left: 0; }
-          /* line 77, ../sass/components/_node_product.scss */
-          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item img {
+          /* line 87, ../sass/components/_node_product.scss */
+          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item > a > img {
             cursor: pointer;
             border: 2px solid #fff;
             border-radius: 40px; }
-          /* line 82, ../sass/components/_node_product.scss */
-          .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item .field__items > .field__item img:hover {
-            opacity: 0.9;
-            transition: 0.25s;
-            border: 2px solid rgba(0, 0, 0, 0.1); }
-    /* line 94, ../sass/components/_node_product.scss */
+            /* line 91, ../sass/components/_node_product.scss */
+            .pane-page-content .node--product .group-product-image .group-image-group > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item > a > img:hover {
+              opacity: 0.9;
+              transition: 0.25s;
+              border: 2px solid rgba(0, 0, 0, 0.1); }
+    /* line 104, ../sass/components/_node_product.scss */
     .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures {
       display: table-cell; }
-      /* line 96, ../sass/components/_node_product.scss */
-      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures img {
+      /* line 109, ../sass/components/_node_product.scss */
+      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures > .field__items > .field__item > a > img {
         cursor: pointer;
         border: 2px solid rgba(0, 0, 0, 0.02);
         border-radius: 280px; }
-      /* line 101, ../sass/components/_node_product.scss */
-      .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures img:hover {
-        border: 2px solid rgba(255, 255, 255, 0.1);
-        transition: 0.25s; }
-    /* line 107, ../sass/components/_node_product.scss */
-    .pane-page-content .node--product .group-product-image .field--name-post-date {
-      text-align: right;
-      font-style: oblique;
-      font-size: 15px; }
+        /* line 113, ../sass/components/_node_product.scss */
+        .pane-page-content .node--product .group-product-image .group-image-group > .field--name-field-pictures > .field__items > .field__item > a > img:hover {
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          transition: 0.25s; }
 
 /* line 2, ../sass/abstractions/mixins.scss */
 .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product:before, .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product:after {

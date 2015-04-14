@@ -598,6 +598,7 @@ function image_field_formatter_view($entity_type, $entity, $field, $instance, $l
  */
 function theme_image_formatter($variables) {
   $item = $variables['item'];
+
   $image = array(
     'path' => $item['uri'],
   );
@@ -637,6 +638,5 @@ function theme_image_formatter($variables) {
     $options['html'] = TRUE;
     $output = l($output, $path, $options);
   }
-
   return $output;
 }

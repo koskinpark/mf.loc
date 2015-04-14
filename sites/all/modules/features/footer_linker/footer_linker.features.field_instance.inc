@@ -24,12 +24,6 @@ function footer_linker_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
-      'node_gallery_node_thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',

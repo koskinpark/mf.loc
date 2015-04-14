@@ -39,75 +39,86 @@
           vertical-align: bottom;
           > .field__items {
             > .field__item {
-              .field__items {
-                position: relative;
-                > .field__item {
-                  &:last-child {
-                    > img {
-                      position: absolute;
-                      bottom: 0;
-                      left: 70px;
+              > .field--name-field-pictures {
+                > .field__items {
+                  position: relative;
+                  > .field__item {
+                    &:last-child {
+                      > a {
+                        > img {
+                          position: absolute;
+                          bottom: 0;
+                          left: 70px;
+                        }
+                      }
                     }
-                  }
-                  &:nth-last-child(2) {
-                    > img {
-                      position: absolute;
-                      bottom: 68px;
-                      left: 22px;
+                    &:nth-last-child(2) {
+                      > a {
+                        > img {
+                          position: absolute;
+                          bottom: 68px;
+                          left: 22px;
+                        }
+                      }
                     }
-                  }
-                  &:nth-last-child(3) {
-                    > img {
-                      position: absolute;
-                      bottom: 149px;
-                      left: -2px;
+                    &:nth-last-child(3) {
+                      > a {
+                        > img {
+                          position: absolute;
+                          bottom: 149px;
+                          left: -2px;
+                        }
+                      }
                     }
-                  }
-                  &:nth-last-child(4) {
-                    > img {
-                      position: absolute;
-                      bottom: 233px;
-                      left: 0;
+                    &:nth-last-child(4) {
+                      > a {
+                        > img {
+                          position: absolute;
+                          bottom: 233px;
+                          left: 0;
+                        }
+                      }
                     }
-                  }
-                  padding-top: 2px;
-                  padding-right: 2px;
-                  width: 80px;
-                  height: 80px;
-                  img {
-                    cursor: pointer;
-                    border: 2px solid #fff;
-                    border-radius: 40px;
-                  }
-                  img:hover {
-                    opacity: 0.9;
-                    transition: 0.25s;
-                    border: 2px solid rgba(0, 0, 0, 0.1);
+                    padding-top: 2px;
+                    padding-right: 2px;
+                    width: 80px;
+                    height: 80px;
+                    > a {
+                      > img {
+                        cursor: pointer;
+                        border: 2px solid #fff;
+                        border-radius: 40px;
+                        &:hover {
+                          opacity: 0.9;
+                          transition: 0.25s;
+                          border: 2px solid rgba(0, 0, 0, 0.1);
+                        }
+                      }
+                    }
                   }
                 }
               }
-
             }
           }
-
         }
         > .field--name-field-pictures {
           display: table-cell;
-          img {
-            cursor: pointer;
-            border: 2px solid rgba(0, 0, 0, 0.02);
-            border-radius: 280px;
-          }
-          img:hover {
-            border: 2px solid rgba(255, 255, 255, 0.10);
-            transition: 0.25s;
+          > .field__items {
+            > .field__item {
+              > a {
+                > img {
+                  cursor: pointer;
+                  border: 2px solid rgba(0, 0, 0, 0.02);
+                  border-radius: 280px;
+                  &:hover {
+                    border: 2px solid rgba(255, 255, 255, 0.10);
+                    transition: 0.25s;
+                  }
+                }
+              }
+            }
           }
         }
-      }
-      .field--name-post-date {
-        text-align: right;
-        font-style: oblique;
-        font-size: 15px;
       }
     }
   }

@@ -90,8 +90,7 @@ function f_ct_product_field_group_info() {
     'label' => 'Other information about product',
     'weight' => '1',
     'children' => array(
-      0 => 'post_date',
-      1 => 'group_image_group',
+      0 => 'group_image_group',
     ),
     'format_type' => 'div',
     'format_settings' => array(

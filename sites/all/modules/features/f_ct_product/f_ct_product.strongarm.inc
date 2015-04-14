@@ -55,6 +55,9 @@ function f_ct_product_strongarm() {
       'logotype' => array(
         'custom_settings' => FALSE,
       ),
+      'colorbox' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

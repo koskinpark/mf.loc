@@ -69,13 +69,14 @@ dependencies[] = fontyourface
 dependencies[] = fontyourface_ui
 dependencies[] = fontdeck
 dependencies[] = fonts_com
-dependencies[] = lightbox2
-dependencies[] = node_gallery
+dependencies[] = colorbox
+dependencies[] = colorbox_node
 
 ;custom
 dependencies[] = layout_sample
 dependencies[] = pane_for_logotype
 dependencies[] = mf_search
+dependencies[] = field_format_link_to_colorbox
 
 ;features
 dependencies[] = f_ct_product
@@ -95,6 +96,7 @@ dependencies[] = block_of_random_products_on_terms_page
 dependencies[] = f_logotype_of_the_site
 dependencies[] = views_for_search
 dependencies[] = see_more_homepage
+dependencies[] = colorbox_settings
 
 
 ; Information added by Drupal.org packaging script on 2014-11-19

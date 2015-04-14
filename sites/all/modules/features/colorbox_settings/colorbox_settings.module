@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Colorbox settings feature.
+ */
+
+include_once 'colorbox_settings.features.inc';

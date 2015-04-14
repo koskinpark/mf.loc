@@ -12,6 +12,7 @@ features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[ds_field_settings][] = node|product|full
 features[ds_fields][] = one_more_picture
+features[ds_layout_settings][] = file|image|full
 features[ds_layout_settings][] = node|product|full
 features[features_api][] = api:2
 features[field_group][] = group_description_product|node|product|default

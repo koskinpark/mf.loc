@@ -37,12 +37,6 @@ function footer_panel_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 1,
       ),
-      'node_gallery_node_thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -107,12 +101,6 @@ function footer_panel_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 0,
-      ),
-      'node_gallery_node_thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
         'weight' => 0,
       ),
     ),

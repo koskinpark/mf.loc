@@ -2,21 +2,297 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd49590d-91f6-4fbd-ac09-7a3dc114a193" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/11032931_1378913842434405_576947450_n.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/11032931_1378913842434405_576947450_n_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/185344_480-320-960-640-360-540_1440x900.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/185344_480-320-960-640-360-540_1440x900_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/240-320-480-360-640-540-960-800-1280-768.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/240-320-480-360-640-540-960-800-1280-768_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/497043446_210.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/497043446_210_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/4_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/5134c1187c30d6163610e26e6b85e797.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/5134c1187c30d6163610e26e6b85e797_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/5815562_65075nothumb500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/5815562_65075nothumb500_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/960-640-360-480-540-1080.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/960-640-360-480-540-1080_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/960-640-360-480-540-1080_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/960-640-360-480-540-1080_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DSC_5666_small_table__18179__38683.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DSC_5666_small_table__18179__38683_0.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Drawing-Furniture-series-by-Jinil-Park_dezeen_1bann-150x150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Drawing-Furniture-series-by-Jinil-Park_dezeen_1bann-150x150_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pheasant11-504505_960x480.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pheasant11-504505_960x480_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT11032931_1378913842434405_576947450_n.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT185344_480-320-960-640-360-540_1440x900.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT240-320-480-360-640-540-960-800-1280-768.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT497043446_210.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT5134c1187c30d6163610e26e6b85e797.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT5815562_65075nothumb500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUT960-640-360-480-540-1080.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTDSC_5666_small_table__18179__38683.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTDrawing-Furniture-series-by-Jinil-Park_dezeen_1bann-150x150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTPheasant11-504505_960x480.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTScreenshot from 2015-03-25 18:05:00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTadidas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTbm_1602_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTcell-za-table3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTcombo11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTfiesta_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUThabitaciones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUThand-drown-logo1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimage_40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_4YiZg8.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_4Zu58Y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_5eEe88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_6pRdqO.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_7qX60n.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_8dWzTe.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_BrWfQk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_CjWJ1r.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_HhKTFK.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_JG7hog.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_LDJDyT.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_Q4foS3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_V0Vlal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_YROysB.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_bcMWZr.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_egpoz0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_f7iFcM.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_izApnR.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_lQhmTG.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_rCzinz.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_wOTcZM.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_wtaFnw.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimagefield_zjOl7h.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTimg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTmantel-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTmebel-v-bolgarii-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTskatert7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTskaterti.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SP_JSON_DIR_OUTсервиз.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshot from 2015-03-25 18:05:00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshot from 2015-03-25 18:05:00_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshot from 2015-03-25 18:05:00_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshot from 2015-03-25 18:05:00_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adidas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/adidas_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bm_1602_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bm_1602_01_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cell-za-table3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cell-za-table3_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cell-za-table3_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cell-za-table3_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/combo11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/combo11_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fiesta_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fiesta_b_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fiesta_b_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fiesta_b_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/habitaciones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/habitaciones_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hand-drown-logo1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hand-drown-logo1_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image_40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image_40_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_4YiZg8.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_4YiZg8_0.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_4Zu58Y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_4Zu58Y_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_5eEe88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_5eEe88_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_6pRdqO.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_6pRdqO_0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_7qX60n.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_7qX60n_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_8dWzTe.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_8dWzTe_0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_BrWfQk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_BrWfQk_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_CjWJ1r.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_CjWJ1r_0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_HhKTFK.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_HhKTFK_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_JG7hog.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_JG7hog_0.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_LDJDyT.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_LDJDyT_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_Q4foS3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_Q4foS3_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_V0Vlal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_V0Vlal_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_YROysB.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_YROysB_0.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_bcMWZr.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_bcMWZr_0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_egpoz0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_egpoz0_0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_f7iFcM.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_f7iFcM_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_izApnR.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_izApnR_0.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_lQhmTG.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_lQhmTG_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_rCzinz.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_rCzinz_0.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_wOTcZM.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_wOTcZM_0.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_wtaFnw.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_wtaFnw_0.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_zjOl7h.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/imagefield_zjOl7h_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mantel-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mantel-7_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mebel-v-bolgarii-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mebel-v-bolgarii-4_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/TODO.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/css/lightbox-rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/css/lightbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/css/lightbox_alt.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/css/lightbox_lite-rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/css/lightbox_lite.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/brokenimage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/close_hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/close_lite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/closelabel.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/contract.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/expand.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/loading_lite.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/next.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/next_alt.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/next_hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/nextlabel.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/pause.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/prev.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/prev_alt.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/prev_hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/images/prevlabel.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/auto_image_handling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/builder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/effects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/lightbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/lightbox2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/lightbox_lite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/lightbox_modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/lightbox_video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/js/scriptaculous.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2-insert-image.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2.admin.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2.formatter.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2.insert.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2.views.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/lightbox2_handler_field_lightbox2.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/lightbox2/page--node--lightbox2.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/UPGRADING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/configure.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/content-type-settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/create-gallery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/gallery-folders.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/getting-help.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/getting-started.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/global-settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/image-sizes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/filefield_paths.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/gallery-content.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/global-settings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/image-content.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/image-formatters.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/link-cover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/ng_jcarousel.preview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/nga.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/node_gallery_slideshow_example.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/pathaliases.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/relationship-list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/images/relationship-settings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/include-slideshows.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/jcarousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/jquery-update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/link-cover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/link-next-image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/node_gallery.help.ini.needs_update" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/pathaliases.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/recipes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/relationship-settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/restrict-access.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/user-profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/help/views-integration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/includes/views/node_gallery.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/includes/views/node_gallery_api.views.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/includes/views/node_gallery_api_views_handler_comments_count.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/includes/views/node_gallery_api_views_handler_item_date.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/includes/views/node_gallery_api_views_handler_item_navigator.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/js/ng_keyboard_shortcuts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/js/ng_manage_images.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/js/ng_plupload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.admin.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.pages.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/node_gallery_api.rules.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/plugins/entityreference/behavior/NodeGalleryBehaviorHandler.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/plugins/entityreference/behavior/node_gallery_behavior.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/plugins/entityreference/selection/NodeGallerySelectionHandler.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/plugins/entityreference/selection/node_gallery.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/theme/node--node-gallery-item-type--node-gallery-thumbnail.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/theme/node-gallery-api-item-navigator.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/node_gallery/theme/theme.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/skatert7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/skatert7_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/skaterti.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/skaterti_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/сервиз.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/сервиз_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/сервиз_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/сервиз_2.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.uuid_term.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.uuid_term.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_instance.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_instance.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.uuid_node.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.uuid_node.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.field_group.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.field_group.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.strongarm.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.uuid_node.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.uuid_node.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.field_instance.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.field_instance.inc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.field_instance.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.field_instance.inc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.uuid_node.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.uuid_node.inc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" afterPath="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" afterPath="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/image/image.field.inc" afterPath="$PROJECT_DIR$/modules/image/image.field.inc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.ds.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.ds.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.views_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.views_default.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="html.iws" />
@@ -42,12 +318,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mixins.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss">
+      <file leaf-file-name="field_format_link_to_colorbox.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox/field_format_link_to_colorbox.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.489796" vertical-offset="0" max-vertical-offset="5400">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="22" />
-              <folding />
+            <state vertical-scroll-proportion="-16.0" vertical-offset="711" max-vertical-offset="1455">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding>
+                <marker date="1428999509187" expanded="true" signature="1231:1585" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,58 +333,38 @@
       <file leaf-file-name="forfurniture.info" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profiles/forfurniture/forfurniture.info">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38540334" vertical-offset="839" max-vertical-offset="1620">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.40460947" vertical-offset="854" max-vertical-offset="1650">
+              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_homepage_background.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss">
+      <file leaf-file-name="colorbox_node.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox_node/colorbox_node.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150">
-              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4080">
+              <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_see_more_pictures.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss">
+      <file leaf-file-name="image.field.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/image/image.field.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1110">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state vertical-scroll-proportion="-44.125" vertical-offset="7626" max-vertical-offset="9675">
+              <caret line="582" column="0" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mf.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/js/mf.js">
+      <file leaf-file-name="colorbox.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox/colorbox.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1575">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_template.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="465">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_to_top_btn.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_to_top_btn.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="495">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state vertical-scroll-proportion="-75.375" vertical-offset="5466" max-vertical-offset="7875">
+              <caret line="488" column="0" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,10 +378,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.info" />
-        <option value="$PROJECT_DIR$/profiles/forfurniture/forfurniture.profile" />
-        <option value="$PROJECT_DIR$/profiles/forfurniture/forfurniture.install" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/config.rb" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_catalog_menu" />
         <option value="$PROJECT_DIR$/sites/all/libraries/jquery.cycle/jquery.cycle.js" />
@@ -132,7 +386,6 @@
         <option value="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.field_base.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.inc" />
-        <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_slideshow_on_mainpage.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_footer_inform.scss" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/pane_for_logo/pane_for_logo.inc" />
@@ -170,6 +423,11 @@
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/mf.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" />
+        <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox/field_format_link_to_colorbox.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/contrib/colorbox/colorbox.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox/field_format_link_to_colorbox.module" />
+        <option value="$PROJECT_DIR$/modules/image/image.field.inc" />
         <option value="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" />
       </list>
     </option>
@@ -179,10 +437,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="y" value="-14" />
-    <option name="width" value="1395" />
-    <option name="height" value="924" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1375" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -207,6 +465,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,11 +556,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mf" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -324,6 +579,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,7 +620,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,14 +631,15 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="LayoutCode.rearrangeEntriesSCSS" value="false" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox" />
+      <recent name="$PROJECT_DIR$/sites/all/modules/custom/pane_for_logotype" />
       <recent name="$PROJECT_DIR$/sites/all/themes/mf/sass/components" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/search" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/layout_sample" />
-      <recent name="$PROJECT_DIR$/sites/all/themes/mf/js" />
-      <recent name="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/sites/all/modules/contrib/ctools/plugins" />
@@ -402,9 +661,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -412,6 +668,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -430,28 +689,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-14" width="1395" height="924" extended-state="6" />
+    <frame x="65" y="24" width="1375" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57425743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25494674" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24945454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25494674" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25742576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -478,74 +737,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/devel/devel.drush.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3209457" vertical-offset="2558" max-vertical-offset="3150">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/devel/devel.rules.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/devel/devel.pages.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9881757" vertical-offset="585" max-vertical-offset="4560">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/devel/devel_node_access.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7601351" vertical-offset="450" max-vertical-offset="20880">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/pane_for_logotype/plugins/content_types/pane_for_logo.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="757">
-          <caret line="0" column="57" selection-start-line="0" selection-start-column="57" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.458333" vertical-offset="36562" max-vertical-offset="124830">
-          <caret line="2457" column="9" selection-start-line="2457" selection-start-column="9" selection-end-line="2457" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/uuid_features/uuid_features.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/uuid_features/uuid_features.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="7560">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/uuid_features/uuid_features.install">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
@@ -681,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="435">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34535104" vertical-offset="358" max-vertical-offset="885">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,15 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3653846" vertical-offset="470" max-vertical-offset="1185">
           <caret line="43" column="31" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33206832" vertical-offset="410" max-vertical-offset="1785">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,6 +907,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="345">
           <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/mf_search/mf_search.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.099075295" vertical-offset="0" max-vertical-offset="757">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_random_picture.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="255">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_serach_box.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1690885" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_taxonomy_page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.336856" vertical-offset="0" max-vertical-offset="1695">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_slideshow_on_mainpage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01981506" vertical-offset="0" max-vertical-offset="757">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="5400">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1110">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/panels/layouts/mf/mf.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37648612" vertical-offset="0" max-vertical-offset="757">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_to_top_btn.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="495">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="465">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/mf.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3841229" vertical-offset="0" max-vertical-offset="781">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/ctools/includes/plugins.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28494623" vertical-offset="11233" max-vertical-offset="13710">
+          <caret line="770" column="73" selection-start-line="770" selection-start-column="73" selection-end-line="770" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -741,90 +1015,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/mf_search/mf_search.module">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox/field_format_link_to_colorbox.info">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.099075295" vertical-offset="0" max-vertical-offset="757">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.03841229" vertical-offset="0" max-vertical-offset="781">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_random_picture.scss">
+    <entry file="file://$PROJECT_DIR$/modules/field/field.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="255">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state vertical-scroll-proportion="-11.446237" vertical-offset="8516" max-vertical-offset="18285">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_serach_box.scss">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox_node/colorbox_node.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1690885" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="5122" max-vertical-offset="6090">
+          <caret line="362" column="9" selection-start-line="362" selection-start-column="9" selection-end-line="362" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_taxonomy_page.scss">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.336856" vertical-offset="0" max-vertical-offset="1695">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.14795244" vertical-offset="1178" max-vertical-offset="1950">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_slideshow_on_mainpage.scss">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox_node/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01981506" vertical-offset="0" max-vertical-offset="757">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.489796" vertical-offset="0" max-vertical-offset="5400">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1110">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/panels/layouts/mf/mf.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37648612" vertical-offset="0" max-vertical-offset="757">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_to_top_btn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="495">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="465">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -837,18 +1063,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/mf.info">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox/field_format_link_to_colorbox.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3841229" vertical-offset="0" max-vertical-offset="781">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.0" vertical-offset="711" max-vertical-offset="1455">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <marker date="1428999509187" expanded="true" signature="1231:1585" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7567204" vertical-offset="119647" max-vertical-offset="124830">
+          <caret line="8020" column="7" selection-start-line="8020" selection-start-column="7" selection-end-line="8020" selection-end-column="7" />
+          <folding>
+            <marker date="1426677675638" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox_node/colorbox_node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4080">
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/image/image.field.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-44.125" vertical-offset="7626" max-vertical-offset="9675">
+          <caret line="582" column="0" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox/colorbox.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-75.375" vertical-offset="5466" max-vertical-offset="7875">
+          <caret line="488" column="0" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profiles/forfurniture/forfurniture.info">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38540334" vertical-offset="839" max-vertical-offset="1620">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.40460947" vertical-offset="854" max-vertical-offset="1650">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
           <folding />
         </state>
       </provider>
