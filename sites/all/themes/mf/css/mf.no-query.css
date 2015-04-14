@@ -16,14 +16,22 @@ body {
   color: #3D3D3D; }
 
 /* line 15, ../sass/base/_template.scss */
+a {
+  text-decoration: none; }
+
+/* line 19, ../sass/base/_template.scss */
+li {
+  list-style-type: none; }
+
+/* line 23, ../sass/base/_template.scss */
 #header-wrap {
   background: #ffffff; }
 
-/* line 19, ../sass/base/_template.scss */
+/* line 27, ../sass/base/_template.scss */
 #content-wrap {
   background: #ffffff; }
 
-/* line 23, ../sass/base/_template.scss */
+/* line 31, ../sass/base/_template.scss */
 #footer-wrap {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   background: #ffffff; }
@@ -107,6 +115,50 @@ ul.nice-menu-down li {
 ul.nice-menu li {
   border: none;
   background-color: unset; }
+
+/* line 2, ../sass/components/_colorbox_of_images.scss */
+.node--product--colorbox > .field--name-title {
+  z-index: 10;
+  width: 40%;
+  height: 50px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  /* line 15, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .field--name-title > .field__items > .field__item > h2 {
+    margin: 0; }
+/* line 21, ../sass/components/_colorbox_of_images.scss */
+.node--product--colorbox > .field--name-field-pictures {
+  width: 100%;
+  height: auto; }
+  /* line 24, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .field--name-field-pictures > .field__items {
+    width: 100%;
+    text-align: center; }
+    /* line 27, ../sass/components/_colorbox_of_images.scss */
+    .node--product--colorbox > .field--name-field-pictures > .field__items > .field__item {
+      display: none; }
+      /* line 29, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-field-pictures > .field__items > .field__item:first-child {
+        display: block; }
+/* line 41, ../sass/components/_colorbox_of_images.scss */
+.node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items {
+  text-align: center; }
+  /* line 43, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item {
+    display: inline-block; }
+
+/* line 53, ../sass/components/_colorbox_of_images.scss */
+.hidden {
+  display: none; }
+
+/* line 56, ../sass/components/_colorbox_of_images.scss */
+.visuallyhidden {
+  opacity: 0; }
 
 /* line 2, ../sass/components/_footer_inform.scss */
 .pane-footer-inform-about-site-panel-pane-1 {

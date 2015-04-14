@@ -1,9 +1,38 @@
 (function($){
 
-    Drupal.behaviors.pruductsimage = {
-        attach: function (context, settings) {
-            $(".group-image-group").click(function() {
 
+
+    Drupal.behaviors.colorboxmenu = {
+        attach: function (context, settings) {
+            $(".node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items", context).once("colorbox", function () {
+                $small_pictures = $(this);
+                $big_pictures = $(".node--product--colorbox > .field--name-field-pictures > .field__items");
+                $("> .field__item:first-child", $small_pictures).click(function () {
+                    if ($("> .field_item", $big_pictures).hasClass('hidden')) {
+                        $("> .field_item", $big_pictures).removeClass('hidden');
+                        setTimeout(function () {
+                            $("> .field_item", $big_pictures).removeClass('visuallyhidden');
+                        }, 20);
+                    } else {
+                        $("> .field_item:first-child", $big_pictures).addClass('visuallyhidden');
+                        $("> .field_item", $big_pictures).one('transitionend', function(e) {
+                            $("> .field_item:first-child", $big_pictures).addClass('hidden');
+                        });
+                    }
+                });
+                $("> .field__item:nth-child(2)", $small_pictures).click(function () {
+                    if ($("> .field_item", $big_pictures).hasClass('hidden')) {
+                        $("> .field_item", $big_pictures).removeClass('hidden');
+                        setTimeout(function () {
+                            $("> .field_item", $big_pictures).removeClass('visuallyhidden');
+                        }, 20);
+                    } else {
+                        $("> .field_item:nth-child(2)", $big_pictures).addClass('visuallyhidden');
+                        $("> .field_item", $big_pictures).one('transitionend', function(e) {
+                            $("> .field_item:nth-child(2)", $big_pictures).addClass('hidden');
+                        });
+                    }
+                });
             });
         }
     };
@@ -11,7 +40,7 @@
     Drupal.behaviors.totopbtn = {
         attach: function (context, settings) {
             $("body", context).once("to-top-btn", function () {
-                $("body").append("<span class='scroller'><img src='sites/all/themes/mf/images/to_top_btn.png'></span>");
+                $("body").append("<span class='scroller'><img src='/sites/all/themes/mf/images/to_top_btn.png'></span>");
                 if ($(this).scrollTop() == 0) {
                     $('.scroller').hide();
                 }

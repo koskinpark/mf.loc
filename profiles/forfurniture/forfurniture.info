@@ -71,6 +71,7 @@ dependencies[] = fontdeck
 dependencies[] = fonts_com
 dependencies[] = colorbox
 dependencies[] = colorbox_node
+dependencies[] = field_slideshow
 
 ;custom
 dependencies[] = layout_sample

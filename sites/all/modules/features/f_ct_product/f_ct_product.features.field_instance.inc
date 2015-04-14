@@ -21,7 +21,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 10,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -103,7 +103,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 9,
       ),
       'default' => array(
         'label' => 'above',
@@ -183,7 +183,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 11,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -283,10 +283,10 @@ function f_ct_product_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'mainpage_image_slideshow',
+          'image_style' => 'colorbox_images',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'default' => array(
         'label' => 'hidden',

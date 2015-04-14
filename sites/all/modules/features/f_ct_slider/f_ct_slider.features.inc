@@ -31,7 +31,7 @@ function f_ct_slider_image_default_styles() {
     'label' => 'Mainpage image slideshow',
     'effects' => array(
       6 => array(
-        'name' => 'image_resize',
+        'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 960,
           'height' => 480,
