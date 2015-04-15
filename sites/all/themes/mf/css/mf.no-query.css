@@ -134,31 +134,98 @@ ul.nice-menu li {
 /* line 21, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > .field--name-field-pictures {
   width: 100%;
-  height: auto; }
-  /* line 24, ../sass/components/_colorbox_of_images.scss */
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 10px; }
+  /* line 26, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .field--name-field-pictures > .field__items {
     width: 100%;
-    text-align: center; }
-    /* line 27, ../sass/components/_colorbox_of_images.scss */
+    display: flex;
+    height: 620px;
+    overflow: hidden; }
+    /* line 31, ../sass/components/_colorbox_of_images.scss */
     .node--product--colorbox > .field--name-field-pictures > .field__items > .field__item {
-      display: none; }
-      /* line 29, ../sass/components/_colorbox_of_images.scss */
-      .node--product--colorbox > .field--name-field-pictures > .field__items > .field__item:first-child {
-        display: block; }
-/* line 41, ../sass/components/_colorbox_of_images.scss */
-.node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items {
-  text-align: center; }
-  /* line 43, ../sass/components/_colorbox_of_images.scss */
-  .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item {
-    display: inline-block; }
+      display: none;
+      margin: auto;
+      overflow: hidden; }
+      /* line 35, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-field-pictures > .field__items > .field__item img {
+        cursor: url(/sites/all/themes/mf/images/cursors/cursor_loupe.png), pointer;
+        max-width: none; }
+/* line 46, ../sass/components/_colorbox_of_images.scss */
+.node--product--colorbox > .field--name-one-more-picture {
+  margin-top: 10px; }
+  /* line 51, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items {
+    float: right; }
+    /* line 53, ../sass/components/_colorbox_of_images.scss */
+    .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item {
+      width: 100px;
+      height: 60px;
+      margin: 5px;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer; }
+      /* line 60, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item img {
+        transition: 0.3s; }
+      /* line 63, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item .under-img {
+        transition: 0.3s;
+        width: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        height: 1px;
+        margin: 10px auto 0 auto; }
+      /* line 71, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover img {
+        transition: 0.3s;
+        opacity: 0.8; }
+      /* line 75, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover .under-img {
+        transition: 0.3s;
+        background: #000;
+        width: 50px; }
+/* line 87, ../sass/components/_colorbox_of_images.scss */
+.node--product--colorbox > .change-image {
+  display: flex;
+  width: 200px;
+  height: 80px; }
+  /* line 91, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .change-image :nth-child(n) {
+    height: 48px;
+    width: 48px;
+    margin: auto 5px auto 15px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer; }
+    /* line 98, ../sass/components/_colorbox_of_images.scss */
+    .node--product--colorbox > .change-image :nth-child(n):hover {
+      transition: 0.3s;
+      opacity: 1; }
+  /* line 103, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .change-image .increase {
+    background: url(/sites/all/themes/mf/images/size_increase.png); }
+  /* line 106, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .change-image .decrease {
+    background: url(/sites/all/themes/mf/images/size_decrease.png); }
 
-/* line 53, ../sass/components/_colorbox_of_images.scss */
+/* line 115, ../sass/components/_colorbox_of_images.scss */
 .hidden {
   display: none; }
 
-/* line 56, ../sass/components/_colorbox_of_images.scss */
+/* line 118, ../sass/components/_colorbox_of_images.scss */
+.visible {
+  display: block !important; }
+
+/* line 121, ../sass/components/_colorbox_of_images.scss */
 .visuallyhidden {
   opacity: 0; }
+
+/* line 125, ../sass/components/_colorbox_of_images.scss */
+.image-increase {
+  transition: 0.3s;
+  width: auto !important;
+  height: 1300px !important; }
 
 /* line 2, ../sass/components/_footer_inform.scss */
 .pane-footer-inform-about-site-panel-pane-1 {

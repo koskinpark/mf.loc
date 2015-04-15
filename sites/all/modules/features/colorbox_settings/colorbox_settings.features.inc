@@ -30,8 +30,8 @@ function colorbox_settings_image_default_styles() {
         'name' => 'image_scale',
         'data' => array(
           'width' => 960,
-          'height' => 480,
-          'upscale' => 1,
+          'height' => 620,
+          'upscale' => 0,
         ),
         'weight' => 1,
       ),
@@ -42,11 +42,12 @@ function colorbox_settings_image_default_styles() {
   $styles['small_pictures_in_colorbox'] = array(
     'label' => 'small pictures in colorbox',
     'effects' => array(
-      8 => array(
-        'name' => 'image_scale_and_crop',
+      9 => array(
+        'name' => 'image_scale',
         'data' => array(
-          'width' => 150,
-          'height' => 150,
+          'width' => 100,
+          'height' => 60,
+          'upscale' => 1,
         ),
         'weight' => 1,
       ),

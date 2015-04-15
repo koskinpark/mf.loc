@@ -4,35 +4,76 @@
 
     Drupal.behaviors.colorboxmenu = {
         attach: function (context, settings) {
-            $(".node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items", context).once("colorbox", function () {
-                $small_pictures = $(this);
-                $big_pictures = $(".node--product--colorbox > .field--name-field-pictures > .field__items");
-                $("> .field__item:first-child", $small_pictures).click(function () {
-                    if ($("> .field_item", $big_pictures).hasClass('hidden')) {
-                        $("> .field_item", $big_pictures).removeClass('hidden');
-                        setTimeout(function () {
-                            $("> .field_item", $big_pictures).removeClass('visuallyhidden');
-                        }, 20);
-                    } else {
-                        $("> .field_item:first-child", $big_pictures).addClass('visuallyhidden');
-                        $("> .field_item", $big_pictures).one('transitionend', function(e) {
-                            $("> .field_item:first-child", $big_pictures).addClass('hidden');
-                        });
-                    }
+
+            $('.node--product--colorbox', context).once('colorbox-imageslide', function() {
+                var $colorbox_node_wrapper = $(this);
+                $($colorbox_node_wrapper).append("<div class='change-image'><span class='increase'></span><span class='decrease'></span></div>");
+                var $big_pictures_items = $('> .field--name-field-pictures .field__items', $colorbox_node_wrapper);
+                var $big_pictures = $('.field__item', $big_pictures_items);
+                var $thumbnails = $('> .field--name-one-more-picture .field--name-field-pictures .field__item', $colorbox_node_wrapper);
+                $($thumbnails).append("<div class='under-img'></div>");
+
+                $default_width = $('img', $big_pictures[0]).attr('width');
+                $default_height = $('img', $big_pictures[0]).attr('height');
+                $factor = $default_width / $default_height;
+                $height = 2*$default_height;
+                $width = $height*$factor;
+                var $checkpoint = false;
+                $($big_pictures[0]).addClass('visible');
+                $('img', $big_pictures[0]).css({'width': $default_width, 'height': $default_height, 'transition': '1s'});
+                $thumbnails.each(function(i) {
+                    var $thumbnail = $(this);
+                    $thumbnail.click(function() {
+                        if ($checkpoint == false) {
+                            if (!$($big_pictures[i]).hasClass('visible')) {
+                                $checkpoint = true;
+                                $big_pictures_items.fadeOut(300, function () {
+                                    $big_pictures.removeClass('visible');
+                                    if ($('img', $big_pictures).hasClass('increased')) {
+                                        $('img', $big_pictures).removeClass('increased');
+                                    }
+                                    $($big_pictures[i]).addClass('visible');
+                                    $default_width = $('img', $big_pictures[i]).attr('width');
+                                    $default_height = $('img', $big_pictures[i]).attr('height');
+                                    $factor = $default_width / $default_height;
+                                    $height = 2*$default_height;
+                                    $width = $height*$factor;
+                                    $('img', $big_pictures[i]).css({'width': $default_width, 'height': $default_height, 'transition': '1s'});
+                                });
+                                $big_pictures_items.fadeIn(300, function () {
+                                    $checkpoint = false;
+                                });
+                            }
+                        }
+                    });
+                    $('img', $big_pictures[i]).click(function() {
+                        if (!$('img', $big_pictures[i]).hasClass('increased')) {
+                            $('img', $big_pictures[i]).addClass('increased');
+                            $('img', $big_pictures[i]).css({'width': $width, 'height': $height, 'transition': '1s'});
+                           // $('img', $big_pictures[i]).draggable();
+
+                        }
+                        else {
+                            $('img', $big_pictures[i]).removeClass('increased');
+                            $('img', $big_pictures[i]).css({'width': $default_width, 'height': $default_height, 'transition': '1s'});
+                        }
+                    });
+                    $("> .change-image .increase", $colorbox_node_wrapper).click(function() {
+                        if (!$('img', $big_pictures[i]).hasClass('increased')) {
+                            $('img', $big_pictures[i]).addClass('increased');
+                            $('img', $big_pictures[i]).css({'width': $width, 'height': $height, 'transition': '1s'});
+                        }
+                    });
+                    $("> .change-image .decrease", $colorbox_node_wrapper).click(function() {
+                        if ($('img', $big_pictures[i]).hasClass('increased')) {
+                            $('img', $big_pictures[i]   ).removeClass('increased');
+                            $('img', $big_pictures[i]).css({'width': $default_width, 'height': $default_height, 'transition': '1s'});
+                        }
+                    });
                 });
-                $("> .field__item:nth-child(2)", $small_pictures).click(function () {
-                    if ($("> .field_item", $big_pictures).hasClass('hidden')) {
-                        $("> .field_item", $big_pictures).removeClass('hidden');
-                        setTimeout(function () {
-                            $("> .field_item", $big_pictures).removeClass('visuallyhidden');
-                        }, 20);
-                    } else {
-                        $("> .field_item:nth-child(2)", $big_pictures).addClass('visuallyhidden');
-                        $("> .field_item", $big_pictures).one('transitionend', function(e) {
-                            $("> .field_item:nth-child(2)", $big_pictures).addClass('hidden');
-                        });
-                    }
-                });
+
+
+
             });
         }
     };
