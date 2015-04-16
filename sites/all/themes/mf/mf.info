@@ -18,9 +18,6 @@ stylesheets[all][] = css/mf.no-query.css
 ; ========================================
 scripts[] = js/mf.behaviors.js
 scripts[] = js/mf.js
-scripts[] = js/jquery-ui.js
-scripts[] = js/jquery-ui.min.js
-scripts[] = js/jquery.js
 
 ; ========================================
 ; Fonts

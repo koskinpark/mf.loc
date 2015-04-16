@@ -2,7 +2,7 @@
   > .field--name-title {
     z-index: 10;
     width: 40%;
-    height: 50px;
+    height: 30px;
     overflow: auto;
     margin: auto;
     position: absolute;
@@ -31,10 +31,10 @@
       > .field__item {
         display: none;
         margin: auto;
-        overflow:hidden;
         img {
           cursor: url(/sites/all/themes/mf/images/cursors/cursor_loupe.png),pointer;
           max-width: none;
+          position:relative;
         }
          &:first-child {
         }
@@ -88,7 +88,14 @@
     display: flex;
     width: 200px;
     height: 80px;
-    :nth-child(n) {
+    :first-child {
+      font-size: 20px;
+      margin: auto;
+      cursor: default;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.34);
+    }
+    :nth-child(n+2) {
       height: 48px;
       width: 48px;
       margin: auto 5px auto 15px;
@@ -126,4 +133,18 @@
   transition: 0.3s;
   width: auto !important;
   height: 1300px !important;
+}
+
+#cboxClose {
+  opacity: 0.2;
+  top: 0;
+  background-image: url(/sites/all/themes/mf/images/close_button.png);
+  height: 30px;
+  width: 30px;
+  right: 0;
+  bottom: unset;
+}
+
+#cboxLoadedContent {
+  margin-bottom:0;
 }
