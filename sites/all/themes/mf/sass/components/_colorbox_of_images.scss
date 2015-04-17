@@ -36,38 +36,52 @@
           max-width: none;
           position:relative;
         }
-         &:first-child {
+        &:first-child {
         }
-         &:nth-child(n+2) {
+        &:nth-child(n+2) {
         }
       }
     }
   }
   > .field--name-one-more-picture {
+    float: right;
     margin-top: 10px;
+    margin-right: 5px;
     > .field__items {
       > .field__item {
         > .field--name-field-pictures {
+          display: flex;
           > .field__items {
-            float: right;
+            margin: auto;
             > .field__item {
-              width: 100px;
-              height: 60px;
-              margin: 5px;
-              display: inline-block;
+              width: 67px;
+              height: 40px;
+              padding: 5px;
+              float: left;
+              display: flex;
+              flex-flow: row wrap;
               text-align: center;
               cursor: pointer;
+              transition: 0.3s;
+              position: relative;
               img {
+                margin: auto;
                 transition: 0.3s;
               }
               .under-img {
+                position: absolute;
                 transition: 0.3s;
                 width: 30px;
-                background: rgba(0, 0, 0, 0.20);
+                background: rgba(0, 0, 0, 0.2);
                 height: 1px;
                 margin: 10px auto 0 auto;
+                left: 23.5px;
+                bottom: -10px;
               }
               &:hover {
+                transition: 0.3s;
+                box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.37);
+                background: rgba(0, 0, 0, 0.04);
                 img {
                   transition: 0.3s;
                   opacity: 0.8;
@@ -76,6 +90,7 @@
                   transition: 0.3s;
                   background: #000;
                   width:50px;
+                  left: 13.5px;
                 }
               }
             }
@@ -85,6 +100,7 @@
     }
   }
   > .change-image {
+    float:left;
     display: flex;
     width: 200px;
     height: 80px;
@@ -147,4 +163,19 @@
 
 #cboxLoadedContent {
   margin-bottom:0;
+}
+
+.colorbox-info {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.33);
+  font-style: oblique;
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 5px;
+  letter-spacing: -0.5px;
+  cursor: default;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 5px;
 }

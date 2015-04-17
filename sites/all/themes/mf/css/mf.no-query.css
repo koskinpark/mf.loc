@@ -154,50 +154,70 @@ ul.nice-menu li {
         position: relative; }
 /* line 46, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > .field--name-one-more-picture {
-  margin-top: 10px; }
-  /* line 51, ../sass/components/_colorbox_of_images.scss */
-  .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items {
-    float: right; }
-    /* line 53, ../sass/components/_colorbox_of_images.scss */
-    .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item {
-      width: 100px;
-      height: 60px;
-      margin: 5px;
-      display: inline-block;
-      text-align: center;
-      cursor: pointer; }
-      /* line 60, ../sass/components/_colorbox_of_images.scss */
-      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item img {
-        transition: 0.3s; }
-      /* line 63, ../sass/components/_colorbox_of_images.scss */
-      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item .under-img {
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px; }
+  /* line 52, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures {
+    display: flex; }
+    /* line 54, ../sass/components/_colorbox_of_images.scss */
+    .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items {
+      margin: auto; }
+      /* line 56, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item {
+        width: 67px;
+        height: 40px;
+        padding: 5px;
+        float: left;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        cursor: pointer;
         transition: 0.3s;
-        width: 30px;
-        background: rgba(0, 0, 0, 0.2);
-        height: 1px;
-        margin: 10px auto 0 auto; }
-      /* line 71, ../sass/components/_colorbox_of_images.scss */
-      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover img {
-        transition: 0.3s;
-        opacity: 0.8; }
-      /* line 75, ../sass/components/_colorbox_of_images.scss */
-      .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover .under-img {
-        transition: 0.3s;
-        background: #000;
-        width: 50px; }
-/* line 87, ../sass/components/_colorbox_of_images.scss */
+        position: relative; }
+        /* line 67, ../sass/components/_colorbox_of_images.scss */
+        .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item img {
+          margin: auto;
+          transition: 0.3s; }
+        /* line 71, ../sass/components/_colorbox_of_images.scss */
+        .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item .under-img {
+          position: absolute;
+          transition: 0.3s;
+          width: 30px;
+          background: rgba(0, 0, 0, 0.2);
+          height: 1px;
+          margin: 10px auto 0 auto;
+          left: 23.5px;
+          bottom: -10px; }
+        /* line 81, ../sass/components/_colorbox_of_images.scss */
+        .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover {
+          transition: 0.3s;
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.37);
+          background: rgba(0, 0, 0, 0.04); }
+          /* line 85, ../sass/components/_colorbox_of_images.scss */
+          .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover img {
+            transition: 0.3s;
+            opacity: 0.8; }
+          /* line 89, ../sass/components/_colorbox_of_images.scss */
+          .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover .under-img {
+            transition: 0.3s;
+            background: #000;
+            width: 50px;
+            left: 13.5px; }
+/* line 102, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > .change-image {
+  float: left;
   display: flex;
   width: 200px;
   height: 80px; }
-  /* line 91, ../sass/components/_colorbox_of_images.scss */
+  /* line 107, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image :first-child {
     font-size: 20px;
     margin: auto;
     cursor: default;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.34); }
-  /* line 98, ../sass/components/_colorbox_of_images.scss */
+  /* line 114, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image :nth-child(n+2) {
     height: 48px;
     width: 48px;
@@ -205,36 +225,36 @@ ul.nice-menu li {
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer; }
-    /* line 105, ../sass/components/_colorbox_of_images.scss */
+    /* line 121, ../sass/components/_colorbox_of_images.scss */
     .node--product--colorbox > .change-image :nth-child(n+2):hover {
       transition: 0.3s;
       opacity: 1; }
-  /* line 110, ../sass/components/_colorbox_of_images.scss */
+  /* line 126, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image .increase {
     background: url(/sites/all/themes/mf/images/size_increase.png); }
-  /* line 113, ../sass/components/_colorbox_of_images.scss */
+  /* line 129, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image .decrease {
     background: url(/sites/all/themes/mf/images/size_decrease.png); }
 
-/* line 122, ../sass/components/_colorbox_of_images.scss */
+/* line 138, ../sass/components/_colorbox_of_images.scss */
 .hidden {
   display: none; }
 
-/* line 125, ../sass/components/_colorbox_of_images.scss */
+/* line 141, ../sass/components/_colorbox_of_images.scss */
 .visible {
   display: block !important; }
 
-/* line 128, ../sass/components/_colorbox_of_images.scss */
+/* line 144, ../sass/components/_colorbox_of_images.scss */
 .visuallyhidden {
   opacity: 0; }
 
-/* line 132, ../sass/components/_colorbox_of_images.scss */
+/* line 148, ../sass/components/_colorbox_of_images.scss */
 .image-increase {
   transition: 0.3s;
   width: auto !important;
   height: 1300px !important; }
 
-/* line 138, ../sass/components/_colorbox_of_images.scss */
+/* line 154, ../sass/components/_colorbox_of_images.scss */
 #cboxClose {
   opacity: 0.2;
   top: 0;
@@ -244,9 +264,24 @@ ul.nice-menu li {
   right: 0;
   bottom: unset; }
 
-/* line 148, ../sass/components/_colorbox_of_images.scss */
+/* line 164, ../sass/components/_colorbox_of_images.scss */
 #cboxLoadedContent {
   margin-bottom: 0; }
+
+/* line 168, ../sass/components/_colorbox_of_images.scss */
+.colorbox-info {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.33);
+  font-style: oblique;
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 5px;
+  letter-spacing: -0.5px;
+  cursor: default;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 5px; }
 
 /* line 2, ../sass/components/_footer_inform.scss */
 .pane-footer-inform-about-site-panel-pane-1 {

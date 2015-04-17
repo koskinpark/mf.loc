@@ -105,7 +105,7 @@ function colorbox_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'colorbox_node_height';
-  $strongarm->value = '800px';
+  $strongarm->value = '98%';
   $export['colorbox_node_height'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -119,7 +119,7 @@ function colorbox_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'colorbox_node_width';
-  $strongarm->value = '960px';
+  $strongarm->value = '98%';
   $export['colorbox_node_width'] = $strongarm;
 
   $strongarm = new stdClass();

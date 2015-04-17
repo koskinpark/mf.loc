@@ -153,6 +153,19 @@ function f_ct_product_field_default_field_instances() {
           'status' => TRUE,
         ),
       ),
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -283,7 +296,7 @@ function f_ct_product_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'colorbox_images',
+          'image_style' => '',
         ),
         'type' => 'image',
         'weight' => 1,
