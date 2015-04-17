@@ -71,8 +71,7 @@ dependencies[] = fontdeck
 dependencies[] = fonts_com
 dependencies[] = colorbox
 dependencies[] = colorbox_node
-dependencies[] = field_slideshow
-dependencies[] = jquery_update
+
 
 ;custom
 dependencies[] = layout_sample
