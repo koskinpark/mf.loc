@@ -77,12 +77,13 @@
                 $('> .field--name-one-more-picture', $colorbox_node_wrapper).before("<div class='change-image'><span>Zoom</span><span class='increase'></span><span class='decrease'></span></div>");
                 $thumbnails.append("<div class='under-img'></div>");
 
+                $('img', $big_pictures).css('cursor', 'url(/sites/all/themes/mf/images/cursors/cursor_loupe.png),pointer');
 
                 var $checked_size = check_size($big_pictures[0]);
                 var $checkpoint = false;
                 var $click_if = true;
                 $($big_pictures[0]).addClass('visible');
-                $('img', $big_pictures[0]).css({'width': $checked_size['width'], 'height': $checked_size['height'], 'transition': '0.5s'});
+                $('img', $big_pictures[0]).css({'width': $checked_size['width'], 'height': $checked_size['height'], 'transform': 'scale(1)', 'margin': '0', 'transition': '1s ease'});
                 $thumbnails.each(function(i) {
                     var $thumbnail = $(this);
                     $thumbnail.click(function() {
@@ -98,7 +99,7 @@
                                     }
                                     $($big_pictures[i]).addClass('visible');
                                     $checked_size = check_size($big_pictures[i]);
-                                    $('img', $big_pictures[i]).css({'width': $checked_size['width'], 'height': $checked_size['height'], 'transition': '0.5s'});
+                                    $('img', $big_pictures[i]).css({'width': $checked_size['width'], 'height': $checked_size['height'], 'transform': 'scale(1)', 'margin': '0', 'transition': '1s ease'});
                                 });
                                 $big_pictures_items.fadeIn(300, function () {
                                     $checkpoint = false;
@@ -108,6 +109,7 @@
                     });
                     var imgClickif = function(relativeX, relativeY) {
                         if (!$('img', $big_pictures[i]).hasClass('increased')) {
+                            $('img', $big_pictures).css('cursor', 'url(/sites/all/themes/mf/images/cursors/cursor_loupe_minus.png),pointer');
                             $('img', $big_pictures[i]).addClass('increased');
                             $margins = margins($checked_size['width'], $checked_size['height'], relativeX, relativeY);
                             $('img', $big_pictures[i]).css({
@@ -121,6 +123,7 @@
                     };
                     var imgClickelse = function() {
                         if ($('img', $big_pictures).hasClass('increased')) {
+                            $('img', $big_pictures).css('cursor', 'url(/sites/all/themes/mf/images/cursors/cursor_loupe.png),pointer');
                             $('img', $big_pictures).removeClass('increased');
                             $('img', $big_pictures).css({
                                 'transform': 'scale(1)',

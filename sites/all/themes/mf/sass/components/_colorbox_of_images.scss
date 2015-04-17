@@ -32,7 +32,6 @@
         display: none;
         margin: auto;
         img {
-          cursor: url(/sites/all/themes/mf/images/cursors/cursor_loupe.png),pointer;
           max-width: none;
           position:relative;
         }
@@ -100,21 +99,21 @@
     }
   }
   > .change-image {
-    float:left;
+    float: left;
     display: flex;
-    width: 200px;
+    width: 165px;
     height: 80px;
     :first-child {
-      font-size: 20px;
+      font-size: 16px;
       margin: auto;
       cursor: default;
       text-transform: uppercase;
       color: rgba(0, 0, 0, 0.34);
     }
     :nth-child(n+2) {
-      height: 48px;
-      width: 48px;
-      margin: auto 5px auto 15px;
+      height: 30px;
+      width: 30px;
+      margin: auto 5px auto 5px;
       opacity: 0.6;
       transition: 0.3s;
       cursor: pointer;
@@ -125,10 +124,11 @@
     }
     .increase {
       background: url(/sites/all/themes/mf/images/size_increase.png);
+      background-size: cover;
     }
     .decrease {
       background: url(/sites/all/themes/mf/images/size_decrease.png);
-
+      background-size: cover;
     }
   }
 }
