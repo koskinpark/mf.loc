@@ -105,7 +105,7 @@ function colorbox_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'colorbox_node_height';
-  $strongarm->value = '98%';
+  $strongarm->value = '750';
   $export['colorbox_node_height'] = $strongarm;
 
   $strongarm = new stdClass();

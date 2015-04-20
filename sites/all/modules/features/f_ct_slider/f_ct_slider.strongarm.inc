@@ -40,11 +40,29 @@ function f_ct_slider_strongarm() {
       'slider_mode' => array(
         'custom_settings' => TRUE,
       ),
+      'mainpage_slideshow' => array(
+        'custom_settings' => TRUE,
+      ),
+      'colorbox' => array(
+        'custom_settings' => FALSE,
+      ),
+      'footer_mode' => array(
+        'custom_settings' => FALSE,
+      ),
+      'logotype' => array(
+        'custom_settings' => FALSE,
+      ),
+      'more_viewed' => array(
+        'custom_settings' => FALSE,
+      ),
+      'actions_page' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),

@@ -83,12 +83,15 @@
                 var $checkpoint = false;
                 var $click_if = true;
                 $($big_pictures[0]).addClass('visible');
+                $($thumbnails[0]).addClass('thumbnail-clicked');
                 $('img', $big_pictures[0]).css({'width': $checked_size['width'], 'height': $checked_size['height'], 'transform': 'scale(1)', 'margin': '0', 'transition': '1s ease'});
                 $thumbnails.each(function(i) {
                     var $thumbnail = $(this);
                     $thumbnail.click(function() {
                         if ($checkpoint == false) {
                             if (!$($big_pictures[i]).hasClass('visible')) {
+                                $thumbnails.removeClass('thumbnail-clicked');
+                                $thumbnail.addClass('thumbnail-clicked');
                                 $checkpoint = true;
                                 $big_pictures_items.fadeOut(300, function () {
                                     $big_pictures.removeClass('visible');
@@ -118,7 +121,8 @@
                                 'margin-left': $margins['margin_left'],
                                 'margin-bottom': $margins['margin_bottom'],
                                 'margin-right': $margins['margin_right'],
-                                'transition': '1s ease'});
+                                'transition': '1s ease'
+                                });
                         }
                     };
                     var imgClickelse = function() {
@@ -131,7 +135,9 @@
                                 'margin-top': '0',
                                 'margin-right': '0',
                                 'margin-bottom': '0',
-                                'transition': '1s ease'
+                                'transition': '1s ease',
+                                'left': '0',
+                                'top' : '0'
                             });
                         }
                     };
@@ -143,11 +149,17 @@
                             var relativeX = (e.pageX - offset.left);
                             var relativeY = (e.pageY - offset.top);
                             imgClickif(relativeX, relativeY);
+                            $('img', $big_pictures[i]).draggable({
+                                disabled: false
+                            });
                             $click_if = false;
                         }
                         else {
-                            imgClickelse();
-                            $click_if = true;
+                            if (!$('img', $big_pictures[i]).hasClass('ui-draggable-dragging')) {
+                                $('img', $big_pictures[i]).draggable({disabled: true});
+                                imgClickelse();
+                                $click_if = true;
+                            }
                         }
                     });
 
@@ -176,11 +188,13 @@
                     $('.scroller').hide();
                 }
             });
-
-            $('.scroller').click(function () {
+            scroller = function() {
                 $('body,html').animate({
                     scrollTop: 0
                 }, 400);
+            };
+            $('.scroller').click(function () {
+                scroller();
                 $('.scroller').fadeOut();
                 return false;
             });
@@ -257,4 +271,18 @@
             });
         }
     };
+    Drupal.behaviors.footerlinker = {
+        attach: function (context, settings) {
+            $(".pane-nice-menus-2", context).once("see-more", function () {
+                $pane = $(this);
+                $pane_ul = $('.nice-menu-menu-footer-menu', $pane);
+                $('.menu-path-taxonomy-term-28 > a', $pane_ul).removeAttr('href');
+                $('.menu-path-taxonomy-term-28 > a', $pane_ul).css('cursor','pointer');
+                $('.menu-path-taxonomy-term-28 > a', $pane_ul).click(function() {
+                   scroller();
+                });
+            });
+        }
+    };
+
 })(jQuery);

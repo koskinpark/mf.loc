@@ -44,7 +44,7 @@
   }
   > .field--name-one-more-picture {
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 5px;
     > .field__items {
       > .field__item {
@@ -56,6 +56,7 @@
               width: 67px;
               height: 40px;
               padding: 5px;
+              margin: 5px;
               float: left;
               display: flex;
               flex-flow: row wrap;
@@ -178,4 +179,24 @@
   cursor: default;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 5px;
+}
+
+.thumbnail-clicked {
+  transition: 0.3s;
+  box-shadow: 0px 0px 1px 0px #000 !important;
+  background: rgba(0, 0, 0, 0.04) !important;
+  .under-img {
+    transition: 0.3s;
+    background: #000 !important;
+    width:50px !important;
+    left: 13.5px !important;
+  }
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: unset;
+}
+
+.ui-draggable-dragging {
+  transition: 0s !important;
 }

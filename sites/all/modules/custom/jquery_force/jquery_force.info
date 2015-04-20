@@ -1,0 +1,5 @@
+name = JQuery UI Force
+description = Forces JQuery UI to always load
+dependencies[] = jquery_update
+package = User Interface
+core = 7.x

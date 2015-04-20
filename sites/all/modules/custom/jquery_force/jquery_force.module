@@ -1,0 +1,7 @@
+<?php
+
+function jquery_force_init() {
+    drupal_add_js(drupal_get_path('theme', 'mf') .'/js/jquery-ui-1.10.4.custom.js', 'file');
+   // drupal_add_library('system', 'ui');
+}
+

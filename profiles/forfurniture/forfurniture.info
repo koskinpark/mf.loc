@@ -71,6 +71,7 @@ dependencies[] = fontdeck
 dependencies[] = fonts_com
 dependencies[] = colorbox
 dependencies[] = colorbox_node
+dependencies[] = jquery_update
 
 
 ;custom
@@ -78,6 +79,7 @@ dependencies[] = layout_sample
 dependencies[] = pane_for_logotype
 dependencies[] = mf_search
 dependencies[] = field_format_link_to_colorbox
+dependencies[] = jquery_force
 
 ;features
 dependencies[] = f_ct_product
@@ -98,6 +100,8 @@ dependencies[] = f_logotype_of_the_site
 dependencies[] = views_for_search
 dependencies[] = see_more_homepage
 dependencies[] = colorbox_settings
+dependencies[] = action_page
+dependencies[] = jquery_settings
 
 
 ; Information added by Drupal.org packaging script on 2014-11-19
