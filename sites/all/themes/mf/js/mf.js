@@ -1,6 +1,19 @@
 (function($){
 
-
+    Drupal.behaviors.imgtobg = {
+        attach: function (context, settings) {
+            $('.group-action', context).once('colorbox-imageslide', function() {
+            var $element = $(this);
+                if ($element.is(':has(> .field--name-field-image-for-background)')) {
+                    var $field_image = $('> .field--name-field-image-for-background', $element);
+                    var $path_to_img = $('> .field--name-field-image-for-background .field__items .field__item', $element);
+                    var $img = $('img', $path_to_img).attr('src');
+                    $field_image.empty();
+                    $field_image.css('background','url(' + $img + ') repeat');
+                }
+            });
+        }
+    };
 
     Drupal.behaviors.colorboxmenu = {
         attach: function (context, settings) {
@@ -142,6 +155,16 @@
                         }
                     };
 
+                    var $trigger = false;
+                    var draggable_func = function ($element) {
+                       $element.draggable({
+                            disabled: false,
+                            start: function() {
+                                $trigger = true;
+                            }
+                        });
+                        return $trigger;
+                    };
 
                     $('img', $big_pictures[i]).click(function(e) {
                         if ($click_if ==  true) {
@@ -149,28 +172,31 @@
                             var relativeX = (e.pageX - offset.left);
                             var relativeY = (e.pageY - offset.top);
                             imgClickif(relativeX, relativeY);
-                            $('img', $big_pictures[i]).draggable({
-                                disabled: false
-                            });
+                            $trigger = draggable_func($('img', $big_pictures[i]));
                             $click_if = false;
                         }
                         else {
-                            if (!$('img', $big_pictures[i]).hasClass('ui-draggable-dragging')) {
+                            if ($trigger == false) {
                                 $('img', $big_pictures[i]).draggable({disabled: true});
                                 imgClickelse();
                                 $click_if = true;
                             }
+                            else {
+                                $trigger = false;
+                            }
                         }
                     });
 
-
                     $("> .change-image .increase", $colorbox_node_wrapper).click(function(){
                         imgClickif();
+                        $trigger = draggable_func($('img', $big_pictures[i]));
                         $click_if = false;
                     });
                     $("> .change-image .decrease", $colorbox_node_wrapper).click(function(){
-                        imgClickelse();
-                        $click_if = true;
+                        if ($trigger == false) {
+                            imgClickelse();
+                            $click_if = true;
+                        }
                     });
                 });
 

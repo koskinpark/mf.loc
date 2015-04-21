@@ -22,3 +22,18 @@ function action_page_ctools_plugin_api($module = NULL, $api = NULL) {
 function action_page_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function action_page_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: pictures_for_action_page.
+  $styles['pictures_for_action_page'] = array(
+    'label' => 'pictures for action page',
+    'effects' => array(),
+  );
+
+  return $styles;
+}

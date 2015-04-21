@@ -136,6 +136,16 @@ function f_page_manager_default_page_manager_handlers() {
           'context' => 'argument_string_1',
           'not' => TRUE,
         ),
+        3 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'mainpage_slideshow' => 'mainpage_slideshow',
+            ),
+          ),
+          'context' => 'node',
+          'not' => TRUE,
+        ),
       ),
       'logic' => 'and',
     );
