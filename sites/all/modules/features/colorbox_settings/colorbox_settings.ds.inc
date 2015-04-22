@@ -28,6 +28,11 @@ function colorbox_settings_ds_field_settings_info() {
         'load_terms' => 0,
       ),
     ),
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
   );
   $export['node|product|colorbox'] = $ds_fieldsetting;
 
@@ -50,11 +55,13 @@ function colorbox_settings_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_pictures',
-        1 => 'one_more_picture',
+        0 => 'title',
+        1 => 'field_pictures',
+        2 => 'one_more_picture',
       ),
     ),
     'fields' => array(
+      'title' => 'ds_content',
       'field_pictures' => 'ds_content',
       'one_more_picture' => 'ds_content',
     ),

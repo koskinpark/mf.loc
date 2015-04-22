@@ -172,6 +172,82 @@ li {
       margin: auto;
       width: 400px; }
 
+/* line 150, ../sass/components/_action_page.scss */
+.pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title {
+  font-style: oblique;
+  font-weight: normal;
+  text-align: center;
+  font-size: 25px;
+  cursor: default; }
+  /* line 344, ../sass/abstractions/mixins.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title:before {
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px;
+    margin-right: 10px; }
+  /* line 354, ../sass/abstractions/mixins.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title:after {
+    margin-left: 10px;
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px; }
+/* line 154, ../sass/components/_action_page.scss */
+.pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content {
+  text-align: center; }
+  /* line 156, ../sass/components/_action_page.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row {
+    transition: 0.3s;
+    display: inline-block;
+    position: relative; }
+    /* line 160, ../sass/components/_action_page.scss */
+    .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow {
+      overflow: hidden; }
+      /* line 162, ../sass/components/_action_page.scss */
+      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-title {
+        position: absolute;
+        top: -68px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.77);
+        color: #000;
+        font-size: 16px; }
+      /* line 173, ../sass/components/_action_page.scss */
+      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-body {
+        height: auto;
+        position: absolute;
+        bottom: -103px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.77);
+        color: #000;
+        font-size: 16px;
+        text-align: justify;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11); }
+        /* line 183, ../sass/components/_action_page.scss */
+        .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-body .field__items {
+          padding: 0 20px 0 20px; }
+    /* line 188, ../sass/components/_action_page.scss */
+    .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row:hover {
+      transition: 0.3s; }
+      /* line 190, ../sass/components/_action_page.scss */
+      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row:hover .field--name-title {
+        top: 0; }
+      /* line 193, ../sass/components/_action_page.scss */
+      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row:hover .field--name-body {
+        bottom: 4px; }
+  /* line 198, ../sass/components/_action_page.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content > :nth-child(2n+2) {
+    padding: 10px 12.5px 10px 10px; }
+  /* line 201, ../sass/components/_action_page.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content > :nth-child(2n+1) {
+    padding: 10px 10px 10px 12.5px; }
+
 /* line 3, ../sass/components/_catalog_menu.scss */
 .pane-nice-menus-1 {
   width: 100%;
@@ -252,53 +328,78 @@ ul.nice-menu li {
   border: none;
   background-color: unset; }
 
-/* line 2, ../sass/components/_colorbox_of_images.scss */
+/* line 3, ../sass/components/_colorbox_of_images.scss */
+.node--product--colorbox > :nth-child(n+3) {
+  opacity: 1;
+  -webkit-animation: all-field-colorbox;
+  -moz-animation: all-field-colorbox;
+  -o-animation: all-field-colorbox;
+  animation: all-field-colorbox;
+  -webkit-animation-duration: 4s; }
+/* line 8, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > .field--name-title {
-  z-index: 10;
-  width: 40%;
-  height: 30px;
-  overflow: auto;
-  margin: auto;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin-left: -12px;
+  margin-top: -13px;
+  display: flex;
+  -webkit-animation: animation-field-title;
+  -moz-animation: animation-field-title;
+  -o-animation: animation-field-title;
+  animation: animation-field-title;
+  -webkit-animation-duration: 4s;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center; }
-  /* line 15, ../sass/components/_colorbox_of_images.scss */
-  .node--product--colorbox > .field--name-title > .field__items > .field__item > h2 {
-    margin: 0; }
-/* line 21, ../sass/components/_colorbox_of_images.scss */
+  background: rgba(255, 255, 255, 0.85); }
+  /* line 19, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .field--name-title .field__items {
+    margin: auto; }
+    /* line 22, ../sass/components/_colorbox_of_images.scss */
+    .node--product--colorbox > .field--name-title .field__items .field__item h2 {
+      cursor: default;
+      opacity: 1;
+      font-size: 70px;
+      font-style: oblique;
+      font-weight: 100;
+      color: black;
+      text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 15px black;
+      -webkit-animation: animation-title;
+      -moz-animation: animation-title;
+      -o-animation: animation-title;
+      animation: animation-title;
+      -webkit-animation-duration: 4s; }
+/* line 36, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > .field--name-field-pictures {
   width: 100%;
   height: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 10px; }
-  /* line 26, ../sass/components/_colorbox_of_images.scss */
-  .node--product--colorbox > .field--name-field-pictures > .field__items {
+  /* line 41, ../sass/components/_colorbox_of_images.scss */
+  .node--product--colorbox > .field--name-field-pictures .field__items {
     width: 100%;
     display: flex;
     height: 620px;
     overflow: hidden; }
-    /* line 31, ../sass/components/_colorbox_of_images.scss */
-    .node--product--colorbox > .field--name-field-pictures > .field__items > .field__item {
+    /* line 46, ../sass/components/_colorbox_of_images.scss */
+    .node--product--colorbox > .field--name-field-pictures .field__items .field__item {
       display: none;
       margin: auto; }
-      /* line 34, ../sass/components/_colorbox_of_images.scss */
-      .node--product--colorbox > .field--name-field-pictures > .field__items > .field__item img {
+      /* line 49, ../sass/components/_colorbox_of_images.scss */
+      .node--product--colorbox > .field--name-field-pictures .field__items .field__item img {
         max-width: none;
         position: relative; }
-/* line 45, ../sass/components/_colorbox_of_images.scss */
+/* line 60, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > .field--name-one-more-picture {
   float: right;
   margin-top: 5px;
   margin-right: 5px; }
-  /* line 51, ../sass/components/_colorbox_of_images.scss */
+  /* line 66, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures {
     display: flex; }
-    /* line 53, ../sass/components/_colorbox_of_images.scss */
+    /* line 68, ../sass/components/_colorbox_of_images.scss */
     .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items {
       margin: auto; }
-      /* line 55, ../sass/components/_colorbox_of_images.scss */
+      /* line 70, ../sass/components/_colorbox_of_images.scss */
       .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item {
         width: 67px;
         height: 40px;
@@ -311,11 +412,11 @@ ul.nice-menu li {
         cursor: pointer;
         transition: 0.3s;
         position: relative; }
-        /* line 67, ../sass/components/_colorbox_of_images.scss */
+        /* line 82, ../sass/components/_colorbox_of_images.scss */
         .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item img {
           margin: auto;
           transition: 0.3s; }
-        /* line 71, ../sass/components/_colorbox_of_images.scss */
+        /* line 86, ../sass/components/_colorbox_of_images.scss */
         .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item .under-img {
           position: absolute;
           transition: 0.3s;
@@ -325,35 +426,35 @@ ul.nice-menu li {
           margin: 10px auto 0 auto;
           left: 23.5px;
           bottom: -10px; }
-        /* line 81, ../sass/components/_colorbox_of_images.scss */
+        /* line 96, ../sass/components/_colorbox_of_images.scss */
         .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover {
           transition: 0.3s;
           box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.37);
           background: rgba(0, 0, 0, 0.04); }
-          /* line 85, ../sass/components/_colorbox_of_images.scss */
+          /* line 100, ../sass/components/_colorbox_of_images.scss */
           .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover img {
             transition: 0.3s;
             opacity: 0.8; }
-          /* line 89, ../sass/components/_colorbox_of_images.scss */
+          /* line 104, ../sass/components/_colorbox_of_images.scss */
           .node--product--colorbox > .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures > .field__items > .field__item:hover .under-img {
             transition: 0.3s;
             background: #000;
             width: 50px;
             left: 13.5px; }
-/* line 102, ../sass/components/_colorbox_of_images.scss */
+/* line 117, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > .change-image {
   float: left;
   display: flex;
   width: 165px;
   height: 80px; }
-  /* line 107, ../sass/components/_colorbox_of_images.scss */
+  /* line 122, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image :first-child {
     font-size: 16px;
     margin: auto;
     cursor: default;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.34); }
-  /* line 114, ../sass/components/_colorbox_of_images.scss */
+  /* line 129, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image :nth-child(n+2) {
     height: 30px;
     width: 30px;
@@ -361,38 +462,38 @@ ul.nice-menu li {
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer; }
-    /* line 121, ../sass/components/_colorbox_of_images.scss */
+    /* line 136, ../sass/components/_colorbox_of_images.scss */
     .node--product--colorbox > .change-image :nth-child(n+2):hover {
       transition: 0.3s;
       opacity: 1; }
-  /* line 126, ../sass/components/_colorbox_of_images.scss */
+  /* line 141, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image .increase {
     background: url(/sites/all/themes/mf/images/size_increase.png);
     background-size: cover; }
-  /* line 130, ../sass/components/_colorbox_of_images.scss */
+  /* line 145, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .change-image .decrease {
     background: url(/sites/all/themes/mf/images/size_decrease.png);
     background-size: cover; }
 
-/* line 139, ../sass/components/_colorbox_of_images.scss */
+/* line 154, ../sass/components/_colorbox_of_images.scss */
 .hidden {
   display: none; }
 
-/* line 142, ../sass/components/_colorbox_of_images.scss */
+/* line 157, ../sass/components/_colorbox_of_images.scss */
 .visible {
   display: block !important; }
 
-/* line 145, ../sass/components/_colorbox_of_images.scss */
+/* line 160, ../sass/components/_colorbox_of_images.scss */
 .visuallyhidden {
   opacity: 0; }
 
-/* line 149, ../sass/components/_colorbox_of_images.scss */
+/* line 164, ../sass/components/_colorbox_of_images.scss */
 .image-increase {
   transition: 0.3s;
   width: auto !important;
   height: 1300px !important; }
 
-/* line 155, ../sass/components/_colorbox_of_images.scss */
+/* line 170, ../sass/components/_colorbox_of_images.scss */
 #cboxClose {
   opacity: 0.2;
   top: 0;
@@ -402,11 +503,11 @@ ul.nice-menu li {
   right: 0;
   bottom: unset; }
 
-/* line 165, ../sass/components/_colorbox_of_images.scss */
+/* line 180, ../sass/components/_colorbox_of_images.scss */
 #cboxLoadedContent {
   margin-bottom: 0; }
 
-/* line 169, ../sass/components/_colorbox_of_images.scss */
+/* line 184, ../sass/components/_colorbox_of_images.scss */
 .colorbox-info {
   padding-left: 100px;
   padding-right: 100px;
@@ -421,26 +522,294 @@ ul.nice-menu li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 5px; }
 
-/* line 184, ../sass/components/_colorbox_of_images.scss */
+/* line 199, ../sass/components/_colorbox_of_images.scss */
 .thumbnail-clicked {
   transition: 0.3s;
   box-shadow: 0px 0px 1px 0px #000 !important;
   background: rgba(0, 0, 0, 0.04) !important; }
-  /* line 188, ../sass/components/_colorbox_of_images.scss */
+  /* line 203, ../sass/components/_colorbox_of_images.scss */
   .thumbnail-clicked .under-img {
     transition: 0.3s;
     background: #000 !important;
     width: 50px !important;
     left: 13.5px !important; }
 
-/* line 196, ../sass/components/_colorbox_of_images.scss */
+/* line 211, ../sass/components/_colorbox_of_images.scss */
 .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
   opacity: unset; }
 
-/* line 200, ../sass/components/_colorbox_of_images.scss */
+/* line 215, ../sass/components/_colorbox_of_images.scss */
 .ui-draggable-dragging {
   transition: 0s !important; }
 
+@-webkit-keyframes animation-title {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); }
+  25% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px); }
+  50% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  80% {
+    opacity: 1;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  90% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); } }
+@-moz-keyframes animation-title {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); }
+  25% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px); }
+  50% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  80% {
+    opacity: 1;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  90% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); } }
+@-o-keyframes animation-title {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); }
+  25% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px); }
+  50% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  80% {
+    opacity: 1;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  90% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); } }
+@keyframes animation-title {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); }
+  25% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px); }
+  50% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  80% {
+    opacity: 1;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0); }
+  90% {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px); } }
+@-webkit-keyframes animation-field-title {
+  0% {
+    z-index: 1; }
+  80% {
+    opacity: 1; }
+  99% {
+    z-index: 1;
+    opacity: 0; }
+  100% {
+    z-index: -1; } }
+@-moz-keyframes animation-title {
+  0% {
+    z-index: 1; }
+  80% {
+    opacity: 1; }
+  99% {
+    z-index: 1;
+    opacity: 0; }
+  100% {
+    z-index: -1; } }
+@-o-keyframes animation-title {
+  0% {
+    z-index: 1; }
+  80% {
+    opacity: 1; }
+  99% {
+    z-index: 1;
+    opacity: 0; }
+  100% {
+    z-index: -1; } }
+@keyframes animation-title {
+  0% {
+    z-index: 1; }
+  80% {
+    opacity: 1; }
+  99% {
+    z-index: 1;
+    opacity: 0; }
+  100% {
+    z-index: -1; } }
+@-webkit-keyframes all-field-colorbox {
+  0% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  80% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  100% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    opacity: 1; } }
+@-moz-keyframes animation-title {
+  0% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  80% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  100% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    opacity: 1; } }
+@-o-keyframes animation-title {
+  0% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  80% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  100% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    opacity: 1; } }
+@keyframes animation-title {
+  0% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  80% {
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    opacity: 0; }
+  100% {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    opacity: 1; } }
 /* line 2, ../sass/components/_footer_inform.scss */
 .pane-footer-inform-about-site-panel-pane-1 {
   display: inline-block;
@@ -463,10 +832,6 @@ ul.nice-menu li {
       text-decoration: none;
       color: unset; }
 
-/* line 2, ../sass/components/_homepage_background.scss */
-.pane-page-content > .contextual-links-region {
-  background: rgba(255, 0, 126, 0.02); }
-
 /* line 2, ../sass/components/_logotype.scss */
 .pane-pane-for-logo {
   margin-top: 10px;
@@ -479,7 +844,7 @@ ul.nice-menu li {
   text-align: center;
   font-size: 25px;
   cursor: default; }
-  /* line 335, ../sass/abstractions/mixins.scss */
+  /* line 344, ../sass/abstractions/mixins.scss */
   .pane-most-viewed-panel-pane-1 > .pane-title:before {
     border-bottom: 1px solid #969696;
     content: ' ';
@@ -489,7 +854,7 @@ ul.nice-menu li {
     top: -7px;
     width: 100px;
     margin-right: 10px; }
-  /* line 345, ../sass/abstractions/mixins.scss */
+  /* line 354, ../sass/abstractions/mixins.scss */
   .pane-most-viewed-panel-pane-1 > .pane-title:after {
     margin-left: 10px;
     border-bottom: 1px solid #969696;
@@ -670,18 +1035,18 @@ ul.nice-menu li {
 /* line 7, ../sass/abstractions/mixins.scss */
 .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product:after {
   clear: both; }
-/* line 112, ../sass/abstractions/mixins.scss */
+/* line 121, ../sass/abstractions/mixins.scss */
 .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content {
   text-align: center; }
-  /* line 114, ../sass/abstractions/mixins.scss */
+  /* line 123, ../sass/abstractions/mixins.scss */
   .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row {
     margin: 3px;
     display: inline-block;
     position: relative; }
-    /* line 57, ../sass/abstractions/mixins.scss */
+    /* line 66, ../sass/abstractions/mixins.scss */
     .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row > .view-mode-random_homepage_pictures {
       cursor: pointer; }
-      /* line 59, ../sass/abstractions/mixins.scss */
+      /* line 68, ../sass/abstractions/mixins.scss */
       .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-title {
         opacity: 0;
         display: flex;
@@ -691,32 +1056,32 @@ ul.nice-menu li {
         position: absolute;
         background: transparent;
         color: rgba(255, 255, 255, 0); }
-        /* line 68, ../sass/abstractions/mixins.scss */
+        /* line 77, ../sass/abstractions/mixins.scss */
         .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-title > .field__items {
           margin: auto;
           padding-left: 10px;
           padding-right: 10px; }
-      /* line 74, ../sass/abstractions/mixins.scss */
+      /* line 83, ../sass/abstractions/mixins.scss */
       .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-field-pictures {
         transition: 0.3s;
         height: 310px; }
-    /* line 81, ../sass/abstractions/mixins.scss */
+    /* line 90, ../sass/abstractions/mixins.scss */
     .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-title {
       opacity: 1;
       transition: 0.3s ease-out;
       color: white;
       background: rgba(0, 0, 0, 0.25);
       text-shadow: 0 0 10px #050505; }
-    /* line 90, ../sass/abstractions/mixins.scss */
+    /* line 99, ../sass/abstractions/mixins.scss */
     .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-field-pictures {
       box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.37); }
-      /* line 92, ../sass/abstractions/mixins.scss */
+      /* line 101, ../sass/abstractions/mixins.scss */
       .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-field-pictures > img {
         opacity: 0.95; }
-    /* line 100, ../sass/abstractions/mixins.scss */
+    /* line 109, ../sass/abstractions/mixins.scss */
     .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title {
       transition: 0.1s ease-in; }
-      /* line 102, ../sass/abstractions/mixins.scss */
+      /* line 111, ../sass/abstractions/mixins.scss */
       .pane-random-homepage-product-panel-pane-1 > .view-random-homepage-product > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title .field__items {
         color: rgba(255, 255, 255, 0); }
 
@@ -742,7 +1107,7 @@ ul.nice-menu li {
   text-align: center;
   font-size: 25px;
   cursor: default; }
-  /* line 335, ../sass/abstractions/mixins.scss */
+  /* line 344, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-header:before {
     border-bottom: 1px solid #969696;
     content: ' ';
@@ -752,7 +1117,7 @@ ul.nice-menu li {
     top: -7px;
     width: 100px;
     margin-right: 10px; }
-  /* line 345, ../sass/abstractions/mixins.scss */
+  /* line 354, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-header:after {
     margin-left: 10px;
     border-bottom: 1px solid #969696;
@@ -769,11 +1134,11 @@ ul.nice-menu li {
 /* line 7, ../sass/abstractions/mixins.scss */
 .pane-search-titles-panel-pane-1 > .view-id-search_titles:after {
   clear: both; }
-/* line 122, ../sass/abstractions/mixins.scss */
+/* line 131, ../sass/abstractions/mixins.scss */
 .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content {
   text-align: center;
   margin-top: 8px; }
-  /* line 125, ../sass/abstractions/mixins.scss */
+  /* line 134, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row {
     padding: 0.3125%;
     position: relative;
@@ -781,25 +1146,25 @@ ul.nice-menu li {
     height: 325px;
     width: 100%;
     overflow: hidden; }
-    /* line 132, ../sass/abstractions/mixins.scss */
+    /* line 141, ../sass/abstractions/mixins.scss */
     .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display {
       width: 100%;
       height: 100%;
       position: relative;
       transition: 0.3s; }
-      /* line 137, ../sass/abstractions/mixins.scss */
+      /* line 146, ../sass/abstractions/mixins.scss */
       .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-first {
         width: 100%;
         position: absolute; }
-        /* line 142, ../sass/abstractions/mixins.scss */
+        /* line 151, ../sass/abstractions/mixins.scss */
         .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content {
           position: relative; }
-          /* line 145, ../sass/abstractions/mixins.scss */
+          /* line 154, ../sass/abstractions/mixins.scss */
           .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > a > img {
             margin-top: 4px;
             background: #fff;
             position: absolute; }
-      /* line 155, ../sass/abstractions/mixins.scss */
+      /* line 164, ../sass/abstractions/mixins.scss */
       .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-last {
         margin-top: 4px;
         width: 32.49475891%;
@@ -807,7 +1172,7 @@ ul.nice-menu li {
         height: 100%;
         overflow: hidden;
         cursor: default; }
-        /* line 162, ../sass/abstractions/mixins.scss */
+        /* line 171, ../sass/abstractions/mixins.scss */
         .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-last > .inside {
           position: relative;
           height: calc(100% - 8px);
@@ -824,14 +1189,14 @@ ul.nice-menu li {
           font-style: oblique;
           -webkit-flex-flow: row wrap;
           flex-flow: row wrap; }
-          /* line 172, ../sass/abstractions/mixins.scss */
+          /* line 181, ../sass/abstractions/mixins.scss */
           .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-last > .inside > .views-field-title {
             width: 100%;
             padding: 0 15px 0 15px;
             font-size: 30px;
             color: rgba(0, 0, 0, 0.45);
             transition: 0.3s; }
-          /* line 179, ../sass/abstractions/mixins.scss */
+          /* line 188, ../sass/abstractions/mixins.scss */
           .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-last > .inside > .views-field-body-value {
             width: 100%;
             height: 0;
@@ -845,84 +1210,84 @@ ul.nice-menu li {
             display: -moz-flex;
             display: -webkit-flex;
             display: flex; }
-            /* line 187, ../sass/abstractions/mixins.scss */
+            /* line 196, ../sass/abstractions/mixins.scss */
             .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-last > .inside > .views-field-body-value > .field-content {
               margin: auto; }
-              /* line 189, ../sass/abstractions/mixins.scss */
+              /* line 198, ../sass/abstractions/mixins.scss */
               .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-last > .inside > .views-field-body-value > .field-content > p {
                 margin: 0; }
-          /* line 194, ../sass/abstractions/mixins.scss */
+          /* line 203, ../sass/abstractions/mixins.scss */
           .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row > .panel-display > .panel-col-last > .inside > .views-field-field-cost {
             width: 100%;
             padding: 0 15px 0 15px;
             font-size: 30px;
             color: #ff5e5e;
             transition: 0.3s; }
-    /* line 204, ../sass/abstractions/mixins.scss */
+    /* line 213, ../sass/abstractions/mixins.scss */
     .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row:hover {
       transition: 0.3s;
       background: rgba(0, 0, 0, 0.04);
       box-shadow: 0px 0px 3px 1px rgba(111, 111, 111, 0.41); }
-      /* line 210, ../sass/abstractions/mixins.scss */
+      /* line 219, ../sass/abstractions/mixins.scss */
       .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row:hover > .panel-display > .panel-col-last > .inside {
         transition: 0.3s;
         background: rgba(0, 0, 0, 0.01);
         border: 1px solid rgba(0, 0, 0, 0.42); }
-        /* line 214, ../sass/abstractions/mixins.scss */
+        /* line 223, ../sass/abstractions/mixins.scss */
         .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row:hover > .panel-display > .panel-col-last > .inside > .views-field-title {
           transition: 0.3s;
           text-shadow: 0px 0px 2px #000;
           color: rgba(0, 0, 0, 0.69); }
-        /* line 219, ../sass/abstractions/mixins.scss */
+        /* line 228, ../sass/abstractions/mixins.scss */
         .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row:hover > .panel-display > .panel-col-last > .inside > .views-field-body-value {
           transition: 0.3s;
           height: 120px;
           margin: 35px 0 35px 0; }
-        /* line 224, ../sass/abstractions/mixins.scss */
+        /* line 233, ../sass/abstractions/mixins.scss */
         .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > .views-row:hover > .panel-display > .panel-col-last > .inside > .views-field-field-cost {
           transition: 0.3s;
           text-shadow: 0px 0px 1px #FF0000;
           color: #FF0000; }
-  /* line 241, ../sass/abstractions/mixins.scss */
+  /* line 250, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+1) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :first-child > img {
     margin-left: 0.628930818%;
     margin-right: 0.314465409%;
     left: 0; }
-  /* line 248, ../sass/abstractions/mixins.scss */
+  /* line 257, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+1) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :last-child > img {
     margin-right: 0.628930818%;
     margin-left: 0.314465409%;
     right: 0; }
-  /* line 258, ../sass/abstractions/mixins.scss */
+  /* line 267, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+1) > .panel-display > .panel-col-last {
     margin-left: 33.752620545%;
     margin-right: 0.314465409%;
     left: 0; }
-  /* line 272, ../sass/abstractions/mixins.scss */
+  /* line 281, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+2) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :first-child > img {
     margin-left: 33.752620545%;
     margin-right: 0.314465409%;
     left: 0; }
-  /* line 279, ../sass/abstractions/mixins.scss */
+  /* line 288, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+2) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :last-child > img {
     margin-right: 0.628930818%;
     margin-left: 0.314465409%;
     right: 0; }
-  /* line 289, ../sass/abstractions/mixins.scss */
+  /* line 298, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+2) > .panel-display > .panel-col-last {
     margin-left: 0.628930818%;
     margin-right: 0.314465409%; }
-  /* line 302, ../sass/abstractions/mixins.scss */
+  /* line 311, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+3) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :first-child > img {
     margin-left: 0.628930818%;
     margin-right: 0.314465409%;
     left: 0; }
-  /* line 309, ../sass/abstractions/mixins.scss */
+  /* line 318, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+3) > .panel-display > .panel-col-first > .inside > .views-field-field-pictures > .field-content > :last-child > img {
     margin-left: 33.752620545%;
     margin-right: 0.314465409%;
     left: 0; }
-  /* line 319, ../sass/abstractions/mixins.scss */
+  /* line 328, ../sass/abstractions/mixins.scss */
   .pane-search-titles-panel-pane-1 > .view-id-search_titles > .view-content > :nth-child(3n+3) > .panel-display > .panel-col-last {
     margin-left: 0.314465409%;
     margin-right: 0.628930818%;
@@ -978,18 +1343,18 @@ ul.nice-menu li {
     /* line 7, ../sass/abstractions/mixins.scss */
     .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage:after {
       clear: both; }
-    /* line 112, ../sass/abstractions/mixins.scss */
+    /* line 121, ../sass/abstractions/mixins.scss */
     .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content {
       text-align: center; }
-      /* line 114, ../sass/abstractions/mixins.scss */
+      /* line 123, ../sass/abstractions/mixins.scss */
       .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row {
         margin: 3px;
         display: inline-block;
         position: relative; }
-        /* line 57, ../sass/abstractions/mixins.scss */
+        /* line 66, ../sass/abstractions/mixins.scss */
         .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row > .view-mode-random_homepage_pictures {
           cursor: pointer; }
-          /* line 59, ../sass/abstractions/mixins.scss */
+          /* line 68, ../sass/abstractions/mixins.scss */
           .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-title {
             opacity: 0;
             display: flex;
@@ -999,32 +1364,32 @@ ul.nice-menu li {
             position: absolute;
             background: transparent;
             color: rgba(255, 255, 255, 0); }
-            /* line 68, ../sass/abstractions/mixins.scss */
+            /* line 77, ../sass/abstractions/mixins.scss */
             .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-title > .field__items {
               margin: auto;
               padding-left: 10px;
               padding-right: 10px; }
-          /* line 74, ../sass/abstractions/mixins.scss */
+          /* line 83, ../sass/abstractions/mixins.scss */
           .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-field-pictures {
             transition: 0.3s;
             height: 310px; }
-        /* line 81, ../sass/abstractions/mixins.scss */
+        /* line 90, ../sass/abstractions/mixins.scss */
         .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-title {
           opacity: 1;
           transition: 0.3s ease-out;
           color: white;
           background: rgba(0, 0, 0, 0.25);
           text-shadow: 0 0 10px #050505; }
-        /* line 90, ../sass/abstractions/mixins.scss */
+        /* line 99, ../sass/abstractions/mixins.scss */
         .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-field-pictures {
           box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.37); }
-          /* line 92, ../sass/abstractions/mixins.scss */
+          /* line 101, ../sass/abstractions/mixins.scss */
           .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-field-pictures > img {
             opacity: 0.95; }
-        /* line 100, ../sass/abstractions/mixins.scss */
+        /* line 109, ../sass/abstractions/mixins.scss */
         .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title {
           transition: 0.1s ease-in; }
-          /* line 102, ../sass/abstractions/mixins.scss */
+          /* line 111, ../sass/abstractions/mixins.scss */
           .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title .field__items {
             color: rgba(255, 255, 255, 0); }
 
@@ -1221,7 +1586,7 @@ ul.nice-menu li {
   text-align: center;
   font-size: 25px;
   cursor: default; }
-  /* line 335, ../sass/abstractions/mixins.scss */
+  /* line 344, ../sass/abstractions/mixins.scss */
   .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title:before {
     border-bottom: 1px solid #969696;
     content: ' ';
@@ -1231,7 +1596,7 @@ ul.nice-menu li {
     top: -7px;
     width: 100px;
     margin-right: 10px; }
-  /* line 345, ../sass/abstractions/mixins.scss */
+  /* line 354, ../sass/abstractions/mixins.scss */
   .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title:after {
     margin-left: 10px;
     border-bottom: 1px solid #969696;
@@ -1248,18 +1613,18 @@ ul.nice-menu li {
 /* line 7, ../sass/abstractions/mixins.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term:after {
   clear: both; }
-/* line 112, ../sass/abstractions/mixins.scss */
+/* line 121, ../sass/abstractions/mixins.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content {
   text-align: center; }
-  /* line 114, ../sass/abstractions/mixins.scss */
+  /* line 123, ../sass/abstractions/mixins.scss */
   .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row {
     margin: 3px;
     display: inline-block;
     position: relative; }
-    /* line 57, ../sass/abstractions/mixins.scss */
+    /* line 66, ../sass/abstractions/mixins.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row > .view-mode-random_homepage_pictures {
       cursor: pointer; }
-      /* line 59, ../sass/abstractions/mixins.scss */
+      /* line 68, ../sass/abstractions/mixins.scss */
       .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-title {
         opacity: 0;
         display: flex;
@@ -1269,32 +1634,32 @@ ul.nice-menu li {
         position: absolute;
         background: transparent;
         color: rgba(255, 255, 255, 0); }
-        /* line 68, ../sass/abstractions/mixins.scss */
+        /* line 77, ../sass/abstractions/mixins.scss */
         .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-title > .field__items {
           margin: auto;
           padding-left: 10px;
           padding-right: 10px; }
-      /* line 74, ../sass/abstractions/mixins.scss */
+      /* line 83, ../sass/abstractions/mixins.scss */
       .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row > .view-mode-random_homepage_pictures > .field--name-field-pictures {
         transition: 0.3s;
         height: 310px; }
-    /* line 81, ../sass/abstractions/mixins.scss */
+    /* line 90, ../sass/abstractions/mixins.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-title {
       opacity: 1;
       transition: 0.3s ease-out;
       color: white;
       background: rgba(0, 0, 0, 0.25);
       text-shadow: 0 0 10px #050505; }
-    /* line 90, ../sass/abstractions/mixins.scss */
+    /* line 99, ../sass/abstractions/mixins.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-field-pictures {
       box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.37); }
-      /* line 92, ../sass/abstractions/mixins.scss */
+      /* line 101, ../sass/abstractions/mixins.scss */
       .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row:hover > .view-mode-random_homepage_pictures > .field--name-field-pictures > img {
         opacity: 0.95; }
-    /* line 100, ../sass/abstractions/mixins.scss */
+    /* line 109, ../sass/abstractions/mixins.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title {
       transition: 0.1s ease-in; }
-      /* line 102, ../sass/abstractions/mixins.scss */
+      /* line 111, ../sass/abstractions/mixins.scss */
       .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title .field__items {
         color: rgba(255, 255, 255, 0); }
 

@@ -58,6 +58,9 @@ function f_ct_slider_strongarm() {
       'actions_page' => array(
         'custom_settings' => TRUE,
       ),
+      'other_actions' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

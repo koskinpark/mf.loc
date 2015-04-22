@@ -29,6 +29,21 @@ function action_page_views_api($module = NULL, $api = NULL) {
 function action_page_image_default_styles() {
   $styles = array();
 
+  // Exported image style: other_actions.
+  $styles['other_actions'] = array(
+    'label' => 'other actions',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 450,
+          'height' => 450,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: pictures_for_action_page.
   $styles['pictures_for_action_page'] = array(
     'label' => 'pictures for action page',

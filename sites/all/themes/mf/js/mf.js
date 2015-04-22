@@ -81,11 +81,15 @@
 
             $('.node--product--colorbox', context).once('colorbox-imageslide', function() {
                 var $colorbox_node_wrapper = $(this);
+
+                var $field_title =  $('> .field--name-title', $colorbox_node_wrapper);
+                var $text_title = $('.field__items  .field__item h2', $field_title);
+
                 var $big_pictures_items = $('> .field--name-field-pictures .field__items', $colorbox_node_wrapper);
                 var $big_pictures = $('.field__item', $big_pictures_items);
+
                 var $text_for_colorbox_info = colorbox_info($big_pictures[1]);
                 var $thumbnails = $('> .field--name-one-more-picture .field--name-field-pictures .field__item', $colorbox_node_wrapper);
-
                 $('> .field--name-one-more-picture', $colorbox_node_wrapper).before("<div class='colorbox-info'><span>" + $text_for_colorbox_info + "</span></div>");
                 $('> .field--name-one-more-picture', $colorbox_node_wrapper).before("<div class='change-image'><span>Zoom</span><span class='increase'></span><span class='decrease'></span></div>");
                 $thumbnails.append("<div class='under-img'></div>");

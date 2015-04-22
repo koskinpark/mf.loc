@@ -1,19 +1,34 @@
+
 .node--product--colorbox {
+  > :nth-child(n+3) {
+    opacity: 1;
+    @include animation-name(all-field-colorbox);
+    -webkit-animation-duration: 4s;
+  }
   > .field--name-title {
-    z-index: 10;
-    width: 40%;
-    height: 30px;
-    overflow: auto;
-    margin: auto;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-left: -12px;
+    margin-top: -13px;
+    display: flex;
+    @include animation-name(animation-field-title);
+    -webkit-animation-duration: 4s;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    > .field__items {
-      > .field__item {
-        > h2 {
-          margin: 0;
+    background: rgba(255, 255, 255, 0.85);
+    .field__items {
+      margin: auto;
+      .field__item {
+        h2 {
+          cursor: default;
+          opacity: 1;
+          font-size: 70px;
+          font-style: oblique;
+          font-weight: 100;
+          color: rgba(0, 0, 0, 1);
+          text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 15px black;
+          @include animation-name(animation-title);
+          -webkit-animation-duration: 4s;
         }
       }
     }
@@ -23,12 +38,12 @@
     height: auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     padding-bottom: 10px;
-    > .field__items {
+    .field__items {
       width: 100%;
       display: flex;
       height: 620px;
       overflow: hidden;
-      > .field__item {
+      .field__item {
         display: none;
         margin: auto;
         img {
@@ -199,4 +214,50 @@
 
 .ui-draggable-dragging {
   transition: 0s !important;
+}
+
+@-webkit-keyframes animation-title {
+  @include animation-title;
+}
+
+@-moz-keyframes animation-title {
+  @include animation-title;
+}
+
+@-o-keyframes animation-title {
+  @include animation-title;
+}
+
+@keyframes animation-title {
+  @include animation-title;
+}
+
+@-webkit-keyframes animation-field-title {
+  @include animation-field-title;
+}
+@-moz-keyframes animation-title {
+  @include animation-field-title;
+}
+
+@-o-keyframes animation-title {
+  @include animation-field-title;
+}
+
+@keyframes animation-title {
+  @include animation-field-title;
+}
+
+@-webkit-keyframes all-field-colorbox {
+  @include all-field-colorbox;
+}
+@-moz-keyframes animation-title {
+  @include all-field-colorbox;
+}
+
+@-o-keyframes animation-title {
+  @include all-field-colorbox;
+}
+
+@keyframes animation-title {
+  @include all-field-colorbox;
 }
