@@ -1,11 +1,14 @@
 name = block of subterms on terms page
 core = 7.x
 package = Features
+dependencies[] = ctools
+dependencies[] = features
 dependencies[] = image
 dependencies[] = views
 dependencies[] = views_content
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
+features[field_base][] = field_small_image_on_parent_page
+features[field_instance][] = taxonomy_term-catalog-field_small_image_on_parent_page
 features[image][] = small_pictures_for_subterms
 features[views_view][] = show_subterms
-features_exclude[dependencies][ctools] = ctools

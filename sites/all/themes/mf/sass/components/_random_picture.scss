@@ -1,7 +1,12 @@
 $height_of_image:310px;
 
 .pane-random-homepage-product-panel-pane-1 {
+  >h2 {
+    @include pane-title;
+  }
   >.view-random-homepage-product {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    padding-top: 7px;
     @include random-product-pane;
   }
 }

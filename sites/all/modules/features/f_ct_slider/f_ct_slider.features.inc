@@ -47,6 +47,21 @@ function f_ct_slider_image_default_styles() {
     ),
   );
 
+  // Exported image style: thumbnails_for_slideshow_on_mainpage.
+  $styles['thumbnails_for_slideshow_on_mainpage'] = array(
+    'label' => 'Thumbnails for slideshow on mainpage',
+    'effects' => array(
+      4 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 150,
+          'height' => 75,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 

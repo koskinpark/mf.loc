@@ -49,10 +49,12 @@ function f_ct_slider_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_images',
+        0 => 'title',
+        1 => 'field_images',
       ),
     ),
     'fields' => array(
+      'title' => 'ds_content',
       'field_images' => 'ds_content',
     ),
     'classes' => array(),

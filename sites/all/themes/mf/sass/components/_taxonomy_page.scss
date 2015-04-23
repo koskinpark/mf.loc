@@ -2,6 +2,7 @@
 .pane-page-title {
   z-index: 1;
   position: relative;
+  margin-top: 10px;
   height: 150px;
   @include display-flex;
   > h1 {
@@ -15,7 +16,7 @@
 .pane-page-content {
   > .contextual-links-region {
     > .pane-taxonomy-term-field-image-for-title {
-      margin-top: -140px;
+      margin-top: -150px;
       > .field--name-field-image-for-title {
         > .field__items {
           > .field__item {
@@ -37,21 +38,25 @@
     }
     > .pane-show-subterms-panel-pane-1 {
       > .view-display-id-panel_pane_1 {
+        @include display-flex;
         > .view-content {
-          text-align: center;
+          display: table;
+          margin: auto;
           border-bottom: 1px solid rgba(0, 0, 0, 0.06);
           > .views-row {
-            width: 160px;
-            height: auto;
             display: inline-block;
             vertical-align: top;
-            padding: 5px;
+            padding: 5px 0 5px 0;
             margin: 0 0 -1px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0);
             transition:0.5s;
-            > .views-field-field-images {
+            > .views-field-field-small-image-on-parent-page {
               > .field-content {
+                width: 150px;
+                height: 150px;
+                @include display-flex;
                 > a {
+                  margin: auto;
                   > img {
                     vertical-align: bottom;
                     transition:0.5s;
@@ -62,6 +67,7 @@
             }
             > .views-field-name {
               margin: 0 0 5px 0;
+              text-align: center;
               > .field-content {
                 > a {
                   transition: 0.5s;
@@ -73,7 +79,7 @@
             &:hover {
               border-bottom: 1px solid #000;
               transition:0.5s;
-              > .views-field-field-images {
+              > .views-field-field-small-image-on-parent-page {
                 > .field-content {
                   > a {
                     > img {

@@ -390,6 +390,9 @@
     opacity: 0;
     @include filter-blur(10px)
   }
+  100% {
+    opacity: 0;
+  }
 }
 
 @mixin animation-field-title {

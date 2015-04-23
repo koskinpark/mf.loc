@@ -41,13 +41,15 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 15,
       ),
       'other_actions' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'settings' => array(
+          'trim_length' => 700,
+        ),
+        'type' => 'text_summary_or_trimmed',
         'weight' => 0,
       ),
       'slider_mode' => array(
@@ -119,7 +121,7 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 11,
       ),
       'other_actions' => array(
         'label' => 'above',
@@ -181,7 +183,7 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 14,
       ),
       'other_actions' => array(
         'label' => 'above',
@@ -251,7 +253,7 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 9,
       ),
       'other_actions' => array(
         'label' => 'above',
@@ -327,7 +329,7 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 12,
       ),
       'other_actions' => array(
         'label' => 'above',
@@ -399,7 +401,7 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 13,
       ),
       'other_actions' => array(
         'label' => 'above',
@@ -475,7 +477,7 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'other_actions' => array(
         'label' => 'above',
@@ -589,7 +591,7 @@ function f_ct_slider_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'mainpage_image_slideshow',
+        'preview_image_style' => '',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -628,7 +630,7 @@ function f_ct_slider_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
       'other_actions' => array(
         'label' => 'above',

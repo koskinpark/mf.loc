@@ -22,10 +22,11 @@ function block_of_subterms_on_terms_page_image_default_styles() {
     'label' => 'small pictures for subterms',
     'effects' => array(
       3 => array(
-        'name' => 'image_scale_and_crop',
+        'name' => 'image_scale',
         'data' => array(
           'width' => 150,
           'height' => 150,
+          'upscale' => 0,
         ),
         'weight' => 1,
       ),

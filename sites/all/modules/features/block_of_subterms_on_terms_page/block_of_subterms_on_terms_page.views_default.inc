@@ -30,18 +30,6 @@ function block_of_subterms_on_terms_page_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Field: Images */
-  $handler->display->display_options['fields']['field_images']['id'] = 'field_images';
-  $handler->display->display_options['fields']['field_images']['table'] = 'field_data_field_images';
-  $handler->display->display_options['fields']['field_images']['field'] = 'field_images';
-  $handler->display->display_options['fields']['field_images']['label'] = '';
-  $handler->display->display_options['fields']['field_images']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_images']['settings'] = array(
-    'image_style' => 'small_pictures_for_subterms',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_images']['delta_offset'] = '0';
   /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -49,6 +37,17 @@ function block_of_subterms_on_terms_page_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: Small image on parent page */
+  $handler->display->display_options['fields']['field_small_image_on_parent_page']['id'] = 'field_small_image_on_parent_page';
+  $handler->display->display_options['fields']['field_small_image_on_parent_page']['table'] = 'field_data_field_small_image_on_parent_page';
+  $handler->display->display_options['fields']['field_small_image_on_parent_page']['field'] = 'field_small_image_on_parent_page';
+  $handler->display->display_options['fields']['field_small_image_on_parent_page']['label'] = '';
+  $handler->display->display_options['fields']['field_small_image_on_parent_page']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_small_image_on_parent_page']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_small_image_on_parent_page']['settings'] = array(
+    'image_style' => 'small_pictures_for_subterms',
+    'image_link' => 'content',
+  );
   /* Contextual filter: Taxonomy term: Parent term */
   $handler->display->display_options['arguments']['parent']['id'] = 'parent';
   $handler->display->display_options['arguments']['parent']['table'] = 'taxonomy_term_hierarchy';

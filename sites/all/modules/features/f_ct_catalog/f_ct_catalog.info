@@ -61,3 +61,5 @@ features[variable][] = uuid_features_entity_node
 features[variable][] = uuid_features_entity_taxonomy_term
 features[variable][] = uuid_features_file_taxonomy_term
 features[variable][] = uuid_features_vocabulary_terms
+features_exclude[field_base][field_small_image_on_parent_page] = field_small_image_on_parent_page
+features_exclude[field_instance][taxonomy_term-catalog-field_small_image_on_parent_page] = taxonomy_term-catalog-field_small_image_on_parent_page

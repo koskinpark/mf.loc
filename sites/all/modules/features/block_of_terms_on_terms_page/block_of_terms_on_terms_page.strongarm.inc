@@ -23,6 +23,14 @@ function block_of_terms_on_terms_page_strongarm() {
       0 => 'node',
       1 => 'nid',
     ),
+    'search_api_server' => array(
+      0 => 'search_api_server',
+      1 => 'id',
+    ),
+    'search_api_index' => array(
+      0 => 'search_api_index',
+      1 => 'id',
+    ),
     'file' => array(
       0 => 'file_managed',
       1 => 'fid',

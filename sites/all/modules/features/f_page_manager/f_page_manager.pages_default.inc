@@ -406,7 +406,20 @@ function f_page_manager_default_page_manager_handlers() {
     $pane->type = 'views_panes';
     $pane->subtype = 'most_viewed-panel_pane_1';
     $pane->shown = TRUE;
-    $pane->access = array();
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'mainpage_slideshow' => 'mainpage_slideshow',
+            ),
+          ),
+          'context' => 'node',
+          'not' => TRUE,
+        ),
+      ),
+    );
     $pane->configuration = array();
     $pane->cache = array();
     $pane->style = array(

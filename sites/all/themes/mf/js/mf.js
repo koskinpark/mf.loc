@@ -1,5 +1,92 @@
 (function($){
 
+    Drupal.behaviors.slideshowonmainpage = {
+        attach: function (context, settings) {
+            $('.pane-view-slideshow-panel-pane-1', context).once('slideshow', function() {
+                var $pane = $(this);
+                var $titles = $('.skin-default > .views-slideshow-controls-top .views-slideshow-pager-field-item', $pane);
+                var $thumbnails = $('.skin-default > .views-slideshow-controls-bottom .views-slideshow-pager-field-item', $pane);
+                $thumbnails.each(function(i) {
+                    var $thumbnail = $(this);
+                    $('img', $thumbnail).mouseenter(function() {
+                        $('.skin-default > .views-slideshow-controls-top', $pane).css({
+                            'display': 'flex'
+                        });
+                        $($titles[i]).css({
+                            'display': 'block'
+                        });
+                        $($titles[i]).delay(1).queue(function(){
+                            $($titles[i]).css({
+                                'visibility' : 'visible',
+                                'opacity' : '1',
+                                'transition' : '0.5s'
+                            }).clearQueue();
+                        });
+
+                    });
+                    $('img', $thumbnail).mouseleave(function() {
+                        $('.skin-default > .views-slideshow-controls-top', $pane).css({
+                            'display': 'none'
+                        });
+                        $($titles[i]).css({
+                            'display': 'none',
+                            'visibility': 'hidden',
+                            'opacity': '0'
+                        });
+                    });
+                });
+
+            });
+        }
+    };
+
+    Drupal.behaviors.otheractions = {
+        attach: function (context, settings) {
+            $(".pane-show-other-actions-on-actions-page-panel-pane-1", context).once("other-actions", function () {
+                var $pane = $(this);
+                var $views_rows = $('> .view-show-other-actions-on-actions-page .view-content .views-row', $pane);
+                $views_rows.each(function(i) {
+                    var $views_row = $(this);
+                    var $title = $('> .node--mainpage-slideshow .field--name-title', $views_row);
+                    var $field_of_img = $('> .node--mainpage-slideshow .field--name-field-images .field__item', $views_row);
+                    var $body = $('> .node--mainpage-slideshow .field--name-body', $views_row);
+                    var $get_height_title = $title.outerHeight();
+                    var $get_height_img = $('img', $field_of_img).attr('height');
+                    var $get_height_body = $body.outerHeight();
+                    $title.css({
+                        'top' : -$get_height_title
+                    });
+                    $field_of_img.css({
+                        'height' : $get_height_img
+                    });
+                    $body.css({
+                        'bottom' : -$get_height_body
+                    });
+                    $views_row.mouseenter(function () {
+                        $title.css({
+                            'top' : 0,
+                            'transition' : '0.5s ease'
+                        });
+                        $body.css({
+                            'bottom': 0,
+                            'transition' : '0.5s ease'
+                        });
+                    });
+                    $views_row.mouseleave(function () {
+                        $title.css({
+                            'top' : -$get_height_title,
+                            'transition' : '0.5s ease'
+                        });
+                        $body.css({
+                            'bottom': -$get_height_body,
+                            'transition' : '0.5s ease'
+                        });
+                    });
+                });
+            });
+        }
+    };
+
     Drupal.behaviors.imgtobg = {
         attach: function (context, settings) {
             $('.group-action', context).once('colorbox-imageslide', function() {
@@ -263,7 +350,7 @@
     Drupal.behaviors.seemorebutton = {
         attach: function (context, settings) {
             $(".pane-see-more-product-homepage-panel-pane-1", context).once("see-more", function () {
-                $pane = $(this);
+                var $pane = $(this);
                 $pane.prepend("<div class='see-more'><span class='see-more-btn'>See More</span><img src='sites/all/themes/mf/images/arrow_see_more.png'></div>");
 
                 $pane.mouseenter(function () {

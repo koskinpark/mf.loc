@@ -42,6 +42,7 @@ features[field_instance][] = node-mainpage_slideshow-field_image_for_title_of_ac
 features[field_instance][] = node-mainpage_slideshow-field_images
 features[field_instance][] = node-mainpage_slideshow-field_last_information_about_act
 features[image][] = mainpage_image_slideshow
+features[image][] = thumbnails_for_slideshow_on_mainpage
 features[node][] = mainpage_slideshow
 features[uuid_node][] = 5ce6227d-ecaa-427f-a856-bae6518e3af9
 features[uuid_node][] = 68250709-5cc6-4960-b176-75694c2e0c4f

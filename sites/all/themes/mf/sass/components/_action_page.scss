@@ -46,7 +46,6 @@
         .field__items {
           padding: 0 20px 0 20px;
           font-style: oblique;
-          letter-spacing: -0.5px;
           text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
         }
         &:after {
@@ -85,7 +84,6 @@
               &:first-letter {
                 font-size: 30px;
                 font-weight: bold;
-                letter-spacing: -1px;
               }
             }
           }
@@ -111,14 +109,12 @@
         box-shadow: 0 0 20px 1px #000;
         .field__items {
           padding: 0 20px 5px 20px;
-          letter-spacing: -0.5px;
           font-style: oblique;
           .field__item {
             p {
               &:first-letter {
                 font-size: 30px;
                 font-weight: bold;
-                letter-spacing: -1px;
               }
             }
           }
@@ -157,27 +153,27 @@
         transition: 0.3s;
         display: inline-block;
         position: relative;
+        overflow: hidden;
         .node--mainpage-slideshow {
           overflow: hidden;
           .field--name-title {
             position: absolute;
-            top: -68px;
             width: 100%;
             background: rgba(255, 255, 255, 0.77);
             color: #000;
             font-size: 16px;
+            font-style: oblique;
           }
           .field--name-field-images {
-
           }
           .field--name-body {
             height: auto;
             position: absolute;
-            bottom: -103px;
             width: 100%;
             background: rgba(255, 255, 255, 0.77);
             color: #000;
             font-size: 16px;
+            font-style: oblique;
             text-align: justify;
             text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11);
             .field__items {
@@ -185,21 +181,9 @@
             }
           }
         }
-        &:hover {
-          transition: 0.3s;
-          .field--name-title {
-            top: 0;
-          }
-          .field--name-body {
-            bottom: 4px;
-          }
-        }
       }
-      > :nth-child(2n+2) {
-        padding: 10px 12.5px 10px 10px;
-      }
-      > :nth-child(2n+1) {
-        padding: 10px 10px 10px 12.5px;
+      > :nth-child(n) {
+        margin: 10px;
       }
 
     }
