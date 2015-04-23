@@ -139,6 +139,16 @@ function action_page_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['argument_input'] = array(
+    'nid_1' => array(
+      'type' => 'panel',
+      'context' => 'entity:comment.author',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Content: Nid',
+    ),
+  );
   $export['show_other_actions_on_actions_page'] = $view;
 
   return $export;

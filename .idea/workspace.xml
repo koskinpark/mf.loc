@@ -2,22 +2,163 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd49590d-91f6-4fbd-ac09-7a3dc114a193" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.ds.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.ds.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.features.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.views_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.views_default.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.pages_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.pages_default.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.strongarm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" afterPath="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.features.field_base.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.features.field_instance.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.field_group.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/action_page/action_page.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_random_products_on_terms_page/block_of_random_products_on_terms_page.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_random_products_on_terms_page/block_of_random_products_on_terms_page.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_random_products_on_terms_page/block_of_random_products_on_terms_page.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_random_products_on_terms_page/block_of_random_products_on_terms_page.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_subterms_on_terms_page/block_of_subterms_on_terms_page.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_subterms_on_terms_page/block_of_subterms_on_terms_page.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_subterms_on_terms_page/block_of_subterms_on_terms_page.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_subterms_on_terms_page/block_of_subterms_on_terms_page.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_terms_on_terms_page/block_of_terms_on_terms_page.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_terms_on_terms_page/block_of_terms_on_terms_page.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_terms_on_terms_page/block_of_terms_on_terms_page.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_terms_on_terms_page/block_of_terms_on_terms_page.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_terms_on_terms_page/block_of_terms_on_terms_page.pages_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_terms_on_terms_page/block_of_terms_on_terms_page.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/block_of_terms_on_terms_page/block_of_terms_on_terms_page.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/colorbox_settings/colorbox_settings.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/colorbox_settings/colorbox_settings.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/colorbox_settings/colorbox_settings.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/colorbox_settings/colorbox_settings.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/colorbox_settings/colorbox_settings.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.field_base.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.field_instance.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.taxonomy.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.uuid_term.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.features.menu_custom.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.features.menu_links.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog_menu/f_ct_catalog_menu.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_base.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_instance.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.uuid_node.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.field_group.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.file_default_displays.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.pages_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_random_hp_product/f_ct_random_hp_product.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_random_hp_product/f_ct_random_hp_product.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_random_hp_product/f_ct_random_hp_product.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_random_hp_product/f_ct_random_hp_product.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_random_hp_product/f_ct_random_hp_product.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.field_base.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.field_instance.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.uuid_node.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.field_group.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_logotype_of_the_site/f_logotype_of_the_site.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_logotype_of_the_site/f_logotype_of_the_site.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_logotype_of_the_site/f_logotype_of_the_site.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_logotype_of_the_site/f_logotype_of_the_site.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_logotype_of_the_site/f_logotype_of_the_site.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_mainpage_fixed_image_block/f_mainpage_fixed_image_block.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_mainpage_fixed_image_block/f_mainpage_fixed_image_block.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_mainpage_fixed_image_block/f_mainpage_fixed_image_block.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.pages_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.field_instance.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.menu_custom.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.taxonomy.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.uuid_term.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.field_base.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.field_instance.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.features.uuid_node.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_panel/footer_panel.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/jquery_settings/jquery_settings.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/jquery_settings/jquery_settings.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/jquery_settings/jquery_settings.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/jquery_settings/jquery_settings.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.ds.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.field_group.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/node_product/node_product.strongarm.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/see_more_homepage/see_more_homepage.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_for_search/views_for_search.features.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_for_search/views_for_search.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_for_search/views_for_search.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_for_search/views_for_search.views_default.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/js/formoptions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/theme/views-slideshow-cycle-main-frame-row-item.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/theme/views-slideshow-cycle-main-frame-row.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/theme/views-slideshow-cycle-main-frame.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/theme/views-slideshow-cycle.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/theme/views_slideshow_cycle.theme.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.views_slideshow.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/js/views_slideshow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-controls-text-next.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-controls-text-pause.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-controls-text-previous.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-controls-text.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-pager-field-field.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-pager-field-item.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-pager-fields.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow-slide-counter.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views-slideshow.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/theme/views_slideshow.theme.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow.api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow.views.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow_controls_text.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/features/views_slideshow/views_slideshow_plugin_style_slideshow.inc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="html.iws" />
@@ -46,58 +187,8 @@
       <file leaf-file-name="_action_page.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44852942" vertical-offset="2516" max-vertical-offset="3195">
+            <state vertical-scroll-proportion="0.46564886" vertical-offset="2516" max-vertical-offset="3195">
               <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_most_viewed.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_most_viewed.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="885">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="field_format_link_to_colorbox.module" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox/field_format_link_to_colorbox.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.125" vertical-offset="924" max-vertical-offset="1455">
-              <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_colorbox_of_images.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-163.75" vertical-offset="0" max-vertical-offset="4020">
-              <caret line="262" column="1" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mf.info" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/mf.info">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mf.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/js/mf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="4845">
-              <caret line="90" column="78" selection-start-line="90" selection-start-column="78" selection-end-line="90" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -170,8 +261,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="75" />
-    <option name="y" value="68" />
+    <option name="x" value="65" />
+    <option name="y" value="58" />
     <option name="width" value="1306" />
     <option name="height" value="691" />
   </component>
@@ -506,6 +597,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -551,6 +668,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -558,9 +678,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -579,8 +696,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="68" width="1306" height="691" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="58" width="1306" height="691" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -588,19 +705,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24945454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30551302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30482116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25494674" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57425743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -629,20 +746,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/common.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7567204" vertical-offset="119647" max-vertical-offset="124830">
-          <caret line="8020" column="7" selection-start-line="8020" selection-start-column="7" selection-end-line="8020" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/image/image.field.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7626" max-vertical-offset="9675">
-          <caret line="582" column="0" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox/colorbox.module">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5466" max-vertical-offset="7875">
@@ -797,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.features.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="548">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profiles/forfurniture/forfurniture.info">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06934307" vertical-offset="1177" max-vertical-offset="1725">
@@ -836,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22058824" vertical-offset="0" max-vertical-offset="585">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3033088" vertical-offset="0" max-vertical-offset="544">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,7 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0753677" vertical-offset="0" max-vertical-offset="1200">
           <caret line="39" column="63" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,13 +988,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox/field_format_link_to_colorbox.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.125" vertical-offset="924" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="1455">
           <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
           <folding />
         </state>
@@ -924,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2959559" vertical-offset="0" max-vertical-offset="1950">
           <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="48" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="548">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3069853" vertical-offset="167" max-vertical-offset="1185">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,17 +1043,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/mf.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-163.75" vertical-offset="0" max-vertical-offset="4020">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3930" max-vertical-offset="4020">
           <caret line="262" column="1" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="1" />
           <folding />
         </state>
@@ -980,21 +1055,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5790441" vertical-offset="315" max-vertical-offset="1110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_most_viewed.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="885">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="885">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/uuid_features/uuid_features.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17612524" vertical-offset="0" max-vertical-offset="7560">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/mf.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2609489" vertical-offset="142" max-vertical-offset="690">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44852942" vertical-offset="2516" max-vertical-offset="3195">
+        <state vertical-scroll-proportion="0.46564886" vertical-offset="2516" max-vertical-offset="3195">
           <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
           <folding />
         </state>
