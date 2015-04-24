@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function search_keyword_views_data() {
+    $data['views']['mf_show_keywords'] = array(
+        'title' => t('Show keywords'),
+        'help' => t('Show keywords that user entered on search-page'),
+        'area' => array(
+            'handler' => 'search_keyword_handler_area_keywords',
+        ),
+    );
+    return $data;
+}

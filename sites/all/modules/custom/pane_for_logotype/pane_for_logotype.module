@@ -8,5 +8,4 @@ function pane_for_logotype_ctools_plugin_directory($owner, $plugin) {
         return 'plugins/' . $plugin;
     }
 }
-
 ?>

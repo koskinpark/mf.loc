@@ -1,0 +1,5 @@
+name = Show keyword from search
+description = Keyword search
+core = 7.x
+; Handlers
+files[] = handlers/search_keyword_handler_area_keywords.inc

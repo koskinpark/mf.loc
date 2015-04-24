@@ -125,9 +125,7 @@
       .field__items {
         background: #fff;
         @include display-flex;
-        border-top: 1px solid rgba(0, 0, 0, 0.08);
-        margin-top: 10px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        margin-top: 7px;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.32);
         text-align: center;

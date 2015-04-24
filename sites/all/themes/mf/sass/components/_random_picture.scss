@@ -5,8 +5,8 @@ $height_of_image:310px;
     @include pane-title;
   }
   >.view-random-homepage-product {
-    border-top: 1px solid rgba(0, 0, 0, 0.07);
-    padding-top: 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 7px 0 3px 0;
     @include random-product-pane;
   }
 }

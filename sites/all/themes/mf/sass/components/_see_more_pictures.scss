@@ -2,6 +2,7 @@
   height: 200px;
   overflow: hidden;
   transition: 0.2s;
+  margin-bottom: 10px;
   > .see-more {
     text-align: center;
     width: 150px;
@@ -20,8 +21,6 @@
         cursor: pointer;
         font-size: 25px;
         font-style: oblique;
-        letter-spacing: 2px;
-        color: rgba(0, 0, 0, 0.53);
       }
       > img {
         position: absolute;
@@ -59,7 +58,7 @@
 }
 
 .see-more-visible {
-  height: 3360px;
+  height: 3356px;
   transition:1s;
   > .see-more {
     > img {

@@ -7,6 +7,8 @@ $border_color: #00cce2, #4A9D6A, #FFD7F4, #FFFACC, #bffff5, #3E55F7, #A1AB13, #F
     @include pane-title;
   }
   > .view-most-viewed {
+    margin-top: 5px;
+    margin-bottom: 5px;
     > .view-content {
       text-align: center;
       > .views-row {

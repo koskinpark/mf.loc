@@ -1,14 +1,14 @@
 .pane-view-slideshow-panel-pane-1 {
   margin-top: 10px;
   > .view-view-slideshow {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     .skin-default {
+      position: relative;
     > .views-slideshow-controls-top {
       position: absolute;
       z-index: 2;
       width: 100%;
       height: 36px;
-      bottom: 100px;
+      bottom: 95px;
       display: none;
       .views-slideshow-pager-fields {
         margin: auto;

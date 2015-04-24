@@ -30,7 +30,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'input_required';
   $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'filtered_html';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '30';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'panels_fields';
@@ -40,11 +40,11 @@ function views_for_search_views_default_views() {
     'body_value' => 'right',
     'field_cost' => 'right',
   );
-  /* Header: Global: Result summary */
-  $handler->display->display_options['header']['result']['id'] = 'result';
-  $handler->display->display_options['header']['result']['table'] = 'views';
-  $handler->display->display_options['header']['result']['field'] = 'result';
-  $handler->display->display_options['header']['result']['content'] = 'Found @total results';
+  /* Header: Global: Show keywords */
+  $handler->display->display_options['header']['mf_show_keywords']['id'] = 'mf_show_keywords';
+  $handler->display->display_options['header']['mf_show_keywords']['table'] = 'views';
+  $handler->display->display_options['header']['mf_show_keywords']['field'] = 'mf_show_keywords';
+  $handler->display->display_options['header']['mf_show_keywords']['content'] = 'Results for "@keywords" (@total)';
   /* Field: Indexed Node: Pictures */
   $handler->display->display_options['fields']['field_pictures']['id'] = 'field_pictures';
   $handler->display->display_options['fields']['field_pictures']['table'] = 'search_api_index_title_index';
@@ -54,11 +54,11 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['fields']['field_pictures']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_pictures']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_pictures']['settings'] = array(
-    'image_style' => 'mainpage_images_block',
+    'image_style' => 'other_actions',
     'image_link' => 'content',
   );
-  $handler->display->display_options['fields']['field_pictures']['delta_limit'] = '2';
-  $handler->display->display_options['fields']['field_pictures']['delta_offset'] = '1';
+  $handler->display->display_options['fields']['field_pictures']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_pictures']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_pictures']['separator'] = '';
   /* Field: Indexed Node: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -74,22 +74,15 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['fields']['body_value']['label'] = '';
   $handler->display->display_options['fields']['body_value']['alter']['max_length'] = '300';
   $handler->display->display_options['fields']['body_value']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body_value']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body_value']['element_class'] = 'group-search';
   $handler->display->display_options['fields']['body_value']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body_value']['link_to_entity'] = 0;
-  /* Field: Indexed Node: Cost */
-  $handler->display->display_options['fields']['field_cost']['id'] = 'field_cost';
-  $handler->display->display_options['fields']['field_cost']['table'] = 'search_api_index_title_index';
-  $handler->display->display_options['fields']['field_cost']['field'] = 'field_cost';
-  $handler->display->display_options['fields']['field_cost']['label'] = '';
-  $handler->display->display_options['fields']['field_cost']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_cost']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
-  );
   /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_title_index';
   $handler->display->display_options['filters']['search_api_views_fulltext']['field'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['operator'] = 'NOT';
   $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Fulltext search';
@@ -151,6 +144,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_title_index';
   $handler->display->display_options['filters']['search_api_views_fulltext']['field'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['operator'] = 'NOT';
   $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
