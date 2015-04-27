@@ -414,22 +414,27 @@
 
     Drupal.behaviors.searchbox = {
         attach: function (context, settings) {
-            $(".form-text").hover(function () {
-                $(".form-text").addClass("search_box_hover");
-                $(".views-submit-button").addClass("search_submit_hover");
-            });
-            $(".form-text").mouseout(function () {
-                $(".form-text").removeClass("search_box_hover");
-                $(".views-submit-button").removeClass("search_submit_hover");
-            });
-            $(".form-text").focus(function () {
-                $(".form-text").val("");
-                $(".form-text").addClass("search_box_focus");
-                $(".views-submit-button").addClass("search_submit_focus");
-            });
-            $(".form-text").blur(function () {
-                $(".form-text").removeClass("search_box_focus");
-                $(".views-submit-button").removeClass("search_submit_focus");
+            $(".pane-searchbox-panel-pane-1", context).once("see-more", function () {
+                var $pane = $(this);
+                var $form_text =  $("> .view-searchbox .form-text", $pane);
+                var $submit_form_search = $('> .view-searchbox .views-submit-button', $pane);
+                $form_text.hover(function () {
+                    $form_text.addClass("search_box_hover");
+                    $submit_form_search.addClass("search_submit_hover");
+                });
+                $form_text.mouseout(function () {
+                    $form_text.removeClass("search_box_hover");
+                    $submit_form_search.removeClass("search_submit_hover");
+                });
+                $form_text.focus(function () {
+                    $form_text.val("");
+                    $form_text.addClass("search_box_focus");
+                    $submit_form_search.addClass("search_submit_focus");
+                });
+                $form_text.blur(function () {
+                    $form_text.removeClass("search_box_focus");
+                    $submit_form_search.removeClass("search_submit_focus");
+                });
             });
         }
     };
