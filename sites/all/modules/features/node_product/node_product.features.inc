@@ -29,11 +29,12 @@ function node_product_image_default_styles() {
   $styles['node_of_product_image'] = array(
     'label' => 'Node of product image',
     'effects' => array(
-      4 => array(
-        'name' => 'image_scale_and_crop',
+      8 => array(
+        'name' => 'image_scale',
         'data' => array(
           'width' => 450,
           'height' => 450,
+          'upscale' => 1,
         ),
         'weight' => 1,
       ),
@@ -44,11 +45,12 @@ function node_product_image_default_styles() {
   $styles['small_pictures_of_node_page'] = array(
     'label' => 'Small pictures of node page',
     'effects' => array(
-      8 => array(
-        'name' => 'image_scale_and_crop',
+      10 => array(
+        'name' => 'image_scale',
         'data' => array(
           'width' => 80,
           'height' => 80,
+          'upscale' => 1,
         ),
         'weight' => 1,
       ),

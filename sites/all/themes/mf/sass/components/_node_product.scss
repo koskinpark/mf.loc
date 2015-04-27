@@ -8,10 +8,15 @@
       clear: both;
       display: table-cell;
       vertical-align: middle;
+      position:relative;
       width: 40%;
-      padding: 30px;
+      text-align: right;
+      padding: 30px 20px 30px 30px;
+      @include linear-gradient(left,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.04),100%);
       .field--name-title {
-        h2 {
+        h1 {
+          color: #000;
+          text-shadow: 0px 0px 1px #000;
           font-weight: bolder;
           text-transform: uppercase;
           margin: 0;
@@ -20,79 +25,56 @@
       .field--name-body {
         text-align: justify;
         margin: 10px 0 0 0;
-        p {
-          margin: 0;
+        .field__items {
+          float: right;
+          p {
+            margin: 0;
+          }
         }
       }
       .field--name-field-cost {
         padding-top: 25px;
         font-style: oblique;
+        color: rgba(0, 0, 0, 0.4);
+      }
+      &:after {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.12);
+        position: absolute;
+        top: 0;
+        right: 0;
       }
     }
     .group-product-image {
       width: 100%;
       padding: 30px;
+      @include linear-gradient(right,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.10),100%);
       .group-image-group {
         > .field--name-one-more-picture {
           clear: both;
           display: table-cell;
-          vertical-align: bottom;
+          vertical-align: middle;
+          padding-left: 20px;
           > .field__items {
             > .field__item {
               > .field--name-field-pictures {
                 > .field__items {
                   position: relative;
                   > .field__item {
-                    &:last-child {
-                      > a {
-                        > img {
-                          position: absolute;
-                          bottom: 0;
-                          left: 70px;
-                        }
-                      }
-                    }
-                    &:nth-last-child(2) {
-                      > a {
-                        > img {
-                          position: absolute;
-                          bottom: 68px;
-                          left: 22px;
-                        }
-                      }
-                    }
-                    &:nth-last-child(3) {
-                      > a {
-                        > img {
-                          position: absolute;
-                          bottom: 149px;
-                          left: -2px;
-                        }
-                      }
-                    }
-                    &:nth-last-child(4) {
-                      > a {
-                        > img {
-                          position: absolute;
-                          bottom: 233px;
-                          left: 0;
-                        }
-                      }
-                    }
-                    padding-top: 2px;
-                    padding-right: 2px;
                     width: 80px;
                     height: 80px;
-                    > a {
+                    margin: 10px 0 10px 0;
+                    display: flex;
                       > img {
+                        margin: auto;
                         cursor: pointer;
-                        border: 2px solid #fff;
-                        border-radius: 40px;
+                        transition: 0.25s;
                         &:hover {
                           opacity: 0.9;
                           transition: 0.25s;
-                          border: 2px solid rgba(0, 0, 0, 0.1);
-                        }
+                          transform: scale(1.05);
                       }
                     }
                   }
@@ -104,14 +86,16 @@
         > .field--name-field-pictures {
           display: table-cell;
           > .field__items {
+            height: 450px;
+            width: 450px;
+            display: flex;
             > .field__item {
+              margin: auto;
+              display: none;
               > a {
                 > img {
                   cursor: pointer;
-                  border: 2px solid rgba(0, 0, 0, 0.02);
-                  border-radius: 280px;
                   &:hover {
-                    border: 2px solid rgba(255, 255, 255, 0.10);
                     transition: 0.25s;
                   }
                 }
@@ -122,4 +106,8 @@
       }
     }
   }
+}
+
+.visible {
+  display: block !important;
 }

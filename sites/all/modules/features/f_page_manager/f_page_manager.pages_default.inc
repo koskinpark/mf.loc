@@ -680,7 +680,28 @@ function f_page_manager_default_page_manager_handlers() {
     $display->content['new-1cdc2fd3-739b-4ee4-9e7d-2872e66f3848'] = $pane;
     $display->panels['content'][3] = 'new-1cdc2fd3-739b-4ee4-9e7d-2872e66f3848';
     $pane = new stdClass();
-    $pane->pid = 'new-4fdb51a0-3de0-49e4-9f11-6682dc06cfa3';
+    $pane->pid = 'new-495773af-5706-4ba2-ada0-e3ec656a99ff';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'random_product_of_taxonomy_term-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(),
+    );
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '495773af-5706-4ba2-ada0-e3ec656a99ff';
+    $display->content['new-495773af-5706-4ba2-ada0-e3ec656a99ff'] = $pane;
+    $display->panels['content'][4] = 'new-495773af-5706-4ba2-ada0-e3ec656a99ff';
+    $pane = new stdClass();
+    $pane->pid = 'new-288c143e-e44c-4bd2-99ff-ec148a0768e8';
     $pane->panel = 'content';
     $pane->type = 'views_panes';
     $pane->subtype = 'random_product_of_taxonomy_term-panel_pane_1';
@@ -693,11 +714,11 @@ function f_page_manager_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
-    $pane->uuid = '4fdb51a0-3de0-49e4-9f11-6682dc06cfa3';
-    $display->content['new-4fdb51a0-3de0-49e4-9f11-6682dc06cfa3'] = $pane;
-    $display->panels['content'][4] = 'new-4fdb51a0-3de0-49e4-9f11-6682dc06cfa3';
+    $pane->uuid = '288c143e-e44c-4bd2-99ff-ec148a0768e8';
+    $display->content['new-288c143e-e44c-4bd2-99ff-ec148a0768e8'] = $pane;
+    $display->panels['content'][5] = 'new-288c143e-e44c-4bd2-99ff-ec148a0768e8';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

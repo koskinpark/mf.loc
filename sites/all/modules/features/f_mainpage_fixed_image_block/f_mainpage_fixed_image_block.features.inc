@@ -15,10 +15,11 @@ function f_mainpage_fixed_image_block_image_default_styles() {
     'label' => 'Mainpage images block',
     'effects' => array(
       6 => array(
-        'name' => 'image_scale_and_crop',
+        'name' => 'image_scale',
         'data' => array(
           'width' => 310,
           'height' => 310,
+          'upscale' => 1,
         ),
         'weight' => 1,
       ),

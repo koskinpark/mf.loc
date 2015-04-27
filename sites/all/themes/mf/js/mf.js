@@ -150,6 +150,38 @@
         }
     };
 
+    Drupal.behaviors.nodepage = {
+        attach: function (context, settings) {
+            $(".node--product--full", context).once("images-on-node-page", function () {
+                var $block = $(this);
+
+                var $height_of_desc_block = $('> .group-description-product', $block).outerHeight();
+                $('> .group-product-image', $block).css('height', $height_of_desc_block);
+
+                var $images_block = $('> .group-product-image .group-image-group', $block);
+                var $thumbnails = $('> .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures .field__item', $images_block);
+                var $big_pictures = $('> .field--name-field-pictures .field__item',$images_block);
+
+                $($big_pictures[0]).addClass('visible');
+
+                $thumbnails.each(function(i) {
+                   var $thumbnail = $(this);
+                    $('img', $thumbnail).click(function() {
+                        $big_pictures.removeClass('visible');
+                        $($big_pictures[i]).addClass('visible');
+                    });
+                });
+
+                $('img', $big_pictures).mouseenter(function() {
+                    $('img', $big_pictures).css('cursor', 'url(/sites/all/themes/mf/images/cursors/cursor_loupe.png),pointer');
+                });
+                $('img', $big_pictures).mouseleave(function() {
+                    $('img', $big_pictures).css('cursor', ' pointer');
+                });
+            });
+        }
+    };
+
     Drupal.behaviors.colorboxmenu = {
         attach: function (context, settings) {
 
@@ -176,11 +208,17 @@
                 $default_height = $('img', $element).attr('height');
                 var sizes = {};
 
-                if (($default_width > 960) || ($default_height > 620)) {
-                    $koef_sizes = $default_width/$default_height;
+                var $width_of_window = $("#cboxLoadedContent").width();
+
+                if (($default_width > $width_of_window) || ($default_height > 620)) {
                     $height = 620;
                     $koef = $default_height/$height;
                     $width = $default_width/$koef;
+                    if ($width > $width_of_window) {
+                        $width = $width_of_window;
+                        $koef = $default_width/$width;
+                        $height = $default_height/$koef;
+                    }
                     sizes.width = $width;
                     sizes.height = $height;
                 }

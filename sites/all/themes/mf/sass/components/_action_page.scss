@@ -148,6 +148,7 @@
     .view-content {
       text-align:center;
       .views-row {
+        cursor: pointer;
         transition: 0.3s;
         display: inline-block;
         position: relative;
