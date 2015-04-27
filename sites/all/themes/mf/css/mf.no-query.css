@@ -482,19 +482,20 @@ ul.nice-menu li {
 
 /* line 168, ../sass/components/_colorbox_of_images.scss */
 #cboxClose {
-  opacity: 0.2;
-  top: 0;
+  transition-delay: 4s;
+  opacity: 0.1;
   background-image: url(/sites/all/themes/mf/images/close_button.png);
   height: 30px;
   width: 30px;
-  right: 0;
+  right: 5px;
+  top: 10px;
   bottom: unset; }
 
-/* line 178, ../sass/components/_colorbox_of_images.scss */
+/* line 179, ../sass/components/_colorbox_of_images.scss */
 #cboxLoadedContent {
   margin-bottom: 0; }
 
-/* line 182, ../sass/components/_colorbox_of_images.scss */
+/* line 183, ../sass/components/_colorbox_of_images.scss */
 .colorbox-info {
   padding-left: 100px;
   padding-right: 100px;
@@ -509,23 +510,23 @@ ul.nice-menu li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding-bottom: 5px; }
 
-/* line 197, ../sass/components/_colorbox_of_images.scss */
+/* line 198, ../sass/components/_colorbox_of_images.scss */
 .thumbnail-clicked {
   transition: 0.3s;
   box-shadow: 0px 0px 1px 0px #000 !important;
   background: rgba(0, 0, 0, 0.04) !important; }
-  /* line 201, ../sass/components/_colorbox_of_images.scss */
+  /* line 202, ../sass/components/_colorbox_of_images.scss */
   .thumbnail-clicked .under-img {
     transition: 0.3s;
     background: #000 !important;
     width: 50px !important;
     left: 13.5px !important; }
 
-/* line 209, ../sass/components/_colorbox_of_images.scss */
+/* line 210, ../sass/components/_colorbox_of_images.scss */
 .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
   opacity: unset; }
 
-/* line 213, ../sass/components/_colorbox_of_images.scss */
+/* line 214, ../sass/components/_colorbox_of_images.scss */
 .ui-draggable-dragging {
   transition: 0s !important; }
 
