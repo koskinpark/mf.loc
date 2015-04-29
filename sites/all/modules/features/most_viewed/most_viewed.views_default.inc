@@ -42,6 +42,11 @@ function most_viewed_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content statistics: Total views */
+  $handler->display->display_options['sorts']['totalcount']['id'] = 'totalcount';
+  $handler->display->display_options['sorts']['totalcount']['table'] = 'node_counter';
+  $handler->display->display_options['sorts']['totalcount']['field'] = 'totalcount';
+  $handler->display->display_options['sorts']['totalcount']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -59,6 +64,18 @@ function most_viewed_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $translatables['most_viewed'] = array(
+    t('Master'),
+    t('Most viewed'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['most_viewed'] = $view;
 
   return $export;

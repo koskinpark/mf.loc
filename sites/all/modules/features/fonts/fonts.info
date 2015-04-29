@@ -1,0 +1,9 @@
+name = Fonts
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = fontyourface_ui
+dependencies[] = google_fonts_api
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2

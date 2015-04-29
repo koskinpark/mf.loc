@@ -73,7 +73,6 @@ dependencies[] = colorbox
 dependencies[] = colorbox_node
 dependencies[] = jquery_update
 
-
 ;custom
 dependencies[] = layout_sample
 dependencies[] = pane_for_logotype
@@ -102,6 +101,11 @@ dependencies[] = see_more_homepage
 dependencies[] = colorbox_settings
 dependencies[] = action_page
 dependencies[] = jquery_settings
+dependencies[] = fonts
+dependencies[] = contacts
+dependencies[] = about_us
+dependencies[] = image_styles
+dependencies[] = languages
 
 
 ; Information added by Drupal.org packaging script on 2014-11-19

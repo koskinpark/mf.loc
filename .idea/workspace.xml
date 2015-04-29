@@ -2,7 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd49590d-91f6-4fbd-ac09-7a3dc114a193" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_contacts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.field_base.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.field_base.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.field_instance.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.field_instance.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.taxonomy.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.taxonomy.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.uuid_term.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.features.uuid_term.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.module" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_catalog/f_ct_catalog.strongarm.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.ds.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.ds.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_base.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_base.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_instance.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.field_instance.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.uuid_node.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.features.uuid_node.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.field_group.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.field_group.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.file_default_displays.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.file_default_displays.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.module" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.pages_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.pages_default.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_product/f_ct_product.strongarm.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.ds.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.ds.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.field_base.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.field_base.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.field_instance.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.field_instance.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.uuid_node.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.features.uuid_node.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.field_group.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.field_group.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.module" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.strongarm.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.views_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_ct_slider/f_ct_slider.views_default.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.features.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.module" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.pages_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.pages_default.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/f_page_manager/f_page_manager.strongarm.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.ds.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.ds.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.field_instance.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.field_instance.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.menu_custom.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.menu_custom.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.taxonomy.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.taxonomy.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.uuid_term.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.features.uuid_term.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.module" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.strongarm.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.strongarm.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.views_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/footer_linker/footer_linker.views_default.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" afterPath="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" afterPath="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.no-query.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" afterPath="$PROJECT_DIR$/sites/all/themes/mf/css/mf.styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" afterPath="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.ds.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.ds.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.features.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.features.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.info" afterPath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.module" afterPath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.views_default.inc" afterPath="$PROJECT_DIR$/sites/all/modules/features/most_viewed/most_viewed.views_default.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,41 +85,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mf.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mf.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/js/mf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3515625" vertical-offset="6015" max-vertical-offset="7515">
-              <caret line="419" column="93" selection-start-line="419" selection-start-column="93" selection-end-line="419" selection-end-column="93" />
+            <state vertical-scroll-proportion="-3.8214285" vertical-offset="1288" max-vertical-offset="7545">
+              <caret line="93" column="34" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_search.scss">
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/l10n_update/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="360" max-vertical-offset="1290">
-              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2460">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_action_page.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss">
+      <file leaf-file-name="LICENSE.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/l10n_update/LICENSE.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4166667" vertical-offset="2168" max-vertical-offset="2940">
-              <caret line="150" column="24" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5175">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="_colorbox_of_images.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss">
+      <file leaf-file-name="_see_more_pictures.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.125" vertical-offset="2292" max-vertical-offset="4005">
-              <caret line="169" column="14" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1230">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -70,18 +131,38 @@
       <file leaf-file-name="_serach_box.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_serach_box.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1200">
-              <caret line="39" column="63" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1185">
+              <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_node_product.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss">
+      <file leaf-file-name="_template.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.75" vertical-offset="396" max-vertical-offset="1770">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="570">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forfurniture.info" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/profiles/forfurniture/forfurniture.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9615877" vertical-offset="854" max-vertical-offset="1785">
+              <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_contacts.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_contacts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="525">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -90,18 +171,18 @@
       <file leaf-file-name="mixins.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.489796" vertical-offset="90" max-vertical-offset="7215">
-              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="16" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7140">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_taxonomy_page.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_taxonomy_page.scss">
+      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/variables/_typography.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="28.125" vertical-offset="900" max-vertical-offset="1785">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="133" selection-start-line="0" selection-start-column="133" selection-end-line="0" selection-end-column="133" />
               <folding />
             </state>
           </provider>
@@ -115,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/custom_pane/custom_pane.info" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/custom_pane/custom_pane.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/custom_pane/plugins/content_types/pane_for_logo.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/pane_for_logotype/pane_for_logotype.info" />
@@ -144,13 +224,11 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/jquery_no_conflict/jquery_no_conflict.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/jquery_force/jquery_force.info" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/jquery_force/jquery_force.module" />
-        <option value="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_homepage_background.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/keyframes.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_slideshow_on_mainpage.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_random_picture.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_most_viewed.scss" />
-        <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_catalog_menu.scss" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/mf_search/mf_search.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/pane_for_logotype/pane_for_logotype.module" />
@@ -160,12 +238,15 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/search_keyword/handlers/search_keyword_handler_area_keywords.inc" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_taxonomy_page.scss" />
-        <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_search.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss" />
+        <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss" />
+        <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss" />
+        <option value="$PROJECT_DIR$/sites/all/themes/mf/sass/components/_contacts.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/mf/js/mf.js" />
+        <option value="$PROJECT_DIR$/profiles/forfurniture/forfurniture.info" />
       </list>
     </option>
   </component>
@@ -217,6 +298,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,7 +489,185 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="abstractions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="l10n_update" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="l10n_update" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forfurniture" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,11 +690,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sites/all/themes/mf/sass/components" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/search_keyword/handlers" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/field_format_link_to_colorbox" />
       <recent name="$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions" />
-      <recent name="$PROJECT_DIR$/sites/all/themes/mf/sass/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/sites/all/modules/contrib/ctools/plugins" />
@@ -474,20 +747,20 @@
     <frame x="55" y="-14" width="1395" height="924" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57425743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24945454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20581818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2698182" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25494674" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57425743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -521,72 +794,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/js/jquery.matchmedia.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15236875" vertical-offset="119" max-vertical-offset="900">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/colorbox_node/colorbox_node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4080">
-          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/libraries/jquery.cycle/jquery.cycle.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23220">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/libraries/colorbox/jquery.colorbox-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="768">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/libraries/jquery/jquery-1.11.2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="740">
-          <caret line="0" column="48" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/libraries/jquery-ui-1.11.4.custom/jquery-ui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6785715" vertical-offset="0" max-vertical-offset="165">
-          <caret line="5" column="13209" selection-start-line="5" selection-start-column="13200" selection-end-line="5" selection-end-column="13209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/js/mf.highslide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="28440">
-          <caret line="1865" column="52" selection-start-line="1865" selection-start-column="52" selection-end-line="1865" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/jquery_force/jquery_force.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10948905" vertical-offset="0" max-vertical-offset="548">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/layout_sample/layout_sample.info">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="548">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="524">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -619,13 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/forfurniture/forfurniture.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06934307" vertical-offset="1177" max-vertical-offset="1725">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/panels/layouts/mf/mf.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54389316" vertical-offset="0" max-vertical-offset="524">
@@ -637,13 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="195">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_footer_inform.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="548">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -689,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/mf.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2609489" vertical-offset="142" max-vertical-offset="690">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/js/mf.behaviors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.05291971" vertical-offset="29" max-vertical-offset="990">
@@ -710,13 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77410835" vertical-offset="314" max-vertical-offset="1095">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_slideshow_on_mainpage.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1125">
@@ -728,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.096154" vertical-offset="270" max-vertical-offset="1275">
           <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,82 +990,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="585">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_random_picture.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="330">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2292" max-vertical-offset="4005">
+          <caret line="169" column="14" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/mf.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36491677" vertical-offset="0" max-vertical-offset="781">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/wysiwyg/editors/ckeditor.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3114525" vertical-offset="857" max-vertical-offset="7005">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_taxonomy_page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="28.125" vertical-offset="900" max-vertical-offset="1785">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.489796" vertical-offset="90" max-vertical-offset="7215">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.12813738" vertical-offset="1163" max-vertical-offset="1920">
+          <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_node_product.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.75" vertical-offset="396" max-vertical-offset="1770">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.5072655" vertical-offset="396" max-vertical-offset="1770">
+          <caret line="52" column="80" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/variables/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33240223" vertical-offset="6422" max-vertical-offset="12225">
+          <caret line="444" column="49" selection-start-line="444" selection-start-column="43" selection-end-line="444" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/theme-settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33240223" vertical-offset="512" max-vertical-offset="3465">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13870542" vertical-offset="0" max-vertical-offset="757">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-120.625" vertical-offset="0" max-vertical-offset="3015">
+          <caret line="193" column="21" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_footer_inform.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="570">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/variables/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="757">
+          <caret line="0" column="133" selection-start-line="0" selection-start-column="133" selection-end-line="0" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/base/_template.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="570">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_serach_box.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1185">
+          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_search.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="360" max-vertical-offset="1290">
+        <state vertical-scroll-proportion="0.79260236" vertical-offset="0" max-vertical-offset="1290">
           <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_action_page.scss">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_see_more_pictures.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4166667" vertical-offset="2168" max-vertical-offset="2940">
-          <caret line="150" column="24" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_colorbox_of_images.scss">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/abstractions/mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.125" vertical-offset="2292" max-vertical-offset="4005">
-          <caret line="169" column="14" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7140">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/sass/components/_contacts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="525">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/mf/js/mf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3515625" vertical-offset="6015" max-vertical-offset="7515">
-          <caret line="419" column="93" selection-start-line="419" selection-start-column="93" selection-end-line="419" selection-end-column="93" />
+        <state vertical-scroll-proportion="-3.8214285" vertical-offset="1288" max-vertical-offset="7545">
+          <caret line="93" column="34" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/l10n_update/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5175">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/l10n_update/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2460">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/forfurniture/forfurniture.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9615877" vertical-offset="854" max-vertical-offset="1785">
+          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -16,6 +16,7 @@ function f_page_manager_strongarm() {
   $strongarm->name = 'default_page_manager_pages';
   $strongarm->value = array(
     'action_page' => TRUE,
+    'about' => TRUE,
   );
   $export['default_page_manager_pages'] = $strongarm;
 

@@ -442,7 +442,7 @@
         attach: function (context, settings) {
             $(".pane-see-more-product-homepage-panel-pane-1", context).once("see-more", function () {
                 var $pane = $(this);
-                $pane.prepend("<div class='see-more'><span class='see-more-btn'>See More</span><img src='sites/all/themes/mf/images/arrow_see_more.png'></div>");
+                $pane.prepend("<div class='border-see-more'></div></div><div class='see-more'><span class='see-more-btn'>See More</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div>");
 
                 $pane.mouseenter(function () {
                     $pane.addClass('toggle-mouse');
@@ -468,10 +468,12 @@
                 $(".see-more-btn").click(function () {
                     $pane.toggleClass('see-more-visible');
                     if ($pane.hasClass('see-more-visible')) {
+                        $(".border-see-more").css({'display' : 'none'});
                         $(".see-more-btn").text("Hide back");
                         $(".view-id-see_more_product_homepage", $pane).removeClass('see-more-pictures');
                     }
                     if (!$pane.hasClass('see-more-visible')) {
+                        $(".border-see-more").css({'display' : 'block'});
                         $(".see-more-btn").text("See More");
                         $(".view-id-see_more_product_homepage", $pane).addClass('see-more-pictures');
                     }

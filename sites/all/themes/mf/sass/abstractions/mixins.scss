@@ -1,15 +1,4 @@
 
-@mixin background-linear-gradient ($side, $arguments) {
-  background: -webkit-linear-gradient($side, $arguments);
-  background: -moz-linear-gradient($side, $arguments); /* FF3.6+ */
-  background: -webkit-linear-gradient($side, $arguments); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient($side, $arguments); /* Opera 11.10+ */
-  background: -ms-linear-gradient($side, $arguments); /* IE10+ */
-  @if ($side == left) {
-    background: linear-gradient(to right, $arguments); /* W3C */
-  }
-}
-
 @mixin linear-gradient($side, $start: #f1f1f1, $from: 0%, $stop: #d9d9d9, $to: 100% ) {
   background: $start;
   background: -webkit-gradient($side, from(ie-hex-str($start)), to(ie-hex-str($stop)));

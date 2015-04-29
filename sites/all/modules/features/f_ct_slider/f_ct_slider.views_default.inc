@@ -131,6 +131,17 @@ function f_ct_slider_views_default_views() {
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $handler->display->display_options['link_url'] = 'actions/';
+  $translatables['view_slideshow'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['view_slideshow'] = $view;
 
   return $export;

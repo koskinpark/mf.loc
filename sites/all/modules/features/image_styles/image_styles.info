@@ -1,0 +1,6 @@
+name = Image styles
+core = 7.x
+package = Features
+features[features_api][] = api:2
+features[image][] = image_for_other_pages__about__contacts__etc__
+features_exclude[dependencies][image] = image
