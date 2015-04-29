@@ -32,6 +32,22 @@ function f_ct_slider_views_api($module = NULL, $api = NULL) {
 function f_ct_slider_image_default_styles() {
   $styles = array();
 
+  // Exported image style: main_image_of_action_page.
+  $styles['main_image_of_action_page'] = array(
+    'label' => 'Main image of action page',
+    'effects' => array(
+      11 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 960,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: mainpage_image_slideshow.
   $styles['mainpage_image_slideshow'] = array(
     'label' => 'Mainpage image slideshow',

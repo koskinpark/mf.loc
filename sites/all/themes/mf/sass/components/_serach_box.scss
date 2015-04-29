@@ -1,4 +1,3 @@
-$width: 150px;
 
 .pane-searchbox-panel-pane-1 {
   float: right;
@@ -13,13 +12,14 @@ $width: 150px;
           > .form-item-search-api-views-fulltext {
             > .form-text {
               height: 30px;
-              width: $width;
+              width: 175px;
               background: #F7F7F7;
               border: 1px solid #DDD;
               border-radius: 3px;
               padding-right: 30px;
               transition: 0.3s;
-              font-style: oblique;
+              font-size: 14px;
+              font-style: italic;
               color: rgba(0, 0, 0, 0.55);
               padding-left:10px;
             }
@@ -59,9 +59,8 @@ $width: 150px;
 .search_box_focus {
   color: rgba(0, 0, 0, 0.74) !important;
   transition: 0.3s;
-  width: $width + 150px !important;
-  background: #fFFFFF !important;
-  border: 2px solid rgba(0, 0, 0, 0.43) !important;
+  width: 220px !important;
+  border: 1px solid rgba(0, 0, 0, 0.43) !important;
 }
 
 .search_submit_hover {

@@ -110,5 +110,14 @@
         @include random-product-pane;
       }
     }
+    > .pane-random-product-of-taxonomy-term-panel-pane-2 {
+      > .pane-title {
+        @include pane-title;
+      }
+      > .view-random-product-of-taxonomy-term {
+        margin-top: 7px;
+        @include random-product-pane;
+      }
+    }
   }
 }

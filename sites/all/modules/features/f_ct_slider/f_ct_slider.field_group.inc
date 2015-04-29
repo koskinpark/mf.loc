@@ -21,7 +21,7 @@ function f_ct_slider_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'First part of action',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_image_1_of_action',
       1 => 'field_body_1_of_action',
@@ -55,7 +55,7 @@ function f_ct_slider_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Second part of action',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_image_2_of_action',
       1 => 'field_body_2_of_action',

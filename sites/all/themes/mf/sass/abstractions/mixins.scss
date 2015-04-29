@@ -24,6 +24,12 @@
   @if ($side == right) {
     background: linear-gradient(to left, $start $from, $stop $to);
   }
+  @if ($side == top) {
+    background: linear-gradient(to bottom, $start $from, $stop $to);
+  }
+  @if ($side == bottom) {
+    background: linear-gradient(to top, $start $from, $stop $to);
+  }
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str($start)}', endColorstr='#{ie-hex-str($stop)}',GradientType=0 );
 
 }
