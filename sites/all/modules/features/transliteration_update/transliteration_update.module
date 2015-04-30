@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the transliteration update feature.
+ */
+
+include_once 'transliteration_update.features.inc';

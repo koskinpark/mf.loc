@@ -106,6 +106,7 @@ dependencies[] = contacts
 dependencies[] = about_us
 dependencies[] = image_styles
 dependencies[] = languages
+dependencies[] = transliteration_update
 
 
 ; Information added by Drupal.org packaging script on 2014-11-19

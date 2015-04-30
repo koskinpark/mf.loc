@@ -13,6 +13,16 @@ function f_page_manager_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_page_manager_handlers';
+  $strongarm->value = array(
+    'node_view__panel_context_53c82c5c-f704-424e-a9b4-e8264576a91f' => TRUE,
+    'term_view__default' => TRUE,
+  );
+  $export['default_page_manager_handlers'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'default_page_manager_pages';
   $strongarm->value = array(
     'action_page' => TRUE,

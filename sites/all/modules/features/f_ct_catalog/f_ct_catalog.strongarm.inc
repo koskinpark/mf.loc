@@ -13,6 +13,46 @@ function f_ct_catalog_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_taxonomy_term__catalog';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'terms_slideshow_on_terms_page' => array(
+        'custom_settings' => FALSE,
+      ),
+      'footer_linker' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'name' => array(
+          'weight' => '-5',
+        ),
+        'description' => array(
+          'weight' => '0',
+        ),
+      ),
+      'display' => array(
+        'description' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['field_bundle_settings_taxonomy_term__catalog'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_display_descendants_catalog';
   $strongarm->value = 0;
   $export['taxonomy_menu_display_descendants_catalog'] = $strongarm;
@@ -120,6 +160,8 @@ function f_ct_catalog_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'uuid_features_entity_node';
   $strongarm->value = array(
+    'about_us' => 'about_us',
+    'contacts' => 'contacts',
     'footer_type' => 'footer_type',
     'mainpage_slideshow' => 'mainpage_slideshow',
     'product' => 'product',
@@ -144,7 +186,7 @@ function f_ct_catalog_strongarm() {
   $strongarm->name = 'uuid_features_file_taxonomy_term';
   $strongarm->value = array(
     'catalog' => 'catalog',
-    'footer_linker' => 0,
+    'footer_linker' => 'footer_linker',
   );
   $export['uuid_features_file_taxonomy_term'] = $strongarm;
 

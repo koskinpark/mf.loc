@@ -68,7 +68,7 @@
 
 .see-more-visible {
   height: 3356px;
-  transition:1s;
+  transition:0.3s ease;
   > .see-more {
     > img {
       @include transform-rotate(180deg);

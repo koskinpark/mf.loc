@@ -13,6 +13,13 @@ function f_ct_slider_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_mainpage_slideshow';
+  $strongarm->value = 'edit-submission';
+  $export['additional_settings__active_tab_mainpage_slideshow'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__mainpage_slideshow';
   $strongarm->value = array(
     'view_modes' => array(
@@ -112,6 +119,16 @@ function f_ct_slider_strongarm() {
   $strongarm->name = 'node_submitted_mainpage_slideshow';
   $strongarm->value = 0;
   $export['node_submitted_mainpage_slideshow'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'path_alias_whitelist';
+  $strongarm->value = array(
+    'node' => TRUE,
+    'taxonomy' => TRUE,
+  );
+  $export['path_alias_whitelist'] = $strongarm;
 
   return $export;
 }

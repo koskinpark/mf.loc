@@ -442,11 +442,21 @@
         attach: function (context, settings) {
             $(".pane-see-more-product-homepage-panel-pane-1", context).once("see-more", function () {
                 var $pane = $(this);
+                var $view_content = $('> .view-see-more-product-homepage .view-content', $pane);
+
+                var childs_from_1_to_3_see_more = function($destination, $opacity, $transition) {
+                    $('>:nth-child(-n+3)', $destination).css({
+                        'opacity' : $opacity,
+                        'transition' : $transition
+                    });
+                };
+                childs_from_1_to_3_see_more($view_content, '.6', '0.3s');
                 $pane.prepend("<div class='border-see-more'></div></div><div class='see-more'><span class='see-more-btn'>See More</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div>");
 
                 $pane.mouseenter(function () {
                     $pane.addClass('toggle-mouse');
                     if (!$pane.hasClass('see-more-visible')) {
+                        childs_from_1_to_3_see_more($view_content, '1', '0.3s');
                         $(".view-id-see_more_product_homepage", $pane).addClass('see-more-pictures');
                     }
 
@@ -454,6 +464,7 @@
                 $pane.mouseleave(function () {
                     $pane.removeClass('toggle-mouse');
                     if (!$pane.hasClass('see-more-visible')) {
+                        childs_from_1_to_3_see_more($view_content, '.6', '0.3s');
                         $(".view-id-see_more_product_homepage", $pane).removeClass('see-more-pictures');
                     }
                 });
@@ -464,15 +475,28 @@
                 $(".see-more-btn", $pane).mouseout(function () {
                     $(".see-more", $pane).removeClass("see-more-hover");
                 });
-
+                var destination = $pane.offset().top;
+                console.log(destination);
                 $(".see-more-btn").click(function () {
                     $pane.toggleClass('see-more-visible');
                     if ($pane.hasClass('see-more-visible')) {
+                        if($.browser.safari){
+                            $('body').animate( { scrollTop: destination}, "fast" );
+                        }else{
+                            $('html').animate( { scrollTop: destination}, "fast" );
+                        }
                         $(".border-see-more").css({'display' : 'none'});
                         $(".see-more-btn").text("Hide back");
                         $(".view-id-see_more_product_homepage", $pane).removeClass('see-more-pictures');
+                        return false;
                     }
                     if (!$pane.hasClass('see-more-visible')) {
+                        var back_destination = destination - 100;
+                        if($.browser.safari){
+                            $('body').animate( { scrollTop: back_destination}, "fast" );
+                        }else{
+                            $('html').animate( { scrollTop: back_destination}, "fast" );
+                        }
                         $(".border-see-more").css({'display' : 'block'});
                         $(".see-more-btn").text("See More");
                         $(".view-id-see_more_product_homepage", $pane).addClass('see-more-pictures');
@@ -486,9 +510,9 @@
             $(".pane-nice-menus-2", context).once("see-more", function () {
                 $pane = $(this);
                 $pane_ul = $('.nice-menu-menu-footer-menu', $pane);
-                $('.menu-path-taxonomy-term-28 > a', $pane_ul).removeAttr('href');
-                $('.menu-path-taxonomy-term-28 > a', $pane_ul).css('cursor','pointer');
-                $('.menu-path-taxonomy-term-28 > a', $pane_ul).click(function() {
+                $('.menu-605 > a', $pane_ul).removeAttr('href');
+                $('.menu-605 > a', $pane_ul).css('cursor','pointer');
+                $('.menu-605 > a', $pane_ul).click(function() {
                    scroller();
                 });
             });

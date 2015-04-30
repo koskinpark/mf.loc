@@ -19,6 +19,7 @@ features[page_manager_pages][] = action_page
 features[page_manager_pages][] = contacts
 features[page_manager_pages][] = events
 features[page_manager_pages][] = home
+features[variable][] = default_page_manager_handlers
 features[variable][] = default_page_manager_pages
 features[variable][] = page_manager_node_view_disabled
 features[variable][] = page_manager_search_disabled_node

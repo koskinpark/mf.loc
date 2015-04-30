@@ -36,6 +36,8 @@ function node_product_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'uuid_features_file_node';
   $strongarm->value = array(
+    'about_us' => 'about_us',
+    'contacts' => 'contacts',
     'footer_type' => 'footer_type',
     'mainpage_slideshow' => 'mainpage_slideshow',
     'product' => 'product',

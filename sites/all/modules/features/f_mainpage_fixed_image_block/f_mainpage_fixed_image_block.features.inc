@@ -14,12 +14,11 @@ function f_mainpage_fixed_image_block_image_default_styles() {
   $styles['mainpage_images_block'] = array(
     'label' => 'Mainpage images block',
     'effects' => array(
-      6 => array(
-        'name' => 'image_scale',
+      13 => array(
+        'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 310,
           'height' => 310,
-          'upscale' => 1,
         ),
         'weight' => 1,
       ),

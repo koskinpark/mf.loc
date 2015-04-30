@@ -54,7 +54,12 @@ function footer_linker_uuid_features_default_terms() {
     'weight' => 4,
     'uuid' => '872e984a-af8d-40ac-b77a-2430ddc6fa62',
     'vocabulary_machine_name' => 'footer_linker',
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Actions',

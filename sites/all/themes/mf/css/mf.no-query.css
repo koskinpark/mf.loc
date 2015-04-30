@@ -952,22 +952,22 @@ ul.nice-menu li {
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-2 img {
       background: #FFF;
       border-radius: 110px;
-      border: 2px solid #4A9D6A; }
+      border: 2px solid #66009d; }
     /* line 47, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-3 img {
       background: #FFF;
       border-radius: 110px;
-      border: 2px solid #FFD7F4; }
+      border: 2px solid #7ffcff; }
     /* line 47, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-4 img {
       background: #FFF;
       border-radius: 110px;
-      border: 2px solid #FFFACC; }
+      border: 2px solid #22ff00; }
     /* line 47, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-5 img {
       background: #FFF;
       border-radius: 110px;
-      border: 2px solid #bffff5; }
+      border: 2px solid #ffbdb3; }
     /* line 47, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-6 img {
       background: #FFF;
@@ -980,6 +980,26 @@ ul.nice-menu li {
       border: 2px solid #A1AB13; }
     /* line 47, ../sass/components/_most_viewed.scss */
     .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-8 img {
+      background: #FFF;
+      border-radius: 110px;
+      border: 2px solid #FF0091; }
+    /* line 47, ../sass/components/_most_viewed.scss */
+    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-9 img {
+      background: #FFF;
+      border-radius: 110px;
+      border: 2px solid #bffff5; }
+    /* line 47, ../sass/components/_most_viewed.scss */
+    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-10 img {
+      background: #FFF;
+      border-radius: 110px;
+      border: 2px solid #3E55F7; }
+    /* line 47, ../sass/components/_most_viewed.scss */
+    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-11 img {
+      background: #FFF;
+      border-radius: 110px;
+      border: 2px solid #A1AB13; }
+    /* line 47, ../sass/components/_most_viewed.scss */
+    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-12 img {
       background: #FFF;
       border-radius: 110px;
       border: 2px solid #FF0091; }
@@ -1467,7 +1487,7 @@ ul.nice-menu li {
 /* line 69, ../sass/components/_see_more_pictures.scss */
 .see-more-visible {
   height: 3356px;
-  transition: 1s; }
+  transition: 0.3s ease; }
   /* line 73, ../sass/components/_see_more_pictures.scss */
   .see-more-visible > .see-more > img {
     -webkit-transform: rotate(180deg);

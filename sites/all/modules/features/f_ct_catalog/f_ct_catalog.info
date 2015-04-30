@@ -43,6 +43,7 @@ features[uuid_term][] = d68db77b-baa5-4f85-b6c1-83c38d4f3642
 features[uuid_term][] = e61f725b-a1f7-49c2-b95b-92e2470a1e8c
 features[uuid_term][] = f8450b8a-0d74-4a00-83bb-468708cce348
 features[uuid_term][] = f972038f-1622-4e25-9c6a-4913651a10be
+features[variable][] = field_bundle_settings_taxonomy_term__catalog
 features[variable][] = taxonomy_menu_display_descendants_catalog
 features[variable][] = taxonomy_menu_display_num_catalog
 features[variable][] = taxonomy_menu_end_all_catalog
