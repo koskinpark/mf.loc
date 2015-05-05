@@ -26,7 +26,9 @@ function f_page_manager_strongarm() {
   $strongarm->name = 'default_page_manager_pages';
   $strongarm->value = array(
     'action_page' => TRUE,
+    'contacts' => TRUE,
     'about' => TRUE,
+    'events' => TRUE,
   );
   $export['default_page_manager_pages'] = $strongarm;
 
@@ -55,7 +57,7 @@ function f_page_manager_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'page_manager_user_view_disabled';
-  $strongarm->value = TRUE;
+  $strongarm->value = FALSE;
   $export['page_manager_user_view_disabled'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -33,210 +33,9 @@ li {
 #content-wrap {
   background: #ffffff; }
 
-/* line 3, ../sass/components/_action_page.scss */
-.node--mainpage-slideshow--full > .group-action {
-  margin-top: 10px;
-  position: relative; }
-  /* line 6, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action .field--name-field-image-for-background {
-    position: absolute;
-    height: 100%;
-    width: 100%; }
-  /* line 11, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action :nth-child(n+2) {
-    position: relative; }
-  /* line 17, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-title .field__items .field__item {
-    z-index: 1;
-    position: relative;
-    height: 150px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex; }
-    /* line 22, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-title .field__items .field__item h2 {
-      margin: auto;
-      color: #FFF;
-      font-size: 2.5em;
-      text-shadow: 0 0 10px #000;
-      cursor: default; }
-  /* line 32, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-field-image-for-title-of-action {
-    margin-top: -150px; }
-  /* line 37, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-body {
-    position: absolute;
-    z-index: 1;
-    width: 600px;
-    left: 20px;
-    top: 120px;
-    background: #FFF;
-    box-shadow: 0 0 10px 1px #000;
-    border-bottom-right-radius: 40px; }
-    /* line 46, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-body .field__items {
-      padding: 0 20px 0 20px;
-      font-style: oblique;
-      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
-    /* line 51, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-body:after {
-      content: '';
-      position: absolute;
-      height: 10px;
-      width: 10px;
-      background: url("../../mf/images/zagugulina.png"); }
-  /* line 60, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 {
-    margin-top: 55px; }
-    /* line 62, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-image-1-of-action {
-      width: 800px;
-      height: auto;
-      margin-left: 30px; }
-      /* line 66, ../sass/components/_action_page.scss */
-      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-image-1-of-action img {
-        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.28); }
-    /* line 70, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-body-1-of-action {
-      position: absolute;
-      top: 50px;
-      right: 20px;
-      height: auto;
-      width: 230px;
-      background: #fff;
-      box-shadow: 0 0 20px 1px #000; }
-      /* line 78, ../sass/components/_action_page.scss */
-      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-body-1-of-action .field__items {
-        padding: 0 20px 5px 20px;
-        letter-spacing: -0.5px;
-        font-style: oblique; }
-        /* line 84, ../sass/components/_action_page.scss */
-        .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-body-1-of-action .field__items .field__item p:first-letter {
-          font-size: 30px;
-          font-weight: bold; }
-  /* line 93, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 {
-    margin-top: 20px; }
-    /* line 95, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-image-2-of-action {
-      width: 800px;
-      height: auto;
-      margin-left: 130px; }
-      /* line 99, ../sass/components/_action_page.scss */
-      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-image-2-of-action img {
-        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.28); }
-    /* line 103, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-body-2-of-action {
-      position: absolute;
-      top: -40px;
-      left: 80px;
-      width: 250px;
-      background: #fff;
-      box-shadow: 0 0 20px 1px #000; }
-      /* line 110, ../sass/components/_action_page.scss */
-      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-body-2-of-action .field__items {
-        padding: 0 20px 5px 20px;
-        font-style: oblique; }
-        /* line 115, ../sass/components/_action_page.scss */
-        .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-body-2-of-action .field__items .field__item p:first-letter {
-          font-size: 30px;
-          font-weight: bold; }
-  /* line 125, ../sass/components/_action_page.scss */
-  .node--mainpage-slideshow--full > .group-action > .field--name-field-last-information-about-act .field__items {
-    background: #fff;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    margin-top: 7px;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.32);
-    text-align: center;
-    font-style: oblique; }
-    /* line 133, ../sass/components/_action_page.scss */
-    .node--mainpage-slideshow--full > .group-action > .field--name-field-last-information-about-act .field__items .field__item {
-      margin: auto;
-      width: 400px; }
-
-/* line 144, ../sass/components/_action_page.scss */
-.pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title {
-  font-style: oblique;
-  font-weight: normal;
-  text-align: center;
-  font-size: 25px;
-  cursor: default;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  padding: 20px 0 20px 0;
-  margin: 0; }
-  /* line 388, ../sass/abstractions/mixins.scss */
-  .pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title:before {
-    border-bottom: 1px solid #969696;
-    content: ' ';
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    top: -7px;
-    width: 100px;
-    margin-right: 10px; }
-  /* line 398, ../sass/abstractions/mixins.scss */
-  .pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title:after {
-    margin-left: 10px;
-    border-bottom: 1px solid #969696;
-    content: ' ';
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    top: -7px;
-    width: 100px; }
-/* line 148, ../sass/components/_action_page.scss */
-.pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content {
-  text-align: center; }
-  /* line 150, ../sass/components/_action_page.scss */
-  .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row {
-    cursor: pointer;
-    transition: 0.3s;
-    display: inline-block;
-    position: relative;
-    overflow: hidden; }
-    /* line 156, ../sass/components/_action_page.scss */
-    .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow {
-      overflow: hidden; }
-      /* line 158, ../sass/components/_action_page.scss */
-      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-title {
-        position: absolute;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.77);
-        color: #000;
-        font-size: 16px;
-        font-style: oblique; }
-      /* line 168, ../sass/components/_action_page.scss */
-      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-body {
-        height: auto;
-        position: absolute;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.77);
-        color: #000;
-        font-size: 16px;
-        font-style: oblique;
-        text-align: justify;
-        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11); }
-        /* line 178, ../sass/components/_action_page.scss */
-        .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-body .field__items {
-          padding: 0 20px 0 20px; }
-  /* line 184, ../sass/components/_action_page.scss */
-  .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content > :nth-child(n) {
-    margin: 10px; }
-
-/* line 192, ../sass/components/_action_page.scss */
-.pane-node-field-main-picture-of-action {
-  margin-top: 10px;
-  margin-bottom: 7px; }
+/* line 4, ../sass/components/_all_actions.scss */
+.all-actions > #content-wrap .pane-page-content .pane-title {
+  border-top: unset; }
 
 /* line 3, ../sass/components/_catalog_menu.scss */
 .pane-nice-menus-1 {
@@ -319,6 +118,16 @@ ul.nice-menu li {
   border: none;
   background-color: unset; }
 
+/* line 82, ../sass/components/_catalog_menu.scss */
+.here_goes {
+  margin-top: 54px; }
+  /* line 84, ../sass/components/_catalog_menu.scss */
+  .here_goes .nice-menu-menu-catalog-menu {
+    position: fixed !important;
+    top: 0;
+    width: 960px !important;
+    box-shadow: 0px 10px 6px -8px #000; }
+
 /* line 3, ../sass/components/_colorbox_of_images.scss */
 .node--product--colorbox > :nth-child(n+3) {
   opacity: 1;
@@ -339,7 +148,7 @@ ul.nice-menu li {
   animation: animation-field-title;
   -webkit-animation-duration: 4s;
   position: absolute;
-  background: rgba(255, 255, 255, 0.85); }
+  background: white; }
   /* line 17, ../sass/components/_colorbox_of_images.scss */
   .node--product--colorbox > .field--name-title .field__items {
     margin: auto; }
@@ -875,134 +684,196 @@ ul.nice-menu li {
   margin-top: 10px;
   display: inline-block; }
 
-/* line 6, ../sass/components/_most_viewed.scss */
-.pane-most-viewed-panel-pane-1 > .pane-title {
-  font-style: oblique;
-  font-weight: normal;
-  text-align: center;
-  font-size: 25px;
-  cursor: default;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  padding: 20px 0 20px 0;
-  margin: 0; }
-  /* line 388, ../sass/abstractions/mixins.scss */
-  .pane-most-viewed-panel-pane-1 > .pane-title:before {
-    border-bottom: 1px solid #969696;
-    content: ' ';
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    top: -7px;
-    width: 100px;
-    margin-right: 10px; }
-  /* line 398, ../sass/abstractions/mixins.scss */
-  .pane-most-viewed-panel-pane-1 > .pane-title:after {
-    margin-left: 10px;
-    border-bottom: 1px solid #969696;
-    content: ' ';
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    top: -7px;
-    width: 100px; }
 /* line 9, ../sass/components/_most_viewed.scss */
-.pane-most-viewed-panel-pane-1 > .view-most-viewed {
-  margin-top: 5px;
-  margin-bottom: 5px; }
-  /* line 12, ../sass/components/_most_viewed.scss */
-  .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content {
-    text-align: center; }
-    /* line 14, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row {
-      width: 220px;
-      height: auto;
+.front > #content-wrap .pane-most-viewed-panel-pane-1 > .view-most-viewed .views-row {
+  opacity: 0; }
+
+/* line 18, ../sass/components/_most_viewed.scss */
+.pane-most-viewed-panel-pane-1 {
+  position: relative; }
+  /* line 20, ../sass/components/_most_viewed.scss */
+  .pane-most-viewed-panel-pane-1 > .pane-title {
+    font-style: oblique;
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+    cursor: default;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 20px 0 20px 0;
+    margin: 0; }
+    /* line 388, ../sass/abstractions/mixins.scss */
+    .pane-most-viewed-panel-pane-1 > .pane-title:before {
+      border-bottom: 1px solid #969696;
+      content: ' ';
       display: inline-block;
-      vertical-align: top;
-      margin: 5px;
-      cursor: pointer; }
-      /* line 21, ../sass/components/_most_viewed.scss */
-      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:hover {
-        color: #000;
-        transition: 0.25s; }
-        /* line 24, ../sass/components/_most_viewed.scss */
-        .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:hover img {
-          transition: 0.25s;
-          opacity: 0.85;
-          border: 2px solid rgba(0, 0, 0, 0.52); }
-      /* line 30, ../sass/components/_most_viewed.scss */
-      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:not(:hover) {
-        transition: 0.25s; }
-        /* line 32, ../sass/components/_most_viewed.scss */
-        .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:not(:hover) img {
+      height: 1px;
+      position: relative;
+      top: -7px;
+      width: 100px;
+      margin-right: 10px; }
+    /* line 398, ../sass/abstractions/mixins.scss */
+    .pane-most-viewed-panel-pane-1 > .pane-title:after {
+      margin-left: 10px;
+      border-bottom: 1px solid #969696;
+      content: ' ';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      top: -7px;
+      width: 100px; }
+  /* line 23, ../sass/components/_most_viewed.scss */
+  .pane-most-viewed-panel-pane-1 > .view-most-viewed {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    /* line 26, ../sass/components/_most_viewed.scss */
+    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content {
+      text-align: center; }
+      /* line 28, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row {
+        width: 220px;
+        height: auto;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        cursor: pointer; }
+        /* line 35, ../sass/components/_most_viewed.scss */
+        .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:hover {
+          color: #000;
           transition: 0.25s; }
-      /* line 37, ../sass/components/_most_viewed.scss */
-      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row > .view-mode-more_viewed h2 {
-        margin: 5px 0 0 0;
-        font-weight: normal;
-        font-size: 20px;
-        padding-left: 10px;
-        padding-right: 10px; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-1 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #00cce2; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-2 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #66009d; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-3 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #7ffcff; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-4 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #22ff00; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-5 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #ffbdb3; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-6 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #3E55F7; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-7 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #A1AB13; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-8 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #FF0091; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-9 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #bffff5; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-10 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #3E55F7; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-11 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #A1AB13; }
-    /* line 47, ../sass/components/_most_viewed.scss */
-    .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-12 img {
-      background: #FFF;
-      border-radius: 110px;
-      border: 2px solid #FF0091; }
+          /* line 38, ../sass/components/_most_viewed.scss */
+          .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row:hover img {
+            transition: 0.25s;
+            opacity: 0.85;
+            border: 2px solid rgba(0, 0, 0, 0.52); }
+        /* line 46, ../sass/components/_most_viewed.scss */
+        .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row > .view-mode-more_viewed h2 {
+          margin: 5px 0 0 0;
+          font-weight: normal;
+          font-size: 20px;
+          padding-left: 10px;
+          padding-right: 10px; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-1 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #00cce2; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-2 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #66009d; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-3 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #7ffcff; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-4 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #22ff00; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-5 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #ffbdb3; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-6 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #3E55F7; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-7 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #A1AB13; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-8 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #FF0091; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-9 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #bffff5; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-10 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #3E55F7; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-11 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #A1AB13; }
+      /* line 56, ../sass/components/_most_viewed.scss */
+      .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content > .views-row-12 img {
+        background: #FFF;
+        border-radius: 110px;
+        border: 2px solid #FF0091; }
+
+/* line 67, ../sass/components/_most_viewed.scss */
+.animated .views-row-1 {
+  transition-delay: 0s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 72, ../sass/components/_most_viewed.scss */
+.animated .views-row-2 {
+  transition-delay: .1s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 77, ../sass/components/_most_viewed.scss */
+.animated .views-row-5 {
+  transition-delay: .1s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 82, ../sass/components/_most_viewed.scss */
+.animated .views-row-3 {
+  transition-delay: .2s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 87, ../sass/components/_most_viewed.scss */
+.animated .views-row-6 {
+  transition-delay: .2s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 92, ../sass/components/_most_viewed.scss */
+.animated .views-row-9 {
+  transition-delay: .2s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 97, ../sass/components/_most_viewed.scss */
+.animated .views-row-4 {
+  transition-delay: .3s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 102, ../sass/components/_most_viewed.scss */
+.animated .views-row-7 {
+  transition-delay: .3s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 107, ../sass/components/_most_viewed.scss */
+.animated .views-row-10 {
+  transition-delay: .3s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 112, ../sass/components/_most_viewed.scss */
+.animated .views-row-8 {
+  transition-delay: .4s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 117, ../sass/components/_most_viewed.scss */
+.animated .views-row-11 {
+  transition-delay: .4s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
+/* line 122, ../sass/components/_most_viewed.scss */
+.animated .views-row-12 {
+  transition-delay: .5s;
+  transition-duration: .25s;
+  opacity: 1 !important; }
 
 /* line 2, ../sass/components/_node_product.scss */
 .pane-page-content .node--product {
@@ -1119,6 +990,214 @@ ul.nice-menu li {
 /* line 111, ../sass/components/_node_product.scss */
 .visible {
   display: block !important; }
+
+/* line 3, ../sass/components/_personal_action_page.scss */
+.node--mainpage-slideshow--full > .group-action {
+  margin-top: 10px;
+  position: relative; }
+  /* line 6, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action .field--name-field-image-for-background {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  /* line 11, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action :nth-child(n+2) {
+    position: relative; }
+  /* line 17, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-title .field__items .field__item {
+    z-index: 1;
+    position: relative;
+    height: 150px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex; }
+    /* line 22, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-title .field__items .field__item h2 {
+      margin: auto;
+      color: #FFF;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #000;
+      cursor: default; }
+  /* line 32, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-field-image-for-title-of-action {
+    margin-top: -150px; }
+  /* line 37, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-body {
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    left: 20px;
+    top: 120px;
+    background: #FFF;
+    box-shadow: 0 0 10px 1px #000;
+    border-bottom-right-radius: 40px; }
+    /* line 46, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-body .field__items {
+      padding: 0 20px 0 20px;
+      font-style: oblique;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
+    /* line 51, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .group-main-desc-of-action .field--name-body:after {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      background: url("../../mf/images/zagugulina.png"); }
+  /* line 60, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 {
+    margin-top: 55px; }
+    /* line 62, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-image-1-of-action {
+      width: 800px;
+      height: auto;
+      margin-left: 30px; }
+      /* line 66, ../sass/components/_personal_action_page.scss */
+      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-image-1-of-action img {
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.28); }
+    /* line 70, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-body-1-of-action {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      height: auto;
+      width: 230px;
+      background: #fff;
+      box-shadow: 0 0 20px 1px #000; }
+      /* line 78, ../sass/components/_personal_action_page.scss */
+      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-body-1-of-action .field__items {
+        padding: 0 20px 5px 20px;
+        letter-spacing: -0.5px;
+        font-style: oblique; }
+        /* line 84, ../sass/components/_personal_action_page.scss */
+        .node--mainpage-slideshow--full > .group-action > .group-block-of-image-1 .field--name-field-body-1-of-action .field__items .field__item p:first-letter {
+          font-size: 30px;
+          font-weight: bold; }
+  /* line 93, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 {
+    margin-top: 20px; }
+    /* line 95, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-image-2-of-action {
+      width: 800px;
+      height: auto;
+      margin-left: 130px; }
+      /* line 99, ../sass/components/_personal_action_page.scss */
+      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-image-2-of-action img {
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.28); }
+    /* line 103, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-body-2-of-action {
+      position: absolute;
+      top: -40px;
+      left: 80px;
+      width: 250px;
+      background: #fff;
+      box-shadow: 0 0 20px 1px #000; }
+      /* line 110, ../sass/components/_personal_action_page.scss */
+      .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-body-2-of-action .field__items {
+        padding: 0 20px 5px 20px;
+        font-style: oblique; }
+        /* line 115, ../sass/components/_personal_action_page.scss */
+        .node--mainpage-slideshow--full > .group-action > .group-block-of-image-2 .field--name-field-body-2-of-action .field__items .field__item p:first-letter {
+          font-size: 30px;
+          font-weight: bold; }
+  /* line 125, ../sass/components/_personal_action_page.scss */
+  .node--mainpage-slideshow--full > .group-action > .field--name-field-last-information-about-act .field__items {
+    background: #fff;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 7px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.32);
+    text-align: center;
+    font-style: oblique; }
+    /* line 133, ../sass/components/_personal_action_page.scss */
+    .node--mainpage-slideshow--full > .group-action > .field--name-field-last-information-about-act .field__items .field__item {
+      margin: auto;
+      width: 400px; }
+
+/* line 144, ../sass/components/_personal_action_page.scss */
+.pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title {
+  font-style: oblique;
+  font-weight: normal;
+  text-align: center;
+  font-size: 25px;
+  cursor: default;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 20px 0 20px 0;
+  margin: 0; }
+  /* line 388, ../sass/abstractions/mixins.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title:before {
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px;
+    margin-right: 10px; }
+  /* line 398, ../sass/abstractions/mixins.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .pane-title:after {
+    margin-left: 10px;
+    border-bottom: 1px solid #969696;
+    content: ' ';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -7px;
+    width: 100px; }
+/* line 148, ../sass/components/_personal_action_page.scss */
+.pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content {
+  text-align: center; }
+  /* line 150, ../sass/components/_personal_action_page.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row {
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden; }
+    /* line 156, ../sass/components/_personal_action_page.scss */
+    .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow {
+      overflow: hidden; }
+      /* line 158, ../sass/components/_personal_action_page.scss */
+      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-title {
+        position: absolute;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.77);
+        color: #000;
+        font-size: 16px;
+        font-style: oblique; }
+      /* line 168, ../sass/components/_personal_action_page.scss */
+      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-field-images > .field__items img {
+        vertical-align: bottom; }
+      /* line 173, ../sass/components/_personal_action_page.scss */
+      .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-body {
+        height: auto;
+        position: absolute;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.77);
+        color: #000;
+        font-size: 16px;
+        font-style: oblique;
+        text-align: justify;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11); }
+        /* line 183, ../sass/components/_personal_action_page.scss */
+        .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content .views-row .node--mainpage-slideshow .field--name-body .field__items {
+          padding: 0 20px 0 20px; }
+  /* line 189, ../sass/components/_personal_action_page.scss */
+  .pane-show-other-actions-on-actions-page-panel-pane-1 > .view-show-other-actions-on-actions-page .view-content > :nth-child(n) {
+    margin: 10px; }
+
+/* line 197, ../sass/components/_personal_action_page.scss */
+.pane-node-field-main-picture-of-action {
+  margin-top: 10px;
+  margin-bottom: 7px; }
 
 /* line 4, ../sass/components/_random_picture.scss */
 .pane-random-homepage-product-panel-pane-1 > h2 {
@@ -1368,24 +1447,22 @@ ul.nice-menu li {
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    position: relative;
-    padding-top: 14px; }
-    /* line 26, ../sass/components/_see_more_pictures.scss */
+    position: relative; }
+    /* line 25, ../sass/components/_see_more_pictures.scss */
     .pane-see-more-product-homepage-panel-pane-1 > .see-more > .see-more-btn {
-      height: 100%;
       width: 100%;
-      margin-top: -3px;
+      padding-top: 10px;
       cursor: pointer;
       font-size: 25px;
       font-style: oblique; }
-    /* line 34, ../sass/components/_see_more_pictures.scss */
+    /* line 32, ../sass/components/_see_more_pictures.scss */
     .pane-see-more-product-homepage-panel-pane-1 > .see-more > img {
       position: absolute;
       bottom: -34px;
       left: 62.5px;
       opacity: 0.4;
       transition: 0.3s; }
-  /* line 43, ../sass/components/_see_more_pictures.scss */
+  /* line 41, ../sass/components/_see_more_pictures.scss */
   .pane-see-more-product-homepage-panel-pane-1 > .view-see-more-product-homepage {
     transition: 0.3s; }
     /* line 27, ../sass/abstractions/mixins.scss */
@@ -1465,30 +1542,30 @@ ul.nice-menu li {
             color: rgba(255, 255, 255, 0);
             transition: 0.1s ease-in; }
 
-/* line 49, ../sass/components/_see_more_pictures.scss */
+/* line 47, ../sass/components/_see_more_pictures.scss */
 .see-more-pictures {
   transition: 0.3s;
   margin-top: -20px; }
 
-/* line 54, ../sass/components/_see_more_pictures.scss */
+/* line 52, ../sass/components/_see_more_pictures.scss */
 .see-more-hover {
   transition: 0.3s;
   border: 1px solid #fff !important;
   background: #000 !important; }
-  /* line 58, ../sass/components/_see_more_pictures.scss */
+  /* line 56, ../sass/components/_see_more_pictures.scss */
   .see-more-hover > .see-more-btn {
     transition: 0.3s;
     color: #fff !important; }
-  /* line 62, ../sass/components/_see_more_pictures.scss */
+  /* line 60, ../sass/components/_see_more_pictures.scss */
   .see-more-hover > img {
     transition: 0.3s;
     opacity: 1 !important; }
 
-/* line 69, ../sass/components/_see_more_pictures.scss */
+/* line 67, ../sass/components/_see_more_pictures.scss */
 .see-more-visible {
   height: 3356px;
   transition: 0.3s ease; }
-  /* line 73, ../sass/components/_see_more_pictures.scss */
+  /* line 71, ../sass/components/_see_more_pictures.scss */
   .see-more-visible > .see-more > img {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);

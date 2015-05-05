@@ -27,6 +27,8 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['search_api_bypass_access'] = 0;
+  $handler->display->display_options['query']['options']['entity_access'] = 0;
   $handler->display->display_options['exposed_form']['type'] = 'input_required';
   $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'filtered_html';
   $handler->display->display_options['pager']['type'] = 'some';
@@ -117,6 +119,21 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['link_to_view'] = '0';
+  $translatables['search_titles'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Select any filter and click on Apply to see results'),
+    t('Results for “@keywords” (@total) '),
+    t(' '),
+    t('Fulltext search'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['search_titles'] = $view;
 
   $view = new view();
@@ -163,13 +180,23 @@ function views_for_search_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  $handler->display->display_options['filters']['search_api_views_fulltext']['mode'] = 'filter';
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $handler->display->display_options['link_url'] = 'search/node/';
   $handler->display->display_options['link_to_view'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '0';
+  $translatables['searchbox'] = array(
+    t('Master'),
+    t('more'),
+    t('S'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['searchbox'] = $view;
 
   return $export;

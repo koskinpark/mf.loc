@@ -22,11 +22,9 @@
     @include display-flex;
     @include flex-flow;
     position: relative;
-    padding-top: 14px;
       > .see-more-btn {
-        height:100%;
         width:100%;
-        margin-top: -3px;
+        padding-top: 10px;
         cursor: pointer;
         font-size: 25px;
         font-style: oblique;

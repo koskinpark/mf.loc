@@ -78,3 +78,13 @@ ul.nice-menu li {
   border:none;
   background-color: unset;
 }
+
+.here_goes {
+ margin-top: 54px;
+  .nice-menu-menu-catalog-menu {
+    position: fixed !important;
+    top: 0;
+    width: 960px !important;
+    box-shadow: 0px 10px 6px -8px #000;
+  }
+}

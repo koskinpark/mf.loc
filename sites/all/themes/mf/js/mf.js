@@ -96,16 +96,12 @@
                 $views_rows.each(function(i) {
                     var $views_row = $(this);
                     var $title = $('> .node--mainpage-slideshow .field--name-title', $views_row);
-                    var $field_of_img = $('> .node--mainpage-slideshow .field--name-field-images .field__item', $views_row);
                     var $body = $('> .node--mainpage-slideshow .field--name-body', $views_row);
                     var $get_height_title = $title.outerHeight();
-                    var $get_height_img = $('img', $field_of_img).attr('height');
+
                     var $get_height_body = $body.outerHeight();
                     $title.css({
                         'top' : -$get_height_title
-                    });
-                    $field_of_img.css({
-                        'height' : $get_height_img
                     });
                     $body.css({
                         'bottom' : -$get_height_body
@@ -481,9 +477,9 @@
                     $pane.toggleClass('see-more-visible');
                     if ($pane.hasClass('see-more-visible')) {
                         if($.browser.safari){
-                            $('body').animate( { scrollTop: destination}, "fast" );
+                            $('body').animate( { scrollTop: destination-70}, "fast" );
                         }else{
-                            $('html').animate( { scrollTop: destination}, "fast" );
+                            $('html').animate( { scrollTop: destination-70}, "fast" );
                         }
                         $(".border-see-more").css({'display' : 'none'});
                         $(".see-more-btn").text("Hide back");
@@ -491,11 +487,10 @@
                         return false;
                     }
                     if (!$pane.hasClass('see-more-visible')) {
-                        var back_destination = destination - 100;
                         if($.browser.safari){
-                            $('body').animate( { scrollTop: back_destination}, "fast" );
+                            $('body').animate( { scrollTop: destination-140}, "fast" );
                         }else{
-                            $('html').animate( { scrollTop: back_destination}, "fast" );
+                            $('html').animate( { scrollTop: destination-140}, "fast" );
                         }
                         $(".border-see-more").css({'display' : 'block'});
                         $(".see-more-btn").text("See More");
@@ -508,12 +503,86 @@
     Drupal.behaviors.footerlinker = {
         attach: function (context, settings) {
             $(".pane-nice-menus-2", context).once("see-more", function () {
-                $pane = $(this);
-                $pane_ul = $('.nice-menu-menu-footer-menu', $pane);
-                $('.menu-605 > a', $pane_ul).removeAttr('href');
-                $('.menu-605 > a', $pane_ul).css('cursor','pointer');
-                $('.menu-605 > a', $pane_ul).click(function() {
+                var $pane = $(this);
+                var $pane_ul = $('.nice-menu-menu-footer-menu', $pane);
+                var $to_top = $(':nth-child(2) a', $pane_ul);
+                $to_top.removeAttr('href');
+                $to_top.css('cursor','pointer');
+                $to_top.click(function() {
                    scroller();
+                });
+            });
+        }
+    };
+    Drupal.behaviors.allactions = {
+        attach: function (context, settings) {
+            $(".all-actions > #content-wrap .pane-show-other-actions-on-actions-page-panel-pane-1", context).once("all-actions", function () {
+                var $pane = $(this);
+               $(".pane-title", $pane).text("All Actions");
+            });
+        }
+    };
+
+    Drupal.behaviors.animationblock = {
+        attach: function (context, settings) {
+            $('.front > #content-wrap .pane-most-viewed-panel-pane-1 > .view-most-viewed > .view-content', context).once("all-actions", function () {
+                var $pane = $(this);
+                window.addEventListener("scroll", function () {
+                    $pane.each(function () {
+                        var animatedBlock = $(this);
+                        var blockHeight = animatedBlock.height();
+                        var blockTop = animatedBlock.offset().top;
+                        var blockBottom = blockHeight + blockTop;
+                        var windowHeight = $(window).height();
+                        var scroll_top = window.pageYOffset;
+                        if (windowHeight < 800) {
+                            if ((scroll_top > (blockTop - 100)) && (scroll_top < (blockBottom - blockHeight * 0.75))) {
+                                if (!animatedBlock.hasClass("animated")) {
+                                    animatedBlock.addClass("animated");
+                                }
+                            } else {
+                                if ((scroll_top < (blockTop - 100)) || (scroll_top > (blockBottom))) {
+                                    animatedBlock.removeClass("animated");
+                                }
+                            }
+                        }
+                        else {
+                            if ((scroll_top > (blockTop - 500)) && (scroll_top < (blockBottom - blockHeight * 0.75))) {
+                                if (!animatedBlock.hasClass("animated")) {
+                                    animatedBlock.addClass("animated");
+                                }
+                            } else {
+                                if ((scroll_top < (blockTop - blockHeight)) || (scroll_top > (blockBottom))) {
+                                    animatedBlock.removeClass("animated");
+                                }
+                            }
+                        }
+                    });
+                });
+            });
+        }
+    };
+
+    Drupal.behaviors.catalogmenufixed = {
+        attach: function (context, settings) {
+            $('.pane-nice-menus-1', context).once("catalog-menu", function () {
+                var $pane = $(this);
+                window.addEventListener("scroll", function () {
+                    var top_inset = window.pageYOffset;
+                    if (top_inset > 130) {
+                        if (!$pane.hasClass('here_goes')) {
+                            $pane.addClass('here_goes');
+                        }
+                        if ($('body').hasClass('admin-menu')) {
+                            $('.nice-menu-menu-catalog-menu',$pane).css('top','29px','important');
+                        }
+                    }
+                    else {
+                        $pane.removeClass('here_goes');
+                        if ($('body').hasClass('admin-menu')) {
+                            $('.nice-menu-menu-catalog-menu',$pane).css('top','0','important');
+                        }
+                    }
                 });
             });
         }

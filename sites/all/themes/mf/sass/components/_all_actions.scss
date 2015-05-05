@@ -1,0 +1,9 @@
+.all-actions {
+  > #content-wrap {
+    .pane-page-content {
+      .pane-title {
+        border-top: unset;
+      }
+    }
+  }
+}

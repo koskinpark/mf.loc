@@ -87,7 +87,7 @@ function f_ct_slider_image_default_styles() {
 function f_ct_slider_node_info() {
   $items = array(
     'mainpage_slideshow' => array(
-      'name' => t('Mainpage Slideshow'),
+      'name' => t('Actions'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
