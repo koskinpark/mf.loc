@@ -410,9 +410,10 @@
 
     Drupal.behaviors.searchbox = {
         attach: function (context, settings) {
-            $(".pane-searchbox-panel-pane-1", context).once("see-more", function () {
+            $(".pane-searchbox-panel-pane-1", context).once("searchbox", function () {
                 var $pane = $(this);
                 var $form_text =  $("> .view-searchbox .form-text", $pane);
+                $form_text.attr('placeholder', 'Поиск по названиям');
                 var $submit_form_search = $('> .view-searchbox .views-submit-button', $pane);
                 $form_text.hover(function () {
                     $form_text.addClass("search_box_hover");
@@ -423,7 +424,6 @@
                     $submit_form_search.removeClass("search_submit_hover");
                 });
                 $form_text.focus(function () {
-                    $form_text.val("");
                     $form_text.addClass("search_box_focus");
                     $submit_form_search.addClass("search_submit_focus");
                 });
@@ -472,7 +472,6 @@
                     $(".see-more", $pane).removeClass("see-more-hover");
                 });
                 var destination = $pane.offset().top;
-                console.log(destination);
                 $(".see-more-btn").click(function () {
                     $pane.toggleClass('see-more-visible');
                     if ($pane.hasClass('see-more-visible')) {

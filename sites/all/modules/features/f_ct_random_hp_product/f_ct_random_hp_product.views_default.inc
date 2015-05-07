@@ -29,7 +29,7 @@ function f_ct_random_hp_product_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '24';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
@@ -68,6 +68,18 @@ function f_ct_random_hp_product_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $translatables['random_homepage_product'] = array(
+    t('Master'),
+    t('Few Products'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['random_homepage_product'] = $view;
 
   return $export;

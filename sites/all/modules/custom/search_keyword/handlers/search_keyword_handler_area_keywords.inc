@@ -53,7 +53,7 @@ class search_keyword_handler_area_keywords extends views_handler_area {
       $output = '';
       $format = $this->options['content'];
       $total = isset($this->view->total_rows) ? $this->view->total_rows : count($this->view->result);
-      $keywords = $this->view->exposed_raw_input['search_api_views_fulltext'];
+      $keywords = $this->view->exposed_raw_input['query'];
       $items = array('keywords', 'total');
       $replacements = array();
       foreach ($items as $item) {

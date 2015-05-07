@@ -131,7 +131,11 @@ function f_ct_slider_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    'file' => TRUE,
+    'node' => TRUE,
+    'taxonomy' => TRUE,
+  );
   $export['path_alias_whitelist'] = $strongarm;
 
   return $export;

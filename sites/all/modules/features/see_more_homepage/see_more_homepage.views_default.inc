@@ -29,7 +29,7 @@ function see_more_homepage_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '30';
-  $handler->display->display_options['pager']['options']['offset'] = '12';
+  $handler->display->display_options['pager']['options']['offset'] = '24';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'random_homepage_pictures';
@@ -66,6 +66,17 @@ function see_more_homepage_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $translatables['see_more_product_homepage'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['see_more_product_homepage'] = $view;
 
   return $export;

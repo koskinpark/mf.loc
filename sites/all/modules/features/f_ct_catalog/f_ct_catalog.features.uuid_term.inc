@@ -20,7 +20,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'upholstered-furniture/sofas',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -35,7 +40,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'mirrors-art',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Case furniture',
@@ -47,7 +57,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'case-furniture',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Blue Jackets',
@@ -140,7 +155,12 @@ function f_ct_catalog_uuid_features_default_terms() {
         ),
       ),
     ),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'decor/blue-jackets',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
     ),
@@ -155,7 +175,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'upholstered-furniture/stools',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -224,7 +249,12 @@ function f_ct_catalog_uuid_features_default_terms() {
       ),
     ),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'decor/outdoor-accents',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
     ),
@@ -239,7 +269,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'kitchen-tabletop',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Wardrobes',
@@ -251,7 +286,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'case-furniture/wardrobes',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '08df812a-0eb5-4c4d-9030-62b98577cd7e',
     ),
@@ -266,7 +306,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'kitchen-tabletop/globally-inspired',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -281,7 +326,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'childrens-furniture',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Table Linens',
@@ -293,7 +343,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'kitchen-tabletop/table-linens',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -308,7 +363,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'kitchen-tabletop/serveware',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -323,7 +383,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'case-furniture/shelves',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '08df812a-0eb5-4c4d-9030-62b98577cd7e',
     ),
@@ -338,7 +403,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'test/test-1',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '96ba570b-7e64-4b74-acd0-0e315d696dd1',
     ),
@@ -353,7 +423,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'upholstered-furniture/chairs',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -368,7 +443,12 @@ function f_ct_catalog_uuid_features_default_terms() {
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'kitchen-tabletop/tabletop',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -440,7 +520,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
       ),
     ),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'test',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Wall decor',
@@ -452,7 +537,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'wall-decor',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Rooms',
@@ -464,7 +554,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'childrens-furniture/rooms',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '6476b63e-7f45-4dd4-b4d1-f3b27b97fa3d',
     ),
@@ -557,7 +652,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
         ),
       ),
     ),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'decor',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Beds',
@@ -569,7 +669,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'childrens-furniture/beds',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '6476b63e-7f45-4dd4-b4d1-f3b27b97fa3d',
     ),
@@ -584,7 +689,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'upholstered-furniture/ottomans',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => 'f8450b8a-0d74-4a00-83bb-468708cce348',
     ),
@@ -599,7 +709,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'kitchen-tabletop/cookware-tools',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => '3f49c4eb-cb3d-4700-9f13-51fc18decba5',
     ),
@@ -614,7 +729,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
     'field_image_for_title' => array(),
     'field_images' => array(),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'upholstered-furniture',
+        'language' => 'und',
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Indoor Accents',
@@ -653,7 +773,12 @@ Parish so enable innate in formed missed. Hand two was eat busy fail. Stand smar
       ),
     ),
     'field_small_image_on_parent_page' => array(),
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'decor/indoor-accents',
+        'language' => 'und',
+      ),
+    ),
     'parent' => array(
       0 => 'ca919bc2-f6d6-450a-a54b-727b5e8dc535',
     ),

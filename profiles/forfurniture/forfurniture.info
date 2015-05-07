@@ -72,6 +72,8 @@ dependencies[] = fonts_com
 dependencies[] = colorbox
 dependencies[] = colorbox_node
 dependencies[] = jquery_update
+dependencies[] = pathauto
+dependencies[] = token
 
 ;custom
 dependencies[] = layout_sample
@@ -107,6 +109,7 @@ dependencies[] = about_us
 dependencies[] = image_styles
 dependencies[] = languages
 dependencies[] = transliteration_update
+dependencies[] = f_pathauto
 
 
 ; Information added by Drupal.org packaging script on 2014-11-19

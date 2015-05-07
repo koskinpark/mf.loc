@@ -1,0 +1,14 @@
+name = f_pathauto
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = pathauto_node_about_us_pattern
+features[variable][] = pathauto_node_contacts_pattern
+features[variable][] = pathauto_node_mainpage_slideshow_pattern
+features[variable][] = pathauto_node_product_pattern
+features[variable][] = pathauto_taxonomy_term_catalog_pattern
+features[variable][] = pathauto_taxonomy_term_pattern
+features[variable][] = pathauto_transliterate

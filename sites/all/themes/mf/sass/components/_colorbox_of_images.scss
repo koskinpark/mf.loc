@@ -2,16 +2,14 @@
 .node--product--colorbox {
   > :nth-child(n+3) {
     opacity: 1;
-    @include animation-name(all-field-colorbox);
-    -webkit-animation-duration: 4s;
+    @include animation-name(all-field-colorbox, 4s);
   }
   > .field--name-title {
     z-index: -1;
     width: 100%;
     height: 100%;
     display: flex;
-    @include animation-name(animation-field-title);
-    -webkit-animation-duration: 4s;
+    @include animation-name(animation-field-title, 4s);
     position: absolute;
     background: rgba(255, 255, 255, 1);
     .field__items {
@@ -25,8 +23,7 @@
           font-weight: 100;
           color: rgba(0, 0, 0, 1);
           text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 15px black;
-          @include animation-name(animation-title);
-          -webkit-animation-duration: 4s;
+          @include animation-name(animation-title, 4s);
         }
       }
     }
@@ -215,48 +212,3 @@
   transition: 0s !important;
 }
 
-@-webkit-keyframes animation-title {
-  @include animation-title;
-}
-
-@-moz-keyframes animation-title {
-  @include animation-title;
-}
-
-@-o-keyframes animation-title {
-  @include animation-title;
-}
-
-@keyframes animation-title {
-  @include animation-title;
-}
-
-@-webkit-keyframes animation-field-title {
-  @include animation-field-title;
-}
-@-moz-keyframes animation-title {
-  @include animation-field-title;
-}
-
-@-o-keyframes animation-title {
-  @include animation-field-title;
-}
-
-@keyframes animation-title {
-  @include animation-field-title;
-}
-
-@-webkit-keyframes all-field-colorbox {
-  @include all-field-colorbox;
-}
-@-moz-keyframes animation-title {
-  @include all-field-colorbox;
-}
-
-@-o-keyframes animation-title {
-  @include all-field-colorbox;
-}
-
-@keyframes animation-title {
-  @include all-field-colorbox;
-}

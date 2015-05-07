@@ -407,65 +407,84 @@
   }
 }
 
-@mixin animation-name($name) {
+@mixin desc_animation($name) {
+  @if ($name == all-field-colorbox) {
+    0% {
+      @include filter-blur(15px);
+      opacity: 0
+    }
+    80% {
+      @include filter-blur(15px);
+      opacity: 0
+    }
+    100% {
+      @include filter-blur(0);
+      opacity: 1
+    }
+  }
+  @if ($name == animation-title) {
+    0%   {
+      opacity: 0;
+      @include filter-blur(10px);
+    }
+    25%  {
+      opacity: 1;
+      @include filter-blur(0px)
+    }
+    50%  {
+      @include filter-blur(0)
+    }
+    80%  {
+      opacity: 1;
+      @include filter-blur(0)
+    }
+    90% {
+      opacity: 0;
+      @include filter-blur(10px)
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @if ($name == animation-field-title) {
+    0% {
+      z-index: 1;
+    }
+    80% {
+      opacity: 1
+    }
+    99% {
+      z-index: 1;
+      opacity: 0;
+    }
+    100% {
+      z-index: -1;
+    }
+  }
+}
+
+@mixin animation-name($name, $duration) {
   -webkit-animation: $name;
   -moz-animation: $name;
   -o-animation: $name;
   animation: $name;
-}
 
-@mixin animation-title {
-  0%   {
-    opacity: 0;
-    @include filter-blur(10px);
-  }
-  25%  {
-    opacity: 1;
-    @include filter-blur(0px)
-  }
-  50%  {
-    @include filter-blur(0)
-  }
-  80%  {
-    opacity: 1;
-    @include filter-blur(0)
-  }
-  90% {
-    opacity: 0;
-    @include filter-blur(10px)
-  }
-  100% {
-    opacity: 0;
-  }
-}
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
 
-@mixin animation-field-title {
-  0% {
-    z-index: 1;
+  @-webkit-keyframes #{$name} {
+    @include desc_animation($name);
   }
-  80% {
-    opacity: 1
+  @-moz-keyframes #{$name} {
+    @include desc_animation($name);
   }
-  99% {
-    z-index: 1;
-    opacity: 0;
-  }
-  100% {
-    z-index: -1;
-  }
-}
 
-@mixin all-field-colorbox {
-  0% {
-    @include filter-blur(15px);
-    opacity: 0
+  @-o-keyframes #{$name} {
+    @include desc_animation($name);
   }
-  80% {
-    @include filter-blur(15px);
-    opacity: 0
+
+  @keyframes #{$name} {
+    @include desc_animation($name);
   }
-  100% {
-    @include filter-blur(0);
-    opacity: 1
-  }
+
 }

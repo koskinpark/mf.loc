@@ -30,6 +30,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['query']['options']['search_api_bypass_access'] = 0;
   $handler->display->display_options['query']['options']['entity_access'] = 0;
   $handler->display->display_options['exposed_form']['type'] = 'input_required';
+  $handler->display->display_options['exposed_form']['options']['text_input_required'] = '';
   $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'filtered_html';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '30';
@@ -99,7 +100,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Fulltext search';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
-  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'query';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -127,7 +128,6 @@ function views_for_search_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Select any filter and click on Apply to see results'),
     t('Results for “@keywords” (@total) '),
     t(' '),
     t('Fulltext search'),
@@ -166,6 +166,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['fields']['search_api_excerpt']['field'] = 'search_api_excerpt';
   $handler->display->display_options['fields']['search_api_excerpt']['label'] = '';
   $handler->display->display_options['fields']['search_api_excerpt']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['search_api_excerpt']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['search_api_excerpt']['link_to_entity'] = 0;
   /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
@@ -174,7 +175,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
-  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'query';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
