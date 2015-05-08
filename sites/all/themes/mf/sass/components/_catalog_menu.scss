@@ -1,9 +1,84 @@
 $height_of_image:320px;
 
-.pane-nice-menus-1 {
+.nav-menu-medium-screen {
+  display: none;
+  @include respond-to(from_480_to_640_screen) {
+   display: block;
+  }
+> .nice-menu-menu-catalog-menu {
+  display: none;
+  }
+}
+
+.btn-show-nav-menu {
+  width: 100%;
+  height: 47px;
+  background: rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.13);
+  &:before {
+    position: absolute;
+    right: 60px;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.11);
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.15);
+  }
+  > a {
+    display: block;
+    height: 49px;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    .sub-border-line {
+      position: relative;
+      width: 38px;
+      float: right;
+      margin: 10px 10px 0 0;
+      height: 28px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.44);
+      border-width: 2px 0;
+      &:before {
+        position: absolute;
+        top: 11px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        content: "";
+        background: rgba(0, 0, 0, 0.44);
+      }
+    }
+  }
+  .pointer-to-nav-menu {
+    position: absolute;
+    right: 100px;
+    top: 9px;
+    text-transform: capitalize;
+    > span {
+      font-size: 19px;
+      font-style: oblique;
+      color: rgba(0, 0, 0, 0.28);
+    }
+    > img {
+      position: absolute;
+      right: -29px;
+      top: 2px;
+      @include transform-rotate(-90deg);
+      opacity: 0.3;
+    }
+  }
+}
+
+
+.nav-menu-full-screen {
   width:100%;
   border-top: 1px solid rgba(0, 0, 0, 0.04);
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  @include respond-to(from_480_to_640_screen) {
+  display: none;
+  }
   > .nice-menu-menu-catalog-menu {
     width: auto;
    float: none;
@@ -20,6 +95,14 @@ $height_of_image:320px;
       &:hover {
         color: #000;
       }
+      @include respond-to(from_640_to_960_screen) {
+        > a {
+          height: 45px !important;
+        }
+        > ul {
+          display: none !important;
+        }
+      }
       > a {
         text-decoration: none;
         padding: 0;
@@ -28,6 +111,7 @@ $height_of_image:320px;
         width: 200px;
         display: table-cell;
         vertical-align: middle;
+
       }
       > ul {
         left:-1px;

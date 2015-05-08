@@ -2,4 +2,16 @@
 .pane-pane-for-logo {
   margin-top:10px;
   display: inline-block;
+  @include respond-to(from_640_to_960_screen) {
+    img {
+      width: 120px;
+    }
+  }
+  @include respond-to(from_480_to_640_screen) {
+//    width: 100%;
+//    text-align: center;
+    img {
+      width: 100px;
+    }
+  }
 }

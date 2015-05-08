@@ -85,7 +85,8 @@
 }
 
 @mixin views-row {
-  margin: 3px;
+  margin: 1px 3px;
+  width: 31.5%;
   display: inline-block;
   position: relative;
   > .view-mode-random_homepage_pictures {
@@ -104,8 +105,8 @@
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 50%;
-        height: 220px;
-        width: 220px;
+        height: 80%;
+        width: 80%;
         @include display-flex;
         .field__item {
           margin: auto;
@@ -114,8 +115,6 @@
     }
     > .field--name-field-pictures {
       transition: 0.3s;
-      height: 310px;
-      width: 310px;
       display: flex;
       .field__items {
         margin: auto;
@@ -486,5 +485,24 @@
   @keyframes #{$name} {
     @include desc_animation($name);
   }
+}
 
+@mixin respond-to($media) {
+  $small: 320px;
+  $large: 960px;
+  @if $media == full_screen {
+    @media only screen and (min-width: $large) { @content; }
+  }
+  @if $media == from_640_to_960_screen {
+    @media only screen and (min-width: 640px) and (max-width: $large) { @content; }
+  }
+  @if $media == to_800_screen {
+    @media only screen and (max-width: 800px) { @content; }
+  }
+  @if $media == to_720_screen {
+    @media only screen and (max-width: 720px) { @content; }
+  }
+  @if $media == from_480_to_640_screen {
+    @media only screen and (min-width: 480px) and (max-width: 640px) { @content; }
+  }
 }

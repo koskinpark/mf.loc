@@ -383,7 +383,7 @@
         attach: function (context, settings) {
             $("body", context).once("to-top-btn", function () {
                 $("body").append("<span class='scroller'><img src='/sites/all/themes/mf/images/to_top_btn.png'></span>");
-                if ($(this).scrollTop() == 0) {
+                    if ($(this).scrollTop() == 0) {
                     $('.scroller').hide();
                 }
             });
@@ -472,6 +472,7 @@
                     $(".see-more", $pane).removeClass("see-more-hover");
                 });
                 var destination = $pane.offset().top;
+
                 $(".see-more-btn").click(function () {
                     $pane.toggleClass('see-more-visible');
                     if ($pane.hasClass('see-more-visible')) {
@@ -483,6 +484,12 @@
                         $(".border-see-more").css({'display' : 'none'});
                         $(".see-more-btn").text("Hide back");
                         $(".view-id-see_more_product_homepage", $pane).removeClass('see-more-pictures');
+                        var get_height_see_more_pictures = $(".view-id-see_more_product_homepage", $pane).height();
+                        console.log(get_height_see_more_pictures);
+                        $pane.css({
+                            'height': get_height_see_more_pictures + 150,
+                            'transition': '0.3s ease'
+                        });
                         return false;
                     }
                     if (!$pane.hasClass('see-more-visible')) {
@@ -494,6 +501,7 @@
                         $(".border-see-more").css({'display' : 'block'});
                         $(".see-more-btn").text("See More");
                         $(".view-id-see_more_product_homepage", $pane).addClass('see-more-pictures');
+
                     }
                 });
             });
@@ -534,13 +542,14 @@
                         var blockBottom = blockHeight + blockTop;
                         var windowHeight = $(window).height();
                         var scroll_top = window.pageYOffset;
+                        console.log(scroll_top, blockTop, blockHeight, blockBottom, windowHeight);
                         if (windowHeight < 800) {
-                            if ((scroll_top > (blockTop - 100)) && (scroll_top < (blockBottom - blockHeight * 0.75))) {
+                            if ((scroll_top > (blockTop - 600)) && (scroll_top < (blockBottom - blockHeight * 0.75))) {
                                 if (!animatedBlock.hasClass("animated")) {
                                     animatedBlock.addClass("animated");
                                 }
                             } else {
-                                if ((scroll_top < (blockTop - 100)) || (scroll_top > (blockBottom))) {
+                                if ((scroll_top < (blockTop - 1000))) {
                                     animatedBlock.removeClass("animated");
                                 }
                             }
@@ -566,25 +575,51 @@
         attach: function (context, settings) {
             $('.pane-nice-menus-1', context).once("catalog-menu", function () {
                 var $pane = $(this);
-                window.addEventListener("scroll", function () {
-                    var top_inset = window.pageYOffset;
-                    if (top_inset > 130) {
-                        if (!$pane.hasClass('here_goes')) {
-                            $pane.addClass('here_goes');
-                        }
-                        if ($('body').hasClass('admin-menu')) {
-                            $('.nice-menu-menu-catalog-menu',$pane).css('top','29px','important');
-                        }
-                    }
-                    else {
-                        $pane.removeClass('here_goes');
-                        if ($('body').hasClass('admin-menu')) {
-                            $('.nice-menu-menu-catalog-menu',$pane).css('top','0','important');
-                        }
-                    }
+                //window.addEventListener("scroll", function () {
+                //    top_inset = window.pageYOffset;
+                //});
+                //
+                //$(window).resize(function () {
+                //    get_width_window = $(window).width();
+                //});
+                //
+                //if (get_width_window > 960) {
+                //    if (top_inset > 130) {
+                //        if (!$pane.hasClass('here_goes')) {
+                //            $pane.addClass('here_goes');
+                //        }
+                //        if ($('body').hasClass('admin-menu')) {
+                //            $('.nice-menu-menu-catalog-menu', $pane).css('top', '29px', 'important');
+                //        }
+                //        else {
+                //            $pane.removeClass('here_goes');
+                //            if ($('body').hasClass('admin-menu')) {
+                //                $('.nice-menu-menu-catalog-menu', $pane).css('top', '0', 'important');
+                //            }
+                //        }
+                //    }
+                //    else {
+                //        $pane.removeClass('here_goes');
+                //    }
+                //}
+            });
+        }
+    };
+
+    Drupal.behaviors.catalogmediumscreen = {
+        attach: function (context, settings) {
+            $('.nav-menu-medium-screen', context).once("nav-menu-medium-screen", function () {
+                var $pane = $(this);
+                $pane.append("<div class='btn-show-nav-menu'><div class='pointer-to-nav-menu'><span>Категории товаров</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div><a><div class='sub-border-line'></div></a></div>");
+                $('.btn-show-nav-menu > a', $pane).click(function() {
+                    $('> .nice-menu-menu-catalog-menu', $pane).css({
+                        'display': 'block'
+                    })
                 });
             });
         }
     };
+
+
 
 })(jQuery);

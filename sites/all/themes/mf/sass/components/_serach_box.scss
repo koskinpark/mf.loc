@@ -1,7 +1,16 @@
 
 .pane-searchbox-panel-pane-1 {
   float: right;
-  margin-top: 85px;
+  margin: 85px 5px 0 0;
+  @include respond-to(from_640_to_960_screen) {
+    margin: 70px 5px 0 0;
+  }
+  @include respond-to(from_480_to_640_screen) {
+//    width: 100%;
+//    margin-top: unset;
+//    float: unset;
+    margin: 63px 5px 0 0;
+  }
   > .view-display-id-panel_pane_1 {
     .views-exposed-widgets {
       position: relative;

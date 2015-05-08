@@ -28,7 +28,7 @@ function most_viewed_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'statistics_day_timestamp';
-  $strongarm->value = 1430985258;
+  $strongarm->value = 1431075347;
   $export['statistics_day_timestamp'] = $strongarm;
 
   $strongarm = new stdClass();
