@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   color: #3D3D3D;
   font-family: 'Playfair Display', serif;
+  overflow-x:hidden;
   @include respond-to(from_640_to_960_screen) {
     width: 100%;
     font-size: 15px;
@@ -18,7 +19,7 @@ body {
   @include respond-to(to_800_screen) {
     font-size: 14px;
   }
-  @include respond-to(from_480_to_640_screen) {
+  @include respond-to(to_640_screen) {
     width: 100%;
     font-size: 12px;
   }

@@ -1,4 +1,46 @@
 
+
+@mixin respond-to($media) {
+  $small: 320px;
+  $large: 960px;
+  @if $media == full_screen {
+    @media only screen and (min-width: $large) { @content; }
+  }
+  @if $media == from_640_to_960_screen {
+    @media only screen and (min-width: 640px) and (max-width: $large) { @content; }
+  }
+  @if $media == to_960_screen {
+    @media only screen and (max-width: $large) { @content; }
+  }
+  @if $media == from_800_screen {
+    @media only screen and (min-width: $large) { @content; }
+  }
+  @if $media == to_800_screen {
+    @media only screen and (max-width: 800px) { @content; }
+  }
+  @if $media == to_720_screen {
+    @media only screen and (max-width: 720px) { @content; }
+  }
+  @if $media == from_480_to_640_screen {
+    @media only screen and (min-width: 480px) and (max-width: 640px) { @content; }
+  }
+  @if $media == from_640_screen {
+    @media only screen and (min-width: 640px) { @content; }
+  }
+  @if $media == to_640_screen {
+    @media only screen and (max-width: 640px) { @content; }
+  }
+  @if $media == from_480_screen {
+    @media only screen and (min-width: 480px) { @content; }
+  }
+  @if $media == to_480_screen {
+    @media only screen and (max-width: 480px) { @content; }
+  }
+  @if $media == to_400_screen {
+    @media only screen and (max-width: 400px) { @content; }
+  }
+}
+
 @mixin linear-gradient($side, $start: #f1f1f1, $from: 0%, $stop: #d9d9d9, $to: 100% ) {
   background: $start;
   background: -webkit-gradient($side, from(ie-hex-str($start)), to(ie-hex-str($stop)));
@@ -86,9 +128,16 @@
 
 @mixin views-row {
   margin: 1px 3px;
-  width: 31.5%;
   display: inline-block;
   position: relative;
+  @include respond-to(from_640_screen) {
+    width: 31.5%;
+    min-width: 200px;
+  }
+  @include respond-to(to_640_screen) {
+    width: 47%;
+  }
+
   > .view-mode-random_homepage_pictures {
     cursor: pointer;
     > .field--name-title {
@@ -380,9 +429,17 @@
   text-align: center;
   font-size: 25px;
   cursor: default;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  padding: 20px 0 20px 0;
+  @include respond-to(from_640_screen) {
+    padding: 20px 0 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  }
+  @include respond-to(from_480_to_640_screen) {
+    padding: 5px 0 5px 0;
+  }
+  @include respond-to(to_480_screen) {
+    padding: 0;
+  }
   margin: 0;
   &:before {
     border-bottom: 1px solid #969696;
@@ -391,8 +448,13 @@
     height: 1px;
     position: relative;
     top: -7px;
-    width: 100px;
     margin-right: 10px;
+    @include respond-to(from_480_screen) {
+      width: 100px;
+    }
+    @include respond-to(to_480_screen) {
+      width: 80px;
+    }
   }
  &:after {
     margin-left: 10px;
@@ -402,7 +464,12 @@
     height: 1px;
     position: relative;
     top: -7px;
-    width: 100px;
+   @include respond-to(from_480_screen) {
+     width: 100px;
+   }
+   @include respond-to(to_480_screen) {
+     width: 80px;
+   }
   }
 }
 
@@ -487,22 +554,3 @@
   }
 }
 
-@mixin respond-to($media) {
-  $small: 320px;
-  $large: 960px;
-  @if $media == full_screen {
-    @media only screen and (min-width: $large) { @content; }
-  }
-  @if $media == from_640_to_960_screen {
-    @media only screen and (min-width: 640px) and (max-width: $large) { @content; }
-  }
-  @if $media == to_800_screen {
-    @media only screen and (max-width: 800px) { @content; }
-  }
-  @if $media == to_720_screen {
-    @media only screen and (max-width: 720px) { @content; }
-  }
-  @if $media == from_480_to_640_screen {
-    @media only screen and (min-width: 480px) and (max-width: 640px) { @content; }
-  }
-}

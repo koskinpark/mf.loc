@@ -7,11 +7,12 @@
       width: 120px;
     }
   }
-  @include respond-to(from_480_to_640_screen) {
-//    width: 100%;
-//    text-align: center;
+  @include respond-to(to_640_screen) {
+    margin-top: unset;
+    position: absolute;
+    top: 0;
     img {
-      width: 100px;
+      width: 60px;
     }
   }
 }

@@ -7,12 +7,43 @@
     .group-description-product {
       clear: both;
       display: table-cell;
-      vertical-align: middle;
-      position:relative;
-      width: 40%;
+      position: relative;
       text-align: right;
-      padding: 30px 20px 30px 30px;
-      @include linear-gradient(left,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.04),100%);
+      min-width: 230px;
+      vertical-align: middle;
+      @include respond-to(full_screen) {
+        padding: 30px 20px 30px 30px;
+        width: 30%;
+      }
+      @include respond-to(to_800_screen) {
+      }
+      @include respond-to(from_640_to_960_screen) {
+        padding: 10px;
+        width: 30%;
+      }
+      @include respond-to(from_640_screen) {
+        @include linear-gradient(left,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.04),100%);
+      }
+      @include respond-to(to_640_screen) {
+        display: block !important;
+        width: 100%;
+        padding: 10px;
+        @include linear-gradient(top,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.04),100%);
+        > .field--name-title {
+          text-align: center;
+          font-size: 1.8em;
+        }
+        > .field--name-body {
+          font-size: 1.2em;
+          text-align: center !important;
+        }
+        > .field--name-field-cost {
+          position: absolute;
+          top: -6px;
+          right: 12px;
+          font-size: 1.2em
+        }
+      }
       .field--name-title {
         h1 {
           color: #000;
@@ -23,6 +54,7 @@
         }
       }
       .field--name-body {
+        @include clearfix();
         text-align: justify;
         margin: 10px 0 0 0;
         .field__items {
@@ -33,7 +65,6 @@
         }
       }
       .field--name-field-cost {
-        padding-top: 25px;
         font-style: oblique;
         color: rgba(0, 0, 0, 0.4);
       }
@@ -48,9 +79,53 @@
       }
     }
     .group-product-image {
-      width: 100%;
-      padding: 30px;
-      @include linear-gradient(right,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.10),100%);
+      @include respond-to(full_screen) {
+        height: 520px;
+      }
+      @include respond-to(to_960_screen) {
+        height: 460px;
+        .group-image-group {
+          > .field--name-field-pictures {
+            display: block !important;
+            .field__items {
+              height: 300px !important;
+              overflow: hidden;
+            }
+          }
+          > .field--name-one-more-picture {
+            display: block !important;
+            padding: 15px 0 0 0 !important;
+            > .field__items {
+              > .field__item {
+                > .field--name-field-pictures {
+                  .field__items {
+                    display: flex;
+                    width: 335px;
+                    margin: auto;
+                    .field__item {
+                      margin: auto !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @include respond-to(from_640_screen) {
+        @include linear-gradient(right,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.10),100%);
+        padding: 30px;
+      }
+      @include respond-to(to_640_screen) {
+        height: 420px;
+        @include linear-gradient(bottom,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.10),100%);
+        padding: 0;
+        .group-image-group {
+          > .field--name-field-pictures {
+            padding-top: 20px;
+          }
+        }
+      }
       .group-image-group {
         > .field--name-one-more-picture {
           clear: both;
@@ -86,13 +161,23 @@
         > .field--name-field-pictures {
           display: table-cell;
           > .field__items {
-            height: 450px;
-            width: 450px;
+            width: 100%;
             display: flex;
             > .field__item {
               margin: auto;
               display: none;
+              @include respond-to(full_screen) {
+                width: 450px;
+              }
+              @include respond-to(from_640_to_960_screen) {
+                width: 300px;
+              }
+              @include respond-to(to_640_screen) {
+                width: 250px;
+              }
+              height: auto;
               > a {
+                margin: auto;
                 > img {
                   cursor: pointer;
                   &:hover {
@@ -109,5 +194,5 @@
 }
 
 .visible {
-  display: block !important;
+  display: flex !important;
 }

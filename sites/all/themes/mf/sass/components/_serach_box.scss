@@ -5,12 +5,29 @@
   @include respond-to(from_640_to_960_screen) {
     margin: 70px 5px 0 0;
   }
-  @include respond-to(from_480_to_640_screen) {
-//    width: 100%;
-//    margin-top: unset;
-//    float: unset;
-    margin: 63px 5px 0 0;
+  @include respond-to(to_640_screen) {
+    margin: 10px 1.5% 10px 0;
+    width: 97%;
+    > .view-searchbox {
+      .views-exposed-widgets {
+        > .views-widget-filter-search_api_views_fulltext {
+          float: unset;
+          .form-text {
+            height: 40px;
+            width: 100%;
+            font-size: 1.6em;
+          }
+        }
+        > .views-submit-button {
+          top: 4px;
+          right: 6px;
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
   }
+
   > .view-display-id-panel_pane_1 {
     .views-exposed-widgets {
       position: relative;
@@ -20,31 +37,35 @@
         > .views-widget {
           > .form-type-textfield {
             > .form-text {
-              height: 30px;
-              width: 175px;
               background: #F7F7F7;
               border: 1px solid #DDD;
               border-radius: 3px;
               padding-right: 30px;
               transition: 0.3s;
-              font-size: 14px;
               font-style: italic;
               color: rgba(0, 0, 0, 0.55);
               padding-left:10px;
+              @include respond-to(from_640_screen) {
+                height: 30px;
+                width: 175px;
+                font-size: 0.9em;
+              }
             }
           }
         }
       }
       > .views-submit-button {
         position: absolute;
-        top: 3px;
-        right: 3px;
         float: none;
         padding: 0;
-        height: 24px;
-        width: 24px;
         opacity: 0.3;
         transition: 0.3s;
+        @include respond-to(from_640_screen) {
+          top: 3px;
+          right: 3px;
+          height: 24px;
+          width: 24px;
+        }
         > .form-submit {
           background: url(../../mf/images/search_box/search.png) no-repeat;
           margin: 0;
@@ -68,7 +89,9 @@
 .search_box_focus {
   color: rgba(0, 0, 0, 0.74) !important;
   transition: 0.3s;
-  width: 220px !important;
+  @include respond-to(from_640_screen) {
+    width: 220px !important;
+  }
   border: 1px solid rgba(0, 0, 0, 0.43) !important;
 }
 

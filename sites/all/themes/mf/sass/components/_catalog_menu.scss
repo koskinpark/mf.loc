@@ -1,12 +1,37 @@
 $height_of_image:320px;
 
+.catalog-visible {
+  display: block !important;
+}
+
 .nav-menu-medium-screen {
   display: none;
-  @include respond-to(from_480_to_640_screen) {
+  @include respond-to(to_640_screen) {
    display: block;
   }
 > .nice-menu-menu-catalog-menu {
   display: none;
+  position: absolute;
+  height: 110px;
+  width: 100%;
+  border-top: 2px solid rgba(216, 216, 216, 0.61);
+  right: 0;
+  margin-top: 47px;
+  background: #F4F4F4;
+  > li {
+    width: 25%;
+    height: 50px;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    a {
+      text-decoration: underline;
+      color: #000305;
+    }
+    > ul {
+      display: none !important;
+    }
+  }
   }
 }
 
@@ -76,7 +101,7 @@ $height_of_image:320px;
   width:100%;
   border-top: 1px solid rgba(0, 0, 0, 0.04);
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  @include respond-to(from_480_to_640_screen) {
+  @include respond-to(to_640_screen) {
   display: none;
   }
   > .nice-menu-menu-catalog-menu {

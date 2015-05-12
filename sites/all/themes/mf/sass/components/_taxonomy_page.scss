@@ -2,7 +2,6 @@
 .pane-page-title {
   z-index: 1;
   position: relative;
-  margin-top: 10px;
   height: 150px;
   @include display-flex;
   > h1 {

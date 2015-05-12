@@ -152,11 +152,31 @@
                 var $block = $(this);
 
                 var $height_of_desc_block = $('> .group-description-product', $block).outerHeight();
-                $('> .group-product-image', $block).css('height', $height_of_desc_block);
+               // $('> .group-product-image', $block).css('height', $height_of_desc_block);
 
                 var $images_block = $('> .group-product-image .group-image-group', $block);
                 var $thumbnails = $('> .field--name-one-more-picture > .field__items > .field__item > .field--name-field-pictures .field__item', $images_block);
+
                 var $big_pictures = $('> .field--name-field-pictures .field__item',$images_block);
+
+                //$big_pictures.each(function(i) {
+                //    var $big_picture = $(this);
+                //    var $img_of_big_picture = $('img', $big_picture);
+                //    var $get_height_img = $img_of_big_picture.attr('height');
+                //    var $get_width_img = $img_of_big_picture.attr('width');
+                //    if ($get_height_img >= $get_width_img) {
+                //        $img_of_big_picture.css({
+                //            'height' : '450px',
+                //            'width' : 'auto'
+                //        });
+                //    }
+                //    else {
+                //        $img_of_big_picture.css({
+                //            'height' : 'auto',
+                //            'width' : '450px'
+                //        });
+                //    }
+                //});
 
                 $($big_pictures[0]).addClass('visible');
 
@@ -485,7 +505,6 @@
                         $(".see-more-btn").text("Hide back");
                         $(".view-id-see_more_product_homepage", $pane).removeClass('see-more-pictures');
                         var get_height_see_more_pictures = $(".view-id-see_more_product_homepage", $pane).height();
-                        console.log(get_height_see_more_pictures);
                         $pane.css({
                             'height': get_height_see_more_pictures + 150,
                             'transition': '0.3s ease'
@@ -612,9 +631,7 @@
                 var $pane = $(this);
                 $pane.append("<div class='btn-show-nav-menu'><div class='pointer-to-nav-menu'><span>Категории товаров</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div><a><div class='sub-border-line'></div></a></div>");
                 $('.btn-show-nav-menu > a', $pane).click(function() {
-                    $('> .nice-menu-menu-catalog-menu', $pane).css({
-                        'display': 'block'
-                    })
+                    $('> .nice-menu-menu-catalog-menu', $pane).toggleClass('catalog-visible');
                 });
             });
         }

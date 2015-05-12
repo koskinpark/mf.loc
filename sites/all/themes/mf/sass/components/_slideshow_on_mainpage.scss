@@ -1,5 +1,4 @@
 .pane-view-slideshow-panel-pane-1 {
-  margin-top: 10px;
   > .view-view-slideshow {
     .skin-default {
       position: relative;
@@ -11,6 +10,12 @@
       height: 36px;
       bottom: 95px;
       display: none;
+      @include respond-to(from_480_to_640_screen) {
+        bottom: 83px;
+      }
+      @include respond-to(to_480_screen) {
+        bottom: 63px;
+      }
       .views-slideshow-pager-fields {
         margin: auto;
         .views-slideshow-pager-field-item {
@@ -35,9 +40,36 @@
           height: 400px !important;
           > :nth-child(n) {
             width: 100% !important;
+            height: auto !important;
             .views-field-field-images-1 {
               img {
                 height: 400px !important;
+              }
+            }
+          }
+        }
+        @include respond-to(from_480_to_640_screen) {
+          width: 100% !important;
+          height: 280px !important;
+          > :nth-child(n) {
+            width: 100% !important;
+            height: auto !important;
+            .views-field-field-images-1 {
+              img {
+                height: 280px !important;
+              }
+            }
+          }
+        }
+        @include respond-to(to_480_screen) {
+          width: 100% !important;
+          height: 200px !important;
+          > :nth-child(n) {
+            width: 100% !important;
+            height: auto !important;
+            .views-field-field-images-1 {
+              img {
+                height: 200px !important;
               }
             }
           }
@@ -47,6 +79,22 @@
     > .views-slideshow-controls-bottom {
       height: 90px;
       width: 100%;
+      @include respond-to(from_480_to_640_screen) {
+        height: 75px;
+        > .views-slideshow-pager-fields {
+          .views-slideshow-pager-field-item {
+            width: 125px;
+          }
+        }
+      }
+      @include respond-to(to_480_screen) {
+        height: 55px;
+        > .views-slideshow-pager-fields {
+          .views-slideshow-pager-field-item {
+            width: 90px;
+          }
+        }
+      }
       @include display-flex;
       > .views-slideshow-pager-fields {
         margin: auto;
@@ -55,6 +103,12 @@
           margin: 5px 0 10px 10px;
           cursor: pointer;
           transition: 0.3s ease;
+          @include respond-to(from_480_to_640_screen) {
+            width: 125px;
+          }
+          @include respond-to(to_480_screen) {
+            width: 90px;
+          }
           .views-field-title {
 
           }

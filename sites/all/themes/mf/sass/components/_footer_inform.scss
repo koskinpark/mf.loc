@@ -5,6 +5,7 @@
     height: auto;
     text-align: center;
     margin: 20px auto 0 auto;
+    @include display-flex;
     > li {
       &:first-child {
         a {
@@ -13,11 +14,27 @@
       }
       width:120px;
       height:30px;
+      @include respond-to(from_480_screen) {
+        > a {
+          font-size: 14px;
+        }
+      }
+      @include respond-to(from_480_to_640_screen) {
+        width: 108px;
+        > a {
+          font-size: 12px;
+        }
+      }
+      @include respond-to(to_480_screen) {
+        width: 100px;
+        > a {
+          font-size: 12px;
+        }
+      }
       > a {
         text-decoration: none;
         border-right: 1px solid rgba(0, 0, 0, 0.12);
         color: rgba(0, 0, 0, 0.24);
-        font-size: 14px;
         text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.21);
         transition: 0.3s;
       }
