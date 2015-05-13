@@ -1,50 +1,47 @@
 (function($){
 
     Drupal.behaviors.searchpage = {
-        attach: function (context, settings) {
-            $('.pane-search-titles-panel-pane-1', context).once('search-pane', function() {
-                var $pane = $(this);
-                var $views_rows = $('> .view-id-search_titles .view-content .views-row', $pane);
-                $views_rows.each(function(i) {
-                    var $views_row = $(this);
-                    var $title = $('.panel-col-last .views-field-title', $views_row);
-                    var $field_of_img = $('.panel-col-first .views-field-field-pictures > .field-content', $views_row);
-                    var $body = $('.panel-col-last .views-field-body-value', $views_row);
-                    var $get_height_title = $title.outerHeight();
-                    var $get_height_img = $('img', $field_of_img).attr('height');
-                    var $get_height_body = $body.outerHeight();
-                    $title.css({
-                        'top' : -$get_height_title
-                    });
-                    $field_of_img.css({
-                        'height' : $get_height_img
-                    });
-                    $body.css({
-                        'bottom' : -$get_height_body
-                    });
-                    $views_row.mouseenter(function () {
-                        $title.css({
-                            'top' : 0,
-                            'transition' : '0.5s ease'
-                        });
-                        $body.css({
-                            'bottom': 0,
-                            'transition' : '0.5s ease'
-                        });
-                    });
-                    $views_row.mouseleave(function () {
-                        $title.css({
-                            'top' : -$get_height_title,
-                            'transition' : '0.5s ease'
-                        });
-                        $body.css({
-                            'bottom': -$get_height_body,
-                            'transition' : '0.5s ease'
-                        });
-                    });
-                });
-            });
-        }
+        //attach: function (context, settings) {
+        //    $('.pane-search-titles-panel-pane-1', context).once('search-pane', function() {
+        //        var $pane = $(this);
+        //        var $views_rows = $('> .view-id-search_titles .view-content .views-row', $pane);
+        //        $views_rows.each(function(i) {
+        //            var $views_row = $(this);
+        //            var $title = $('.panel-col-last .views-field-title', $views_row);
+        //            var $field_of_img = $('.panel-col-first .views-field-field-pictures > .field-content', $views_row);
+        //            var $body = $('.panel-col-last .views-field-body-value', $views_row);
+        //            var $get_height_title = $title.outerHeight();
+        //            var $get_height_img = $('img', $field_of_img).attr('height');
+        //            var $get_height_body = $body.outerHeight();
+        //            $title.css({
+        //                'top' : -$get_height_title
+        //            });
+        //            $body.css({
+        //                'bottom' : -$get_height_body
+        //            });
+        //            $views_row.mouseenter(function () {
+        //                $title.css({
+        //                    'top' : 0,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //                $body.css({
+        //                    'bottom': 0,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //            });
+        //            $views_row.mouseleave(function () {
+        //                $title.css({
+        //                    'top' : -$get_height_title,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //                $body.css({
+        //                    'bottom': -$get_height_body,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //            });
+        //        });
+        //    });
+        //}
     };
 
 
@@ -89,46 +86,46 @@
     };
 
     Drupal.behaviors.otheractions = {
-        attach: function (context, settings) {
-            $(".pane-show-other-actions-on-actions-page-panel-pane-1", context).once("other-actions", function () {
-                var $pane = $(this);
-                var $views_rows = $('> .view-show-other-actions-on-actions-page .view-content .views-row', $pane);
-                $views_rows.each(function(i) {
-                    var $views_row = $(this);
-                    var $title = $('> .node--mainpage-slideshow .field--name-title', $views_row);
-                    var $body = $('> .node--mainpage-slideshow .field--name-body', $views_row);
-                    var $get_height_title = $title.outerHeight();
-
-                    var $get_height_body = $body.outerHeight();
-                    $title.css({
-                        'top' : -$get_height_title
-                    });
-                    $body.css({
-                        'bottom' : -$get_height_body
-                    });
-                    $views_row.mouseenter(function () {
-                        $title.css({
-                            'top' : 0,
-                            'transition' : '0.5s ease'
-                        });
-                        $body.css({
-                            'bottom': 0,
-                            'transition' : '0.5s ease'
-                        });
-                    });
-                    $views_row.mouseleave(function () {
-                        $title.css({
-                            'top' : -$get_height_title,
-                            'transition' : '0.5s ease'
-                        });
-                        $body.css({
-                            'bottom': -$get_height_body,
-                            'transition' : '0.5s ease'
-                        });
-                    });
-                });
-            });
-        }
+        //attach: function (context, settings) {
+        //    $(".pane-show-other-actions-on-actions-page-panel-pane-1", context).once("other-actions", function () {
+        //        var $pane = $(this);
+        //        var $views_rows = $('> .view-show-other-actions-on-actions-page .view-content .views-row', $pane);
+        //        $views_rows.each(function(i) {
+        //            var $views_row = $(this);
+        //            var $title = $('> .node--mainpage-slideshow .field--name-title', $views_row);
+        //            var $body = $('> .node--mainpage-slideshow .field--name-body', $views_row);
+        //            var $get_height_title = $title.outerHeight();
+        //
+        //            var $get_height_body = $body.outerHeight();
+        //            $title.css({
+        //                'top' : -$get_height_title
+        //            });
+        //            $body.css({
+        //                'bottom' : -$get_height_body
+        //            });
+        //            $views_row.mouseenter(function () {
+        //                $title.css({
+        //                    'top' : 0,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //                $body.css({
+        //                    'bottom': 0,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //            });
+        //            $views_row.mouseleave(function () {
+        //                $title.css({
+        //                    'top' : -$get_height_title,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //                $body.css({
+        //                    'bottom': -$get_height_body,
+        //                    'transition' : '0.5s ease'
+        //                });
+        //            });
+        //        });
+        //    });
+        //}
     };
 
     Drupal.behaviors.imgtobg = {

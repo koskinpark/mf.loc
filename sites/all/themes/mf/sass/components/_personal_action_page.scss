@@ -146,13 +146,46 @@
   }
   > .view-show-other-actions-on-actions-page {
     .view-content {
+      @include clearfix();
       text-align:center;
       .views-row {
         cursor: pointer;
         transition: 0.3s;
-        display: inline-block;
+        float: left;
         position: relative;
         overflow: hidden;
+        @include respond-to(from_800_screen) {
+          .node--mainpage-slideshow {
+            .field--name-title, .field--name-body {
+              opacity: 0;
+              transition: 0.3s;
+            }
+          }
+          &:hover {
+            .node--mainpage-slideshow {
+              .field--name-title, .field--name-body {
+                opacity: 1;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+        @include respond-to(to_800_screen) {
+          .node--mainpage-slideshow {
+            .field--name-title {
+              bottom: 0;
+            }
+            .field--name-body {
+              opacity: 0;
+            }
+          }
+        }
+        @include respond-to(from_480_screen) {
+          width: 50%;
+        }
+        @include respond-to(to_480_screen) {
+          width: 100%;
+        }
         .node--mainpage-slideshow {
           overflow: hidden;
           .field--name-title {
@@ -176,6 +209,7 @@
             width: 100%;
             background: rgba(255, 255, 255, 0.77);
             color: #000;
+            bottom: 0;
             font-size: 16px;
             font-style: oblique;
             text-align: justify;
@@ -185,9 +219,13 @@
             }
           }
         }
+        &:last-child {
+          float: unset;
+          margin: auto;
+        }
       }
       > :nth-child(n) {
-        margin: 10px;
+        padding: 10px;
       }
 
     }

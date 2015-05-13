@@ -23,6 +23,9 @@ body {
     width: 100%;
     font-size: 12px;
   }
+  @include respond-to(to_480_screen) {
+    font-size: 11px;
+  }
 }
 
 a {
@@ -35,6 +38,8 @@ li {
 
 #header-wrap {
   background: #ffffff;
+  position: relative;
+  float: none;
 }
 
 #content-wrap {

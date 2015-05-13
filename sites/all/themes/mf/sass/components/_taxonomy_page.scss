@@ -2,28 +2,43 @@
 .pane-page-title {
   z-index: 1;
   position: relative;
-  height: 150px;
+  width: 100%;
   @include display-flex;
-  > h1 {
-    margin: auto;
-    color: #FFF;
-    font-size: 2.5em;
-    text-shadow: 0 0 10px #000;
-    cursor: default;
+  @include respond-to(full_screen) {
+    height: 150px;
+    > h1 {
+      margin: auto;
+      color: #FFF;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #000;
+      cursor: default;
+    }
+  }
+  @include respond-to(to_960_screen) {
+    > h1 {
+      width: 100%;
+      border-top: none !important;
+      @include pane-title;
+    }
   }
 }
 .pane-page-content {
   > .contextual-links-region {
     > .pane-taxonomy-term-field-image-for-title {
-      margin-top: -150px;
-      > .field--name-field-image-for-title {
-        > .field__items {
-          > .field__item {
-           > img {
-              vertical-align: bottom;
+      @include respond-to(full_screen) {
+        margin-top: -150px;
+        > .field--name-field-image-for-title {
+          > .field__items {
+            > .field__item {
+              > img {
+                vertical-align: bottom;
+              }
             }
           }
         }
+      }
+      @include respond-to(to_960_screen) {
+        display: none;
       }
     }
     > .pane-term-description {
@@ -41,6 +56,7 @@
         > .view-content {
           display: table;
           margin: auto;
+          text-align: center;
           > .views-row {
             display: inline-block;
             vertical-align: top;
@@ -48,17 +64,78 @@
             margin: 0 0 -1px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0);
             transition:0.5s;
+            @include respond-to(full_screen) {
+              > .views-field-field-small-image-on-parent-page {
+                > .field-content {
+                  width: 150px;
+                  height: 150px;
+                }
+              }
+            }
+            @include respond-to(from_800_to_960_screen) {
+              > .views-field-field-small-image-on-parent-page {
+                > .field-content {
+                  width: 130px;
+                  height: 130px;
+                }
+              }
+            }
+            @include respond-to(from_640_to_800_screen) {
+              > .views-field-field-small-image-on-parent-page {
+                > .field-content {
+                  width: 100px;
+                  height: 100px;
+                }
+              }
+            }
+            @include respond-to(from_640_screen) {
+              &:hover {
+                border-bottom: 1px solid #000;
+                transition:0.5s;
+                > .views-field-field-small-image-on-parent-page {
+                  > .field-content {
+                    > a {
+                      > img {
+                        transition: 0.5s;
+                        @include ungrayscale;
+                      }
+                    }
+                  }
+                }
+                > .views-field-name {
+                  > .field-content {
+                    > a {
+                      transition: 0.5s;
+                      color: #000000;
+                    }
+                  }
+                }
+              }
+              > .views-field-field-small-image-on-parent-page {
+                > .field-content {
+                  > a {
+                    > img {
+                      @include grayscale;
+                    }
+                  }
+                }
+              }
+            }
+            @include respond-to(to_640_screen) {
+              width: 33%;
+              > .views-field-field-small-image-on-parent-page {
+                min-height: 150px;
+                @include display-flex;
+              }
+            }
             > .views-field-field-small-image-on-parent-page {
               > .field-content {
-                width: 150px;
-                height: 150px;
                 @include display-flex;
                 > a {
                   margin: auto;
                   > img {
                     vertical-align: bottom;
                     transition:0.5s;
-                    @include grayscale;
                   }
                 }
               }
@@ -74,28 +151,7 @@
                 }
               }
             }
-            &:hover {
-              border-bottom: 1px solid #000;
-              transition:0.5s;
-              > .views-field-field-small-image-on-parent-page {
-                > .field-content {
-                  > a {
-                    > img {
-                      transition: 0.5s;
-                      @include ungrayscale;
-                    }
-                  }
-                }
-              }
-              > .views-field-name {
-                > .field-content {
-                  > a {
-                    transition: 0.5s;
-                    color: #000000;
-                  }
-                }
-              }
-            }
+
           }
         }
       }

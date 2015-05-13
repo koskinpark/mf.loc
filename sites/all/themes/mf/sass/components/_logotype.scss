@@ -2,6 +2,7 @@
 .pane-pane-for-logo {
   margin-top:10px;
   display: inline-block;
+  position: relative;
   @include respond-to(from_640_to_960_screen) {
     img {
       width: 120px;

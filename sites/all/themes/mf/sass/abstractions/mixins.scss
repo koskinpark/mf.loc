@@ -1,19 +1,23 @@
 
 
 @mixin respond-to($media) {
-  $small: 320px;
   $large: 960px;
   @if $media == full_screen {
-    @media only screen and (min-width: $large) { @content; }
+    @media only screen and (min-width: $large) {
+      @content;
+    }
   }
   @if $media == from_640_to_960_screen {
-    @media only screen and (min-width: 640px) and (max-width: $large) { @content; }
+    @media only screen and (min-width: 641px) and (max-width: $large) { @content; }
+  }
+  @if $media == from_800_to_960_screen {
+    @media only screen and (min-width: 801px) and (max-width: $large) { @content; }
   }
   @if $media == to_960_screen {
     @media only screen and (max-width: $large) { @content; }
   }
   @if $media == from_800_screen {
-    @media only screen and (min-width: $large) { @content; }
+    @media only screen and (min-width: 801px) { @content; }
   }
   @if $media == to_800_screen {
     @media only screen and (max-width: 800px) { @content; }
@@ -22,22 +26,28 @@
     @media only screen and (max-width: 720px) { @content; }
   }
   @if $media == from_480_to_640_screen {
-    @media only screen and (min-width: 480px) and (max-width: 640px) { @content; }
+    @media only screen and (min-width: 481px) and (max-width: 640px) { @content; }
   }
   @if $media == from_640_screen {
-    @media only screen and (min-width: 640px) { @content; }
+    @media only screen and (min-width: 641px) { @content; }
+  }
+  @if $media == from_640_to_800_screen {
+    @media only screen and (min-width: 641px) and (max-width: 800px) { @content; }
   }
   @if $media == to_640_screen {
     @media only screen and (max-width: 640px) { @content; }
   }
   @if $media == from_480_screen {
-    @media only screen and (min-width: 480px) { @content; }
+    @media only screen and (min-width: 481px) { @content; }
   }
   @if $media == to_480_screen {
     @media only screen and (max-width: 480px) { @content; }
   }
   @if $media == to_400_screen {
     @media only screen and (max-width: 400px) { @content; }
+  }
+  @if $media == scroller {
+    @media only screen and (max-width: 1260px) { @content; }
   }
 }
 
@@ -130,6 +140,7 @@
   margin: 1px 3px;
   display: inline-block;
   position: relative;
+  height:auto;
   @include respond-to(from_640_screen) {
     width: 31.5%;
     min-width: 200px;
@@ -434,42 +445,47 @@
     border-top: 1px solid rgba(0, 0, 0, 0.04);
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   }
-  @include respond-to(from_480_to_640_screen) {
+  @include respond-to(to_640_screen) {
+    background: #F7F7F7;
     padding: 5px 0 5px 0;
-  }
-  @include respond-to(to_480_screen) {
-    padding: 0;
   }
   margin: 0;
   &:before {
-    border-bottom: 1px solid #969696;
-    content: ' ';
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    top: -7px;
-    margin-right: 10px;
-    @include respond-to(from_480_screen) {
+    @include respond-to(from_640_screen) {
+      border-bottom: 1px solid #969696;
+      content: ' ';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      top: -7px;
+      margin-right: 10px;
       width: 100px;
     }
-    @include respond-to(to_480_screen) {
-      width: 80px;
-    }
+//    @include respond-to(from_480_screen) {
+//      width: 100px;
+//    }
+//    @include respond-to(to_480_screen) {
+//      width: 80px;
+//    }
   }
  &:after {
-    margin-left: 10px;
-    border-bottom: 1px solid #969696;
-    content: ' ';
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    top: -7px;
-   @include respond-to(from_480_screen) {
+   @include respond-to(from_640_screen) {
+     margin-left: 10px;
+     border-bottom: 1px solid #969696;
+     content: ' ';
+     display: inline-block;
+     height: 1px;
+     position: relative;
+     top: -7px;
      width: 100px;
    }
-   @include respond-to(to_480_screen) {
-     width: 80px;
-   }
+
+//   @include respond-to(from_480_screen) {
+//     width: 100px;
+//   }
+//   @include respond-to(to_480_screen) {
+//     width: 80px;
+//   }
   }
 }
 

@@ -5,15 +5,14 @@
 .panel-2col .panel-col-last .inside {
   margin: 0;
 }
-
 .panel-2col .panel-col-first {
-//  float: none;
-  width: auto;
+  float: none;
+  width: unset;
 }
+
 
 .panel-2col .panel-col-last {
   float: none;
-  width: auto;
 }
 
 .pane-search-titles-panel-pane-1 {
@@ -24,15 +23,63 @@
       @include pane-title;
     }
     .view-content {
+      @include clearfix();
       text-align:center;
       .views-row {
+        position: relative;
         transition: 0.3s;
-        display: inline-block;
+        float: left;
         overflow: hidden;
+        @include respond-to(from_800_screen) {
+          .panel-display {
+            > .panel-col-last {
+              opacity:0;
+              transition:0.3s;
+            }
+          }
+          &:hover {
+            .panel-display {
+              > .panel-col-last {
+                opacity: 1;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+        @include respond-to(to_800_screen) {
+          .panel-display {
+            > .panel-col-last {
+              .inside {
+                .views-field-title {
+                  bottom: 0;
+                }
+                .views-field-body-value {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        @include respond-to(from_480_screen) {
+          width: 50%;
+        }
+        @include respond-to(to_480_screen) {
+          width: 100%;
+        }
         .panel-display {
           position: relative;
           overflow: hidden;
           > .panel-col-first {
+            .inside {
+              > .views-field-field-pictures {
+                .field-content {
+                  width: 100%;
+                  img {
+                    vertical-align: bottom;
+                  }
+                }
+              }
+            }
             .views-field-view-node {
               a {
                 position: absolute;
@@ -48,22 +95,24 @@
             width: 100%;
             height:100%;
             position: absolute;
+            top: 0;
             .views-field-title {
               position: absolute;
               width: 100%;
               background: rgba(0, 0, 0, 0.77);
               color: #FFF;
-              font-size: 20px;
+              font-size: 1.5em;
               font-style: oblique;
               padding: 20px;
             }
             .views-field-body-value {
               height: auto;
               position: absolute;
+              bottom: 0;
               width: 100%;
               background: rgba(0, 0, 0, 0.77);
               color: #FFF;;
-              font-size: 16px;
+              font-size: 1em;
               font-style: oblique;
               text-align: justify;
               text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11);
@@ -71,9 +120,13 @@
             }
           }
         }
+        &:last-child {
+          float: unset;
+          margin: auto;
+        }
       }
       > :nth-child(n) {
-        margin: 10px;
+        padding: 10px;
       }
 
     }

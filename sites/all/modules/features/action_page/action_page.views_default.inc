@@ -70,6 +70,25 @@ function action_page_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $translatables['action_page'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('All'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['action_page'] = $view;
 
   $view = new view();
@@ -148,6 +167,26 @@ function action_page_views_default_views() {
       'fixed' => '',
       'label' => 'Content: Nid',
     ),
+  );
+  $translatables['show_other_actions_on_actions_page'] = array(
+    t('Master'),
+    t('Other actions'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('All'),
+    t('Content pane'),
+    t('View panes'),
   );
   $export['show_other_actions_on_actions_page'] = $view;
 

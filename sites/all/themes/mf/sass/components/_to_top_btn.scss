@@ -10,8 +10,9 @@
   border: 2px solid rgba(0, 0, 0, 0.09);
   height: 50px;
   transition: 0.3s;
-  @include respond-to(from_640_to_960_screen) {
-    display: none;
+  display: block;
+  @include respond-to(scroller) {
+    display: none !important;
   }
   > img {
     transition: 0.3s;

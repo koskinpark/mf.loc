@@ -35,12 +35,20 @@
       position: relative;
       z-index: 1;
       .views-slideshow-cycle-main-frame {
-        @include respond-to(from_640_to_960_screen) {
+        width: 100% !important;
+        height: auto;
+        > :nth-child(n) {
           width: 100% !important;
+          height: auto !important;
+          .views-field-field-images-1 {
+            img {
+
+            }
+          }
+        }
+        @include respond-to(from_640_to_960_screen) {
           height: 400px !important;
           > :nth-child(n) {
-            width: 100% !important;
-            height: auto !important;
             .views-field-field-images-1 {
               img {
                 height: 400px !important;
@@ -49,11 +57,8 @@
           }
         }
         @include respond-to(from_480_to_640_screen) {
-          width: 100% !important;
           height: 280px !important;
           > :nth-child(n) {
-            width: 100% !important;
-            height: auto !important;
             .views-field-field-images-1 {
               img {
                 height: 280px !important;
@@ -62,11 +67,8 @@
           }
         }
         @include respond-to(to_480_screen) {
-          width: 100% !important;
           height: 200px !important;
           > :nth-child(n) {
-            width: 100% !important;
-            height: auto !important;
             .views-field-field-images-1 {
               img {
                 height: 200px !important;
@@ -97,12 +99,15 @@
       }
       @include display-flex;
       > .views-slideshow-pager-fields {
+        @include clearfix();
         margin: auto;
         .views-slideshow-pager-field-item {
+          @include clearfix();
           float: left;
           margin: 5px 0 10px 10px;
           cursor: pointer;
           transition: 0.3s ease;
+          width: 150px;
           @include respond-to(from_480_to_640_screen) {
             width: 125px;
           }

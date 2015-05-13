@@ -36,8 +36,8 @@ function action_page_image_default_styles() {
       1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 450,
-          'height' => 450,
+          'width' => 460,
+          'height' => 460,
         ),
         'weight' => 1,
       ),

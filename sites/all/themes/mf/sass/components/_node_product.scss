@@ -36,6 +36,9 @@
         > .field--name-body {
           font-size: 1.2em;
           text-align: center !important;
+          .field__items {
+            float: unset !important;
+          }
         }
         > .field--name-field-cost {
           position: absolute;
