@@ -1,0 +1,3 @@
+name = Drush Content Importer
+description = This module allows you to import content from files of different directories into your content.
+core = 7.x

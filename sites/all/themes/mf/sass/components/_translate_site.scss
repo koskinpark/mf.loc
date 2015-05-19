@@ -1,0 +1,41 @@
+#header-wrap {
+  > .translate-site {
+    position: absolute;
+    @include respond-to(from_640_screen) {
+      top: 10px;
+      right: 10px;
+      a {
+        font-size: 14px;
+        width: 20px;
+      }
+    }
+    @include respond-to(to_640_screen) {
+      top: 8px;
+      left: 80px;
+      a {
+        font-size: 22px;
+        width: 28px;
+      }
+    }
+    @include display-flex;
+    a {
+      font-style: italic;
+      padding: 0px 3px;
+      margin: auto;
+      text-align: center;
+      &:hover {
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.73);
+        transition: 0.3s ease;
+      }
+      &:not(:hover) {
+      transition: 0.3s ease;
+    }
+    }
+    span {
+      color: #000;
+    }
+    > span {
+      font-size: 24px;
+    }
+  }
+}

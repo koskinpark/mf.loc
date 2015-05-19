@@ -47,7 +47,7 @@
 
     Drupal.behaviors.slideshowonmainpage = {
         attach: function (context, settings) {
-            $('.pane-view-slideshow-panel-pane-1', context).once('slideshow', function() {
+            $('.pane-view-slideshow-panel-pane-1', context).once('slideshowonmainpage', function() {
                 var $pane = $(this);
                 var $titles = $('.skin-default > .views-slideshow-controls-top .views-slideshow-pager-field-item', $pane);
                 var $thumbnails = $('.skin-default > .views-slideshow-controls-bottom .views-slideshow-pager-field-item', $pane);
@@ -399,13 +399,13 @@
     Drupal.behaviors.totopbtn = {
         attach: function (context, settings) {
             $("body", context).once("to-top-btn", function () {
-                $("body").append("<span class='scroller'><img src='/sites/all/themes/mf/images/to_top_btn.png'></span>");
-                    if ($(this).scrollTop() == 0) {
+                $(this).append("<span class='scroller'><img src='/sites/all/themes/mf/images/to_top_btn.png'></span>");
+                if ($(this).scrollTop() == 0) {
                     $('.scroller').hide();
                 }
             });
             scroller = function() {
-                $('body,html').animate({
+                $('body').animate({
                     scrollTop: 0
                 }, 400);
             };
@@ -455,6 +455,7 @@
         attach: function (context, settings) {
             $(".pane-see-more-product-homepage-panel-pane-1", context).once("see-more", function () {
                 var $pane = $(this);
+                var $height_of_pane = $pane.height();
                 var $view_content = $('> .view-see-more-product-homepage .view-content', $pane);
 
                 var childs_from_1_to_3_see_more = function($destination, $opacity, $transition) {
@@ -464,7 +465,7 @@
                     });
                 };
                 childs_from_1_to_3_see_more($view_content, '.6', '0.3s');
-                $pane.prepend("<div class='border-see-more'></div></div><div class='see-more'><span class='see-more-btn'>See More</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div>");
+                $pane.prepend("<div class='border-see-more'></div></div><div class='see-more'><span class='see-more-btn'>Show more</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div>");
 
                 $pane.mouseenter(function () {
                     $pane.addClass('toggle-mouse');
@@ -499,7 +500,7 @@
                             $('html').animate( { scrollTop: destination-70}, "fast" );
                         }
                         $(".border-see-more").css({'display' : 'none'});
-                        $(".see-more-btn").text("Hide back");
+                        $(".see-more-btn").text(Drupal.t("Hide back"));
                         $(".view-id-see_more_product_homepage", $pane).removeClass('see-more-pictures');
                         var get_height_see_more_pictures = $(".view-id-see_more_product_homepage", $pane).height();
                         $pane.css({
@@ -515,8 +516,12 @@
                             $('html').animate( { scrollTop: destination-140}, "fast" );
                         }
                         $(".border-see-more").css({'display' : 'block'});
-                        $(".see-more-btn").text("See More");
+                        $(".see-more-btn").text(Drupal.t('Show more'));
                         $(".view-id-see_more_product_homepage", $pane).addClass('see-more-pictures');
+                        $pane.css({
+                            'height':  $height_of_pane,
+                            'transition': '0.3s ease'
+                        });
 
                     }
                 });
@@ -541,7 +546,7 @@
         attach: function (context, settings) {
             $(".all-actions > #content-wrap .pane-show-other-actions-on-actions-page-panel-pane-1", context).once("all-actions", function () {
                 var $pane = $(this);
-               $(".pane-title", $pane).text("All Actions");
+               $(".pane-title", $pane).text("Все акции");
             });
         }
     };
@@ -634,6 +639,25 @@
         }
     };
 
+    Drupal.behaviors.transaltesite = {
+        attach: function (context, settings) {
+            $('#header-wrap', context).once("transaltesite", function () {
+                var $pane = $(this);
+                $('.pane-pane-for-logo', $pane).after("<div class='translate-site'></div>");
+                var i = 1;
+                var languages = new Array('ru','en');
+                while(i <= languages.length) {
+                    $('> .translate-site', $pane).append(
+                        "<a href=" + languages[i-1] + " class=translate-variant-" + i + "><span>" + languages[i-1] + "</span></a>");
+                    if (!(i == languages.length)) {
+                        $("> .translate-site .translate-variant-" + i +"", $pane).after("<span>|</span>");
+                    }
+                    i++;
+                };
+
+            });
+        }
+    };
 
 
 })(jQuery);
