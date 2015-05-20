@@ -48,7 +48,6 @@ features[image][] = mainpage_image_slideshow
 features[image][] = thumbnails_for_slideshow_on_mainpage
 features[node][] = mainpage_slideshow
 features[uuid_node][] = 716612b6-81f9-40a8-b96f-38f1aaaac12d
-features[uuid_node][] = a2b21734-283c-4e26-899a-f755419bd37c
 features[uuid_node][] = cfdaa58e-fb75-4765-876c-c8aedc68cf7f
 features[variable][] = additional_settings__active_tab_mainpage_slideshow
 features[variable][] = field_bundle_settings_node__mainpage_slideshow

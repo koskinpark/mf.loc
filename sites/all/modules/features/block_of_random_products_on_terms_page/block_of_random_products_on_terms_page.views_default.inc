@@ -22,14 +22,17 @@ function block_of_random_products_on_terms_page_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Some products of this category';
+  $handler->display->display_options['title'] = 'Товары данной категории';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '30';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'random_homepage_pictures';
@@ -115,6 +118,28 @@ function block_of_random_products_on_terms_page_views_default_views() {
       'fixed' => '',
       'label' => 'Taxonomy term: Parent term',
     ),
+  );
+  $translatables['random_product_of_taxonomy_term'] = array(
+    t('Master'),
+    t('Товары данной категории'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Taxonomy term entity referenced from field_catalog'),
+    t('Catalog Child'),
+    t('All'),
+    t('View panes'),
+    t('Catalog Parent'),
   );
   $export['random_product_of_taxonomy_term'] = $view;
 

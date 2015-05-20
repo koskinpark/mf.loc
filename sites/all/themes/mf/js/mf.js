@@ -430,7 +430,8 @@
             $(".pane-searchbox-panel-pane-1", context).once("searchbox", function () {
                 var $pane = $(this);
                 var $form_text =  $("> .view-searchbox .form-text", $pane);
-                $form_text.attr('placeholder', 'Поиск по названиям');
+                var $text = Drupal.t('Search by titles');
+                $form_text.attr('placeholder', $text);
                 var $submit_form_search = $('> .view-searchbox .views-submit-button', $pane);
                 $form_text.hover(function () {
                     $form_text.addClass("search_box_hover");
@@ -451,9 +452,9 @@
             });
         }
     };
-    Drupal.behaviors.seemorebutton = {
+    Drupal.behaviors.seemore = {
         attach: function (context, settings) {
-            $(".pane-see-more-product-homepage-panel-pane-1", context).once("see-more", function () {
+            $(".pane-see-more-product-homepage-panel-pane-1", context).once("seemore", function () {
                 var $pane = $(this);
                 var $height_of_pane = $pane.height();
                 var $view_content = $('> .view-see-more-product-homepage .view-content', $pane);
@@ -465,7 +466,7 @@
                     });
                 };
                 childs_from_1_to_3_see_more($view_content, '.6', '0.3s');
-                $pane.prepend("<div class='border-see-more'></div></div><div class='see-more'><span class='see-more-btn'>Show more</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div>");
+                $pane.prepend("<div class='border-see-more'></div></div><div class='see-more'><span class='see-more-btn'>" + Drupal.t('Show more') + "</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div>");
 
                 $pane.mouseenter(function () {
                     $pane.addClass('toggle-mouse');
@@ -489,16 +490,9 @@
                 $(".see-more-btn", $pane).mouseout(function () {
                     $(".see-more", $pane).removeClass("see-more-hover");
                 });
-                var destination = $pane.offset().top;
-
                 $(".see-more-btn").click(function () {
                     $pane.toggleClass('see-more-visible');
                     if ($pane.hasClass('see-more-visible')) {
-                        if($.browser.safari){
-                            $('body').animate( { scrollTop: destination-70}, "fast" );
-                        }else{
-                            $('html').animate( { scrollTop: destination-70}, "fast" );
-                        }
                         $(".border-see-more").css({'display' : 'none'});
                         $(".see-more-btn").text(Drupal.t("Hide back"));
                         $(".view-id-see_more_product_homepage", $pane).removeClass('see-more-pictures');
@@ -510,11 +504,6 @@
                         return false;
                     }
                     if (!$pane.hasClass('see-more-visible')) {
-                        if($.browser.safari){
-                            $('body').animate( { scrollTop: destination-140}, "fast" );
-                        }else{
-                            $('html').animate( { scrollTop: destination-140}, "fast" );
-                        }
                         $(".border-see-more").css({'display' : 'block'});
                         $(".see-more-btn").text(Drupal.t('Show more'));
                         $(".view-id-see_more_product_homepage", $pane).addClass('see-more-pictures');

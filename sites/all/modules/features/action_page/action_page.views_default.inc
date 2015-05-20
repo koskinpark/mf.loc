@@ -103,7 +103,7 @@ function action_page_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Other actions';
+  $handler->display->display_options['title'] = 'Другие акции';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -170,7 +170,7 @@ function action_page_views_default_views() {
   );
   $translatables['show_other_actions_on_actions_page'] = array(
     t('Master'),
-    t('Other actions'),
+    t('Другие акции'),
     t('more'),
     t('Apply'),
     t('Reset'),

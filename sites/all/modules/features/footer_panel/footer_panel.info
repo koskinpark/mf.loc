@@ -18,7 +18,6 @@ features[ds_layout_settings][] = node|footer_type|footer_mode
 features[ds_view_modes][] = footer_mode
 features[features_api][] = api:2
 features[node][] = footer_type
-features[uuid_node][] = 41ea60c3-2705-4f07-92ca-817a54354617
 features[variable][] = menu_options_footer_type
 features[variable][] = menu_parent_footer_type
 features[variable][] = node_options_footer_type

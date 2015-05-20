@@ -1,0 +1,45 @@
+<?php
+
+function mf_menu_link(array $variables)
+{
+    $element = $variables['element'];
+    $element['#attributes']['class'][] = 'menu-active';
+    $path = '';
+    $sub_menu = '';
+    $image_style = '';
+
+    if ($variables['element']['#original_link']['depth'] == 2) {
+        $title_of_taxonomy_term = $variables['element']['#original_link']['options']['attributes']['title'];
+        $info_about_taxonomy_term = taxonomy_get_term_by_name($title_of_taxonomy_term);
+        $info_about_taxonomy_term = reset($info_about_taxonomy_term);
+        $id_of_taxonomy_term = $info_about_taxonomy_term->tid;
+        $term = taxonomy_term_load($id_of_taxonomy_term);
+        if ($term->field_image_for_navigation_menu) {
+            $path = $term->field_image_for_navigation_menu['und'][0]['uri'];
+        }
+    }
+
+    if ($element['#below']) {
+        $sub_menu = drupal_render($element['#below']);
+    }
+
+    if ($path) {
+        $image_style = 'image_of_child_taxonomy_term';
+        //theme_image_style
+        $path = theme_image_style(array(
+            'style_name' => $image_style,
+            'path' => $path,
+            "height" => NULL,
+            "width" => NULL,
+        ));
+    }
+    $output = l('<span>' . $element['#title'] . '</span>' . $path, $element['#href'], array(
+            'html' => true,
+            'attributes' => array(
+                'title' => $element['#localized_options']['attributes']['title']))
+    );
+
+    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+
+

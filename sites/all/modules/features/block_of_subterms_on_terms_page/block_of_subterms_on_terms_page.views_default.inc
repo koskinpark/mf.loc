@@ -77,6 +77,25 @@ function block_of_subterms_on_terms_page_views_default_views() {
       'label' => 'Taxonomy term: Parent term',
     ),
   );
+  $translatables['show_subterms'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('All'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['show_subterms'] = $view;
 
   return $export;

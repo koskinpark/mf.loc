@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,300,700,800&subset=latin,cyrillic);
 /* line 1, ../sass/base/_media.scss */
 img, media {
   max-width: 100%; }
@@ -15,7 +16,7 @@ body {
   height: auto;
   font-size: 16px;
   color: #3D3D3D;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif, serif;
   overflow-x: hidden; }
   @media only screen and (min-width: 641px) and (max-width: 960px) {
     /* line 6, ../sass/base/_template.scss */
@@ -164,7 +165,6 @@ li {
 /* line 101, ../sass/components/_catalog_menu.scss */
 .nav-menu-full-screen {
   width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
   border-bottom: 1px solid rgba(0, 0, 0, 0.04); }
   /* line 79, ../sass/abstractions/mixins.scss */
   .nav-menu-full-screen:before, .nav-menu-full-screen:after {
@@ -181,11 +181,25 @@ li {
     /* line 101, ../sass/components/_catalog_menu.scss */
     .nav-menu-full-screen {
       display: block; } }
-  /* line 112, ../sass/components/_catalog_menu.scss */
+  /* line 111, ../sass/components/_catalog_menu.scss */
   .nav-menu-full-screen > .nice-menu-menu-catalog-menu {
-    width: auto;
+    box-shadow: 0px 10px 5px -9px rgba(0, 0, 0, 0.28);
     float: none;
-    background: #fff; }
+    background: transparent;
+    background: -webkit-gradient(top, from(#00000000), to(#0A000000));
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.04) 100%);
+    background: -moz-gradient(top, transparent 0%, rgba(0, 0, 0, 0.04) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.04) 100%);
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.04) 100%);
+    background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.04) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#0A000000',GradientType=0 );
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex; }
     /* line 79, ../sass/abstractions/mixins.scss */
     .nav-menu-full-screen > .nice-menu-menu-catalog-menu:before, .nav-menu-full-screen > .nice-menu-menu-catalog-menu:after {
       content: "";
@@ -195,86 +209,115 @@ li {
       clear: both; }
     /* line 117, ../sass/components/_catalog_menu.scss */
     .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li {
-      text-align: center;
       float: none;
-      display: table-cell;
-      vertical-align: top;
+      margin: auto;
       border-bottom: 1px solid transparent;
-      border-top: 1px solid #ffffff;
       border-left: 1px solid #ffffff;
       border-right: 1px solid #ffffff; }
-      /* line 126, ../sass/components/_catalog_menu.scss */
+      /* line 123, ../sass/components/_catalog_menu.scss */
       .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li:hover {
         color: #000; }
+        /* line 125, ../sass/components/_catalog_menu.scss */
+        .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li:hover > ul {
+          visibility: visible !important;
+          display: block !important; }
       @media only screen and (min-width: 641px) and (max-width: 960px) {
-        /* line 130, ../sass/components/_catalog_menu.scss */
+        /* line 131, ../sass/components/_catalog_menu.scss */
         .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > a {
           height: 45px !important; }
-        /* line 133, ../sass/components/_catalog_menu.scss */
+        /* line 134, ../sass/components/_catalog_menu.scss */
         .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul {
           top: 47px !important; } }
-      /* line 137, ../sass/components/_catalog_menu.scss */
+      /* line 138, ../sass/components/_catalog_menu.scss */
+      .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li span {
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.44);
+        font-weight: 100;
+        letter-spacing: -0.5px;
+        display: block; }
+      /* line 145, ../sass/components/_catalog_menu.scss */
       .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > a {
         text-decoration: none;
         padding: 0;
         color: unset;
         height: 50px;
-        width: 200px;
         display: table-cell;
         vertical-align: middle; }
-      /* line 147, ../sass/components/_catalog_menu.scss */
+      /* line 154, ../sass/components/_catalog_menu.scss */
       .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul {
-        left: -1px;
-        top: 52px;
+        top: 50px;
+        text-align: center;
         width: 100%;
-        border: 1px solid #000; }
-        /* line 152, ../sass/components/_catalog_menu.scss */
+        background: white;
+        background: -webkit-gradient(bottom, from(#FFFFFFFF), to(#FFF5F5F5));
+        background: -moz-linear-gradient(bottom, white 0%, whitesmoke 100%);
+        background: -moz-gradient(bottom, white 0%, whitesmoke 100%);
+        background: -webkit-linear-gradient(bottom, white 0%, whitesmoke 100%);
+        background: -o-linear-gradient(bottom, white 0%, whitesmoke 100%);
+        background: -ms-linear-gradient(bottom, white 0%, whitesmoke 100%);
+        background: linear-gradient(to top, #ffffff 0%, #f5f5f5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFFFF', endColorstr='#FFF5F5F5',GradientType=0 ); }
+        /* line 159, ../sass/components/_catalog_menu.scss */
         .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul > li {
-          background: #fff;
-          width: 100%;
           text-align: center;
-          float: none;
-          display: block; }
-          /* line 158, ../sass/components/_catalog_menu.scss */
+          float: unset;
+          display: inline-block;
+          width: unset;
+          margin: 5px; }
+          /* line 165, ../sass/components/_catalog_menu.scss */
           .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul > li:hover {
             background: #f4f4f4; }
-          /* line 161, ../sass/components/_catalog_menu.scss */
+          /* line 168, ../sass/components/_catalog_menu.scss */
           .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul > li > a {
-            text-decoration: none;
-            padding: 0;
-            color: unset;
-            margin: auto;
-            width: 200px;
-            height: 50px;
-            padding-left: 15px;
-            padding-right: 15px;
-            display: table-cell;
-            vertical-align: middle; }
-        /* line 174, ../sass/components/_catalog_menu.scss */
-        .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul:last-child {
-          width: calc(100% + 2px); }
+            color: unset; }
+            /* line 170, ../sass/components/_catalog_menu.scss */
+            .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul > li > a span {
+              text-align: left;
+              font-style: oblique;
+              font-weight: 600;
+              height: 40px;
+              width: 100%;
+              display: block;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+              margin-bottom: 5px;
+              padding-top: 12px; }
+            /* line 181, ../sass/components/_catalog_menu.scss */
+            .nav-menu-full-screen > .nice-menu-menu-catalog-menu > li > ul > li > a img {
+              width: 95%; }
 
-/* line 182, ../sass/components/_catalog_menu.scss */
+/* line 191, ../sass/components/_catalog_menu.scss */
 ul.nice-menu-down li.menuparent {
   background: none; }
 
-/* line 185, ../sass/components/_catalog_menu.scss */
+/* line 194, ../sass/components/_catalog_menu.scss */
 ul.nice-menu-down li.menuparent:hover {
   background: none; }
 
-/* line 189, ../sass/components/_catalog_menu.scss */
+/* line 198, ../sass/components/_catalog_menu.scss */
 ul.nice-menu-down li {
   border: none; }
 
-/* line 192, ../sass/components/_catalog_menu.scss */
+/* line 201, ../sass/components/_catalog_menu.scss */
 ul.nice-menu li {
+  position: unset;
   border: none;
   background-color: unset; }
 
-/* line 197, ../sass/components/_catalog_menu.scss */
+/* line 207, ../sass/components/_catalog_menu.scss */
+ul.nice-menu-down .menuparent a {
+  padding: 0; }
+
+/* line 211, ../sass/components/_catalog_menu.scss */
+ul.nice-menu a {
+  padding: 0; }
+
+/* line 215, ../sass/components/_catalog_menu.scss */
+ul.nice-menu ul {
+  border-top: unset; }
+
+/* line 219, ../sass/components/_catalog_menu.scss */
 .here_goes {
   margin-top: 54px; }
-  /* line 199, ../sass/components/_catalog_menu.scss */
+  /* line 221, ../sass/components/_catalog_menu.scss */
   .here_goes .nice-menu-menu-catalog-menu {
     position: fixed !important;
     top: 0;
@@ -2359,31 +2402,30 @@ ul.nice-menu li {
     .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row {
       display: inline-block;
       vertical-align: top;
-      padding: 5px 0 5px 0;
-      margin: 0 0 -1px 0;
       border-bottom: 1px solid transparent;
-      transition: 0.5s; }
+      transition: 0.5s;
+      position: relative; }
       @media only screen and (min-width: 960px) {
-        /* line 69, ../sass/components/_taxonomy_page.scss */
+        /* line 70, ../sass/components/_taxonomy_page.scss */
         .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page > .field-content {
           width: 150px;
           height: 150px; } }
       @media only screen and (min-width: 801px) and (max-width: 960px) {
-        /* line 77, ../sass/components/_taxonomy_page.scss */
+        /* line 78, ../sass/components/_taxonomy_page.scss */
         .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page > .field-content {
           width: 130px;
           height: 130px; } }
       @media only screen and (min-width: 641px) and (max-width: 800px) {
-        /* line 85, ../sass/components/_taxonomy_page.scss */
+        /* line 86, ../sass/components/_taxonomy_page.scss */
         .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page > .field-content {
           width: 100px;
           height: 100px; } }
       @media only screen and (min-width: 641px) {
-        /* line 92, ../sass/components/_taxonomy_page.scss */
+        /* line 93, ../sass/components/_taxonomy_page.scss */
         .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row:hover {
           border-bottom: 1px solid #000;
           transition: 0.5s; }
-          /* line 98, ../sass/components/_taxonomy_page.scss */
+          /* line 99, ../sass/components/_taxonomy_page.scss */
           .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row:hover > .views-field-field-small-image-on-parent-page > .field-content > a > img {
             transition: 0.5s;
             -webkit-filter: grayscale(0%);
@@ -2391,11 +2433,11 @@ ul.nice-menu li {
             -ms-filter: grayscale(0%);
             -o-filter: grayscale(0%);
             filter: grayscale(0%); }
-          /* line 107, ../sass/components/_taxonomy_page.scss */
+          /* line 108, ../sass/components/_taxonomy_page.scss */
           .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row:hover > .views-field-name > .field-content > a {
             transition: 0.5s;
             color: #000000; }
-        /* line 117, ../sass/components/_taxonomy_page.scss */
+        /* line 118, ../sass/components/_taxonomy_page.scss */
         .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page > .field-content > a > img {
           -webkit-filter: grayscale(100%);
           -moz-filter: grayscale(100%);
@@ -2408,7 +2450,7 @@ ul.nice-menu li {
         /* line 60, ../sass/components/_taxonomy_page.scss */
         .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row {
           width: 33%; }
-          /* line 126, ../sass/components/_taxonomy_page.scss */
+          /* line 127, ../sass/components/_taxonomy_page.scss */
           .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page {
             min-height: 150px;
             display: -webkit-box;
@@ -2417,7 +2459,7 @@ ul.nice-menu li {
             display: -moz-flex;
             display: -webkit-flex;
             display: flex; } }
-      /* line 132, ../sass/components/_taxonomy_page.scss */
+      /* line 133, ../sass/components/_taxonomy_page.scss */
       .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page > .field-content {
         display: -webkit-box;
         display: -moz-box;
@@ -2425,23 +2467,32 @@ ul.nice-menu li {
         display: -moz-flex;
         display: -webkit-flex;
         display: flex; }
-        /* line 134, ../sass/components/_taxonomy_page.scss */
+        /* line 135, ../sass/components/_taxonomy_page.scss */
         .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page > .field-content > a {
           margin: auto; }
-          /* line 136, ../sass/components/_taxonomy_page.scss */
+          /* line 137, ../sass/components/_taxonomy_page.scss */
           .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-field-small-image-on-parent-page > .field-content > a > img {
             vertical-align: bottom;
             transition: 0.5s; }
-      /* line 143, ../sass/components/_taxonomy_page.scss */
+      /* line 144, ../sass/components/_taxonomy_page.scss */
       .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-name {
-        margin: 0 0 5px 0;
-        text-align: center; }
-        /* line 147, ../sass/components/_taxonomy_page.scss */
-        .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-name > .field-content > a {
-          transition: 0.5s;
-          color: #3D3D3D;
-          text-decoration: none; }
-/* line 160, ../sass/components/_taxonomy_page.scss */
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        z-index: 1; }
+        /* line 151, ../sass/components/_taxonomy_page.scss */
+        .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-name > .field-content {
+          margin: auto;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.69); }
+          /* line 155, ../sass/components/_taxonomy_page.scss */
+          .pane-page-content > .contextual-links-region > .pane-show-subterms-panel-pane-1 > .view-display-id-panel_pane_1 > .view-content > .views-row > .views-field-name > .field-content > a {
+            transition: 0.5s;
+            color: #FFFFFF;
+            text-decoration: none; }
+/* line 168, ../sass/components/_taxonomy_page.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title {
   font-style: oblique;
   font-weight: normal;
@@ -2450,13 +2501,13 @@ ul.nice-menu li {
   cursor: default;
   margin: 0; }
   @media only screen and (min-width: 641px) {
-    /* line 160, ../sass/components/_taxonomy_page.scss */
+    /* line 168, ../sass/components/_taxonomy_page.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title {
       padding: 20px 0 20px 0;
       border-top: 1px solid rgba(0, 0, 0, 0.04);
       border-bottom: 1px solid rgba(0, 0, 0, 0.04); } }
   @media only screen and (max-width: 640px) {
-    /* line 160, ../sass/components/_taxonomy_page.scss */
+    /* line 168, ../sass/components/_taxonomy_page.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .pane-title {
       background: #F7F7F7;
       padding: 5px 0 5px 0; } }
@@ -2482,7 +2533,7 @@ ul.nice-menu li {
       position: relative;
       top: -7px;
       width: 100px; } }
-/* line 163, ../sass/components/_taxonomy_page.scss */
+/* line 171, ../sass/components/_taxonomy_page.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term {
   margin-top: 7px; }
   /* line 79, ../sass/abstractions/mixins.scss */
@@ -2569,7 +2620,7 @@ ul.nice-menu li {
         .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-1 > .view-random-product-of-taxonomy-term > .view-content > .views-row:not(:hover) > .view-mode-random_homepage_pictures > .field--name-title .field__items {
           color: rgba(255, 255, 255, 0);
           transition: 0.1s ease-in; }
-/* line 169, ../sass/components/_taxonomy_page.scss */
+/* line 177, ../sass/components/_taxonomy_page.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-2 > .pane-title {
   font-style: oblique;
   font-weight: normal;
@@ -2578,13 +2629,13 @@ ul.nice-menu li {
   cursor: default;
   margin: 0; }
   @media only screen and (min-width: 641px) {
-    /* line 169, ../sass/components/_taxonomy_page.scss */
+    /* line 177, ../sass/components/_taxonomy_page.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-2 > .pane-title {
       padding: 20px 0 20px 0;
       border-top: 1px solid rgba(0, 0, 0, 0.04);
       border-bottom: 1px solid rgba(0, 0, 0, 0.04); } }
   @media only screen and (max-width: 640px) {
-    /* line 169, ../sass/components/_taxonomy_page.scss */
+    /* line 177, ../sass/components/_taxonomy_page.scss */
     .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-2 > .pane-title {
       background: #F7F7F7;
       padding: 5px 0 5px 0; } }
@@ -2610,7 +2661,7 @@ ul.nice-menu li {
       position: relative;
       top: -7px;
       width: 100px; } }
-/* line 172, ../sass/components/_taxonomy_page.scss */
+/* line 180, ../sass/components/_taxonomy_page.scss */
 .pane-page-content > .contextual-links-region > .pane-random-product-of-taxonomy-term-panel-pane-2 > .view-random-product-of-taxonomy-term {
   margin-top: 7px; }
   /* line 79, ../sass/abstractions/mixins.scss */

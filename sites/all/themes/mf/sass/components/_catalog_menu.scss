@@ -100,7 +100,6 @@ $height_of_image:320px;
 
 .nav-menu-full-screen {
   width:100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   @include clearfix();
   @include respond-to(to_640_screen) {
@@ -111,20 +110,22 @@ $height_of_image:320px;
   }
   > .nice-menu-menu-catalog-menu {
     @include clearfix();
-    width: auto;
+    box-shadow: 0px 10px 5px -9px rgba(0, 0, 0, 0.28);
     float: none;
-    background: #fff;
+    @include linear-gradient(top, rgba(0, 0, 0, 0), 0%, rgba(0, 0, 0, 0.04), 100%);
+    @include display-flex;
     > li {
-      text-align: center;
       float: none;
-      display: table-cell;
-      vertical-align: top;
+      margin: auto;
       border-bottom: 1px solid transparent;
-      border-top: 1px solid #ffffff;
       border-left: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
       &:hover {
         color: #000;
+        > ul {
+          visibility: visible !important;
+          display: block !important;
+        }
       }
       @include respond-to(from_640_to_960_screen) {
         > a {
@@ -134,45 +135,53 @@ $height_of_image:320px;
           top: 47px !important;
         }
       }
+      span {
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.44);
+        font-weight: 100;
+        letter-spacing: -0.5px;
+        display: block;
+
+      }
       > a {
         text-decoration: none;
         padding: 0;
         color: unset;
         height: 50px;
-        width: 200px;
         display: table-cell;
         vertical-align: middle;
 
       }
       > ul {
-        left:-1px;
-        top:52px;
+        top:50px;
+        text-align: center;
         width: 100%;
-        border: 1px solid #000;
+        @include linear-gradient(bottom, rgba(255, 255, 255, 1), 0%, rgba(245, 245, 245, 1), 100%);
        > li {
-          background: #fff;
-          width: 100%;
-          text-align: center;
-          float: none;
-          display: block;
+         text-align: center;
+         float: unset;
+         display: inline-block;
+         width: unset;
+         margin: 5px;
          &:hover {
            background: #f4f4f4;
          }
         > a {
-          text-decoration: none;
-          padding: 0;
           color: unset;
-          margin: auto;
-          width: 200px;
-          height: 50px;
-          padding-left: 15px;
-          padding-right: 15px;
-          display: table-cell;
-          vertical-align: middle;
+          span {
+            text-align: left;
+            font-style: oblique;
+            font-weight: 600;
+            height: 40px;
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+            margin-bottom: 5px;
+            padding-top: 12px;
           }
-        }
-        &:last-child {
-          width: calc(100% + 2px);
+          img {
+            width: 95%;
+          }
+          }
         }
       }
     }
@@ -190,8 +199,21 @@ ul.nice-menu-down li {
   border:none;
 }
 ul.nice-menu li {
+  position: unset;
   border:none;
   background-color: unset;
+}
+
+ul.nice-menu-down .menuparent a {
+  padding: 0;
+}
+
+ul.nice-menu a {
+  padding: 0;
+}
+
+ul.nice-menu ul {
+  border-top: unset;
 }
 
 .here_goes {

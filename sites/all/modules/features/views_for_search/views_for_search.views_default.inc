@@ -47,7 +47,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['header']['mf_show_keywords']['id'] = 'mf_show_keywords';
   $handler->display->display_options['header']['mf_show_keywords']['table'] = 'views';
   $handler->display->display_options['header']['mf_show_keywords']['field'] = 'mf_show_keywords';
-  $handler->display->display_options['header']['mf_show_keywords']['content'] = 'Results for “@keywords” (@total) ';
+  $handler->display->display_options['header']['mf_show_keywords']['content'] = 'Поиск по “@keywords” (@total) ';
   /* Field: Indexed Node: Pictures */
   $handler->display->display_options['fields']['field_pictures']['id'] = 'field_pictures';
   $handler->display->display_options['fields']['field_pictures']['table'] = 'search_api_index_title_index';
@@ -128,7 +128,7 @@ function views_for_search_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Results for “@keywords” (@total) '),
+    t('Поиск по “@keywords” (@total) '),
     t(' '),
     t('Fulltext search'),
     t('Content pane'),

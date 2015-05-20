@@ -74,6 +74,7 @@ dependencies[] = colorbox_node
 dependencies[] = jquery_update
 dependencies[] = pathauto
 dependencies[] = token
+dependencies[] = menuimage
 
 ;custom
 dependencies[] = layout_sample

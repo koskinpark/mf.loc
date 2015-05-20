@@ -10,7 +10,7 @@ body {
   height: auto;
   font-size: 16px;
   color: #3D3D3D;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif, serif;
   overflow-x:hidden;
   @include respond-to(from_640_to_960_screen) {
     width: 100%;

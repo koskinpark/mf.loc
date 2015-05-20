@@ -13,7 +13,7 @@ function f_ct_catalog_taxonomy_default_vocabularies() {
       'name' => 'Catalog',
       'machine_name' => 'catalog',
       'description' => '',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(

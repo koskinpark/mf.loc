@@ -60,10 +60,11 @@
           > .views-row {
             display: inline-block;
             vertical-align: top;
-            padding: 5px 0 5px 0;
-            margin: 0 0 -1px 0;
+//            padding: 5px 0 5px 0;
+//            margin: 0 0 -1px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0);
             transition:0.5s;
+            position: relative;
             @include respond-to(full_screen) {
               > .views-field-field-small-image-on-parent-page {
                 > .field-content {
@@ -141,12 +142,19 @@
               }
             }
             > .views-field-name {
-              margin: 0 0 5px 0;
               text-align: center;
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              display: flex;
+              z-index: 1;
               > .field-content {
+                margin: auto;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.69);
                 > a {
                   transition: 0.5s;
-                  color: #3D3D3D;
+                  color: #FFFFFF;
                   text-decoration: none;
                 }
               }
