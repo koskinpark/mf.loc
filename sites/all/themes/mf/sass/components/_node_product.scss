@@ -84,6 +84,7 @@
     .group-product-image {
       @include respond-to(full_screen) {
         height: 520px;
+        @include display-flex();
       }
       @include respond-to(to_960_screen) {
         height: 460px;
@@ -130,6 +131,7 @@
         }
       }
       .group-image-group {
+        margin: auto 0;
         > .field--name-one-more-picture {
           clear: both;
           display: table-cell;

@@ -552,7 +552,6 @@
                         var blockBottom = blockHeight + blockTop;
                         var windowHeight = $(window).height();
                         var scroll_top = window.pageYOffset;
-                        console.log(scroll_top, blockTop, blockHeight, blockBottom, windowHeight);
                         if (windowHeight < 800) {
                             if ((scroll_top > (blockTop - 600)) && (scroll_top < (blockBottom - blockHeight * 0.75))) {
                                 if (!animatedBlock.hasClass("animated")) {
@@ -581,7 +580,7 @@
         }
     };
 
-    Drupal.behaviors.catalogmenufixed = {
+    Drupal.behaviors.catalogmenu = {
         attach: function (context, settings) {
             $('.pane-nice-menus-1', context).once("catalog-menu", function () {
                 var $pane = $(this);
@@ -620,9 +619,22 @@
         attach: function (context, settings) {
             $('.nav-menu-medium-screen', context).once("nav-menu-medium-screen", function () {
                 var $pane = $(this);
-                $pane.append("<div class='btn-show-nav-menu'><div class='pointer-to-nav-menu'><span>Категории товаров</span><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div><a><div class='sub-border-line'></div></a></div>");
+                $pane.append("<div class='btn-show-nav-menu'><div class='pointer-to-nav-menu'><span>Категории товаров</span></div><a><div class='sub-border-line'></div></a></div>");
                 $('.btn-show-nav-menu > a', $pane).click(function() {
-                    $('> .nice-menu-menu-catalog-menu', $pane).toggleClass('catalog-visible');
+                    var $ul_menu = $('> .nice-menu-menu-catalog-menu', $pane);
+                    $ul_menu.toggleClass('catalog-visible');
+                    if ($ul_menu.hasClass('catalog-visible')) {
+                        $('body > #content-wrap').css({
+                            'margin-left': '280px',
+                            'transition': '.3s ease'
+                        });
+                    }
+                    else {
+                        $('body > #content-wrap').css({
+                            'margin-left': '0',
+                            'transition': '.3s ease'
+                        });
+                    }
                 });
             });
         }
@@ -648,5 +660,161 @@
         }
     };
 
+    Drupal.behaviors.darkening_background = {
+        attach: function (context, settings) {
+            $('body', context).once("darkening_background", function () {
+                var $pane = $(this);
+                $(this).append("<div class='darkening-bg'></div>");
+            });
+        }
+    };
+    Drupal.behaviors.catalogmenu_hover = {
+        attach: function (context, settings) {
+            $('.pane-nice-menus-1', context).once("catalogmenu_hover", function () {
+                var $pane = $(this);
+                var $hover_element = $('.nice-menu-menu-catalog-menu > li', $pane);
+                $('> .darkening-bg', 'body').css({
+                    'opacity' : '0',
+                    'visibility': 'hidden'
+                });
+                $hover_element.mouseover(function () {
+                    $hover_element
+                    $('> .darkening-bg', 'body').css({
+                        'visibility' : 'visible'
+                    }).stop().animate({opacity: '.6'}, 200);
+                });
+                $hover_element.mouseout(function () {
+                    $('> .darkening-bg', 'body').css({
+                        'visibility' : 'hidden'
+                    }).stop().animate({opacity: '0'}, 100);
+                });
+            });
+        }
+    };
+
+    Drupal.behaviors.resizeslideshow = {
+        attach: function (context, settings) {
+            $('.views-slideshow-cycle-main-frame', context).once("resizeslideshow", function () {
+                var $pane = $(this);
+                var $frame_rows = $('.views-slideshow-cycle-main-frame-row', $pane);
+                var  new_height = new Array();
+                $(window).resize(function () {
+                    var get_width_window = $(window).width();
+                $frame_rows.each(function(i) {
+                    var $frame_row = $(this);
+                    var $img = $('img', $frame_row);
+                    var width = $img.attr('width');
+                    var objHeight = $img.attr('height');
+                    var width_of_window = get_width_window;
+                    var koef = width / objHeight;
+                    new_height[i] = width_of_window / koef;
+                });
+                    max = Math.max.apply(null, new_height);
+                    $pane.css({
+                        'height': max
+                    });
+                    $('img', $frame_rows).css({
+                        'height': max
+                    });
+                });
+            });
+        }
+    }
+
+    Drupal.behaviors.slideshow_bottom_controls_btn = {
+        attach: function (context, settings) {
+            $('.views-slideshow-pager-fields, .widget_pager_bottom', context).once("slideshow_bottom_controls_btn", function () {
+                var $pane = $(this);
+                var $controls_bottom = $('.views-slideshow-pager-field-item', $pane);
+                $controls_bottom.each(function() {
+                    var $control_bottom = $(this);
+                    $control_bottom.empty();
+                    });
+            });
+        }
+    };
+
+    Drupal.behaviors.spoiler_nav_menu = {
+        attach: function (context, settings) {
+            $('.nav-menu-medium-screen > .nice-menu-menu-catalog-menu', context).once("spoiler_nav_menu", function () {
+                var $pane = $(this);
+                var $catalog_elements = $('> li', $pane);
+                $catalog_elements.each(function(i){
+                    var $catalog_element = $(this);
+                    $catalog_element.css({
+                        'cssText':'overflow: hidden !important'
+                    });
+                    var $sub_catalog = $('> ul', $catalog_element);
+                    if ($sub_catalog.length == 1) {
+                        $catalog_element.prepend("<div class='spoiler'><img src='/sites/all/themes/mf/images/arrow_see_more.png'></div>");
+                        var height_of_sub_catalog = $('> li', $sub_catalog).length;
+                        $sub_catalog.css({
+                            'cssText': 'display: block !important; visibility: visible !important;',
+                            'height': 0
+                        });
+                    }
+                    if ($('.spoiler', $catalog_element)) {
+                        var $spoiler = $('.spoiler', $catalog_element);
+                        $spoiler.click(function() {
+                            $sub_catalog.toggleClass('spoiler-active');
+                            if ($sub_catalog.hasClass('spoiler-active')) {
+                                $sub_catalog.css({
+                                    'height' : height_of_sub_catalog*20,
+                                    'transition' : '.3s ease'
+                                });
+                            }
+                            else {
+                                $sub_catalog.css({
+                                    'cssText': 'display: block !important; visibility: visible !important;',
+                                    'height': 0,
+                                    'transition' : '.3s ease'
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        }
+    };
+
+    Drupal.behaviors.copy_seachbox_to_nav_menu_medium = {
+        attach: function (context, settings) {
+            $('.nav-menu-medium-screen > .nice-menu-menu-catalog-menu', context).once("copy_seachbox_to_nav_menu_medium", function () {
+                var $pane = $(this);
+                $('.pane-searchbox-panel-pane-1', 'body').clone().prependTo($pane);
+            });
+        }
+    };
+
+    Drupal.behaviors.copy_translate_site_to_nav_menu_medium = {
+        attach: function (context, settings) {
+            $('.nav-menu-medium-screen > .nice-menu-menu-catalog-menu', context).once("copy_translate_site_to_nav_menu_medium", function () {
+                var $pane = $(this);
+                $('.translate-site', 'body').clone().prependTo($pane);
+            });
+        }
+    };
+
+    Drupal.behaviors.height_of_content_on_node_page = {
+        attach: function (context, settings) {
+            $('.node--product--full > .group-product-image', context).once("height_of_content_on_node_page", function () {
+                var $pane = $(this);
+                var height_of_pane = $pane.height();
+                var height_of_window = $(window).height();
+                var height_of_header = $('#header-wrap').height();
+                var height_of_footer = $('#footer-wrap').height();
+                var sum_height = height_of_header + height_of_footer;
+                if ((height_of_window - sum_height) > height_of_pane) {
+                    var result_height = height_of_window - sum_height;
+                    if ($('body').hasClass('admin-menu')) {
+                        result_height = result_height - 29;
+                    }
+                    $pane.css({
+                        'height' : result_height
+                    });
+                }
+            });
+        }
+    };
 
 })(jQuery);

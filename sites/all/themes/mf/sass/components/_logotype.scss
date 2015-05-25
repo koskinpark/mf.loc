@@ -1,19 +1,19 @@
 
 .pane-pane-for-logo {
-  margin-top:10px;
-  display: inline-block;
-  position: relative;
-  @include respond-to(from_640_to_960_screen) {
-    img {
-      width: 120px;
-    }
+  @include respond-to(full_screen) {
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
   }
-  @include respond-to(to_640_screen) {
-    margin-top: unset;
+  @include respond-to(to_960_screen) {
+    margin-top: 2px;
     position: absolute;
-    top: 0;
+    z-index: 600;
+    right: 2px;
     img {
-      width: 60px;
+      width: 56px;
     }
   }
 }

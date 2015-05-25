@@ -1,41 +1,98 @@
 #header-wrap {
   > .translate-site {
-    position: absolute;
-    @include respond-to(from_640_screen) {
-      top: 10px;
-      right: 10px;
-      a {
-        font-size: 14px;
-        width: 20px;
+    @include respond-to(full_screen) {
+      top: 50px;
+      right: 25px;
+    }
+    @include respond-to(to_960_screen) {
+      display: none !important;
+    }
+  }
+  > .nav-menu-medium-screen {
+    .translate-site {
+      @include respond-to(full_screen) {
+        display: none;
+      }
+      @include respond-to(to_960_screen) {
+        top: 10px;
+        right: 10px;
+        z-index: 7;
       }
     }
-    @include respond-to(to_640_screen) {
-      top: 8px;
-      left: 80px;
-      a {
-        font-size: 22px;
-        width: 28px;
+  }
+  .translate-site {
+    position: absolute;
+    a {
+      font-size: 14px;
+      width: 20px;
+      > span {
+        position: relative;
+        transition: 0.3s ease;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          bottom: -1px;
+          height: 1px;
+          transition: 0.3s ease;
+          @include respond-to(full_screen) {
+            background: rgba(255, 255, 255, 0.84);
+          }
+          @include respond-to(to_960_screen) {
+            background: #000;
+          }
+        }
+      }
+    }
+    .translate-variant-1 {
+      > span {
+        &:after {
+          right: -6px;
+        }
+      }
+    }
+    .translate-variant-2 {
+      > span {
+        &:after {
+          left: -6px;
+        }
       }
     }
     @include display-flex;
     a {
-      font-style: italic;
-      padding: 0px 3px;
       margin: auto;
       text-align: center;
       &:hover {
-        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.73);
-        transition: 0.3s ease;
+        > span {
+          transition: 0.3s ease;
+          @include respond-to(full_screen) {
+            text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.6);
+          }
+          @include respond-to(to_960_screen) {
+            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+          }
+          &:after {
+            width: 30px;
+            transition: 0.3s ease;
+          }
+        }
       }
       &:not(:hover) {
-      transition: 0.3s ease;
-    }
+        transition: 0.3s ease;
+      }
     }
     span {
-      color: #000;
+      text-transform: uppercase;
+      @include respond-to(full_screen) {
+        color: rgba(255, 255, 255, 0.84);
+      }
+      @include respond-to(to_960_screen) {
+        color: rgba(0, 0, 0, 0.84);
+      }
     }
     > span {
-      font-size: 24px;
+      font-size: 20px;
+      margin-bottom: 3px;
     }
   }
 }

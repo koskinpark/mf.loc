@@ -36,110 +36,58 @@
       z-index: 1;
       .views-slideshow-cycle-main-frame {
         width: 100% !important;
+        text-align: center;
         height: auto;
         > :nth-child(n) {
           width: 100% !important;
           height: auto !important;
           .views-field-field-images-1 {
             img {
-
-            }
-          }
-        }
-        @include respond-to(from_640_to_960_screen) {
-          height: 400px !important;
-          > :nth-child(n) {
-            .views-field-field-images-1 {
-              img {
-                height: 400px !important;
-              }
-            }
-          }
-        }
-        @include respond-to(from_480_to_640_screen) {
-          height: 280px !important;
-          > :nth-child(n) {
-            .views-field-field-images-1 {
-              img {
-                height: 280px !important;
-              }
-            }
-          }
-        }
-        @include respond-to(to_480_screen) {
-          height: 200px !important;
-          > :nth-child(n) {
-            .views-field-field-images-1 {
-              img {
-                height: 200px !important;
-              }
+              width: 100%;
+              max-height: 480px;
+              max-width: unset;
             }
           }
         }
       }
     }
     > .views-slideshow-controls-bottom {
-      height: 90px;
-      width: 100%;
-      @include respond-to(from_480_to_640_screen) {
-        height: 75px;
-        > .views-slideshow-pager-fields {
-          .views-slideshow-pager-field-item {
-            width: 125px;
-          }
-        }
+      position: absolute;
+      bottom: 15px;
+      z-index: 1;
+      @include respond-to(full_screen) {
+        width: 100%;
+        @include display-flex;
       }
-      @include respond-to(to_480_screen) {
-        height: 55px;
-        > .views-slideshow-pager-fields {
-          .views-slideshow-pager-field-item {
-            width: 90px;
-          }
-        }
+      @include respond-to(to_960_screen) {
+        right: 10px;
       }
-      @include display-flex;
       > .views-slideshow-pager-fields {
         @include clearfix();
         margin: auto;
         .views-slideshow-pager-field-item {
           @include clearfix();
           float: left;
-          margin: 5px 0 10px 10px;
+          margin: 5px;
           cursor: pointer;
-          transition: 0.3s ease;
-          width: 150px;
-          @include respond-to(from_480_to_640_screen) {
-            width: 125px;
-          }
-          @include respond-to(to_480_screen) {
-            width: 90px;
-          }
-          .views-field-title {
-
-          }
-          .views-field-field-images {
-            img {
-              transition: 0.3s ease;
-              opacity: 0.6;
-
-            }
-          }
-          .views-content-field-images {
-          }
-          &:last-child {
-            margin-right: 10px;
-          }
+          width: 20px;
+          height: 20px;
+          background: #AEAEAE;
+          transition: .3s ease;
+          border: 1px solid #AEAEAE;
+          border-radius: 50%;
         }
         .active {
-          img {
-            transition: 0.3s ease;
-            opacity: 1 !important;
-          }
-
+          border: 1px solid #ffffff;
+          background: #303030;
         }
       }
 
       }
     }
   }
+}
+
+.pane-view-slideshow-panel-pane-1 > .view-view-slideshow .skin-default > .views-slideshow-controls-bottom > .views-slideshow-pager-fields .views-slideshow-pager-field-item:before, .pane-view-slideshow-panel-pane-1 > .view-view-slideshow .skin-default > .views-slideshow-controls-bottom > .views-slideshow-pager-fields .views-slideshow-pager-field-item:after {
+  content: unset;
 }

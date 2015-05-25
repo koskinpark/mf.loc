@@ -4,16 +4,16 @@
   > .nice-menu-menu-footer-menu {
     height: auto;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
     @include display-flex;
     > li {
       &:first-child {
         a {
-          border-left: 1px solid rgba(0, 0, 0, 0.12);
+          border-left: 1px solid #474747;
         }
       }
       width:120px;
-      height:30px;
+      height: auto;
       @include respond-to(from_480_screen) {
         > a {
           font-size: 14px;
@@ -33,15 +33,15 @@
       }
       > a {
         text-decoration: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.12);
-        color: rgba(0, 0, 0, 0.24);
-        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.21);
+        border-right: 1px solid #474747;;
+        color: #949494;
+        text-shadow: rgba(247, 247, 247, 1);
         transition: 0.3s;
       }
       &:hover {
         a {
-          color: #000;
-          text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+          color: #DBDBDB;
+          text-shadow: 0px 0px 1px rgba(139, 139, 139, 1);
           transition: 0.3s;
         }
       }

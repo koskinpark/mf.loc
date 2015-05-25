@@ -26,35 +26,14 @@ $border_color: #00cce2, #66009d, #7ffcff, #22ff00, #ffbdb3, #3E55F7, #A1AB13, #F
     > .view-content {
       text-align: center;
       > .views-row {
-        width: 24%;
-        height: auto;
-        vertical-align: top;
-        display: inline-block;
+        width: 25%;
+        float: left;
         cursor: pointer;
-        min-width: 193.5px;
-        @include respond-to(from_640_to_960_screen) {
-          height: 300px;
-        }
         @include respond-to(to_800_screen) {
-          width: 32%;
-          height: 290px;
-          min-width: 206.3px;
+          width: 33.333333%;
         }
         @include respond-to(to_640_screen) {
-          width: 47%;
-          min-width: unset;
-          h2 {
-            font-size: 1.6em !important;
-          }
-        }
-        @include respond-to(to_480_screen) {
-          height:265px;
-          h2 {
-            font-size: 1.3em !important;
-          }
-        }
-        @include respond-to(to_400_screen) {
-          height:230px;
+          width: 50%;
         }
         .node--product--more-viewed {
           padding: 5px;
@@ -71,10 +50,12 @@ $border_color: #00cce2, #66009d, #7ffcff, #22ff00, #ffbdb3, #3E55F7, #A1AB13, #F
         }
         > .view-mode-more_viewed {
            h2 {
-            margin: 5px 0 0 0;
-            font-weight: normal;
-            font-size: 20px;
-            padding: 0 20px;
+             margin: 5px 0 0 0;
+             font-weight: normal;
+             text-overflow: ellipsis;
+             white-space: nowrap;
+             overflow: hidden;
+             font-size: 0.9em !important;
           }
         }
       }

@@ -6,12 +6,13 @@ textarea:focus, input:focus {
 body {
   background: #ffffff;
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
   height: auto;
   font-size: 16px;
   color: #3D3D3D;
   font-family: 'Open Sans', sans-serif, serif;
   overflow-x:hidden;
+  @include clearfix();
   @include respond-to(from_640_to_960_screen) {
     width: 100%;
     font-size: 15px;
@@ -38,14 +39,19 @@ li {
 }
 
 #header-wrap {
-  background: #ffffff;
+  background: #282828;
   position: relative;
   float: none;
+  z-index: 600;
 }
 
 #content-wrap {
    background: #ffffff;
+  @include respond-to(to_960_screen) {
+    margin-top: 50px;
+  }
 }
 
 #footer-wrap {
+  background: #282828;
 }
