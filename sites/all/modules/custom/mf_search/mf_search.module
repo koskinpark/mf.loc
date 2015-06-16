@@ -1,8 +1,5 @@
 <?php
 
-/**
- * Implements hook_ctools_plugin_directory().
- */
 function search_form_alter(&$form, &$form_state, $form_id) {
     if ($form_id == 'views_exposed_form') {
       $form['search_api_views_fulltext']['#attributes'] = array (

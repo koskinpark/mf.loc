@@ -7,6 +7,12 @@
       @content;
     }
   }
+  @if $media == colorbox_full {
+    @media only screen and (min-width: 961px) and (min-height: 801px) { @content; }
+  }
+  @if $media == colorbox_small {
+    @media only screen and (max-height: 800px) { @content; }
+  }
   @if $media == from_640_to_960_screen {
     @media only screen and (min-width: 641px) and (max-width: $large) { @content; }
   }
@@ -39,6 +45,9 @@
   }
   @if $media == from_480_screen {
     @media only screen and (min-width: 481px) { @content; }
+  }
+  @if $media == from_480_to_800_screen {
+    @media only screen and (min-width: 481px) and (max-width: 800px) { @content; }
   }
   @if $media == to_480_screen {
     @media only screen and (max-width: 480px) { @content; }
@@ -104,18 +113,34 @@
 
 }
 
-@mixin display-flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
+@mixin display-flex($priority: '') {
+  @if ($priority == 'important') {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -moz-flex !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+  }
+  @else {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
 }
 
-@mixin flex-flow {
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+@mixin flex-flow($parametres: '') {
+  @if ($parametres) {
+    -webkit-flex-flow: $parametres;
+    flex-flow: $parametres;
+  }
+  @else {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
 }
 
 @mixin justify-content($param) {
@@ -143,11 +168,22 @@
 
 @mixin views-row {
   padding: 5px;
-  float: left;
+  display: inline-block;
+  margin-left: -4px;
   position: relative;
   height:auto;
+  > .view-mode-random_homepage_pictures {
+    > .field--name-title {
+      transition: 0.2s ease-in;
+      .field__items {
+        color: rgba(255, 255, 255, 0);
+        transition: 0.2s ease-in;
+      }
+    }
+  }
   @include respond-to(from_800_screen) {
     width: 25%;
+    max-width: 340px;
     &:nth-child(-n+4) {
       border-top: 1px solid #EAEAEA;
     }
@@ -200,7 +236,6 @@
     }
     > .field--name-field-pictures {
       transition: 0.3s;
-      display: flex;
       .field__items {
         margin: auto;
         img {
@@ -213,12 +248,12 @@
     > .view-mode-random_homepage_pictures {
       > .field--name-title {
         opacity: 1;
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 10px #050505;
         background: rgba(255, 255, 255, 0.34);
-        transition: 0.1s ease;
+        h2 {
+          color: rgb(255, 255, 255);
+          text-shadow: 0 0 10px #050505;
+        }
         > .field__items {
-          transition: 0.3s ease;
           box-shadow: 0px 0px 30px 20px #FFF;
           background: rgba(0, 0, 0, 0.68);
         }
@@ -226,17 +261,6 @@
       > .field--name-field-pictures {
         > img {
           opacity: 0.95;
-        }
-      }
-    }
-  }
-  &:not(:hover) {
-    > .view-mode-random_homepage_pictures {
-      > .field--name-title {
-        transition: 0.1s ease-in;
-        .field__items {
-          color: rgba(255, 255, 255, 0);
-          transition: 0.1s ease-in;
         }
       }
     }
@@ -571,6 +595,14 @@
     }
     100% {
       z-index: -1;
+    }
+  }
+  @if ($name == ajax-progress) {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }

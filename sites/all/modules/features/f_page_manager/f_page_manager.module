@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the f_page-manager feature.
+ * Code for the f_page_manager feature.
  */
 
 include_once 'f_page_manager.features.inc';

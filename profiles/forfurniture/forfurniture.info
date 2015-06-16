@@ -4,7 +4,7 @@ version = VERSION
 core = 7.x
 exclusive = TRUE
 
-;custom
+;core
 dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
@@ -23,10 +23,12 @@ dependencies[] = search
 dependencies[] = shortcut
 ;dependencies[] = overlay
 dependencies[] = field_ui
-dependencies[] = file
 dependencies[] = rdf
 
 ;contib
+dependencies[] = translation
+dependencies[] = statistics
+dependencies[] = locale
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = ctools
@@ -41,6 +43,20 @@ dependencies[] = ds_ui
 dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = entityreference
+dependencies[] = geofield
+dependencies[] = gmap
+dependencies[] = gmap_macro_builder
+dependencies[] = l10n_update
+dependencies[] = i18n
+dependencies[] = i18n_field
+dependencies[] = i18n_menu
+dependencies[] = i18n_node
+dependencies[] = i18n_panels
+dependencies[] = i18n_string
+dependencies[] = i18n_sync
+dependencies[] = i18n_taxonomy
+dependencies[] = i18n_redirect
+dependencies[] = i18n_translation
 dependencies[] = features
 dependencies[] = nice_menus
 dependencies[] = panels
@@ -72,9 +88,20 @@ dependencies[] = fonts_com
 dependencies[] = colorbox
 dependencies[] = colorbox_node
 dependencies[] = jquery_update
+dependencies[] = diff
+dependencies[] = transliteration
+dependencies[] = geofield_map
+dependencies[] = geofield_ymap
+dependencies[] = geophp
+dependencies[] = imagefield_crop
+dependencies[] = job_scheduler
+dependencies[] = libraries
+dependencies[] = data_export_import
 dependencies[] = pathauto
 dependencies[] = token
 dependencies[] = menuimage
+dependencies[] = variable
+dependencies[] = menu_import
 
 ;custom
 dependencies[] = layout_sample
@@ -82,35 +109,48 @@ dependencies[] = pane_for_logotype
 dependencies[] = mf_search
 dependencies[] = field_format_link_to_colorbox
 dependencies[] = jquery_force
+dependencies[] = content_importer
+dependencies[] = search_keyword
+dependencies[] = load_img_nav_menu
+
 
 ;features
+dependencies[] = f_taxonomy_menu_settings
+dependencies[] = f_catalog_menu
+dependencies[] = f_colorbox_settings
+dependencies[] = f_ct_about
+dependencies[] = f_ct_actions
+dependencies[] = f_ct_contacts
+dependencies[] = f_ct_page_not_found
 dependencies[] = f_ct_product
-dependencies[] = f_ct_catalog_menu
-dependencies[] = f_page_manager
-dependencies[] = f_ct_random_hp_product
-dependencies[] = f_ct_catalog
-dependencies[] = f_mainpage_fixed_image_block
-dependencies[] = f_ct_slider
-dependencies[] = most_viewed
-dependencies[] = footer_linker
-dependencies[] = node_product
-dependencies[] = footer_panel
-dependencies[] = block_of_terms_on_terms_page
-dependencies[] = block_of_subterms_on_terms_page
-dependencies[] = block_of_random_products_on_terms_page
-dependencies[] = f_logotype_of_the_site
-dependencies[] = views_for_search
-dependencies[] = see_more_homepage
-dependencies[] = colorbox_settings
-dependencies[] = action_page
-dependencies[] = jquery_settings
+dependencies[] = f_display_suite
+dependencies[] = f_footer_menu
+dependencies[] = f_image_styles
+dependencies[] = f_nice_menus_settings
 dependencies[] = fonts
-dependencies[] = contacts
-dependencies[] = about_us
-dependencies[] = image_styles
-dependencies[] = languages
-dependencies[] = transliteration_update
+dependencies[] = f_page_manager
 dependencies[] = f_pathauto
+dependencies[] = f_site_settings
+dependencies[] = f_t_catalog
+dependencies[] = f_t_catalog_terms_1
+dependencies[] = f_t_catalog_terms_2
+dependencies[] = f_text_formats
+dependencies[] = f_t_menu_settings
+dependencies[] = f_uuid_features_settings
+dependencies[] = f_v_homepage_random_products
+dependencies[] = f_v_more_products_on_home_page
+dependencies[] = f_v_other_actions_on_actions_page
+dependencies[] = f_v_products_on_terms_page
+dependencies[] = f_v_subterms_on_terms_page
+dependencies[] = f_v_view_slideshow
+dependencies[] = f_yandexmap_settings
+dependencies[] = jquery_settings
+dependencies[] = languages
+dependencies[] = most_viewed
+dependencies[] = transliteration_update
+dependencies[] = views_for_search
+dependencies[] = views_slideshow
+dependencies[] = f_devel_settings
 
 
 ; Information added by Drupal.org packaging script on 2014-11-19

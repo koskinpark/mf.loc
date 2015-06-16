@@ -42,7 +42,7 @@ function f_ct_product_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 5,
       ),
       'more_viewed' => array(
         'label' => 'hidden',
@@ -54,7 +54,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 3,
       ),
       'search_view_mode' => array(
         'label' => 'hidden',
@@ -122,7 +122,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 11,
       ),
       'more_viewed' => array(
         'label' => 'above',
@@ -134,7 +134,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'search_view_mode' => array(
         'label' => 'above',
@@ -227,12 +227,12 @@ function f_ct_product_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
+          'prefix_suffix' => 1,
           'scale' => 0,
           'thousand_separator' => ' ',
         ),
         'type' => 'number_integer',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'more_viewed' => array(
         'label' => 'hidden',
@@ -244,7 +244,7 @@ function f_ct_product_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'search_view_mode' => array(
         'label' => 'hidden',
@@ -273,7 +273,7 @@ function f_ct_product_field_default_field_instances() {
       'max' => 1000000,
       'min' => '',
       'prefix' => '',
-      'suffix' => ' $',
+      'suffix' => '₽',
       'user_register_form' => FALSE,
     ),
     'widget' => array(

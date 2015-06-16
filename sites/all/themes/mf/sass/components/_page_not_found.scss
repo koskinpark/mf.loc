@@ -1,0 +1,10 @@
+.page-not-found {
+  img {
+    vertical-align: bottom;
+  }
+  #content-wrap {
+    > .pane-page-title {
+      display: none;
+    }
+  }
+}

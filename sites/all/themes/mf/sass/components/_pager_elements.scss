@@ -1,0 +1,59 @@
+
+.pane-random-product-of-taxonomy-term-panel-pane-1, .pane-search-titles-panel-pane-1 {
+  > .view-random-product-of-taxonomy-term, > .view-search-titles {
+    .pager {
+      margin: 10px 0 0 0;
+      .pager__item {
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: top;
+        color: #000;
+        font-size: 16px;
+        border-radius: 50%;
+        border: 1px solid #C0C0C0;
+        transition: .3s ease;
+        &:hover {
+          background: #EDEDED;
+          border: 1px solid #000;
+        }
+        > a {
+          color: #3D3D3D;
+          width: 28px;
+          height: 28px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      > .pager__item--current {
+        border: 1px solid #C0C0C0 !important;
+      }
+      > .pager__item--first {
+        a {
+          background: url(/sites/all/themes/mf/images/pager_control.png) no-repeat 60% 50%, url(/sites/all/themes/mf/images/pager_control.png) no-repeat 30% 50%;
+        }
+      }
+      > .pager__item--previous {
+        a {
+          background: url(/sites/all/themes/mf/images/pager_control.png) no-repeat 45% 50%;
+        }
+      }
+      > .pager__item--next {
+        a {
+          background: url(/sites/all/themes/mf/images/pager_control.png) no-repeat 47% 50%;
+        }
+      }
+      > .pager__item--last {
+        a {
+          background: url(/sites/all/themes/mf/images/pager_control.png) no-repeat 60% 50%, url(/sites/all/themes/mf/images/pager_control.png) no-repeat 30% 50%;
+        }
+      }
+      > .pager__item--next, > .pager__item--last {
+        a {
+          @include transform-rotate(180deg);
+        }
+      }
+    }
+  }
+}

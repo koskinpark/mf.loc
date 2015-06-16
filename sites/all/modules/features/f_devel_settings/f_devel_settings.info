@@ -1,0 +1,14 @@
+name = f_devel_settings
+core = 7.x
+package = Features
+dependencies[] = f_footer_menu
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_links][] = devel_clear-cache:devel/cache/clear
+features[menu_links][] = devel_rebuild-menus:devel/menu/reset
+features[menu_links][] = devel_run-cron:devel/run-cron
+features[menu_links][] = menu-footer-menu_-:node/918
+features[menu_links][] = menu-footer-menu_:node/917
+features[menu_links][] = menu-footer-menu_about:node/916
+features[menu_links][] = menu-footer-menu_contacts:node/62

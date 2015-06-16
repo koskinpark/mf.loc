@@ -22,6 +22,7 @@ function views_for_search_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['hide_admin_links'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -32,9 +33,15 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'input_required';
   $handler->display->display_options['exposed_form']['options']['text_input_required'] = '';
   $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'filtered_html';
-  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '30';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '';
+  $handler->display->display_options['pager']['options']['tags']['next'] = '';
+  $handler->display->display_options['pager']['options']['tags']['last'] = '';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'panels_fields';
   $handler->display->display_options['row_options']['regions'] = array(
@@ -47,6 +54,7 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['header']['mf_show_keywords']['id'] = 'mf_show_keywords';
   $handler->display->display_options['header']['mf_show_keywords']['table'] = 'views';
   $handler->display->display_options['header']['mf_show_keywords']['field'] = 'mf_show_keywords';
+  $handler->display->display_options['header']['mf_show_keywords']['empty'] = TRUE;
   $handler->display->display_options['header']['mf_show_keywords']['content'] = 'Поиск по “@keywords” (@total) ';
   /* Field: Indexed Node: Pictures */
   $handler->display->display_options['fields']['field_pictures']['id'] = 'field_pictures';
@@ -128,6 +136,9 @@ function views_for_search_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
     t('Поиск по “@keywords” (@total) '),
     t(' '),
     t('Fulltext search'),
@@ -160,6 +171,9 @@ function views_for_search_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'search_api_excerpt' => 'search_api_excerpt',
+  );
   /* Field: Search: Excerpt */
   $handler->display->display_options['fields']['search_api_excerpt']['id'] = 'search_api_excerpt';
   $handler->display->display_options['fields']['search_api_excerpt']['table'] = 'search_api_index_title_index';

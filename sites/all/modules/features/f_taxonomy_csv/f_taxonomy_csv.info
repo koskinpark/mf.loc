@@ -1,0 +1,16 @@
+name = f_taxonomy_csv
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = taxonomy_csv_export_delimiter
+features[variable][] = taxonomy_csv_export_delimiter_custom
+features[variable][] = taxonomy_csv_export_enclosure
+features[variable][] = taxonomy_csv_export_enclosure_custom
+features[variable][] = taxonomy_csv_export_format
+features[variable][] = taxonomy_csv_export_line_ending
+features[variable][] = taxonomy_csv_export_order
+features[variable][] = taxonomy_csv_export_vocabulary_id
+features[variable][] = taxonomy_csv_result_duplicates

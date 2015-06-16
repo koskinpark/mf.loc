@@ -1,0 +1,3 @@
+name = Page Not Found
+description = This module allows you to put something to your page called "not found".
+core = 7.x

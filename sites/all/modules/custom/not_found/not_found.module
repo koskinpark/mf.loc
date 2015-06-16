@@ -1,0 +1,6 @@
+<?php
+
+function not_found_preprocess_page(&$vars) {
+//    kpr ($vars);
+//    var_dump($vars);
+}

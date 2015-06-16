@@ -1,214 +1,298 @@
-
-.node--product--colorbox {
-  > :nth-child(n+3) {
-    opacity: 1;
-    @include animation-name(all-field-colorbox, 4s);
-  }
-  > .field--name-title {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    @include animation-name(animation-field-title, 4s);
-    position: absolute;
-    background: rgba(255, 255, 255, 1);
-    .field__items {
-      margin: auto;
-      .field__item {
-        h2 {
-          cursor: default;
-          opacity: 1;
-          font-size: 70px;
-          font-style: oblique;
-          font-weight: 100;
-          color: rgba(0, 0, 0, 1);
-          text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 15px black;
-          @include animation-name(animation-title, 4s);
+#colorbox {
+  @include respond-to(colorbox_full) {
+    .node--product--colorbox {
+      > :nth-child(n+3) {
+        opacity: 1;
+        @include animation-name(all-field-colorbox, 4s);
+      }
+      > .field--name-title {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @include animation-name(animation-field-title, 4s);
+        position: absolute;
+        background: rgba(255, 255, 255, 1);
+        .field__items {
+          margin: auto;
+          .field__item {
+            h2 {
+              cursor: default;
+              opacity: 1;
+              font-size: 55px;
+              font-style: oblique;
+              font-weight: 400;
+              color: rgba(0, 0, 0, 1);
+              text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 15px black;
+              @include animation-name(animation-title, 4s);
+            }
+          }
         }
       }
-    }
-  }
-  > .field--name-field-pictures {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-    padding-bottom: 10px;
-    .field__items {
-      width: 100%;
-      display: flex;
-      height: 620px;
-      overflow: hidden;
-      .field__item {
-        display: none;
-        margin: auto;
-        img {
-          max-width: none;
-          position:relative;
-        }
-        &:first-child {
-        }
-        &:nth-child(n+2) {
-        }
-      }
-    }
-  }
-  > .field--name-one-more-picture {
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-    > .field__items {
-      > .field__item {
-        > .field--name-field-pictures {
+      > .field--name-field-pictures {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+        padding-bottom: 10px;
+        .field__items {
+          width: 100%;
           display: flex;
-          > .field__items {
+          height: 620px;
+          overflow: hidden;
+          .field__item {
+            display: none;
             margin: auto;
-            > .field__item {
-              width: 67px;
-              height: 40px;
-              padding: 5px;
-              margin: 5px;
-              float: left;
-              display: flex;
-              flex-flow: row wrap;
-              text-align: center;
-              cursor: pointer;
-              transition: 0.3s;
+            img {
+              max-width: none;
               position: relative;
-              img {
+            }
+            &:first-child {
+            }
+            &:nth-child(n+2) {
+            }
+          }
+        }
+      }
+      > .field--name-one-more-picture {
+        float: right;
+        margin-top: 5px;
+        margin-right: 5px;
+        > .field__items {
+          > .field__item {
+            > .field--name-field-pictures {
+              display: flex;
+              > .field__items {
                 margin: auto;
-                transition: 0.3s;
-              }
-              .under-img {
-                position: absolute;
-                transition: 0.3s;
-                width: 30px;
-                background: rgba(0, 0, 0, 0.2);
-                height: 1px;
-                margin: 10px auto 0 auto;
-                left: 23.5px;
-                bottom: -10px;
-              }
-              &:hover {
-                transition: 0.3s;
-                box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.37);
-                background: rgba(0, 0, 0, 0.04);
-                img {
+                > .field__item {
+                  width: 67px;
+                  height: 40px;
+                  padding: 5px;
+                  margin: 5px;
+                  float: left;
+                  display: flex;
+                  flex-flow: row wrap;
+                  text-align: center;
+                  cursor: pointer;
                   transition: 0.3s;
-                  opacity: 0.8;
-                }
-                .under-img {
-                  transition: 0.3s;
-                  background: #000;
-                  width:50px;
-                  left: 13.5px;
+                  position: relative;
+                  img {
+                    margin: auto;
+                    transition: 0.3s;
+                  }
+                  .under-img {
+                    position: absolute;
+                    transition: 0.3s;
+                    width: 30px;
+                    background: rgba(0, 0, 0, 0.2);
+                    height: 1px;
+                    margin: 10px auto 0 auto;
+                    left: 23.5px;
+                    bottom: -10px;
+                  }
+                  &:hover {
+                    transition: 0.3s;
+                    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.37);
+                    background: rgba(0, 0, 0, 0.04);
+                    img {
+                      transition: 0.3s;
+                      opacity: 0.8;
+                    }
+                    .under-img {
+                      transition: 0.3s;
+                      background: #000;
+                      width: 50px;
+                      left: 13.5px;
+                    }
+                  }
                 }
               }
             }
           }
         }
       }
-    }
-  }
-  > .change-image {
-    float: left;
-    display: flex;
-    width: 165px;
-    height: 80px;
-    :first-child {
-      font-size: 16px;
-      margin: auto;
-      cursor: default;
-      text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.34);
-    }
-    :nth-child(n+2) {
-      height: 30px;
-      width: 30px;
-      margin: auto 5px auto 5px;
-      opacity: 0.6;
-      transition: 0.3s;
-      cursor: pointer;
-      &:hover {
-        transition: 0.3s;
-        opacity: 1;
+      > .change-image {
+        float: left;
+        display: flex;
+        width: 165px;
+        height: 80px;
+        :first-child {
+          font-size: 16px;
+          margin: auto;
+          cursor: default;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.34);
+        }
+        :nth-child(n+2) {
+          height: 30px;
+          width: 30px;
+          margin: auto 5px auto 5px;
+          opacity: 0.6;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            transition: 0.3s;
+            opacity: 1;
+          }
+        }
+        .increase {
+          background: url(/sites/all/themes/mf/images/size_increase.png);
+          background-size: cover;
+        }
+        .decrease {
+          background: url(/sites/all/themes/mf/images/size_decrease.png);
+          background-size: cover;
+        }
       }
     }
-    .increase {
-      background: url(/sites/all/themes/mf/images/size_increase.png);
-      background-size: cover;
+  }
+  @include respond-to(colorbox_small) {
+    .field--name-title {
+      display: none;
     }
-    .decrease {
-      background: url(/sites/all/themes/mf/images/size_decrease.png);
-      background-size: cover;
+    .colorbox-info {
+      display: none;
+    }
+    .change-image {
+      display: none;
+    }
+    #cboxLoadedContent {
+      @include display-flex(important);
+      > :first-child {
+        display: none;
+      }
+      > :nth-child(2) {
+        margin: auto;
+      }
+      .node--product--colorbox {
+        position: unset !important;
+        > .field--name-field-pictures {
+          margin-top: -90px;
+          width: 100%;
+          height: auto;
+          .field__items {
+            background: #fff;
+            width: 100%;
+            display: flex;
+            height: auto;
+            overflow: hidden;
+            .field__item {
+              display: none;
+              margin: auto;
+              img {
+                max-width: none;
+                position: relative;
+              }
+              &:first-child {
+              }
+              &:nth-child(n+2) {
+              }
+            }
+          }
+        }
+        > .field--name-one-more-picture {
+          position: absolute;
+          margin-right: 5px;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          > .field__items {
+            > .field__item {
+              > .field--name-field-pictures {
+                display: flex;
+                > .field__items {
+                  background: #fff;
+                  margin: auto;
+                  > .field__item {
+                    width: 67px;
+                    height: 40px;
+                    padding: 5px;
+                    margin: 5px;
+                    float: left;
+                    display: flex;
+                    flex-flow: row wrap;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    position: relative;
+                    img {
+                      margin: auto;
+                      transition: 0.3s;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      img {
+      }
     }
   }
-}
+    .hidden {
+      display: none;
+    }
+    .visible {
+      display: block !important;
+    }
+    .visuallyhidden {
+      opacity: 0;
+    }
 
+    .image-increase {
+      transition: 0.3s;
+      width: auto !important;
+      height: 1300px !important;
+    }
 
+    #cboxClose {
+      transition-delay: 4s;
+      opacity: 0.1;
+      background-image: url(/sites/all/themes/mf/images/close_button.png);
+      height: 30px;
+      width: 30px;
+      right: 5px;
+      top: 10px;
+      bottom: unset;
+    }
 
-.hidden {
-  display: none;
-}
-.visible {
-  display: block !important;
-}
-.visuallyhidden {
-  opacity: 0;
-}
+    #cboxLoadedContent {
+      margin-bottom: 0;
+    }
 
-.image-increase {
-  transition: 0.3s;
-  width: auto !important;
-  height: 1300px !important;
-}
+    .colorbox-info {
+      padding-left: 100px;
+      padding-right: 100px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.33);
+      font-style: oblique;
+      font-size: 14px;
+      font-weight: 100;
+      padding-top: 5px;
+      letter-spacing: -0.5px;
+      cursor: default;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+      padding-bottom: 5px;
+    }
 
-#cboxClose {
-  transition-delay: 4s;
-  opacity: 0.1;
-  background-image: url(/sites/all/themes/mf/images/close_button.png);
-  height: 30px;
-  width: 30px;
-  right: 5px;
-  top: 10px;
-  bottom: unset;
-}
+    .thumbnail-clicked {
+      transition: 0.3s;
+      box-shadow: 0px 0px 1px 0px #000 !important;
+      background: rgba(0, 0, 0, 0.04) !important;
+      .under-img {
+        transition: 0.3s;
+        background: #000 !important;
+        width: 50px !important;
+        left: 13.5px !important;
+      }
+    }
 
-#cboxLoadedContent {
-  margin-bottom:0;
-}
+    .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+      opacity: unset;
+    }
 
-.colorbox-info {
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.33);
-  font-style: oblique;
-  font-size: 14px;
-  font-weight: 100;
-  padding-top: 5px;
-  letter-spacing: -0.5px;
-  cursor: default;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  padding-bottom: 5px;
-}
-
-.thumbnail-clicked {
-  transition: 0.3s;
-  box-shadow: 0px 0px 1px 0px #000 !important;
-  background: rgba(0, 0, 0, 0.04) !important;
-  .under-img {
-    transition: 0.3s;
-    background: #000 !important;
-    width:50px !important;
-    left: 13.5px !important;
-  }
-}
-
-.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
-  opacity: unset;
-}
-
-.ui-draggable-dragging {
-  transition: 0s !important;
+    .ui-draggable-dragging {
+      transition: 0s !important;
+    }
 }
 

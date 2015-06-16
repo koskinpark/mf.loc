@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_yandexmap_settings feature.
+ */
+
+include_once 'f_yandexmap_settings.features.inc';

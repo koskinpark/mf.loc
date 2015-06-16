@@ -1,0 +1,9 @@
+name = f_v_products_on_terms_page
+core = 7.x
+package = Features
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = random_product_of_taxonomy_term
+features_exclude[dependencies][ctools] = ctools

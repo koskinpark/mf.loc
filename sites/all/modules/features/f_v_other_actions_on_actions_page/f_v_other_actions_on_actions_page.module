@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_v_other_actions_on_actions_page feature.
+ */
+
+include_once 'f_v_other_actions_on_actions_page.features.inc';

@@ -1,6 +1,7 @@
 .pane-view-slideshow-panel-pane-1 {
   > .view-view-slideshow {
     .skin-default {
+      text-align: center;
       position: relative;
       @include clearfix();
     > .views-slideshow-controls-top {
@@ -38,6 +39,7 @@
         width: 100% !important;
         text-align: center;
         height: auto;
+        max-height: 480px;
         > :nth-child(n) {
           width: 100% !important;
           height: auto !important;
@@ -45,26 +47,18 @@
             img {
               width: 100%;
               max-height: 480px;
-              max-width: unset;
+              max-width: 1366px;
             }
           }
         }
       }
     }
     > .views-slideshow-controls-bottom {
-      position: absolute;
-      bottom: 15px;
       z-index: 1;
-      @include respond-to(full_screen) {
-        width: 100%;
-        @include display-flex;
-      }
-      @include respond-to(to_960_screen) {
-        right: 10px;
-      }
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
       > .views-slideshow-pager-fields {
-        @include clearfix();
-        margin: auto;
         .views-slideshow-pager-field-item {
           @include clearfix();
           float: left;

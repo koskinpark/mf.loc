@@ -139,100 +139,102 @@
     }
   }
 }
-
-.pane-show-other-actions-on-actions-page-panel-pane-1 {
-  > .pane-title {
-    @include pane-title;
-  }
-  > .view-show-other-actions-on-actions-page {
-    .view-content {
-      @include clearfix();
-      text-align:center;
-      .views-row {
-        cursor: pointer;
-        transition: 0.3s;
-        float: left;
-        position: relative;
-        overflow: hidden;
-        @include respond-to(from_800_screen) {
-          .node--mainpage-slideshow {
-            .field--name-title, .field--name-body {
-              opacity: 0;
-              transition: 0.3s;
+#content-wrap {
+  > .pane-page-content {
+    .pane-show-other-actions-on-actions-page-panel-pane-1 {
+      > .pane-title {
+        @include pane-title;
+      }
+      > .view-show-other-actions-on-actions-page {
+        .view-content {
+          @include clearfix();
+          text-align: center;
+          .views-row {
+            cursor: pointer;
+            transition: 0.3s;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            @include respond-to(from_800_screen) {
+              .node--mainpage-slideshow {
+                .field--name-title, .field--name-body {
+                  opacity: 0;
+                  transition: 0.3s;
+                }
+              }
+              &:hover {
+                .node--mainpage-slideshow {
+                  .field--name-title, .field--name-body {
+                    opacity: 1;
+                    transition: 0.3s;
+                  }
+                }
+              }
             }
-          }
-          &:hover {
+            @include respond-to(to_800_screen) {
+              .node--mainpage-slideshow {
+                .field--name-title {
+                  bottom: 0;
+                }
+                .field--name-body {
+                  opacity: 0;
+                }
+              }
+            }
+            @include respond-to(from_480_screen) {
+              width: 50%;
+            }
+            @include respond-to(to_480_screen) {
+              width: 100%;
+            }
             .node--mainpage-slideshow {
-              .field--name-title, .field--name-body {
-                opacity: 1;
-                transition: 0.3s;
+              overflow: hidden;
+              .field--name-title {
+                position: absolute;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.77);
+                color: #000;
+                font-size: 16px;
+                font-style: oblique;
+              }
+              .field--name-field-images {
+                > .field__items {
+                  img {
+                    vertical-align: bottom;
+                  }
+                }
+              }
+              .field--name-body {
+                height: auto;
+                position: absolute;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.77);
+                color: #000;
+                bottom: 0;
+                font-size: 16px;
+                font-style: oblique;
+                text-align: justify;
+                text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11);
+                .field__items {
+                  padding: 0 20px 0 20px;
+                }
               }
             }
-          }
-        }
-        @include respond-to(to_800_screen) {
-          .node--mainpage-slideshow {
-            .field--name-title {
-              bottom: 0;
-            }
-            .field--name-body {
-              opacity: 0;
+            &:last-child {
+              float: unset;
+              margin: auto;
             }
           }
-        }
-        @include respond-to(from_480_screen) {
-          width: 50%;
-        }
-        @include respond-to(to_480_screen) {
-          width: 100%;
-        }
-        .node--mainpage-slideshow {
-          overflow: hidden;
-          .field--name-title {
-            position: absolute;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.77);
-            color: #000;
-            font-size: 16px;
-            font-style: oblique;
+          > :nth-child(n) {
+            padding: 10px;
           }
-          .field--name-field-images {
-            > .field__items {
-              img {
-                vertical-align: bottom;
-              }
-            }
-          }
-          .field--name-body {
-            height: auto;
-            position: absolute;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.77);
-            color: #000;
-            bottom: 0;
-            font-size: 16px;
-            font-style: oblique;
-            text-align: justify;
-            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.11);
-            .field__items {
-              padding:0 20px 0 20px;
-            }
-          }
-        }
-        &:last-child {
-          float: unset;
-          margin: auto;
-        }
-      }
-      > :nth-child(n) {
-        padding: 10px;
-      }
 
+        }
+      }
     }
   }
 }
 
 .pane-node-field-main-picture-of-action {
-  margin-top: 10px;
-  margin-bottom: 7px;
+  text-align: center;
 }

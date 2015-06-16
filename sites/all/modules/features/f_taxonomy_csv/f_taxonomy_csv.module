@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_taxonomy_csv feature.
+ */
+
+include_once 'f_taxonomy_csv.features.inc';

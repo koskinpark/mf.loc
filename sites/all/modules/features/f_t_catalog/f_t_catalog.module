@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_t_catalog feature.
+ */
+
+include_once 'f_t_catalog.features.inc';

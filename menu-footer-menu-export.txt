@@ -1,0 +1,10 @@
+Contacts {"url":"contacts","lang":"en","options":{"attributes":{"title":""},"alter":true},"node_uuid":"c6d8b733-36cc-42fb-b58a-48d8591c20d0","weight":"-47"}
+To Top {"url":"<front>","lang":"en","options":{"attributes":{"title":""}},"weight":"-49"}
+All Actions {"url":"actions","lang":"en","options":{"attributes":{"title":""}},"weight":"-48"}
+About {"url":"about","lang":"en","options":{"attributes":{"title":""},"alter":true},"node_uuid":"c173ec2a-0671-476f-982f-23affbbf2634","weight":"-46"}
+Front page {"url":"<front>","lang":"en","options":{"attributes":{"title":""},"alter":true},"weight":"-50"}
+Контакты {"url":"node\/917","lang":"ru","options":{"attributes":{"title":""},"alter":true},"node_uuid":"eed4cc5a-54ff-4747-ae29-8c9f462ef181","weight":"-42"}
+Главная {"url":"<front>","lang":"ru","options":{"attributes":{"title":""},"alter":true},"weight":"-45"}
+Наверх {"url":"<front>","lang":"ru","options":{"attributes":{"title":""},"alter":true},"weight":"-44"}
+Акции {"url":"actions","lang":"ru","options":{"attributes":{"title":""},"alter":true},"weight":"-43"}
+О магазине {"url":"node\/918","lang":"ru","options":{"attributes":{"title":""},"alter":true},"node_uuid":"c98b095b-9473-4925-b94d-74b7248be8ee","weight":"-41"}

@@ -868,7 +868,7 @@ function comment_get_thread($node, $mode, $comments_per_page) {
  */
 function comment_prepare_thread(&$comments) {
   // A flag stating if we are still searching for first new comment on the thread.
-  $first_new = TRUE;
+    $first_new = TRUE;
 
   // A counter that helps track how indented we are.
   $divs = 0;

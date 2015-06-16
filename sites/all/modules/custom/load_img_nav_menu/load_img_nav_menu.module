@@ -7,9 +7,8 @@ function mf_menu_link(array $variables)
     $path = '';
     $sub_menu = '';
     $image_style = '';
-
     if ($variables['element']['#original_link']['depth'] == 2) {
-        $title_of_taxonomy_term = $variables['element']['#original_link']['options']['attributes']['title'];
+        $title_of_taxonomy_term = $variables['element']['#localized_options']['attributes']['title'];
         $info_about_taxonomy_term = taxonomy_get_term_by_name($title_of_taxonomy_term);
         $info_about_taxonomy_term = reset($info_about_taxonomy_term);
         $id_of_taxonomy_term = $info_about_taxonomy_term->tid;

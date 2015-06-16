@@ -1,0 +1,38 @@
+
+body > .right-panel-of-titles {
+  position: fixed;
+  right: 0;
+  width: 220px;
+  z-index: 100;
+  overflow: hidden;
+  h1, h2 {
+    font-size: 14px;
+    white-space: nowrap;
+    color: #D4D4CE;
+    font-weight: 400;
+    margin: auto auto auto 10px;
+  }
+  > :nth-child(n) {
+    height: 40px;
+    width: 0;
+    overflow: hidden;
+    float: right;
+    transition: .3s ease;
+    cursor: pointer;
+    @include display-flex;
+    &:hover {
+      background: #F5F5F5;
+      border-left: 10px solid #BCBCBC;
+      >:first-child {
+        color: #272727;
+      }
+    }
+  }
+  .title-visible {
+    width: 100%;
+    background: #272727;
+  }
+  @include respond-to(to_960_screen) {
+    display: none;
+  }
+}

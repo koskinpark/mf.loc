@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_colorbox_settings feature.
+ */
+
+include_once 'f_colorbox_settings.features.inc';

@@ -102,7 +102,7 @@ function views_for_search_default_search_api_server() {
     "options" : {
       "database" : "default:default",
       "min_chars" : "1",
-      "partial_matches" : 0,
+      "partial_matches" : 1,
       "indexes" : { "title_index" : {
           "search_api_language" : {
             "table" : "search_api_db_title_index",

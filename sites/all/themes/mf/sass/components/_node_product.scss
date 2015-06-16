@@ -1,9 +1,23 @@
-.pane-page-content {
-  .node--product {
+.pane-node-content {
+  > .node--product--full {
     display: table;
     width: 100%;
     margin: 0 auto;
     position: relative;
+    > .field--name-title {
+      width: 100%;
+      display: table-caption;
+      background: #E6E6E6;
+      border-bottom: 1px solid #D7D7D7;
+      text-align: center;
+      h1 {
+        color: #000;
+        margin: 0.37em 0;
+        text-shadow: 0px 0px 1px #000;
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+    }
     .group-description-product {
       clear: both;
       display: table-cell;
@@ -12,13 +26,12 @@
       min-width: 230px;
       vertical-align: middle;
       @include respond-to(full_screen) {
-        padding: 30px 20px 30px 30px;
-        width: 30%;
+        padding: 30px 1px 30px 30px;
+        width: 40%;
       }
       @include respond-to(to_800_screen) {
       }
       @include respond-to(from_640_to_960_screen) {
-        padding: 10px;
         width: 30%;
       }
       @include respond-to(from_640_screen) {
@@ -34,32 +47,51 @@
           font-size: 1.8em;
         }
         > .field--name-body {
+          width: 70%;
           font-size: 1.2em;
-          text-align: center !important;
+          text-align: left;
           .field__items {
             float: unset !important;
           }
         }
         > .field--name-field-cost {
           position: absolute;
-          top: -6px;
-          right: 12px;
-          font-size: 1.2em
+          bottom: 15px;
+          right: -15px;
+          width: 90px !important;
+          height: 90px !important;
+          font-size: 1.2em;
+          .cost_title {
+            padding: 22px 0 0 0px !important;
+            font-size: 1.5em !important;
+            &:after {
+              margin: -4px 10px !important;
+            }
+          }
+          > .field__items {
+            .field__item {
+              font-size: 1em !important;
+              padding: 2px 0 0 0px !important;
+            }
+          }
         }
       }
       .field--name-title {
-        h1 {
-          color: #000;
-          text-shadow: 0px 0px 1px #000;
-          font-weight: bolder;
-          text-transform: uppercase;
-          margin: 0;
+
+      }
+      @include respond-to(to_480_screen) {
+        > .field--name-body {
+          width: 240px;
         }
+      }
+      .field--name-title {
+
       }
       .field--name-body {
         @include clearfix();
         text-align: justify;
-        margin: 10px 0 0 0;
+        font-size: 0.8em;
+        margin: 10px 20px 10px 10px;
         .field__items {
           float: right;
           p {
@@ -68,8 +100,43 @@
         }
       }
       .field--name-field-cost {
-        font-style: oblique;
-        color: rgba(0, 0, 0, 0.4);
+        width: 120px;
+        overflow: hidden;
+        height: 150px;
+        background: url(http://mf.loc/sites/all/themes/mf/images/price.png);
+        text-align: center;
+        float: right;
+        background-size: cover;
+        .cost_title {
+          font-size: 2.5em;
+          color: #FFF;
+          text-shadow: 0px 0px 1px #1D1C1C;
+          display: block;
+          text-align: center;
+          font-weight: 700;
+          @include respond-to(from_800_screen) {
+            padding: 30px 0 0 10px;
+          }
+          @include respond-to(to_800_screen) {
+            padding: 35px 0 0 10px;
+          }
+          &:after {
+            content: '';
+            display: block;
+            width: 126px;
+            margin: -6px 3px;
+            height: 2px;
+            background: #F8F8F8;
+          }
+        }
+        > .field__items {
+          .field__item {
+            font-size: 1.5em;
+            padding: 3px 0 0 15px;
+            color: #FFF;
+            text-shadow: 0px 0px 1px #000;
+          }
+        }
       }
       &:after {
         content: "";
@@ -84,6 +151,7 @@
     .group-product-image {
       @include respond-to(full_screen) {
         height: 520px;
+        width: 60%;
         @include display-flex();
       }
       @include respond-to(to_960_screen) {
@@ -121,7 +189,7 @@
         padding: 30px;
       }
       @include respond-to(to_640_screen) {
-        height: 420px;
+        height: 425px !important;
         @include linear-gradient(bottom,rgba(0,0,0,0),0%,rgba(0, 0, 0, 0.10),100%);
         padding: 0;
         .group-image-group {
@@ -165,20 +233,24 @@
         }
         > .field--name-field-pictures {
           display: table-cell;
+          vertical-align: middle;
           > .field__items {
             width: 100%;
             display: flex;
             > .field__item {
               margin: auto;
               display: none;
-              @include respond-to(full_screen) {
+              @include respond-to(from_800_screen) {
                 width: 450px;
               }
-              @include respond-to(from_640_to_960_screen) {
-                width: 300px;
+              @include respond-to(from_640_to_800_screen) {
+                width: 350px;
               }
-              @include respond-to(to_640_screen) {
-                width: 250px;
+              @include respond-to(from_480_to_640_screen) {
+                width: 450px;
+              }
+              @include respond-to(to_480_screen) {
+                width: 320px;
               }
               height: auto;
               > a {

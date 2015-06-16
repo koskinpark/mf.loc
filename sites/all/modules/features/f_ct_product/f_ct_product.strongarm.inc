@@ -13,30 +13,51 @@ function f_ct_product_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_product';
-  $strongarm->value = 'edit-comment';
-  $export['additional_settings__active_tab_product'] = $strongarm;
+  $strongarm->name = 'comment_anonymous_product';
+  $strongarm->value = 0;
+  $export['comment_anonymous_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_enable_revisions_page_node_product';
-  $strongarm->value = 1;
-  $export['diff_enable_revisions_page_node_product'] = $strongarm;
+  $strongarm->name = 'comment_default_mode_product';
+  $strongarm->value = 0;
+  $export['comment_default_mode_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_show_preview_changes_node_product';
-  $strongarm->value = 1;
-  $export['diff_show_preview_changes_node_product'] = $strongarm;
+  $strongarm->name = 'comment_default_per_page_product';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_view_mode_preview_node_product';
-  $strongarm->value = 'full';
-  $export['diff_view_mode_preview_node_product'] = $strongarm;
+  $strongarm->name = 'comment_form_location_product';
+  $strongarm->value = 0;
+  $export['comment_form_location_product'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_product';
+  $strongarm->value = '0';
+  $export['comment_preview_product'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_product';
+  $strongarm->value = '0';
+  $export['comment_product'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_product';
+  $strongarm->value = 0;
+  $export['comment_subject_field_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -91,6 +112,9 @@ function f_ct_product_strongarm() {
       'form' => array(
         'title' => array(
           'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),

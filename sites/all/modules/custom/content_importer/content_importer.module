@@ -2,106 +2,154 @@
 
 function content_importer_content_import()
 {
-//    $dir = 'parse/';
-//    if (is_dir($dir)) {
-//        $tree_of_catalogs = content_importer_get_all_directories($dir);
-//        content_importer_save_content($tree_of_catalogs);
-//    } else {
-//        print $dir . ' -такой директории нет';
-//    }
-
-    for ($i = 279; $i <= 915; $i++) {
-        $ololo = node_load($i);
-        if (!$ololo->field_pictures) {
-           node_delete($i);
+    for ($i = 0; $i <= 2500; $i++) {
+        $node = node_load($i);
+        if ($node->type == 'product') {
+            node_delete($i);
+            drush_print($node->title . ' deleted!');
         }
+        if ($i == 2500) {
+            drush_print('All nodes was deleted');
+        }
+    }
+    drush_print('Starting import content into your content type called Product');
+    $dir = 'parse/';
+    if (is_dir($dir)) {
+        $tree_of_catalogs = content_importer_get_all_directories($dir);
+        foreach($tree_of_catalogs as $key => $value) {
+            foreach ($value as $sub_key => $sub_value) {
+                if ($sub_value[0] == null) {
+                    //если не null, значит $key-Родитель, sub_key-дочерний,
+                    //sub_value[] - товар
+                    foreach($sub_value as $product_name => $product_items) {
+                        $get_catalog_item = $sub_key;
+                        $get_product_name = $product_name;
+                        $limit_of_upload_images = 0;
+                        $get_image_file = '';
+                        foreach ($product_items as $key_item => $product_item) {
+                            $check_image = substr($product_item, -3);
+                            if ($product_item == 'description.txt') {
+                                $get_description = file_get_contents($dir . $key . '/' . $get_catalog_item . '/' . $get_product_name . '/' . $product_item);
+                            }
+                            if ($product_item == 'price.txt') {
+                                $get_price = file_get_contents($dir . $key . '/' . $get_catalog_item . '/' . $get_product_name . '/' . $product_item);
+                            }
+                            if ($check_image == 'jpg') {
+                                if ($limit_of_upload_images < 4) {
+                                    $get_image_file[$limit_of_upload_images] = content_importer_get_path_for_image('parse/' . $key . '/' . $get_catalog_item . '/' . $get_product_name . '/' . $product_item);
+                                }
+                                $limit_of_upload_images++;
+                            }
+                        }
+                        if ($get_image_file) {
+                            content_importer_save_content($get_catalog_item, $get_product_name, $get_description, $get_price, $get_image_file);
+                        }
+                    }
+                }
+                else {
+                    //если null, значит $key = родитель, а sub_key = товар
+                    $get_catalog_item = $key;
+                    $get_product_name = $sub_key;
+                    $limit_of_upload_images = 0;
+                    $get_image_file = '';
+                    foreach ($sub_value as $key_item => $product_item) {
+                        $check_image = substr($product_item, -3);
+                        if ($product_item == 'description.txt') {
+                            $get_description = file_get_contents($dir . $get_catalog_item . '/' . $get_product_name . '/' . $product_item);
+                        }
+                        if ($product_item == 'price.txt') {
+                            $get_price = file_get_contents($dir . $get_catalog_item . '/' . $get_product_name . '/' . $product_item);
+                        }
+                        if ($check_image == 'jpg') {
+                            if ($limit_of_upload_images < 4) {
+                                $get_image_file[$limit_of_upload_images] = content_importer_get_path_for_image('parse/' . $get_catalog_item . '/' . $get_product_name . '/' . $product_item);
+                            }
+                            $limit_of_upload_images++;
+                        }
+                    }
+                    if ($get_image_file) {
+                        content_importer_save_content($get_catalog_item, $get_product_name, $get_description, $get_price, $get_image_file);
+                    }
+                }
+            }
+
+          //
+        }
+    } else {
+        print $dir . ' -такой директории нет';
     }
 }
 
-//function content_importer_get_all_directories($dir, &$all_array = array())
-//{
-//    $parent_dir = content_importer_removing_dots(scandir($dir));
-//    foreach ($parent_dir as $key => $value) {
-//        $sub_dir = $dir . $value . '/';
-//        if (is_dir($sub_dir)) {
-//            $all_array[$value] = array();
-//            content_importer_get_all_directories($sub_dir, $all_array[$value]);
-//        } else {
-//            $all_array[] = $value;
-//        }
-//    }
-//    return ($all_array);
-//}
-//
-//function content_importer_removing_dots($array)
-//{
-//    foreach ($array as $key => $value) {
-//        if (($value == '.') || ($value == '..')) {
-//            unset($array[$key]);
-//        }
-//    }
-//    sort($array);
-//    return ($array);
-//}
-//
-//function content_importer_save_content($tree)
-//{
-//    $parent_term = 'Мягкая мебель';
-//    foreach ($tree[$parent_term] as $key => $value) {
-//        if (is_array($value)) {
-//            foreach ($value as $sub_key => $sub_value) {
-//                $node = entity_create('node', array(
-//                    'type' => 'product',
-//                ));
-//                $node->title = $sub_key;
-//                $info_about_taxonomy_term = taxonomy_get_term_by_name($key);
-//                $info_about_taxonomy_term = reset($info_about_taxonomy_term);
-//                $id_of_taxonomy_term = $info_about_taxonomy_term->tid;
-//                $node->uid = 1;
-//                $node->field_catalog['und'][0]['target_id'] = $id_of_taxonomy_term;
-//                if (is_array($sub_value)) {
-//                    $limit_of_upload_images = 0;
-//                    foreach ($sub_value as $s_k => $s_v) {
-//                        $check_image = substr($s_v, -3);
-//                        if ($check_image == 'jpg') {
-//                            if ($limit_of_upload_images < 4) {
-//                                $image_file = content_importer_get_path_for_image('parse/' . $parent_term . '/' . $key . '/' . $sub_key . '/' . $s_v);
-//                                $node->field_pictures['und'][$limit_of_upload_images] = $image_file;
-//                            }
-//                            $limit_of_upload_images++;
-//                        }
-//                        if ($check_image == 'txt') {
-//                            if ($s_v == 'description.txt') {
-//                                $get_description = file_get_contents('parse/' . $parent_term . '/' . $key . '/' . $sub_key . '/' . $s_v);
-//                                $node->body['und'][0]['value'] = $get_description;
-//                                $node->body['und'][0]['format'] = 'full_html';
-//                            }
-//                            if ($s_v == 'price.txt') {
-//                                $get_description = file_get_contents('parse/' . $parent_term . '/' . $key . '/' . $sub_key . '/' . $s_v);
-//                                $get_description = str_replace(' ','',$get_description);
-//                                $node->field_cost['und'][0]['value'] = (int)$get_description;
-//                            }
-//                        }
-//                        node_save($node);
-//                        print ('Content ' . $node->title . ' added /n \n');
-//                    }
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//function content_importer_get_path_for_image($full_path)
-//{
-//    $filepath = drupal_realpath($full_path);
-//    $file = (object) array(
-//        'uid' => 1,
-//        'uri' => $filepath,
-//        'filemime' => file_get_mimetype($filepath),
-//        'status' => 1,
-//    );
-//    $file = file_copy($file, 'public://');
-//    $file = (array)$file;
-//    return ($file);
-//}
+function content_importer_save_content($catalog_name, $product_name, $description, $price, $image_files)
+{
+    $node = entity_create('node', array(
+        'type' => 'product',
+    ));
+    $node->title = $product_name;
+    $get_structure_catalog = taxonomy_vocabulary_machine_name_load('catalog');
+
+    $get_structure_catalog = taxonomy_get_tree($get_structure_catalog->vid);
+    $name = i18n_taxonomy_localize_terms($get_structure_catalog);
+    foreach ($name as $keys => $terms) {
+        $term = $name[$keys]->name;
+        if ($term == $catalog_name) {
+            $id_of_taxonomy_term = $name[$keys]->tid;
+        }
+    }
+    $node->uid = 1;
+    $node->field_catalog['und'][0]['target_id'] = $id_of_taxonomy_term;
+    foreach ($image_files as $key => $value) {
+        $node->field_pictures['und'][$key] = $value;
+    }
+    if (!$description) {
+        $description = 'Описания для данного товара ещё нет';
+    }
+    $node->body['und'][0]['value'] = $description;
+    $node->body['und'][0]['format'] = 'full_html';
+    $node->field_cost['und'][0]['value'] = (int)str_replace(' ', '', $price);
+    if ($id_of_taxonomy_term) {
+        node_save($node);
+        drush_print($node->title . ' succesfully added');
+    }
+}
+
+function content_importer_get_path_for_image($full_path)
+{
+    $filepath = drupal_realpath($full_path);
+    $file = (object) array(
+        'uid' => 1,
+        'uri' => $filepath,
+        'filemime' => file_get_mimetype($filepath),
+        'status' => 1,
+    );
+    $file = file_copy($file, 'public://');
+    $file = (array)$file;
+    return ($file);
+}
+
+function content_importer_get_all_directories($dir, &$all_array = array())
+{
+    $parent_dir = content_importer_removing_dots(scandir($dir));
+    foreach ($parent_dir as $key => $value) {
+        $sub_dir = $dir . $value . '/';
+        if (is_dir($sub_dir)) {
+            $all_array[$value] = array();
+            content_importer_get_all_directories($sub_dir, $all_array[$value]);
+        } else {
+            $all_array[] = $value;
+        }
+    }
+    return ($all_array);
+}
+
+function content_importer_removing_dots($array)
+{
+    foreach ($array as $key => $value) {
+        if (($value == '.') || ($value == '..')) {
+            unset($array[$key]);
+        }
+    }
+    sort($array);
+    return ($array);
+}
 

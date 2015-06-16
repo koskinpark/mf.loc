@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_display_suite feature.
+ */
+
+include_once 'f_display_suite.features.inc';

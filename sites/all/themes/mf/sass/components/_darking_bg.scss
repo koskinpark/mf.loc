@@ -7,5 +7,14 @@ body {
     background: rgba(0, 0, 0, 1);
     top: 0;
     left: 0;
+    transition: 0.3s
+  }
+  .darkening-disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .darkening-enabled {
+    opacity: .6;
+    visibility: visible;
   }
 }

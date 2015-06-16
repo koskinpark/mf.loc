@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the f_v_products_on_terms_page feature.
+ */
+
+include_once 'f_v_products_on_terms_page.features.inc';

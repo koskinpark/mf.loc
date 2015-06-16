@@ -1,0 +1,19 @@
+
+.ajax-progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.49);
+  z-index: 10000;
+  @include animation-name(ajax-progress, 1s);
+  @include display-flex;
+  > .throbber {
+    margin: auto;
+    height: 70px;
+    width: 70px;
+    background: transparent url('/sites/all/themes/mf/images/spinner.gif') no-repeat;
+    background-size: cover;
+  }
+}

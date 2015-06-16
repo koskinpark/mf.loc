@@ -1,19 +1,33 @@
-
-.pane-pane-for-logo {
-  @include respond-to(full_screen) {
-    margin-top: 10px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    width: 100%;
+#header-wrap {
+  > .pane-pane-for-logo {
+    @include respond-to(full_screen) {
+      margin-top: 20px;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      padding: 32px 0;
+      width: 100%;
+    }
+    @include respond-to(to_960_screen) {
+      display: none;
+    }
   }
-  @include respond-to(to_960_screen) {
-    margin-top: 2px;
-    position: absolute;
-    z-index: 600;
-    right: 2px;
-    img {
-      width: 56px;
+  > .nav-menu-medium-screen {
+    .btn-show-nav-menu {
+      .pane-pane-for-logo {
+        @include respond-to(full_screen) {
+          display: none;
+        }
+        @include respond-to(to_960_screen) {
+          margin-top: 8px;
+          position: absolute;
+          z-index: 600;
+          right: 4px;
+          img {
+            width: 320px;
+          }
+        }
+      }
     }
   }
 }

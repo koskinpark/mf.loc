@@ -1,30 +1,133 @@
 
 .node--contacts--full {
   position: relative;
-  > .group-contact-group {
-    position: absolute;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    .field--name-title {
-      text-align: left;
-      font-size: 21px;
-      color: #FFF;
-      text-shadow: -2px 1px 2px #000;
-      h2 {
-        margin: 5px;
+  > .group-pictures-group {
+    position: relative;
+    > .field--name-field-more-picture, > .field--name-field-picture-of-contacts {
+      .field__item {
+        position: relative;
+        img {
+          vertical-align: bottom;
+          min-height: 400px;
+          min-width: 1200px;
+        }
+        &:after {
+          content: '';
+          top: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+        }
       }
     }
-    .field--name-body {
-      text-align: right;
-      font-size: 21px;
-      color: #FFF;
-      text-shadow: 1px 1px 2px #000;
+    > .group-contact-group {
+      position: absolute;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      @include display-flex;
+      @include flex-flow(column wrap);
+      > :first-child {
+        margin: auto auto 0 auto;
+      }
+      > .field--name-field-address {
+        color: #fff;
+        p {
+          text-align: center;
+        }
+        .contacts-info {
+          font-size: 30px;
+        }
+        .contacts-address {
+          font-size: 35px;
+          display: block;
+          margin-top: -12px;
+        }
+      }
+      > .field--name-field-telephones, .field--name-field-opening-times {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.22);
+        p {
+          text-align: center;
+          overflow: hidden;
+          transition: .3s ease;
+          margin: 0;
+          font-size: 18px;
+          > .contacts-telephones, > .contacts-telephones {
+            font-size: 20px;
+          }
+        }
+      }
+      .field--name-title {
+
+        h2 {
+
+        }
+      }
+      .field--name-body {
+
+      }
     }
   }
-  > .field--name-field-picture-of-contacts {
-    img {
-      vertical-align: bottom;
+  .field--name-field-yandex-map {
+    overflow: hidden;
+    transition: .3s ease;
+  }
+
+}
+
+.show-more-contacts {
+  padding: 20px;
+  border: 2px solid #FFF;
+  display: inline-block;
+  width: 280px;
+  background: #282828;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s ease;
+  &:hover {
+    border: 2px solid #000;
+    background: #FFFFFF;
+    color: #282828;
+  }
+}
+
+.block-of-yandex-map-btn {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  .show-yandex-map {
+    height: 38px;
+    display: inline-block;
+    background: #282828;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    border: 2px solid #fff;
+    border-bottom: unset !important;
+    cursor: pointer;
+    transition: .3s ease;
+    &:hover {
+      height: 45px;
+      background: #3D3D3D;
+      border: 2px solid #BBB;
+    }
+    @include respond-to(from_640_screen) {
+      width: 640px;
+    }
+    @include respond-to(to_640_screen) {
+      width: 100%;
+      border-left: unset !important;
+      border-right: unset !important;
     }
   }
 }

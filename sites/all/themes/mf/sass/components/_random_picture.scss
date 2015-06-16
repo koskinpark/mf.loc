@@ -1,12 +1,14 @@
 $height_of_image:310px;
-
-.pane-random-homepage-product-panel-pane-1 {
-  >h2 {
-    margin-top: 0 !important;
-    @include pane-title;
-  }
-  >.view-random-homepage-product {
-    @include random-product-pane;
+#content-wrap {
+  > .pane-page-content {
+    .pane-random-homepage-product-panel-pane-1 {
+      >h2 {
+        @include pane-title;
+      }
+      >.view-random-homepage-product {
+        @include random-product-pane;
+      }
+    }
   }
 }
 

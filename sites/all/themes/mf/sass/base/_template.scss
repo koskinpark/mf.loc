@@ -46,7 +46,10 @@ li {
 }
 
 #content-wrap {
-   background: #ffffff;
+  background: #ffffff;
+  margin: 0 auto;
+  float: unset;
+  max-width: 1366px;
   @include respond-to(to_960_screen) {
     margin-top: 50px;
   }
